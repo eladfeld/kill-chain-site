@@ -44,3 +44,5 @@ table.stages tr.absent .val { color: #4a505c; }
 .why .ev q { font-style: italic; }
 .why .ev .loc { color: var(--accent); }
 .pending { color: var(--muted); font-style: italic; }
+.wip { background: #3a2f1a; color: #e8c98a; border-bottom: 1px solid #55492a; padding: 8px 24px; font-size: 13px; text-align: center; }
+.wip code { background: rgba(0,0,0,.3); padding: 1px 5px; border-radius: 3px; }
