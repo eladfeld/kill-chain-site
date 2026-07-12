@@ -1,0 +1,17 @@
+{
+  "name": "kill-chain-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Archive extending Table II of The Promptware Kill Chain (NDSS'27)",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "add": "node scripts/add.mjs",
+    "serve": "node scripts/build.mjs && npx --yes http-server docs -p 8080 -c-1"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "js-yaml": "^4.1.0"
+  }
+}

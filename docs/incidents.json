@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "not-what-you-signed-up-for",
+    "title": "Not What You Signed Up For (Greshake et al.)",
+    "date": "2023-02",
+    "dateDisplay": "Feb'23",
+    "category": "Browser/Search",
+    "target": "Bing Chat, plugins",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Poisoned webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil., fraud"
+    },
+    "url": "https://arxiv.org/abs/2302.12173"
+  },
+  {
+    "slug": "bing-chat-exfil",
+    "title": "Bing Chat Data Exfiltration",
+    "date": "2023-06",
+    "dateDisplay": "Jun'23",
+    "category": "Browser/Search",
+    "target": "Bing Chat",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Poisoned webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/"
+  },
+  {
+    "slug": "morris-ii-worm",
+    "title": "Morris II Worm",
+    "date": "2024-03",
+    "dateDisplay": "Mar'24",
+    "category": "AI Worm",
+    "target": "Email assistants",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Received email",
+      "privilege_escalation": "Role-play JB",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": "Self-rep",
+      "action_on_objective": "Data exfil., spam"
+    },
+    "url": "https://sites.google.com/view/compromptmized"
+  }
+]

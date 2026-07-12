@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["slug", "title", "date", "category", "target", "source", "stages"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "paper_ref": { "type": ["integer", "null"] },
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}$" },
+    "category": { "enum": ["Browser/Search", "Enterprise", "Coding Assist.", "AI Agent", "Agentic/CUA", "Crypto/DeFi", "AI Worm", "Multimodal"] },
+    "target": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "required": ["url", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "type": "string", "minLength": 1 },
+        "type": { "enum": ["paper", "blog", "advisory", "cve", "tweet", "other"] },
+        "snapshot": { "type": ["string", "null"] },
+        "archived_at": { "type": ["string", "null"] },
+        "sha256": { "type": ["string", "null"] }
+      }
+    },
+    "stages": {
+      "type": "object",
+      "required": ["initial_access", "privilege_escalation", "reconnaissance", "persistence", "command_control", "lateral_movement", "action_on_objective"],
+      "additionalProperties": false,
+      "properties": {
+        "initial_access": { "$ref": "#/definitions/freeStage" },
+        "privilege_escalation": { "$ref": "#/definitions/freeStage" },
+        "reconnaissance": { "$ref": "#/definitions/freeStage" },
+        "persistence": { "$ref": "#/definitions/persistStage" },
+        "command_control": { "$ref": "#/definitions/c2Stage" },
+        "lateral_movement": { "$ref": "#/definitions/latStage" },
+        "action_on_objective": { "$ref": "#/definitions/freeStage" }
+      }
+    }
+  },
+  "definitions": {
+    "evidence": {
+      "type": "object",
+      "required": ["quote", "locator"],
+      "additionalProperties": false,
+      "properties": { "quote": { "type": "string" }, "locator": { "type": "string" } }
+    },
+    "freeStage": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "object", "required": ["value", "justification", "evidence"], "additionalProperties": false,
+          "properties": { "value": { "type": "string", "minLength": 1 }, "justification": { "type": "string", "minLength": 1 }, "evidence": { "$ref": "#/definitions/evidence" } } }
+      ]
+    },
+    "persistStage": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "object", "required": ["value", "justification", "evidence"], "additionalProperties": false,
+          "properties": { "value": { "enum": ["RAG-dep", "RAG-indep", "Session", "Git-repo"] }, "justification": { "type": "string", "minLength": 1 }, "evidence": { "$ref": "#/definitions/evidence" } } }
+      ]
+    },
+    "c2Stage": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "object", "required": ["value", "justification", "evidence"], "additionalProperties": false,
+          "properties": { "value": { "enum": ["native"] }, "justification": { "type": "string", "minLength": 1 }, "evidence": { "$ref": "#/definitions/evidence" } } }
+      ]
+    },
+    "latStage": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "object", "required": ["value", "justification", "evidence"], "additionalProperties": false,
+          "properties": { "value": { "enum": ["Perm", "Self-rep", "Pipeline", "Supply-ch", "Git-propag", "Cross-agent", "Cross-app", "Cross-client"] }, "justification": { "type": "string", "minLength": 1 }, "evidence": { "$ref": "#/definitions/evidence" } } }
+      ]
+    }
+  }
+}

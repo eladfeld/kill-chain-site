@@ -1,0 +1,29 @@
+slug: bing-chat-exfil
+title: "Bing Chat Data Exfiltration"
+paper_ref: 44
+date: 2023-06
+category: Browser/Search
+target: "Bing Chat"
+source:
+  url: "https://embracethered.com/blog/"
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: "Poisoned webpage"
+    justification: "TODO"
+    evidence: { quote: "TODO", locator: "TODO" }
+  privilege_escalation:
+    value: "Instr. override"
+    justification: "TODO"
+    evidence: { quote: "TODO", locator: "TODO" }
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: "Data exfiltration"
+    justification: "TODO"
+    evidence: { quote: "TODO", locator: "TODO" }
