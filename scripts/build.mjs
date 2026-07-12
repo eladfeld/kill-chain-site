@@ -3,6 +3,8 @@ import path from 'node:path';
 import { ROOT, STAGE_KEYS, STAGE_LABELS, loadIncidents, validateAll, coverage, dateDisplay, stageValue, escapeHtml } from './lib.mjs';
 
 const OUT = path.join(ROOT, 'docs');
+const cssVer = Math.floor(fs.statSync(path.join(ROOT, 'assets', 'style.css')).mtimeMs);
+const jsVer = Math.floor(fs.statSync(path.join(ROOT, 'assets', 'table.js')).mtimeMs);
 const incidents = loadIncidents();
 const errors = validateAll(incidents);
 if (errors.length) { console.error(`✗ build aborted (${errors.length} error(s)):`); errors.forEach(e => console.error('  - ' + e)); process.exit(1); }
@@ -27,7 +29,7 @@ function page(title, body, prefix) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)}</title>
-<link rel="stylesheet" href="${prefix}assets/style.css">
+<link rel="stylesheet" href="${prefix}assets/style.css?v=${cssVer}">
 </head><body>
 <header class="site"><a class="home" href="${prefix}index.html">Promptware Kill-Chain Archive</a>
 <span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
@@ -46,7 +48,7 @@ const indexBody = `
   <span id="count" class="count"></span>
 </div>
 <div class="table-wrap"><table id="grid"><thead></thead><tbody></tbody></table></div>
-<script src="assets/table.js"></script>`;
+<script src="assets/table.js?v=${jsVer}"></script>`;
 fs.writeFileSync(path.join(OUT, 'index.html'), page('Promptware Kill-Chain Archive', indexBody, ''));
 
 function stageRow(inc, k) {
