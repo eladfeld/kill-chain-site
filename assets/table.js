@@ -15,8 +15,8 @@ function setup() {
   cats.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; catSel.appendChild(o); });
   const covSel = $('#cov');
   for (let i = 0; i <= 6; i++) { const o = document.createElement('option'); o.value = i; o.textContent = i; covSel.appendChild(o); }
-  $('#grid thead').innerHTML = '<tr><th>Incident</th><th>Date</th><th>Category</th><th>Target</th>' +
-    STAGES.map(s => `<th class="st">${s[1]}</th>`).join('') + '<th>Cov.</th></tr>';
+  $('#grid thead').innerHTML = '<tr><th class="c-title">Incident</th><th>Date</th><th>Category</th><th>Target</th>' +
+    STAGES.map(s => `<th>${s[1]}</th>`).join('') + '<th>Cov.</th></tr>';
   ['#q', '#cat', '#cov'].forEach(id => $(id).addEventListener('input', render));
   render();
 }
@@ -29,9 +29,9 @@ function render() {
   $('#grid tbody').innerHTML = rows.map(d => {
     const cells = STAGES.map(s => {
       const v = d.stages[s[0]];
-      return v ? `<td class="on" title="${esc(v)}">${esc(v)}</td>` : '<td class="off">–</td>';
+      return v ? `<td class="on"><span class="chip" title="${esc(v)}">${esc(v)}</span></td>` : '<td class="off">–</td>';
     }).join('');
-    return `<tr onclick="location.href='incident/${d.slug}.html'"><td class="title">${esc(d.title)}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td>${cells}<td class="cov">${d.coverage}</td></tr>`;
+    return `<tr onclick="location.href='incident/${d.slug}.html'"><td class="title">${esc(d.title)}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
   }).join('');
   $('#count').textContent = `${rows.length} / ${DATA.length} incidents`;
 }
