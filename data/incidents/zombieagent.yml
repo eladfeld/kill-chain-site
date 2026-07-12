@@ -1,32 +1,42 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: zombieagent
+title: ZombieAgent
+paper_ref: 67
+date: 2026-01
+category: Enterprise
+target: ChatGPT
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Received email/file
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Instr. override
+    value: Control bypass
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   reconnaissance: null
-  persistence: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   command_control: null
-  lateral_movement: null
+  lateral_movement:
+    value: Self-rep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   action_on_objective:
     value: Data exfiltration
     justification: TODO

@@ -35,7 +35,45 @@
       "lateral_movement": null,
       "action_on_objective": "Data exfiltration"
     },
-    "url": "https://embracethered.com/blog/"
+    "url": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/"
+  },
+  {
+    "slug": "gpt4v-visual-injection",
+    "title": "GPT-4V Visual Injection",
+    "date": "2023-10",
+    "dateDisplay": "Oct'23",
+    "category": "Multimodal",
+    "target": "GPT-4V",
+    "coverage": 2,
+    "stages": {
+      "initial_access": "Image (hidden text)",
+      "privilege_escalation": null,
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Response manip."
+    },
+    "url": "https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/"
+  },
+  {
+    "slug": "artprompt",
+    "title": "ArtPrompt",
+    "date": "2024-02",
+    "dateDisplay": "Feb'24",
+    "category": "Multimodal",
+    "target": "GPT-4, Claude",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "ASCII art encoding",
+      "privilege_escalation": "Semantic bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Harmful content"
+    },
+    "url": "TODO-verify"
   },
   {
     "slug": "morris-ii-worm",
@@ -55,5 +93,594 @@
       "action_on_objective": "Data exfil., spam"
     },
     "url": "https://sites.google.com/view/compromptmized"
+  },
+  {
+    "slug": "apwt",
+    "title": "APwT (A Jailbroken GenAI Model Can Cause Real Harm)",
+    "date": "2024-08",
+    "dateDisplay": "Aug'24",
+    "category": "AI Agent",
+    "target": "GenAI-powered app",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Direct prompt",
+      "privilege_escalation": "Role-play JB",
+      "reconnaissance": "Context probing",
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Perm",
+      "action_on_objective": "DoS, SQL table modification"
+    },
+    "url": "https://arxiv.org/abs/2408.05061"
+  },
+  {
+    "slug": "m365-ascii-smuggling",
+    "title": "M365 Copilot ASCII Smuggling",
+    "date": "2024-08",
+    "dateDisplay": "Aug'24",
+    "category": "Enterprise",
+    "target": "M365 Copilot",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Malicious email",
+      "privilege_escalation": "Auto tool inv.",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "MFA code exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "slack-ai-exfil",
+    "title": "Slack AI Exfiltration",
+    "date": "2024-08",
+    "dateDisplay": "Aug'24",
+    "category": "Enterprise",
+    "target": "Slack AI",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Public channel msg",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Private ch. exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "chatgpt-spaiware",
+    "title": "ChatGPT SpAIware",
+    "date": "2024-09",
+    "dateDisplay": "Sep'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Browsed webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Persistent exfil."
+    },
+    "url": "https://arxiv.org/abs/2412.06090"
+  },
+  {
+    "slug": "chatgpt-zombai-c2",
+    "title": "ChatGPT ZombAI C2",
+    "date": "2024-10",
+    "dateDisplay": "Oct'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Browsed webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": "native",
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "prompt-infection",
+    "title": "Prompt Infection",
+    "date": "2024-10",
+    "dateDisplay": "Oct'24",
+    "category": "AI Worm",
+    "target": "Multi-agent sys.",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Webpage/PDF/Email",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Cross-agent",
+      "action_on_objective": "Saturation"
+    },
+    "url": "https://arxiv.org/abs/2410.07283"
+  },
+  {
+    "slug": "zombais-claude-c2",
+    "title": "ZombAIs: Claude Computer Use C2",
+    "date": "2024-10",
+    "dateDisplay": "Oct'24",
+    "category": "Agentic/CUA",
+    "target": "Claude Comp. Use",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Visited webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE, malware C2 conn."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "deepseek-ato-xss",
+    "title": "DeepSeek Account Takeover (XSS)",
+    "date": "2024-11",
+    "dateDisplay": "Nov'24",
+    "category": "Browser/Search",
+    "target": "DeepSeek AI web app",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Direct prompt",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "XSS, account takeover"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "freysa-ai-heist",
+    "title": "Freysa AI Heist",
+    "date": "2024-11",
+    "dateDisplay": "Nov'24",
+    "category": "Crypto/DeFi",
+    "target": "Freysa AI agent",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Direct message",
+      "privilege_escalation": "Tool confusion",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Transfer funds"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "chatgpt-search",
+    "title": "ChatGPT Search Manipulation",
+    "date": "2024-12",
+    "dateDisplay": "Dec'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT Search",
+    "coverage": 2,
+    "stages": {
+      "initial_access": "Hidden text on webpage",
+      "privilege_escalation": null,
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Output manipulation"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "mcp-history-theft",
+    "title": "MCP History Theft",
+    "date": "2025-04",
+    "dateDisplay": "Apr'25",
+    "category": "Coding Assist.",
+    "target": "MCP-based agents",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Malicious MCP server",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Exfil of conversations"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "camoleak",
+    "title": "CamoLeak",
+    "date": "2025-06",
+    "dateDisplay": "Jun'25",
+    "category": "Coding Assist.",
+    "target": "GitHub Copilot",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Untrusted repo content",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Secret exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "echoleak",
+    "title": "EchoLeak",
+    "date": "2025-06",
+    "dateDisplay": "Jun'25",
+    "category": "Enterprise",
+    "target": "M365 Copilot",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Markdown email",
+      "privilege_escalation": "Auto RAG mix",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Zero-click exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "curxecute",
+    "title": "CurXecute",
+    "date": "2025-07",
+    "dateDisplay": "Jul'25",
+    "category": "Coding Assist.",
+    "target": "Cursor",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Slack/GitHub msg",
+      "privilege_escalation": "Approval bypass",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE via MCP"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "forcedleak",
+    "title": "ForcedLeak",
+    "date": "2025-07",
+    "dateDisplay": "Jul'25",
+    "category": "Enterprise",
+    "target": "SF Agentforce",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Web-to-Lead form",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "CRM data exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "agentflayer",
+    "title": "AgentFlayer",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Cursor",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Jira ticket",
+      "privilege_escalation": "Instr. obfusc.",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": "Pipeline",
+      "action_on_objective": "Credential exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "copilot-backdoor",
+    "title": "Copilot Backdoor Insertion",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "GitHub Copilot",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "GitHub issue",
+      "privilege_escalation": "Instr. obfusc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Supply-ch",
+      "action_on_objective": "Backdoor insertion"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "devin-ai-rce",
+    "title": "Devin AI RCE",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "AI Agent",
+    "target": "Devin",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Browsed website",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE, malware C2 (Sliver)"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "devin-expose-port",
+    "title": "Devin Exposed Port",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "AI Agent",
+    "target": "Devin",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Untrusted content",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Perm",
+      "action_on_objective": "Service exposure"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "github-copilot-rce",
+    "title": "GitHub Copilot RCE (CVE-2025-53773)",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "GitHub Copilot",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Code/issue/webpage",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "identitymesh",
+    "title": "IdentityMesh",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Browser/Search",
+    "target": "Perplexity Comet",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "GitHub issue",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": "Cross-app",
+      "action_on_objective": "Gmail exfil., phish"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "invitation-is-all-you-need",
+    "title": "Invitation Is All You Need",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Agentic/CUA",
+    "target": "Google Assistant",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Calendar invite",
+      "privilege_escalation": "Delayed tool inv",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": "Perm",
+      "action_on_objective": "IoT manip., surv."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "windsurf-spaiware",
+    "title": "Windsurf SpAIware",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Windsurf",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Source code",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Persistent exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "hashjack",
+    "title": "HashJack",
+    "date": "2025-11",
+    "dateDisplay": "Nov'25",
+    "category": "Browser/Search",
+    "target": "AI browsers",
+    "coverage": 2,
+    "stages": {
+      "initial_access": "URL fragment",
+      "privilege_escalation": null,
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Phishing, data theft"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "agenthopper",
+    "title": "AgentHopper",
+    "date": "2025-12",
+    "dateDisplay": "Dec'25",
+    "category": "AI Worm",
+    "target": "AI code assist.",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Git repository",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": "Git-repo",
+      "command_control": null,
+      "lateral_movement": "Git-propag",
+      "action_on_objective": "Exponential spread"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "agentic-probllms",
+    "title": "Agentic ProbLLMs",
+    "date": "2025-12",
+    "dateDisplay": "Dec'25",
+    "category": "Agentic/CUA",
+    "target": "Claude Comp. Use",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Visited webpage",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Perm",
+      "action_on_objective": "RCE"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "geminijack",
+    "title": "GeminiJack",
+    "date": "2025-12",
+    "dateDisplay": "Dec'25",
+    "category": "Enterprise",
+    "target": "Google Gemini",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Doc/Cal/Email",
+      "privilege_escalation": "Zero-click RAG",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Corporate data exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "claude-cowork",
+    "title": "Claude Cowork Exfiltration",
+    "date": "2026-01",
+    "dateDisplay": "Jan'26",
+    "category": "Agentic/CUA",
+    "target": "Claude Cowork",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Skill file (.docx)",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "File exfiltration"
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "notion-ai-exfil",
+    "title": "Notion AI Exfiltration",
+    "date": "2026-01",
+    "dateDisplay": "Jan'26",
+    "category": "Enterprise",
+    "target": "Notion AI",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Uploaded doc",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "HR data exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "reprompt-attack",
+    "title": "Reprompt Attack",
+    "date": "2026-01",
+    "dateDisplay": "Jan'26",
+    "category": "Enterprise",
+    "target": "Microsoft Copilot",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "URL q-parameter",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": "Session",
+      "command_control": "native",
+      "lateral_movement": null,
+      "action_on_objective": "Continuous exfil."
+    },
+    "url": "TODO-verify"
+  },
+  {
+    "slug": "zombieagent",
+    "title": "ZombieAgent",
+    "date": "2026-01",
+    "dateDisplay": "Jan'26",
+    "category": "Enterprise",
+    "target": "ChatGPT",
+    "coverage": 5,
+    "stages": {
+      "initial_access": "Received email/file",
+      "privilege_escalation": "Control bypass",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": "Self-rep",
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "TODO-verify"
   }
 ]

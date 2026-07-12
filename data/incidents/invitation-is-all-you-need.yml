@@ -1,24 +1,24 @@
-slug: morris-ii-worm
-title: Morris II Worm
-paper_ref: 7
-date: 2024-03
-category: AI Worm
-target: Email assistants
+slug: invitation-is-all-you-need
+title: Invitation Is All You Need
+paper_ref: 6
+date: 2025-08
+category: Agentic/CUA
+target: Google Assistant
 source:
-  url: https://sites.google.com/view/compromptmized
+  url: TODO-verify
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Received email
+    value: Calendar invite
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Role-play JB
+    value: Delayed tool inv
     justification: TODO
     evidence:
       quote: TODO
@@ -32,13 +32,13 @@ stages:
       locator: TODO
   command_control: null
   lateral_movement:
-    value: Self-rep
+    value: Perm
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   action_on_objective:
-    value: Data exfil., spam
+    value: IoT manip., surv.
     justification: TODO
     evidence:
       quote: TODO

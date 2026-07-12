@@ -1,18 +1,18 @@
-slug: morris-ii-worm
-title: Morris II Worm
-paper_ref: 7
-date: 2024-03
-category: AI Worm
-target: Email assistants
+slug: apwt
+title: APwT (A Jailbroken GenAI Model Can Cause Real Harm)
+paper_ref: 37
+date: 2024-08
+category: AI Agent
+target: GenAI-powered app
 source:
-  url: https://sites.google.com/view/compromptmized
+  url: https://arxiv.org/abs/2408.05061
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Received email
+    value: Direct prompt
     justification: TODO
     evidence:
       quote: TODO
@@ -23,22 +23,22 @@ stages:
     evidence:
       quote: TODO
       locator: TODO
-  reconnaissance: null
-  persistence:
-    value: RAG-dep
+  reconnaissance:
+    value: Context probing
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
+  persistence: null
   command_control: null
   lateral_movement:
-    value: Self-rep
+    value: Perm
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   action_on_objective:
-    value: Data exfil., spam
+    value: DoS, SQL table modification
     justification: TODO
     evidence:
       quote: TODO

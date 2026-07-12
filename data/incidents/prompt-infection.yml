@@ -1,18 +1,18 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: prompt-infection
+title: Prompt Infection
+paper_ref: 49
+date: 2024-10
+category: AI Worm
+target: Multi-agent sys.
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
-  type: blog
+  url: https://arxiv.org/abs/2410.07283
+  type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Webpage/PDF/Email
     justification: TODO
     evidence:
       quote: TODO
@@ -26,9 +26,14 @@ stages:
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement: null
+  lateral_movement:
+    value: Cross-agent
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   action_on_objective:
-    value: Data exfiltration
+    value: Saturation
     justification: TODO
     evidence:
       quote: TODO

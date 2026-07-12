@@ -1,34 +1,39 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: curxecute
+title: CurXecute
+paper_ref: 57
+date: 2025-07
+category: Coding Assist.
+target: Cursor
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Slack/GitHub msg
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Instr. override
+    value: Approval bypass
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   reconnaissance: null
-  persistence: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: RCE via MCP
     justification: TODO
     evidence:
       quote: TODO

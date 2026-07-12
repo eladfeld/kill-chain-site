@@ -1,44 +1,44 @@
-slug: morris-ii-worm
-title: Morris II Worm
-paper_ref: 7
-date: 2024-03
+slug: agenthopper
+title: AgentHopper
+paper_ref: 66
+date: 2025-12
 category: AI Worm
-target: Email assistants
+target: AI code assist.
 source:
-  url: https://sites.google.com/view/compromptmized
-  type: paper
+  url: TODO-verify
+  type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Received email
+    value: Git repository
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Role-play JB
+    value: Control bypass
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   reconnaissance: null
   persistence:
-    value: RAG-dep
+    value: Git-repo
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   command_control: null
   lateral_movement:
-    value: Self-rep
+    value: Git-propag
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   action_on_objective:
-    value: Data exfil., spam
+    value: Exponential spread
     justification: TODO
     evidence:
       quote: TODO

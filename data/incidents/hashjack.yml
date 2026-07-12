@@ -1,34 +1,29 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
+slug: hashjack
+title: HashJack
+paper_ref: 64
+date: 2025-11
 category: Browser/Search
-target: Bing Chat
+target: AI browsers
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: URL fragment
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
-  privilege_escalation:
-    value: Instr. override
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Phishing, data theft
     justification: TODO
     evidence:
       quote: TODO

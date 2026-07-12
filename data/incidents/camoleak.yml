@@ -1,24 +1,24 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: camoleak
+title: CamoLeak
+paper_ref: 56
+date: 2025-06
+category: Coding Assist.
+target: GitHub Copilot
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Untrusted repo content
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Instr. override
+    value: Control bypass
     justification: TODO
     evidence:
       quote: TODO
@@ -28,7 +28,7 @@ stages:
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Secret exfil.
     justification: TODO
     evidence:
       quote: TODO

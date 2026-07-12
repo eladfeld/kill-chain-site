@@ -1,18 +1,18 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: forcedleak
+title: ForcedLeak
+paper_ref: 58
+date: 2025-07
+category: Enterprise
+target: SF Agentforce
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Web-to-Lead form
     justification: TODO
     evidence:
       quote: TODO
@@ -24,11 +24,16 @@ stages:
       quote: TODO
       locator: TODO
   reconnaissance: null
-  persistence: null
+  persistence:
+    value: RAG-dep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: CRM data exfil.
     justification: TODO
     evidence:
       quote: TODO

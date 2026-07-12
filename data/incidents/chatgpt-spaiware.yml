@@ -1,18 +1,18 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
+slug: chatgpt-spaiware
+title: ChatGPT SpAIware
+paper_ref: 5
+date: 2024-09
 category: Browser/Search
-target: Bing Chat
+target: ChatGPT
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
-  type: blog
+  url: https://arxiv.org/abs/2412.06090
+  type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Browsed webpage
     justification: TODO
     evidence:
       quote: TODO
@@ -24,11 +24,16 @@ stages:
       quote: TODO
       locator: TODO
   reconnaissance: null
-  persistence: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Persistent exfil.
     justification: TODO
     evidence:
       quote: TODO

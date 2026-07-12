@@ -1,24 +1,24 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: artprompt
+title: ArtPrompt
+paper_ref: 33
+date: 2024-02
+category: Multimodal
+target: GPT-4, Claude
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
-  type: blog
+  url: TODO-verify
+  type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: ASCII art encoding
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Instr. override
+    value: Semantic bypass
     justification: TODO
     evidence:
       quote: TODO
@@ -28,7 +28,7 @@ stages:
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Harmful content
     justification: TODO
     evidence:
       quote: TODO

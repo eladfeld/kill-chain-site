@@ -1,24 +1,24 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
-category: Browser/Search
-target: Bing Chat
+slug: freysa-ai-heist
+title: Freysa AI Heist
+paper_ref: 52
+date: 2024-11
+category: Crypto/DeFi
+target: Freysa AI agent
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Direct message
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Instr. override
+    value: Tool confusion
     justification: TODO
     evidence:
       quote: TODO
@@ -28,7 +28,7 @@ stages:
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Transfer funds
     justification: TODO
     evidence:
       quote: TODO

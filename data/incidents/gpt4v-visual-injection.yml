@@ -1,0 +1,30 @@
+slug: gpt4v-visual-injection
+title: GPT-4V Visual Injection
+paper_ref: 45
+date: 2023-10
+category: Multimodal
+target: GPT-4V
+source:
+  url: https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Image (hidden text)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Response manip.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

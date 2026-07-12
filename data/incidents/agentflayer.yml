@@ -1,24 +1,24 @@
-slug: morris-ii-worm
-title: Morris II Worm
-paper_ref: 7
-date: 2024-03
-category: AI Worm
-target: Email assistants
+slug: agentflayer
+title: AgentFlayer
+paper_ref: 38
+date: 2025-08
+category: Coding Assist.
+target: Cursor
 source:
-  url: https://sites.google.com/view/compromptmized
-  type: paper
+  url: TODO-verify
+  type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Received email
+    value: Jira ticket
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   privilege_escalation:
-    value: Role-play JB
+    value: Instr. obfusc.
     justification: TODO
     evidence:
       quote: TODO
@@ -32,13 +32,13 @@ stages:
       locator: TODO
   command_control: null
   lateral_movement:
-    value: Self-rep
+    value: Pipeline
     justification: TODO
     evidence:
       quote: TODO
       locator: TODO
   action_on_objective:
-    value: Data exfil., spam
+    value: Credential exfil.
     justification: TODO
     evidence:
       quote: TODO

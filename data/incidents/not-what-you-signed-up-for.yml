@@ -1,29 +1,35 @@
 slug: not-what-you-signed-up-for
-title: "Not What You Signed Up For (Greshake et al.)"
+title: Not What You Signed Up For (Greshake et al.)
 paper_ref: 43
 date: 2023-02
 category: Browser/Search
-target: "Bing Chat, plugins"
+target: Bing Chat, plugins
 source:
-  url: "https://arxiv.org/abs/2302.12173"
+  url: https://arxiv.org/abs/2302.12173
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: "Poisoned webpage"
-    justification: "TODO: indirect prompt injection via attacker-controlled web content retrieved at inference time."
-    evidence: { quote: "TODO", locator: "TODO" }
+    value: Poisoned webpage
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   privilege_escalation:
-    value: "Instr. override"
-    justification: "TODO"
-    evidence: { quote: "TODO", locator: "TODO" }
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: "Data exfil., fraud"
-    justification: "TODO"
-    evidence: { quote: "TODO", locator: "TODO" }
+    value: Data exfil., fraud
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

@@ -1,18 +1,18 @@
-slug: bing-chat-exfil
-title: Bing Chat Data Exfiltration
-paper_ref: 44
-date: 2023-06
+slug: chatgpt-zombai-c2
+title: ChatGPT ZombAI C2
+paper_ref: 48
+date: 2024-10
 category: Browser/Search
-target: Bing Chat
+target: ChatGPT
 source:
-  url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
+  url: TODO-verify
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
+    value: Browsed webpage
     justification: TODO
     evidence:
       quote: TODO
@@ -24,11 +24,21 @@ stages:
       quote: TODO
       locator: TODO
   reconnaissance: null
-  persistence: null
-  command_control: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control:
+    value: native
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
+    value: Data exfil
     justification: TODO
     evidence:
       quote: TODO
