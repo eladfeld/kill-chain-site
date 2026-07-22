@@ -44,6 +44,7 @@ const indexBody = `
 <div class="controls">
   <input id="q" type="search" placeholder="Search title or target…">
   <select id="cat"><option value="">All categories</option></select>
+  <select id="year"><option value="">All years</option></select>
   <label class="cov">Min stages <select id="cov"></select></label>
   <span id="count" class="count"></span>
 </div>
