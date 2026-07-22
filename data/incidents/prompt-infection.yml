@@ -6,6 +6,7 @@ category: AI Worm
 target: Multi-agent sys.
 source:
   url: https://arxiv.org/abs/2410.07283
+  venue: "arXiv preprint"
   type: paper
   snapshot: null
   archived_at: null

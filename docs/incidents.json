@@ -7,6 +7,7 @@
     "category": "Browser/Search",
     "target": "Bing Chat, plugins",
     "coverage": 3,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -26,6 +27,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (YouTube plugin)",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned transcript",
       "privilege_escalation": "Instr. override",
@@ -45,6 +47,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT plugins (WebPilot)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -64,6 +67,7 @@
     "category": "Browser/Search",
     "target": "Bing Chat",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -83,6 +87,7 @@
     "category": "Coding Assist.",
     "target": "ChatGPT plugin (GitHub)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Malicious webpage",
       "privilege_escalation": "Confused deputy (OAuth)",
@@ -102,6 +107,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (Browsing)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -121,6 +127,7 @@
     "category": "Multimodal",
     "target": "Google Bard",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Image (hidden text)",
       "privilege_escalation": "Instr. override",
@@ -140,6 +147,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (Custom Instructions)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Direct/indirect prompt",
       "privilege_escalation": "Instr. override",
@@ -159,11 +167,12 @@
     "category": "Multimodal",
     "target": "LLaVA, PandaGPT",
     "coverage": 4,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Perturbed image/audio",
       "privilege_escalation": "Instr. injection",
       "reconnaissance": null,
-      "persistence": "Session",
+      "persistence": "RAG-indep",
       "command_control": null,
       "lateral_movement": null,
       "action_on_objective": "Response manip., dialog steering"
@@ -178,6 +187,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT media plugins",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "Auto plugin inv.",
@@ -197,6 +207,7 @@
     "category": "AI Agent",
     "target": "LLM apps, ChatGPT",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "Auto tool recursion",
@@ -216,6 +227,7 @@
     "category": "Multimodal",
     "target": "GPT-4V",
     "coverage": 2,
+    "venue": "Simon Willison's Weblog",
     "stages": {
       "initial_access": "Image (hidden text)",
       "privilege_escalation": null,
@@ -235,6 +247,7 @@
     "category": "Enterprise",
     "target": "Bard (Workspace extensions)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Force-shared doc/email",
       "privilege_escalation": "Instr. override",
@@ -254,6 +267,7 @@
     "category": "AI Agent",
     "target": "ChatGPT custom GPTs",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Malicious GPT (social eng.)",
       "privilege_escalation": "Deceptive instr.",
@@ -273,6 +287,7 @@
     "category": "Multimodal",
     "target": "GPT-4, Claude",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "ASCII art encoding",
       "privilege_escalation": "Semantic bypass",
@@ -292,6 +307,7 @@
     "category": "Enterprise",
     "target": "M365 Copilot",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Malicious email/doc",
       "privilege_escalation": "Instr. override",
@@ -311,6 +327,7 @@
     "category": "AI Worm",
     "target": "Email assistants",
     "coverage": 5,
+    "venue": "Project website",
     "stages": {
       "initial_access": "Received email",
       "privilege_escalation": "Role-play JB",
@@ -330,6 +347,7 @@
     "category": "Enterprise",
     "target": "Slack apps / AI chatbots",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Injected content",
       "privilege_escalation": "Auto link unfurl",
@@ -349,6 +367,7 @@
     "category": "Enterprise",
     "target": "Google AI Studio (Gemini)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned uploaded file",
       "privilege_escalation": "Instr. override",
@@ -368,6 +387,7 @@
     "category": "Enterprise",
     "target": "Google NotebookLM",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned uploaded file",
       "privilege_escalation": "Instr. override",
@@ -387,6 +407,7 @@
     "category": "AI Agent",
     "target": "LangChain, LlamaIndex, PALChain",
     "coverage": 3,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Prompt injection",
       "privilege_escalation": "Code injection",
@@ -406,6 +427,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (browsing + tools)",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Auto tool inv. (bypass)",
@@ -425,6 +447,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (Memory)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Image / connected app / browsing",
       "privilege_escalation": "Instr. override + memory tool",
@@ -444,6 +467,7 @@
     "category": "Coding Assist.",
     "target": "GitHub Copilot Chat (VS Code)",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Untrusted source code",
       "privilege_escalation": "Instr. override",
@@ -463,6 +487,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT (Memory)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override + memory tool",
@@ -482,6 +507,7 @@
     "category": "AI Agent",
     "target": "GenAI-powered app",
     "coverage": 5,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Direct prompt",
       "privilege_escalation": "Role-play JB",
@@ -501,6 +527,7 @@
     "category": "Enterprise",
     "target": "M365 Copilot",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Malicious email",
       "privilege_escalation": "Auto tool inv.",
@@ -520,6 +547,7 @@
     "category": "Enterprise",
     "target": "Slack AI",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Public channel msg",
       "privilege_escalation": "Instr. override",
@@ -539,6 +567,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT",
     "coverage": 4,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -558,6 +587,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -577,6 +607,7 @@
     "category": "AI Agent",
     "target": "LLM apps (Poe, GPT Store)",
     "coverage": 3,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Direct prompt (optimized)",
       "privilege_escalation": "Adversarial query opt.",
@@ -596,6 +627,7 @@
     "category": "AI Worm",
     "target": "Multi-agent sys.",
     "coverage": 4,
+    "venue": "arXiv preprint",
     "stages": {
       "initial_access": "Webpage/PDF/Email",
       "privilege_escalation": "Instr. override",
@@ -615,6 +647,7 @@
     "category": "Agentic/CUA",
     "target": "Claude Comp. Use",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Visited webpage",
       "privilege_escalation": "Instr. override",
@@ -634,6 +667,7 @@
     "category": "Browser/Search",
     "target": "DeepSeek AI web app",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Direct prompt",
       "privilege_escalation": "Control bypass",
@@ -653,6 +687,7 @@
     "category": "Crypto/DeFi",
     "target": "Freysa AI agent",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Direct message",
       "privilege_escalation": "Tool confusion",
@@ -672,6 +707,7 @@
     "category": "Browser/Search",
     "target": "ChatGPT Search",
     "coverage": 2,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Hidden text on webpage",
       "privilege_escalation": null,
@@ -691,6 +727,7 @@
     "category": "Browser/Search",
     "target": "xAI Grok (X, Web, API)",
     "coverage": 4,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned X post / image / PDF",
       "privilege_escalation": "Instr. override, ASCII smuggling",
@@ -710,6 +747,7 @@
     "category": "Coding Assist.",
     "target": "LLM-powered terminal/CLI apps",
     "coverage": 3,
+    "venue": "Embrace The Red (blog)",
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "ANSI control-char inj.",
@@ -729,6 +767,7 @@
     "category": "Coding Assist.",
     "target": "MCP-based agents",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Malicious MCP server",
       "privilege_escalation": "Control bypass",
@@ -748,6 +787,7 @@
     "category": "Coding Assist.",
     "target": "GitHub Copilot",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Untrusted repo content",
       "privilege_escalation": "Control bypass",
@@ -767,6 +807,7 @@
     "category": "Enterprise",
     "target": "M365 Copilot",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Markdown email",
       "privilege_escalation": "Auto RAG mix",
@@ -786,6 +827,7 @@
     "category": "Coding Assist.",
     "target": "Cursor",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Slack/GitHub msg",
       "privilege_escalation": "Approval bypass",
@@ -805,6 +847,7 @@
     "category": "Enterprise",
     "target": "SF Agentforce",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Web-to-Lead form",
       "privilege_escalation": "Instr. override",
@@ -824,6 +867,7 @@
     "category": "Coding Assist.",
     "target": "Cursor",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Jira ticket",
       "privilege_escalation": "Instr. obfusc.",
@@ -843,6 +887,7 @@
     "category": "Coding Assist.",
     "target": "GitHub Copilot",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. obfusc.",
@@ -862,6 +907,7 @@
     "category": "AI Agent",
     "target": "Devin",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Browsed website",
       "privilege_escalation": "Control bypass",
@@ -881,6 +927,7 @@
     "category": "AI Agent",
     "target": "Devin",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Untrusted content",
       "privilege_escalation": "Control bypass",
@@ -900,6 +947,7 @@
     "category": "Coding Assist.",
     "target": "GitHub Copilot",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Code/issue/webpage",
       "privilege_escalation": "Control bypass",
@@ -919,6 +967,7 @@
     "category": "Browser/Search",
     "target": "Perplexity Comet",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. override",
@@ -938,6 +987,7 @@
     "category": "Agentic/CUA",
     "target": "Google Assistant",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Calendar invite",
       "privilege_escalation": "Delayed tool inv",
@@ -957,6 +1007,7 @@
     "category": "Coding Assist.",
     "target": "Windsurf",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Source code",
       "privilege_escalation": "Instr. override",
@@ -976,6 +1027,7 @@
     "category": "Browser/Search",
     "target": "AI browsers",
     "coverage": 2,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "URL fragment",
       "privilege_escalation": null,
@@ -995,11 +1047,12 @@
     "category": "AI Worm",
     "target": "AI code assist.",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Git repository",
       "privilege_escalation": "Control bypass",
       "reconnaissance": null,
-      "persistence": "Git-repo",
+      "persistence": "RAG-dep",
       "command_control": null,
       "lateral_movement": "Git-propag",
       "action_on_objective": "Exponential spread"
@@ -1014,6 +1067,7 @@
     "category": "Agentic/CUA",
     "target": "Claude Comp. Use",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Visited webpage",
       "privilege_escalation": "Control bypass",
@@ -1033,6 +1087,7 @@
     "category": "Enterprise",
     "target": "Google Gemini",
     "coverage": 4,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Doc/Cal/Email",
       "privilege_escalation": "Zero-click RAG",
@@ -1052,6 +1107,7 @@
     "category": "Agentic/CUA",
     "target": "Claude Cowork",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Skill file (.docx)",
       "privilege_escalation": "Control bypass",
@@ -1071,6 +1127,7 @@
     "category": "Enterprise",
     "target": "Notion AI",
     "coverage": 3,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Uploaded doc",
       "privilege_escalation": "Control bypass",
@@ -1090,11 +1147,12 @@
     "category": "Enterprise",
     "target": "Microsoft Copilot",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "URL q-parameter",
       "privilege_escalation": "Control bypass",
       "reconnaissance": null,
-      "persistence": "Session",
+      "persistence": "RAG-indep",
       "command_control": "native",
       "lateral_movement": null,
       "action_on_objective": "Continuous exfil."
@@ -1109,6 +1167,7 @@
     "category": "Enterprise",
     "target": "ChatGPT",
     "coverage": 5,
+    "venue": "TODO-verify",
     "stages": {
       "initial_access": "Received email/file",
       "privilege_escalation": "Control bypass",

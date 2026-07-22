@@ -6,6 +6,7 @@ category: AI Agent
 target: LangChain, LlamaIndex, PALChain
 source:
   url: https://arxiv.org/abs/2309.02926
+  venue: "arXiv preprint"
   type: paper
   snapshot: null
   archived_at: null

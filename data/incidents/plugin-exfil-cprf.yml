@@ -6,6 +6,7 @@ category: Browser/Search
 target: ChatGPT plugins (WebPilot)
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

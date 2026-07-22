@@ -6,6 +6,7 @@ category: Enterprise
 target: M365 Copilot
 source:
   url: https://embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

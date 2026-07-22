@@ -6,6 +6,7 @@ category: AI Agent
 target: ChatGPT custom GPTs
 source:
   url: https://embracethered.com/blog/posts/2023/openai-custom-malware-gpt/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

@@ -18,6 +18,7 @@ if (fs.existsSync(archiveSrc)) fs.cpSync(archiveSrc, path.join(OUT, 'archive'), 
 const json = incidents.map(inc => ({
   slug: inc.slug, title: inc.title, date: inc.date, dateDisplay: dateDisplay(inc.date),
   category: inc.category, target: inc.target, coverage: coverage(inc),
+  venue: inc.source.venue || null,
   stages: Object.fromEntries(STAGE_KEYS.map(k => [k, stageValue(inc, k)])),
   url: inc.source.url
 }));
@@ -73,6 +74,7 @@ for (const inc of incidents) {
    <tr><th>Category</th><td>${escapeHtml(inc.category)}</td></tr>
    <tr><th>Target</th><td>${escapeHtml(inc.target)}</td></tr>
    <tr><th>Coverage</th><td>${coverage(inc)} / 7 stages</td></tr>
+   <tr><th>Venue</th><td>${escapeHtml(inc.source.venue || "—")}</td></tr>
    <tr><th>Source</th><td><a href="${escapeHtml(inc.source.url)}" rel="noreferrer noopener">original (${escapeHtml(inc.source.type)})</a> · ${snap}</td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>

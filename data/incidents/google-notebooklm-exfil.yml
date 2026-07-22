@@ -6,6 +6,7 @@ category: Enterprise
 target: Google NotebookLM
 source:
   url: https://embracethered.com/blog/posts/2024/google-notebook-ml-data-exfiltration/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

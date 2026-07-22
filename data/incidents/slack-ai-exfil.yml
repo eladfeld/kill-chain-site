@@ -6,6 +6,7 @@ category: Enterprise
 target: Slack AI
 source:
   url: TODO-verify
+  venue: "TODO-verify"
   type: blog
   snapshot: null
   archived_at: null

@@ -6,6 +6,7 @@ category: Coding Assist.
 target: GitHub Copilot Chat (VS Code)
 source:
   url: https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

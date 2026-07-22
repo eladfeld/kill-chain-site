@@ -104,3 +104,11 @@ table#grid td.title { min-width: 0; max-width: none; }
 table#grid tbody td:nth-child(2) { white-space: normal; }
 td.off { text-align: left; }
 table#grid tbody td:nth-child(3), table#grid tbody td:nth-child(4) { overflow-wrap: anywhere; }
+td.title a.rowlink { color: var(--ink); }
+td.title a.rowlink:hover { color: var(--accent-ink); }
+td.venue { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+table#grid thead th:nth-child(5) { width: 8%; }   /* venue */
+table#grid thead th:nth-child(13) { width: 4%; }  /* cov moved to col 13 */
+table#grid thead th:nth-child(12) { width: auto; }
+table#grid tbody td:nth-child(5) { overflow-wrap: anywhere; }
+table#grid tbody td { overflow: hidden; }

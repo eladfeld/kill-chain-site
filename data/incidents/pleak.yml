@@ -6,6 +6,7 @@ category: AI Agent
 target: LLM apps (Poe, GPT Store)
 source:
   url: https://arxiv.org/abs/2405.06823
+  venue: "arXiv preprint"
   type: paper
   snapshot: null
   archived_at: null

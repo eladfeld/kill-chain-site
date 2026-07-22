@@ -6,6 +6,7 @@ category: AI Worm
 target: AI code assist.
 source:
   url: TODO-verify
+  venue: "TODO-verify"
   type: blog
   snapshot: null
   archived_at: null
@@ -25,7 +26,7 @@ stages:
       locator: TODO
   reconnaissance: null
   persistence:
-    value: Git-repo
+    value: RAG-dep
     justification: TODO
     evidence:
       quote: TODO

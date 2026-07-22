@@ -6,6 +6,7 @@ category: Multimodal
 target: LLaVA, PandaGPT
 source:
   url: https://arxiv.org/abs/2307.10490
+  venue: "arXiv preprint"
   type: paper
   snapshot: null
   archived_at: null
@@ -25,7 +26,7 @@ stages:
       locator: TODO
   reconnaissance: null
   persistence:
-    value: Session
+    value: RAG-indep
     justification: TODO
     evidence:
       quote: TODO

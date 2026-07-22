@@ -6,6 +6,7 @@ category: Multimodal
 target: Google Bard
 source:
   url: https://embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

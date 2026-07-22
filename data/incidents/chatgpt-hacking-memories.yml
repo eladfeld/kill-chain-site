@@ -6,6 +6,7 @@ category: Browser/Search
 target: ChatGPT (Memory)
 source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

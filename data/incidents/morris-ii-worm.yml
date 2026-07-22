@@ -6,6 +6,7 @@ category: AI Worm
 target: Email assistants
 source:
   url: https://sites.google.com/view/compromptmized
+  venue: "Project website"
   type: paper
   snapshot: null
   archived_at: null

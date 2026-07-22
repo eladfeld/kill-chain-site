@@ -6,6 +6,7 @@ category: Coding Assist.
 target: ChatGPT plugin (GitHub)
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

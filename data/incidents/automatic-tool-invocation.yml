@@ -6,6 +6,7 @@ category: Browser/Search
 target: ChatGPT (browsing + tools)
 source:
   url: https://embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

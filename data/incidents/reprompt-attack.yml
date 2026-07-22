@@ -6,6 +6,7 @@ category: Enterprise
 target: Microsoft Copilot
 source:
   url: TODO-verify
+  venue: "TODO-verify"
   type: blog
   snapshot: null
   archived_at: null
@@ -25,7 +26,7 @@ stages:
       locator: TODO
   reconnaissance: null
   persistence:
-    value: Session
+    value: RAG-indep
     justification: TODO
     evidence:
       quote: TODO

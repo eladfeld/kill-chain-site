@@ -6,6 +6,7 @@ category: Multimodal
 target: GPT-4V
 source:
   url: https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
+  venue: "Simon Willison's Weblog"
   type: blog
   snapshot: null
   archived_at: null

@@ -6,6 +6,7 @@ category: Coding Assist.
 target: GitHub Copilot
 source:
   url: TODO-verify
+  venue: "TODO-verify"
   type: cve
   snapshot: null
   archived_at: null
