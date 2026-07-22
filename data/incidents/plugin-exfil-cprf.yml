@@ -1,0 +1,40 @@
+slug: plugin-exfil-cprf
+title: Plugin Exfil / Cross-Plugin Request Forgery
+paper_ref: null
+date: 2023-05
+category: Browser/Search
+target: ChatGPT plugins (WebPilot)
+source:
+  url: https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned webpage
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement:
+    value: Cross-app
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  action_on_objective:
+    value: Chat-history exfil., fraud
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

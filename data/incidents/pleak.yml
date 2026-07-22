@@ -1,0 +1,35 @@
+slug: pleak
+title: PLeak
+paper_ref: null
+date: 2024-10
+category: AI Agent
+target: LLM apps (Poe, GPT Store)
+source:
+  url: https://arxiv.org/abs/2405.06823
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct prompt (optimized)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Adversarial query opt.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: System-prompt leak (IP theft)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

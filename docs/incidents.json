@@ -19,6 +19,44 @@
     "url": "https://arxiv.org/abs/2302.12173"
   },
   {
+    "slug": "ipi-youtube-transcript",
+    "title": "IPI via YouTube Transcript",
+    "date": "2023-05",
+    "dateDisplay": "May'23",
+    "category": "Browser/Search",
+    "target": "ChatGPT (YouTube plugin)",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Poisoned transcript",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Session hijack, identity swap"
+    },
+    "url": "https://embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/"
+  },
+  {
+    "slug": "plugin-exfil-cprf",
+    "title": "Plugin Exfil / Cross-Plugin Request Forgery",
+    "date": "2023-05",
+    "dateDisplay": "May'23",
+    "category": "Browser/Search",
+    "target": "ChatGPT plugins (WebPilot)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Poisoned webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Cross-app",
+      "action_on_objective": "Chat-history exfil., fraud"
+    },
+    "url": "https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/"
+  },
+  {
     "slug": "bing-chat-exfil",
     "title": "Bing Chat Data Exfiltration",
     "date": "2023-06",
@@ -36,6 +74,139 @@
       "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/"
+  },
+  {
+    "slug": "chat-with-code-plugin",
+    "title": "Chat with Code Plugin (Confused Deputy)",
+    "date": "2023-06",
+    "dateDisplay": "Jun'23",
+    "category": "Coding Assist.",
+    "target": "ChatGPT plugin (GitHub)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Malicious webpage",
+      "privilege_escalation": "Confused deputy (OAuth)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Perm",
+      "action_on_objective": "Source-code theft, repo priv->pub"
+    },
+    "url": "https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/"
+  },
+  {
+    "slug": "enter-the-matrix",
+    "title": "Enter the Matrix",
+    "date": "2023-06",
+    "dateDisplay": "Jun'23",
+    "category": "Browser/Search",
+    "target": "ChatGPT (Browsing)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Browsed webpage",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Cross-app",
+      "action_on_objective": "Response manip. (demo)"
+    },
+    "url": "https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/"
+  },
+  {
+    "slug": "bard-image-injection",
+    "title": "Google Bard Image-to-Prompt Injection",
+    "date": "2023-07",
+    "dateDisplay": "Jul'23",
+    "category": "Multimodal",
+    "target": "Google Bard",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Image (hidden text)",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Response manip."
+    },
+    "url": "https://embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/"
+  },
+  {
+    "slug": "custom-instructions-persistence",
+    "title": "ChatGPT Custom Instructions Persistence",
+    "date": "2023-07",
+    "dateDisplay": "Jul'23",
+    "category": "Browser/Search",
+    "target": "ChatGPT (Custom Instructions)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Direct/indirect prompt",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Persistent data exfil."
+    },
+    "url": "https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/"
+  },
+  {
+    "slug": "images-and-sounds-ipi",
+    "title": "Indirect Prompt Injection via Images and Sounds",
+    "date": "2023-07",
+    "dateDisplay": "Jul'23",
+    "category": "Multimodal",
+    "target": "LLaVA, PandaGPT",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Perturbed image/audio",
+      "privilege_escalation": "Instr. injection",
+      "reconnaissance": null,
+      "persistence": "Session",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Response manip., dialog steering"
+    },
+    "url": "https://arxiv.org/abs/2307.10490"
+  },
+  {
+    "slug": "advanced-plugin-exfil",
+    "title": "Advanced Plugin Data Exfiltration",
+    "date": "2023-09",
+    "dateDisplay": "Sep'23",
+    "category": "Browser/Search",
+    "target": "ChatGPT media plugins",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Poisoned content",
+      "privilege_escalation": "Auto plugin inv.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Cross-app",
+      "action_on_objective": "High-volume data exfil."
+    },
+    "url": "https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/"
+  },
+  {
+    "slug": "llm-cost-dos-loop",
+    "title": "LLM Cost / DoS Loop",
+    "date": "2023-09",
+    "dateDisplay": "Sep'23",
+    "category": "AI Agent",
+    "target": "LLM apps, ChatGPT",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Poisoned content",
+      "privilege_escalation": "Auto tool recursion",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "DoS, cost exhaustion"
+    },
+    "url": "https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/"
   },
   {
     "slug": "gpt4v-visual-injection",
@@ -57,6 +228,44 @@
     "url": "https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/"
   },
   {
+    "slug": "hacking-google-bard",
+    "title": "Hacking Google Bard (Workspace Exfil)",
+    "date": "2023-11",
+    "dateDisplay": "Nov'23",
+    "category": "Enterprise",
+    "target": "Bard (Workspace extensions)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Force-shared doc/email",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Chat/personal-data exfil."
+    },
+    "url": "https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/"
+  },
+  {
+    "slug": "thief-gpt",
+    "title": "Thief GPT (Malicious Custom GPT)",
+    "date": "2023-12",
+    "dateDisplay": "Dec'23",
+    "category": "AI Agent",
+    "target": "ChatGPT custom GPTs",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Malicious GPT (social eng.)",
+      "privilege_escalation": "Deceptive instr.",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Credential/PII exfil."
+    },
+    "url": "https://embracethered.com/blog/posts/2023/openai-custom-malware-gpt/"
+  },
+  {
     "slug": "artprompt",
     "title": "ArtPrompt",
     "date": "2024-02",
@@ -76,6 +285,25 @@
     "url": "TODO-verify"
   },
   {
+    "slug": "conditional-pi-whoami",
+    "title": "Conditional Prompt Injection (whoami)",
+    "date": "2024-03",
+    "dateDisplay": "Mar'24",
+    "category": "Enterprise",
+    "target": "M365 Copilot",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Malicious email/doc",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": "Identity recon (whoami)",
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Targeted/delayed payload"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/"
+  },
+  {
     "slug": "morris-ii-worm",
     "title": "Morris II Worm",
     "date": "2024-03",
@@ -93,6 +321,158 @@
       "action_on_objective": "Data exfil., spam"
     },
     "url": "https://sites.google.com/view/compromptmized"
+  },
+  {
+    "slug": "data-exfil-unfurling",
+    "title": "Data Exfiltration via Link Unfurling",
+    "date": "2024-04",
+    "dateDisplay": "Apr'24",
+    "category": "Enterprise",
+    "target": "Slack apps / AI chatbots",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Injected content",
+      "privilege_escalation": "Auto link unfurl",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Zero-click data exfil"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/"
+  },
+  {
+    "slug": "google-aistudio-mass-exfil",
+    "title": "Google AI Studio Mass Data Exfiltration",
+    "date": "2024-04",
+    "dateDisplay": "Apr'24",
+    "category": "Enterprise",
+    "target": "Google AI Studio (Gemini)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Poisoned uploaded file",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Mass in-context data exfil"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/"
+  },
+  {
+    "slug": "google-notebooklm-exfil",
+    "title": "Google NotebookLM Data Exfiltration",
+    "date": "2024-04",
+    "dateDisplay": "Apr'24",
+    "category": "Enterprise",
+    "target": "Google NotebookLM",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Poisoned uploaded file",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil, response manip."
+    },
+    "url": "https://embracethered.com/blog/posts/2024/google-notebook-ml-data-exfiltration/"
+  },
+  {
+    "slug": "llm4shell",
+    "title": "LLM4Shell (RCE in LLM-Integrated Apps)",
+    "date": "2024-04",
+    "dateDisplay": "Apr'24",
+    "category": "AI Agent",
+    "target": "LangChain, LlamaIndex, PALChain",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Prompt injection",
+      "privilege_escalation": "Code injection",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE, API-key/file leak, SQLi"
+    },
+    "url": "https://arxiv.org/abs/2309.02926"
+  },
+  {
+    "slug": "automatic-tool-invocation",
+    "title": "Automatic Tool Invocation (Browsing)",
+    "date": "2024-05",
+    "dateDisplay": "May'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT (browsing + tools)",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Browsed webpage",
+      "privilege_escalation": "Auto tool inv. (bypass)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Unauthorized tool use"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/"
+  },
+  {
+    "slug": "chatgpt-hacking-memories",
+    "title": "ChatGPT Hacking Memories",
+    "date": "2024-05",
+    "dateDisplay": "May'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT (Memory)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Image / connected app / browsing",
+      "privilege_escalation": "Instr. override + memory tool",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Memory poisoning / deletion"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/"
+  },
+  {
+    "slug": "github-copilot-chat-exfil",
+    "title": "GitHub Copilot Chat Data Exfiltration",
+    "date": "2024-06",
+    "dateDisplay": "Jun'24",
+    "category": "Coding Assist.",
+    "target": "GitHub Copilot Chat (VS Code)",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Untrusted source code",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil (markdown image)"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/"
+  },
+  {
+    "slug": "chatgpt-persistent-dos",
+    "title": "ChatGPT Persistent Denial of Service",
+    "date": "2024-07",
+    "dateDisplay": "Jul'24",
+    "category": "Browser/Search",
+    "target": "ChatGPT (Memory)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Browsed webpage",
+      "privilege_escalation": "Instr. override + memory tool",
+      "reconnaissance": null,
+      "persistence": "RAG-indep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Persistent DoS (cross-session)"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/"
   },
   {
     "slug": "apwt",
@@ -190,6 +570,25 @@
     "url": "TODO-verify"
   },
   {
+    "slug": "pleak",
+    "title": "PLeak",
+    "date": "2024-10",
+    "dateDisplay": "Oct'24",
+    "category": "AI Agent",
+    "target": "LLM apps (Poe, GPT Store)",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Direct prompt (optimized)",
+      "privilege_escalation": "Adversarial query opt.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "System-prompt leak (IP theft)"
+    },
+    "url": "https://arxiv.org/abs/2405.06823"
+  },
+  {
     "slug": "prompt-infection",
     "title": "Prompt Infection",
     "date": "2024-10",
@@ -283,6 +682,44 @@
       "action_on_objective": "Output manipulation"
     },
     "url": "TODO-verify"
+  },
+  {
+    "slug": "grok-security-probllms",
+    "title": "Grok Security ProbLLMs",
+    "date": "2024-12",
+    "dateDisplay": "Dec'24",
+    "category": "Browser/Search",
+    "target": "xAI Grok (X, Web, API)",
+    "coverage": 4,
+    "stages": {
+      "initial_access": "Poisoned X post / image / PDF",
+      "privilege_escalation": "Instr. override, ASCII smuggling",
+      "reconnaissance": "Conditional targeting",
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil, disinfo, phishing"
+    },
+    "url": "https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/"
+  },
+  {
+    "slug": "terminal-dillma-ansi",
+    "title": "Terminal DiLLMa (ANSI Escape Injection)",
+    "date": "2024-12",
+    "dateDisplay": "Dec'24",
+    "category": "Coding Assist.",
+    "target": "LLM-powered terminal/CLI apps",
+    "coverage": 3,
+    "stages": {
+      "initial_access": "Poisoned content",
+      "privilege_escalation": "ANSI control-char inj.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Terminal hijack, output manip."
+    },
+    "url": "https://embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/"
   },
   {
     "slug": "mcp-history-theft",

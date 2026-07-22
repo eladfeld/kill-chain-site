@@ -1,0 +1,40 @@
+slug: advanced-plugin-exfil
+title: Advanced Plugin Data Exfiltration
+paper_ref: null
+date: 2023-09
+category: Browser/Search
+target: ChatGPT media plugins
+source:
+  url: https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned content
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Auto plugin inv.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement:
+    value: Cross-app
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  action_on_objective:
+    value: High-volume data exfil.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

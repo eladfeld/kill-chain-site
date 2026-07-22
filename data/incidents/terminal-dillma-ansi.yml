@@ -1,0 +1,35 @@
+slug: terminal-dillma-ansi
+title: Terminal DiLLMa (ANSI Escape Injection)
+paper_ref: null
+date: 2024-12
+category: Coding Assist.
+target: LLM-powered terminal/CLI apps
+source:
+  url: https://embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned content
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: ANSI control-char inj.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Terminal hijack, output manip.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

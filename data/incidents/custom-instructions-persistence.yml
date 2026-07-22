@@ -1,0 +1,40 @@
+slug: custom-instructions-persistence
+title: ChatGPT Custom Instructions Persistence
+paper_ref: null
+date: 2023-07
+category: Browser/Search
+target: ChatGPT (Custom Instructions)
+source:
+  url: https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct/indirect prompt
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Persistent data exfil.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

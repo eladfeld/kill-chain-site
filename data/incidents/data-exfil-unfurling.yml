@@ -1,0 +1,35 @@
+slug: data-exfil-unfurling
+title: Data Exfiltration via Link Unfurling
+paper_ref: null
+date: 2024-04
+category: Enterprise
+target: Slack apps / AI chatbots
+source:
+  url: https://embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Injected content
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Auto link unfurl
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Zero-click data exfil
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

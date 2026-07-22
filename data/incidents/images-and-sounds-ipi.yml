@@ -1,0 +1,40 @@
+slug: images-and-sounds-ipi
+title: Indirect Prompt Injection via Images and Sounds
+paper_ref: null
+date: 2023-07
+category: Multimodal
+target: LLaVA, PandaGPT
+source:
+  url: https://arxiv.org/abs/2307.10490
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Perturbed image/audio
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. injection
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence:
+    value: Session
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Response manip., dialog steering
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

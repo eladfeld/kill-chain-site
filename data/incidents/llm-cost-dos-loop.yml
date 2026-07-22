@@ -1,0 +1,35 @@
+slug: llm-cost-dos-loop
+title: LLM Cost / DoS Loop
+paper_ref: null
+date: 2023-09
+category: AI Agent
+target: LLM apps, ChatGPT
+source:
+  url: https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned content
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Auto tool recursion
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: DoS, cost exhaustion
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

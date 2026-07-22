@@ -1,0 +1,35 @@
+slug: llm4shell
+title: LLM4Shell (RCE in LLM-Integrated Apps)
+paper_ref: null
+date: 2024-04
+category: AI Agent
+target: LangChain, LlamaIndex, PALChain
+source:
+  url: https://arxiv.org/abs/2309.02926
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Prompt injection
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Code injection
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE, API-key/file leak, SQLi
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

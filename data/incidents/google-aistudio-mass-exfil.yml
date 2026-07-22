@@ -1,0 +1,40 @@
+slug: google-aistudio-mass-exfil
+title: Google AI Studio Mass Data Exfiltration
+paper_ref: null
+date: 2024-04
+category: Enterprise
+target: Google AI Studio (Gemini)
+source:
+  url: https://embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned uploaded file
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence:
+    value: RAG-dep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Mass in-context data exfil
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

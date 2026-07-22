@@ -1,0 +1,35 @@
+slug: github-copilot-chat-exfil
+title: GitHub Copilot Chat Data Exfiltration
+paper_ref: null
+date: 2024-06
+category: Coding Assist.
+target: GitHub Copilot Chat (VS Code)
+source:
+  url: https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Untrusted source code
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfil (markdown image)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

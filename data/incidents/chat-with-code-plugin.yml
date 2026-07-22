@@ -1,0 +1,40 @@
+slug: chat-with-code-plugin
+title: Chat with Code Plugin (Confused Deputy)
+paper_ref: null
+date: 2023-06
+category: Coding Assist.
+target: ChatGPT plugin (GitHub)
+source:
+  url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Malicious webpage
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Confused deputy (OAuth)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement:
+    value: Perm
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  action_on_objective:
+    value: Source-code theft, repo priv->pub
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

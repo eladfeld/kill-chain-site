@@ -1,0 +1,35 @@
+slug: ipi-youtube-transcript
+title: IPI via YouTube Transcript
+paper_ref: null
+date: 2023-05
+category: Browser/Search
+target: ChatGPT (YouTube plugin)
+source:
+  url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned transcript
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Session hijack, identity swap
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

@@ -1,0 +1,40 @@
+slug: chatgpt-hacking-memories
+title: ChatGPT Hacking Memories
+paper_ref: null
+date: 2024-05
+category: Browser/Search
+target: ChatGPT (Memory)
+source:
+  url: https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Image / connected app / browsing
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override + memory tool
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence:
+    value: RAG-indep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Memory poisoning / deletion
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

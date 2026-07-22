@@ -1,0 +1,35 @@
+slug: automatic-tool-invocation
+title: Automatic Tool Invocation (Browsing)
+paper_ref: null
+date: 2024-05
+category: Browser/Search
+target: ChatGPT (browsing + tools)
+source:
+  url: https://embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Browsed webpage
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Auto tool inv. (bypass)
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Unauthorized tool use
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

@@ -1,0 +1,40 @@
+slug: grok-security-probllms
+title: Grok Security ProbLLMs
+paper_ref: null
+date: 2024-12
+category: Browser/Search
+target: xAI Grok (X, Web, API)
+source:
+  url: https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned X post / image / PDF
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override, ASCII smuggling
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance:
+    value: Conditional targeting
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfil, disinfo, phishing
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO

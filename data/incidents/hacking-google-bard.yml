@@ -1,0 +1,40 @@
+slug: hacking-google-bard
+title: Hacking Google Bard (Workspace Exfil)
+paper_ref: null
+date: 2023-11
+category: Enterprise
+target: Bard (Workspace extensions)
+source:
+  url: https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Force-shared doc/email
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instr. override
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence:
+    value: RAG-dep
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Chat/personal-data exfil.
+    justification: TODO
+    evidence:
+      quote: TODO
+      locator: TODO
