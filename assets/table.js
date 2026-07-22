@@ -20,14 +20,14 @@ function setup() {
   for (let i = 0; i <= 6; i++) { const o = document.createElement('option'); o.value = i; o.textContent = i; covSel.appendChild(o); }
   $('#grid thead').innerHTML = '<tr><th class="c-title">Incident</th><th>Date</th><th>Category</th><th>Target</th><th>Venue</th>' +
     STAGES.map(s => `<th>${s[1]}</th>`).join('') + '<th>Cov.</th></tr>';
-  ['#q', '#cat', '#year', '#cov'].forEach(id => $(id).addEventListener('input', render));
+  ['#q', '#cat', '#year', '#newf', '#cov'].forEach(id => $(id).addEventListener('input', render));
   render();
 }
 
 function render() {
-  const q = $('#q').value.toLowerCase(), cat = $('#cat').value, year = $('#year').value, cov = +$('#cov').value;
+  const q = $('#q').value.toLowerCase(), cat = $('#cat').value, year = $('#year').value, nf = $('#newf').value, cov = +$('#cov').value;
   const rows = DATA.filter(d =>
-    (!cat || d.category === cat) && (!year || d.date.startsWith(year)) && d.coverage >= cov &&
+    (!cat || d.category === cat) && (!year || d.date.startsWith(year)) && d.coverage >= cov && (!nf || (nf === 'new') === d.isNew) &&
     (!q || d.title.toLowerCase().includes(q) || d.target.toLowerCase().includes(q)));
   $('#grid tbody').innerHTML = rows.map(d => {
     const cells = STAGES.map(s => {
