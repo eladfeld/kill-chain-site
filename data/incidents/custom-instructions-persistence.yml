@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-07
 category: Browser/Search
 target: ChatGPT (Custom Instructions)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/
   venue: "Embrace The Red (blog)"

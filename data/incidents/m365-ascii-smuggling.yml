@@ -5,8 +5,8 @@ date: 2024-08
 category: Enterprise
 target: M365 Copilot
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: "https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/"
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

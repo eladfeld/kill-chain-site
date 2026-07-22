@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-04
 category: Enterprise
 target: Google NotebookLM
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/google-notebook-ml-data-exfiltration/
   venue: "Embrace The Red (blog)"

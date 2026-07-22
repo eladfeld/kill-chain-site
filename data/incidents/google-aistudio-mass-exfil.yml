@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-04
 category: Enterprise
 target: Google AI Studio (Gemini)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/
   venue: "Embrace The Red (blog)"

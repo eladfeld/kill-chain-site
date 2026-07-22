@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-05
 category: Browser/Search
 target: ChatGPT (YouTube plugin)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
   venue: "Embrace The Red (blog)"

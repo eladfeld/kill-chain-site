@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-12
 category: Coding Assist.
 target: LLM-powered terminal/CLI apps
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/
   venue: "Embrace The Red (blog)"

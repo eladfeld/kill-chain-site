@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-09
 category: Browser/Search
 target: ChatGPT media plugins
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
   venue: "Embrace The Red (blog)"

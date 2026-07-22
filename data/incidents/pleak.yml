@@ -4,9 +4,10 @@ paper_ref: null
 date: 2024-10
 category: AI Agent
 target: LLM apps (Poe, GPT Store)
+new: true
 source:
   url: https://arxiv.org/abs/2405.06823
-  venue: "arXiv preprint"
+  venue: "CCS'24"
   type: paper
   snapshot: null
   archived_at: null

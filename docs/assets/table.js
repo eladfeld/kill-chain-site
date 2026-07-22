@@ -35,7 +35,7 @@ function render() {
       return v ? `<td class="on"><span class="chip" title="${esc(v)}">${esc(v)}</span></td>` : '<td class="off">–</td>';
     }).join('');
     const venue = d.venue && d.venue !== 'TODO-verify' ? esc(d.venue) : '<span class="pending">TBD</span>';
-    return `<tr><td class="title"><a class="rowlink" href="incident/${d.slug}.html" target="_blank" rel="noopener">${esc(d.title)}</a></td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td><td class="venue">${venue}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
+    return `<tr><td class="title"><a class="rowlink" href="incident/${d.slug}.html" target="_blank" rel="noopener">${esc(d.title)}</a>${d.isNew ? ' <span class="newtag">NEW</span>' : ''}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td><td class="venue">${venue}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
   }).join('');
   document.querySelectorAll('#grid tbody tr').forEach(tr => {
     tr.addEventListener('click', e => { if (e.target.tagName !== 'A') tr.querySelector('a.rowlink').dispatchEvent(new MouseEvent('click', { ctrlKey: e.ctrlKey, metaKey: e.metaKey })); });

@@ -19,6 +19,7 @@ const json = incidents.map(inc => ({
   slug: inc.slug, title: inc.title, date: inc.date, dateDisplay: dateDisplay(inc.date),
   category: inc.category, target: inc.target, coverage: coverage(inc),
   venue: inc.source.venue || null,
+  isNew: !!inc.new,
   stages: Object.fromEntries(STAGE_KEYS.map(k => [k, stageValue(inc, k)])),
   url: inc.source.url
 }));

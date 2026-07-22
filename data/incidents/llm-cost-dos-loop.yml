@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-09
 category: AI Agent
 target: LLM apps, ChatGPT
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
   venue: "Embrace The Red (blog)"

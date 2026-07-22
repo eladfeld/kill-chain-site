@@ -6,7 +6,7 @@ category: Browser/Search
 target: ChatGPT
 source:
   url: https://arxiv.org/abs/2412.06090
-  venue: "arXiv preprint"
+  venue: "Black Hat EU'24"
   type: paper
   snapshot: null
   archived_at: null

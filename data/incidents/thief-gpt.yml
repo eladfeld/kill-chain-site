@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-12
 category: AI Agent
 target: ChatGPT custom GPTs
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/openai-custom-malware-gpt/
   venue: "Embrace The Red (blog)"

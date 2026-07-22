@@ -5,8 +5,8 @@ date: 2024-11
 category: Browser/Search
 target: DeepSeek AI web app
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: "https://embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/"
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null

@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-07
 category: Multimodal
 target: LLaVA, PandaGPT
+new: true
 source:
   url: https://arxiv.org/abs/2307.10490
   venue: "arXiv preprint"

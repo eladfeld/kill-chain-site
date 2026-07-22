@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-07
 category: Browser/Search
 target: ChatGPT (Memory)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
   venue: "Embrace The Red (blog)"

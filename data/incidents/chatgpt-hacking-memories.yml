@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-05
 category: Browser/Search
 target: ChatGPT (Memory)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   venue: "Embrace The Red (blog)"

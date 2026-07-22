@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-06
 category: Browser/Search
 target: ChatGPT (Browsing)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
   venue: "Embrace The Red (blog)"

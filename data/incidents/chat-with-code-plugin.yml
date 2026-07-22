@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-06
 category: Coding Assist.
 target: ChatGPT plugin (GitHub)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
   venue: "Embrace The Red (blog)"

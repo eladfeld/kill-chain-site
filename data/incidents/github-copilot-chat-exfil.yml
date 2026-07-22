@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-06
 category: Coding Assist.
 target: GitHub Copilot Chat (VS Code)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/github-copilot-chat-prompt-injection-data-exfiltration/
   venue: "Embrace The Red (blog)"

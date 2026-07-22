@@ -129,6 +129,9 @@
           "$ref": "#/definitions/freeStage"
         }
       }
+    },
+    "new": {
+      "type": "boolean"
     }
   },
   "definitions": {

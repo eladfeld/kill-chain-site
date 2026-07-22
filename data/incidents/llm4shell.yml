@@ -4,9 +4,10 @@ paper_ref: null
 date: 2024-04
 category: AI Agent
 target: LangChain, LlamaIndex, PALChain
+new: true
 source:
   url: https://arxiv.org/abs/2309.02926
-  venue: "arXiv preprint"
+  venue: "Black Hat Asia'24"
   type: paper
   snapshot: null
   archived_at: null

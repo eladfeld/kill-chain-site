@@ -4,6 +4,7 @@ paper_ref: null
 date: 2024-12
 category: Browser/Search
 target: xAI Grok (X, Web, API)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/
   venue: "Embrace The Red (blog)"

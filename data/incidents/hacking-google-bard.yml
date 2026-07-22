@@ -4,6 +4,7 @@ paper_ref: null
 date: 2023-11
 category: Enterprise
 target: Bard (Workspace extensions)
+new: true
 source:
   url: https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
   venue: "Embrace The Red (blog)"
