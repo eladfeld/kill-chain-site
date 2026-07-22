@@ -34,7 +34,7 @@ function render() {
       const v = d.stages[s[0]];
       return v ? `<td class="on"><span class="chip" title="${esc(v)}">${esc(v)}</span></td>` : '<td class="off">–</td>';
     }).join('');
-    return `<tr onclick="location.href='incident/${d.slug}.html'"><td class="title">${esc(d.title)}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
+    return `<tr onclick="window.open('incident/${d.slug}.html','_blank')"><td class="title">${esc(d.title)}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
   }).join('');
   $('#count').textContent = `${rows.length} / ${DATA.length} incidents`;
 }

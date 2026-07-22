@@ -83,3 +83,5 @@ table.stages tr.absent td { color: var(--faint); }
   .controls input { min-width: 0; flex: 1 1 100%; }
   .count { margin-left: 0; }
 }
+main:has(#grid) { max-width: none; padding-left: 40px; padding-right: 40px; }
+main:has(#grid) .intro { max-width: 860px; }
