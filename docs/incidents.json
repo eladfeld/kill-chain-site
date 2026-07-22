@@ -168,27 +168,6 @@
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/"
   },
   {
-    "slug": "images-and-sounds-ipi",
-    "title": "Indirect Prompt Injection via Images and Sounds",
-    "date": "2023-07",
-    "dateDisplay": "Jul'23",
-    "category": "Multimodal",
-    "target": "LLaVA, PandaGPT",
-    "coverage": 4,
-    "venue": "arXiv preprint",
-    "isNew": true,
-    "stages": {
-      "initial_access": "Perturbed image/audio",
-      "privilege_escalation": "Instr. injection",
-      "reconnaissance": null,
-      "persistence": "RAG-indep",
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Response manip., dialog steering"
-    },
-    "url": "https://arxiv.org/abs/2307.10490"
-  },
-  {
     "slug": "advanced-plugin-exfil",
     "title": "Advanced Plugin Data Exfiltration",
     "date": "2023-09",
