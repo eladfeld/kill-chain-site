@@ -7,7 +7,7 @@ let DATA = [];
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-fetch('incidents.json').then(r => r.json()).then(d => { DATA = d; setup(); });
+fetch('incidents.json?v=' + Date.now()).then(r => r.json()).then(d => { DATA = d; setup(); });
 
 function setup() {
   const cats = [...new Set(DATA.map(d => d.category))].sort();
