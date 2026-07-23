@@ -288,7 +288,7 @@
   {
     "slug": "artprompt",
     "title": "ArtPrompt",
-    "authors": "TODO-verify",
+    "authors": "Fengqing Jiang, Zhangchen Xu, Luyao Niu, Zhen Xiang, Bhaskar Ramasubramanian, Bo Li, Radha Poovendran",
     "date": "2024-02",
     "dateDisplay": "Feb'24",
     "category": "Multimodal",
@@ -420,7 +420,7 @@
   {
     "slug": "llm4shell",
     "title": "LLM4Shell (RCE in LLM-Integrated Apps)",
-    "authors": "TODO-verify",
+    "authors": "Tong Liu, Zizhuang Deng, Guozhu Meng, Yuekang Li, Kai Chen",
     "date": "2024-04",
     "dateDisplay": "Apr'24",
     "category": "AI Agent",
@@ -530,7 +530,7 @@
   {
     "slug": "apwt",
     "title": "APwT (A Jailbroken GenAI Model Can Cause Real Harm)",
-    "authors": "TODO-verify",
+    "authors": "Stav Cohen, Ron Bitton, Ben Nassi",
     "date": "2024-08",
     "dateDisplay": "Aug'24",
     "category": "AI Agent",
@@ -574,7 +574,7 @@
   {
     "slug": "slack-ai-exfil",
     "title": "Slack AI Exfiltration",
-    "authors": "TODO-verify",
+    "authors": "PromptArmor",
     "date": "2024-08",
     "dateDisplay": "Aug'24",
     "category": "Enterprise",
@@ -640,7 +640,7 @@
   {
     "slug": "pleak",
     "title": "PLeak",
-    "authors": "TODO-verify",
+    "authors": "Bo Hui, Haolin Yuan, Neil Gong, Philippe Burlina, Yinzhi Cao",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "AI Agent",
@@ -662,7 +662,7 @@
   {
     "slug": "prompt-infection",
     "title": "Prompt Infection",
-    "authors": "TODO-verify",
+    "authors": "Donghyun Lee, Mo Tiwari",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "AI Worm",
@@ -728,7 +728,7 @@
   {
     "slug": "freysa-ai-heist",
     "title": "Freysa AI Heist",
-    "authors": "TODO-verify",
+    "authors": "p0pular.eth",
     "date": "2024-11",
     "dateDisplay": "Nov'24",
     "category": "Crypto/DeFi",
@@ -750,7 +750,7 @@
   {
     "slug": "chatgpt-search",
     "title": "ChatGPT Search Manipulation",
-    "authors": "TODO-verify",
+    "authors": "The Guardian",
     "date": "2024-12",
     "dateDisplay": "Dec'24",
     "category": "Browser/Search",
@@ -816,7 +816,7 @@
   {
     "slug": "mcp-history-theft",
     "title": "MCP History Theft",
-    "authors": "TODO-verify",
+    "authors": "Invariant Labs",
     "date": "2025-04",
     "dateDisplay": "Apr'25",
     "category": "Coding Assist.",
@@ -838,7 +838,7 @@
   {
     "slug": "camoleak",
     "title": "CamoLeak",
-    "authors": "TODO-verify",
+    "authors": "Omer Mayraz (Legit Security)",
     "date": "2025-06",
     "dateDisplay": "Jun'25",
     "category": "Coding Assist.",
@@ -860,7 +860,7 @@
   {
     "slug": "echoleak",
     "title": "EchoLeak",
-    "authors": "TODO-verify",
+    "authors": "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)",
     "date": "2025-06",
     "dateDisplay": "Jun'25",
     "category": "Enterprise",
@@ -882,7 +882,7 @@
   {
     "slug": "curxecute",
     "title": "CurXecute",
-    "authors": "TODO-verify",
+    "authors": "Aim Security (Aim Labs)",
     "date": "2025-07",
     "dateDisplay": "Jul'25",
     "category": "Coding Assist.",
@@ -904,7 +904,7 @@
   {
     "slug": "forcedleak",
     "title": "ForcedLeak",
-    "authors": "TODO-verify",
+    "authors": "Noma Security (Sasi Levi)",
     "date": "2025-07",
     "dateDisplay": "Jul'25",
     "category": "Enterprise",
@@ -926,7 +926,7 @@
   {
     "slug": "agentflayer",
     "title": "AgentFlayer",
-    "authors": "TODO-verify",
+    "authors": "Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -948,7 +948,7 @@
   {
     "slug": "copilot-backdoor",
     "title": "Copilot Backdoor Insertion",
-    "authors": "TODO-verify",
+    "authors": "Pillar Security",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -970,7 +970,7 @@
   {
     "slug": "devin-ai-rce",
     "title": "Devin AI RCE",
-    "authors": "TODO-verify",
+    "authors": "Johann Rehberger",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "AI Agent",
@@ -992,7 +992,7 @@
   {
     "slug": "devin-expose-port",
     "title": "Devin Exposed Port",
-    "authors": "TODO-verify",
+    "authors": "Johann Rehberger",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "AI Agent",
@@ -1014,7 +1014,7 @@
   {
     "slug": "github-copilot-rce",
     "title": "GitHub Copilot RCE (CVE-2025-53773)",
-    "authors": "TODO-verify",
+    "authors": "Johann Rehberger",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -1036,7 +1036,7 @@
   {
     "slug": "identitymesh",
     "title": "IdentityMesh",
-    "authors": "TODO-verify",
+    "authors": "Lasso Security",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Browser/Search",
@@ -1058,7 +1058,7 @@
   {
     "slug": "invitation-is-all-you-need",
     "title": "Invitation Is All You Need",
-    "authors": "TODO-verify",
+    "authors": "Ben Nassi, Stav Cohen, Or Yair",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Agentic/CUA",
@@ -1102,7 +1102,7 @@
   {
     "slug": "hashjack",
     "title": "HashJack",
-    "authors": "TODO-verify",
+    "authors": "Vitaly Simonovich (Cato Networks)",
     "date": "2025-11",
     "dateDisplay": "Nov'25",
     "category": "Browser/Search",
@@ -1124,7 +1124,7 @@
   {
     "slug": "agenthopper",
     "title": "AgentHopper",
-    "authors": "TODO-verify",
+    "authors": "Johann Rehberger",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "AI Worm",
@@ -1168,7 +1168,7 @@
   {
     "slug": "geminijack",
     "title": "GeminiJack",
-    "authors": "TODO-verify",
+    "authors": "Noma Security (Noma Labs)",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "Enterprise",
@@ -1190,7 +1190,7 @@
   {
     "slug": "claude-cowork",
     "title": "Claude Cowork Exfiltration",
-    "authors": "TODO-verify",
+    "authors": "PromptArmor",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Agentic/CUA",
@@ -1212,7 +1212,7 @@
   {
     "slug": "notion-ai-exfil",
     "title": "Notion AI Exfiltration",
-    "authors": "TODO-verify",
+    "authors": "CodeIntegrity",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
@@ -1234,7 +1234,7 @@
   {
     "slug": "reprompt-attack",
     "title": "Reprompt Attack",
-    "authors": "TODO-verify",
+    "authors": "Dolev Taler (Varonis Threat Labs)",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
@@ -1256,7 +1256,7 @@
   {
     "slug": "zombieagent",
     "title": "ZombieAgent",
-    "authors": "TODO-verify",
+    "authors": "Radware",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
