@@ -52,6 +52,7 @@ const indexBody = `
   <span id="count" class="count"></span>
 </div>
 <div class="table-wrap"><table id="grid"><thead></thead><tbody></tbody></table></div>
+<div id="modal" class="modal" hidden><div class="modal-card"><button class="modal-close" aria-label="Close">\u00d7</button><div class="modal-body"></div></div></div>
 <script src="assets/table.js?v=${jsVer}"></script>`;
 fs.writeFileSync(path.join(OUT, 'index.html'), page('Promptware Kill-Chain Archive', indexBody, ''));
 
