@@ -1,5 +1,6 @@
 slug: github-copilot-rce
 title: GitHub Copilot RCE (CVE-2025-53773)
+authors: "TODO-verify"
 paper_ref: 61
 date: 2025-08
 category: Coding Assist.

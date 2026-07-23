@@ -1,5 +1,6 @@
 slug: bing-chat-exfil
 title: Bing Chat Data Exfiltration
+authors: "Johann Rehberger"
 paper_ref: 44
 date: 2023-06
 category: Browser/Search

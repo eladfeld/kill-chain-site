@@ -121,3 +121,6 @@ body.modal-open { overflow: hidden; }
 .modal-close:hover { color: var(--accent-ink); border-color: var(--accent); }
 .modal-body h1 { margin-top: 0; }
 .modal-body .loading { color: var(--muted); }
+
+.byline{margin:.1rem 0 1rem;color:#6b5d52;font-style:italic;font-size:.95rem}
+.rowauth{margin-top:.15rem;color:#7a6a5d;font-size:.78rem;line-height:1.25}

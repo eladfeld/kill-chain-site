@@ -16,7 +16,7 @@ const archiveSrc = path.join(ROOT, 'archive');
 if (fs.existsSync(archiveSrc)) fs.cpSync(archiveSrc, path.join(OUT, 'archive'), { recursive: true });
 
 const json = incidents.map(inc => ({
-  slug: inc.slug, title: inc.title, date: inc.date, dateDisplay: dateDisplay(inc.date),
+  slug: inc.slug, title: inc.title, authors: inc.authors, date: inc.date, dateDisplay: dateDisplay(inc.date),
   category: inc.category, target: inc.target, coverage: coverage(inc),
   venue: inc.source.venue || null,
   isNew: !!inc.new,
@@ -72,7 +72,9 @@ for (const inc of incidents) {
   const body = `
   <p class="back"><a href="../index.html">← all incidents</a></p>
   <h1>${escapeHtml(inc.title)}</h1>
+  <p class="byline">${escapeHtml(inc.authors)}</p>
   <table class="meta"><tbody>
+   <tr><th>Authors</th><td>${escapeHtml(inc.authors)}</td></tr>
    <tr><th>Date</th><td>${dateDisplay(inc.date)}</td></tr>
    <tr><th>Category</th><td>${escapeHtml(inc.category)}</td></tr>
    <tr><th>Target</th><td>${escapeHtml(inc.target)}</td></tr>

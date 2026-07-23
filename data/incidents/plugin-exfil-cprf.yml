@@ -1,5 +1,6 @@
 slug: plugin-exfil-cprf
 title: Plugin Exfil / Cross-Plugin Request Forgery
+authors: "Johann Rehberger"
 paper_ref: null
 date: 2023-05
 category: Browser/Search

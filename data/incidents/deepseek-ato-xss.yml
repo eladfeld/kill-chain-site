@@ -1,5 +1,6 @@
 slug: deepseek-ato-xss
 title: DeepSeek Account Takeover (XSS)
+authors: "Johann Rehberger"
 paper_ref: 51
 date: 2024-11
 category: Browser/Search

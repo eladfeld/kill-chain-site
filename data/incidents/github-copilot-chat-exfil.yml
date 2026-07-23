@@ -1,5 +1,6 @@
 slug: github-copilot-chat-exfil
 title: GitHub Copilot Chat Data Exfiltration
+authors: "Johann Rehberger"
 paper_ref: null
 date: 2024-06
 category: Coding Assist.

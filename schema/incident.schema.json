@@ -4,6 +4,7 @@
   "required": [
     "slug",
     "title",
+    "authors",
     "date",
     "category",
     "target",
@@ -17,6 +18,10 @@
       "pattern": "^[a-z0-9-]+$"
     },
     "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
       "type": "string",
       "minLength": 1
     },

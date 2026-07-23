@@ -2,6 +2,7 @@
   {
     "slug": "not-what-you-signed-up-for",
     "title": "Not What You Signed Up For (Greshake et al.)",
+    "authors": "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz",
     "date": "2023-02",
     "dateDisplay": "Feb'23",
     "category": "Browser/Search",
@@ -23,6 +24,7 @@
   {
     "slug": "ipi-youtube-transcript",
     "title": "IPI via YouTube Transcript",
+    "authors": "Johann Rehberger",
     "date": "2023-05",
     "dateDisplay": "May'23",
     "category": "Browser/Search",
@@ -44,6 +46,7 @@
   {
     "slug": "plugin-exfil-cprf",
     "title": "Plugin Exfil / Cross-Plugin Request Forgery",
+    "authors": "Johann Rehberger",
     "date": "2023-05",
     "dateDisplay": "May'23",
     "category": "Browser/Search",
@@ -65,6 +68,7 @@
   {
     "slug": "bing-chat-exfil",
     "title": "Bing Chat Data Exfiltration",
+    "authors": "Johann Rehberger",
     "date": "2023-06",
     "dateDisplay": "Jun'23",
     "category": "Browser/Search",
@@ -86,6 +90,7 @@
   {
     "slug": "chat-with-code-plugin",
     "title": "Chat with Code Plugin (Confused Deputy)",
+    "authors": "Johann Rehberger",
     "date": "2023-06",
     "dateDisplay": "Jun'23",
     "category": "Coding Assist.",
@@ -107,6 +112,7 @@
   {
     "slug": "enter-the-matrix",
     "title": "Enter the Matrix",
+    "authors": "Johann Rehberger",
     "date": "2023-06",
     "dateDisplay": "Jun'23",
     "category": "Browser/Search",
@@ -128,6 +134,7 @@
   {
     "slug": "bard-image-injection",
     "title": "Google Bard Image-to-Prompt Injection",
+    "authors": "Johann Rehberger",
     "date": "2023-07",
     "dateDisplay": "Jul'23",
     "category": "Multimodal",
@@ -149,6 +156,7 @@
   {
     "slug": "custom-instructions-persistence",
     "title": "ChatGPT Custom Instructions Persistence",
+    "authors": "Johann Rehberger",
     "date": "2023-07",
     "dateDisplay": "Jul'23",
     "category": "Browser/Search",
@@ -170,6 +178,7 @@
   {
     "slug": "advanced-plugin-exfil",
     "title": "Advanced Plugin Data Exfiltration",
+    "authors": "Johann Rehberger",
     "date": "2023-09",
     "dateDisplay": "Sep'23",
     "category": "Browser/Search",
@@ -191,6 +200,7 @@
   {
     "slug": "llm-cost-dos-loop",
     "title": "LLM Cost / DoS Loop",
+    "authors": "Johann Rehberger",
     "date": "2023-09",
     "dateDisplay": "Sep'23",
     "category": "AI Agent",
@@ -212,6 +222,7 @@
   {
     "slug": "gpt4v-visual-injection",
     "title": "GPT-4V Visual Injection",
+    "authors": "Simon Willison",
     "date": "2023-10",
     "dateDisplay": "Oct'23",
     "category": "Multimodal",
@@ -233,6 +244,7 @@
   {
     "slug": "hacking-google-bard",
     "title": "Hacking Google Bard (Workspace Exfil)",
+    "authors": "Johann Rehberger",
     "date": "2023-11",
     "dateDisplay": "Nov'23",
     "category": "Enterprise",
@@ -254,6 +266,7 @@
   {
     "slug": "thief-gpt",
     "title": "Thief GPT (Malicious Custom GPT)",
+    "authors": "Johann Rehberger",
     "date": "2023-12",
     "dateDisplay": "Dec'23",
     "category": "AI Agent",
@@ -275,6 +288,7 @@
   {
     "slug": "artprompt",
     "title": "ArtPrompt",
+    "authors": "TODO-verify",
     "date": "2024-02",
     "dateDisplay": "Feb'24",
     "category": "Multimodal",
@@ -296,6 +310,7 @@
   {
     "slug": "conditional-pi-whoami",
     "title": "Conditional Prompt Injection (whoami)",
+    "authors": "Johann Rehberger",
     "date": "2024-03",
     "dateDisplay": "Mar'24",
     "category": "Enterprise",
@@ -317,6 +332,7 @@
   {
     "slug": "morris-ii-worm",
     "title": "Morris II Worm",
+    "authors": "Stav Cohen, Ron Bitton, Ben Nassi",
     "date": "2024-03",
     "dateDisplay": "Mar'24",
     "category": "AI Worm",
@@ -338,6 +354,7 @@
   {
     "slug": "data-exfil-unfurling",
     "title": "Data Exfiltration via Link Unfurling",
+    "authors": "Johann Rehberger",
     "date": "2024-04",
     "dateDisplay": "Apr'24",
     "category": "Enterprise",
@@ -359,6 +376,7 @@
   {
     "slug": "google-aistudio-mass-exfil",
     "title": "Google AI Studio Mass Data Exfiltration",
+    "authors": "Johann Rehberger",
     "date": "2024-04",
     "dateDisplay": "Apr'24",
     "category": "Enterprise",
@@ -380,6 +398,7 @@
   {
     "slug": "google-notebooklm-exfil",
     "title": "Google NotebookLM Data Exfiltration",
+    "authors": "Johann Rehberger",
     "date": "2024-04",
     "dateDisplay": "Apr'24",
     "category": "Enterprise",
@@ -401,6 +420,7 @@
   {
     "slug": "llm4shell",
     "title": "LLM4Shell (RCE in LLM-Integrated Apps)",
+    "authors": "TODO-verify",
     "date": "2024-04",
     "dateDisplay": "Apr'24",
     "category": "AI Agent",
@@ -422,6 +442,7 @@
   {
     "slug": "automatic-tool-invocation",
     "title": "Automatic Tool Invocation (Browsing)",
+    "authors": "Johann Rehberger",
     "date": "2024-05",
     "dateDisplay": "May'24",
     "category": "Browser/Search",
@@ -443,6 +464,7 @@
   {
     "slug": "chatgpt-hacking-memories",
     "title": "ChatGPT Hacking Memories",
+    "authors": "Johann Rehberger",
     "date": "2024-05",
     "dateDisplay": "May'24",
     "category": "Browser/Search",
@@ -464,6 +486,7 @@
   {
     "slug": "github-copilot-chat-exfil",
     "title": "GitHub Copilot Chat Data Exfiltration",
+    "authors": "Johann Rehberger",
     "date": "2024-06",
     "dateDisplay": "Jun'24",
     "category": "Coding Assist.",
@@ -485,6 +508,7 @@
   {
     "slug": "chatgpt-persistent-dos",
     "title": "ChatGPT Persistent Denial of Service",
+    "authors": "Johann Rehberger",
     "date": "2024-07",
     "dateDisplay": "Jul'24",
     "category": "Browser/Search",
@@ -506,6 +530,7 @@
   {
     "slug": "apwt",
     "title": "APwT (A Jailbroken GenAI Model Can Cause Real Harm)",
+    "authors": "TODO-verify",
     "date": "2024-08",
     "dateDisplay": "Aug'24",
     "category": "AI Agent",
@@ -527,6 +552,7 @@
   {
     "slug": "m365-ascii-smuggling",
     "title": "M365 Copilot ASCII Smuggling",
+    "authors": "Johann Rehberger",
     "date": "2024-08",
     "dateDisplay": "Aug'24",
     "category": "Enterprise",
@@ -548,6 +574,7 @@
   {
     "slug": "slack-ai-exfil",
     "title": "Slack AI Exfiltration",
+    "authors": "TODO-verify",
     "date": "2024-08",
     "dateDisplay": "Aug'24",
     "category": "Enterprise",
@@ -569,6 +596,7 @@
   {
     "slug": "chatgpt-spaiware",
     "title": "ChatGPT SpAIware",
+    "authors": "Johann Rehberger",
     "date": "2024-09",
     "dateDisplay": "Sep'24",
     "category": "Browser/Search",
@@ -590,6 +618,7 @@
   {
     "slug": "chatgpt-zombai-c2",
     "title": "ChatGPT ZombAI C2",
+    "authors": "Johann Rehberger",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "Browser/Search",
@@ -611,6 +640,7 @@
   {
     "slug": "pleak",
     "title": "PLeak",
+    "authors": "TODO-verify",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "AI Agent",
@@ -632,6 +662,7 @@
   {
     "slug": "prompt-infection",
     "title": "Prompt Infection",
+    "authors": "TODO-verify",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "AI Worm",
@@ -653,6 +684,7 @@
   {
     "slug": "zombais-claude-c2",
     "title": "ZombAIs: Claude Computer Use C2",
+    "authors": "Johann Rehberger",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "Agentic/CUA",
@@ -674,6 +706,7 @@
   {
     "slug": "deepseek-ato-xss",
     "title": "DeepSeek Account Takeover (XSS)",
+    "authors": "Johann Rehberger",
     "date": "2024-11",
     "dateDisplay": "Nov'24",
     "category": "Browser/Search",
@@ -695,6 +728,7 @@
   {
     "slug": "freysa-ai-heist",
     "title": "Freysa AI Heist",
+    "authors": "TODO-verify",
     "date": "2024-11",
     "dateDisplay": "Nov'24",
     "category": "Crypto/DeFi",
@@ -716,6 +750,7 @@
   {
     "slug": "chatgpt-search",
     "title": "ChatGPT Search Manipulation",
+    "authors": "TODO-verify",
     "date": "2024-12",
     "dateDisplay": "Dec'24",
     "category": "Browser/Search",
@@ -737,6 +772,7 @@
   {
     "slug": "grok-security-probllms",
     "title": "Grok Security ProbLLMs",
+    "authors": "Johann Rehberger",
     "date": "2024-12",
     "dateDisplay": "Dec'24",
     "category": "Browser/Search",
@@ -758,6 +794,7 @@
   {
     "slug": "terminal-dillma-ansi",
     "title": "Terminal DiLLMa (ANSI Escape Injection)",
+    "authors": "Johann Rehberger",
     "date": "2024-12",
     "dateDisplay": "Dec'24",
     "category": "Coding Assist.",
@@ -779,6 +816,7 @@
   {
     "slug": "mcp-history-theft",
     "title": "MCP History Theft",
+    "authors": "TODO-verify",
     "date": "2025-04",
     "dateDisplay": "Apr'25",
     "category": "Coding Assist.",
@@ -800,6 +838,7 @@
   {
     "slug": "camoleak",
     "title": "CamoLeak",
+    "authors": "TODO-verify",
     "date": "2025-06",
     "dateDisplay": "Jun'25",
     "category": "Coding Assist.",
@@ -821,6 +860,7 @@
   {
     "slug": "echoleak",
     "title": "EchoLeak",
+    "authors": "TODO-verify",
     "date": "2025-06",
     "dateDisplay": "Jun'25",
     "category": "Enterprise",
@@ -842,6 +882,7 @@
   {
     "slug": "curxecute",
     "title": "CurXecute",
+    "authors": "TODO-verify",
     "date": "2025-07",
     "dateDisplay": "Jul'25",
     "category": "Coding Assist.",
@@ -863,6 +904,7 @@
   {
     "slug": "forcedleak",
     "title": "ForcedLeak",
+    "authors": "TODO-verify",
     "date": "2025-07",
     "dateDisplay": "Jul'25",
     "category": "Enterprise",
@@ -884,6 +926,7 @@
   {
     "slug": "agentflayer",
     "title": "AgentFlayer",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -905,6 +948,7 @@
   {
     "slug": "copilot-backdoor",
     "title": "Copilot Backdoor Insertion",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -926,6 +970,7 @@
   {
     "slug": "devin-ai-rce",
     "title": "Devin AI RCE",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "AI Agent",
@@ -947,6 +992,7 @@
   {
     "slug": "devin-expose-port",
     "title": "Devin Exposed Port",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "AI Agent",
@@ -968,6 +1014,7 @@
   {
     "slug": "github-copilot-rce",
     "title": "GitHub Copilot RCE (CVE-2025-53773)",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -989,6 +1036,7 @@
   {
     "slug": "identitymesh",
     "title": "IdentityMesh",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Browser/Search",
@@ -1010,6 +1058,7 @@
   {
     "slug": "invitation-is-all-you-need",
     "title": "Invitation Is All You Need",
+    "authors": "TODO-verify",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Agentic/CUA",
@@ -1031,6 +1080,7 @@
   {
     "slug": "windsurf-spaiware",
     "title": "Windsurf SpAIware",
+    "authors": "Johann Rehberger",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
@@ -1052,6 +1102,7 @@
   {
     "slug": "hashjack",
     "title": "HashJack",
+    "authors": "TODO-verify",
     "date": "2025-11",
     "dateDisplay": "Nov'25",
     "category": "Browser/Search",
@@ -1073,6 +1124,7 @@
   {
     "slug": "agenthopper",
     "title": "AgentHopper",
+    "authors": "TODO-verify",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "AI Worm",
@@ -1094,6 +1146,7 @@
   {
     "slug": "agentic-probllms",
     "title": "Agentic ProbLLMs",
+    "authors": "Johann Rehberger",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "Agentic/CUA",
@@ -1115,6 +1168,7 @@
   {
     "slug": "geminijack",
     "title": "GeminiJack",
+    "authors": "TODO-verify",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "Enterprise",
@@ -1136,6 +1190,7 @@
   {
     "slug": "claude-cowork",
     "title": "Claude Cowork Exfiltration",
+    "authors": "TODO-verify",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Agentic/CUA",
@@ -1157,6 +1212,7 @@
   {
     "slug": "notion-ai-exfil",
     "title": "Notion AI Exfiltration",
+    "authors": "TODO-verify",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
@@ -1178,6 +1234,7 @@
   {
     "slug": "reprompt-attack",
     "title": "Reprompt Attack",
+    "authors": "TODO-verify",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
@@ -1199,6 +1256,7 @@
   {
     "slug": "zombieagent",
     "title": "ZombieAgent",
+    "authors": "TODO-verify",
     "date": "2026-01",
     "dateDisplay": "Jan'26",
     "category": "Enterprise",
