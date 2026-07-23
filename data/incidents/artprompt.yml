@@ -1,13 +1,14 @@
 slug: artprompt
-title: ArtPrompt
+title: "ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs"
 authors: "Fengqing Jiang, Zhangchen Xu, Luyao Niu, Zhen Xiang, Bhaskar Ramasubramanian, Bo Li, Radha Poovendran"
+questioned: true
 paper_ref: 33
 date: 2024-02
 category: Multimodal
 target: GPT-4, Claude
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://aclanthology.org/2024.acl-long.809.pdf
+  venue: "ACL'24"
   type: paper
   snapshot: null
   archived_at: null

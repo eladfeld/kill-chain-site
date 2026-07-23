@@ -1,5 +1,5 @@
 slug: morris-ii-worm
-title: Morris II Worm
+title: "Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications"
 authors: "Stav Cohen, Ron Bitton, Ben Nassi"
 paper_ref: 7
 date: 2024-03
@@ -7,7 +7,7 @@ category: AI Worm
 target: Email assistants
 source:
   url: https://sites.google.com/view/compromptmized
-  venue: "Project website"
+  venue: "CCS'25"
   type: paper
   snapshot: null
   archived_at: null

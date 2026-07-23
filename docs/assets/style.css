@@ -124,3 +124,6 @@ body.modal-open { overflow: hidden; }
 
 .byline{margin:.1rem 0 1rem;color:#6b5d52;font-style:italic;font-size:.95rem}
 .rowauth{margin-top:.15rem;color:#7a6a5d;font-size:.78rem;line-height:1.25}
+
+.qtag{display:inline-block;margin-left:.35rem;padding:0 .45rem;border-radius:999px;background:#e7dccb;color:#7a5c2e;font-weight:700;font-size:.72rem;cursor:help}
+.questioned{margin:.2rem 0 1rem;padding:.5rem .7rem;background:#fbf3e2;border-left:3px solid #c9a24b;color:#6b5322;font-size:.9rem}

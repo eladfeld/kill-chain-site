@@ -20,6 +20,7 @@ const json = incidents.map(inc => ({
   category: inc.category, target: inc.target, coverage: coverage(inc),
   venue: inc.source.venue || null,
   isNew: !!inc.new,
+  questioned: !!inc.questioned,
   stages: Object.fromEntries(STAGE_KEYS.map(k => [k, stageValue(inc, k)])),
   url: inc.source.url
 }));
@@ -73,6 +74,7 @@ for (const inc of incidents) {
   <p class="back"><a href="../index.html">← all incidents</a></p>
   <h1>${escapeHtml(inc.title)}</h1>
   <p class="byline">${escapeHtml(inc.authors)}</p>
+  ${inc.questioned ? `<p class="questioned"><strong>?</strong> Not demonstrated against a real LLM-integrated application.</p>` : ""}
   <table class="meta"><tbody>
    <tr><th>Authors</th><td>${escapeHtml(inc.authors)}</td></tr>
    <tr><th>Date</th><td>${dateDisplay(inc.date)}</td></tr>

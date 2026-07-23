@@ -10,6 +10,7 @@
     "coverage": 3,
     "venue": "AISec@CCS'23 / Black Hat USA'23",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -32,6 +33,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned transcript",
       "privilege_escalation": "Instr. override",
@@ -54,6 +56,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -76,6 +79,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned webpage",
       "privilege_escalation": "Instr. override",
@@ -98,6 +102,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Malicious webpage",
       "privilege_escalation": "Confused deputy (OAuth)",
@@ -120,6 +125,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -142,6 +148,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Image (hidden text)",
       "privilege_escalation": "Instr. override",
@@ -164,6 +171,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Direct/indirect prompt",
       "privilege_escalation": "Instr. override",
@@ -186,6 +194,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "Auto plugin inv.",
@@ -208,6 +217,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "Auto tool recursion",
@@ -230,6 +240,7 @@
     "coverage": 2,
     "venue": "Simon Willison's Weblog",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Image (hidden text)",
       "privilege_escalation": null,
@@ -252,6 +263,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Force-shared doc/email",
       "privilege_escalation": "Instr. override",
@@ -274,6 +286,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Malicious GPT (social eng.)",
       "privilege_escalation": "Deceptive instr.",
@@ -287,15 +300,16 @@
   },
   {
     "slug": "artprompt",
-    "title": "ArtPrompt",
+    "title": "ArtPrompt: ASCII Art-based Jailbreak Attacks against Aligned LLMs",
     "authors": "Fengqing Jiang, Zhangchen Xu, Luyao Niu, Zhen Xiang, Bhaskar Ramasubramanian, Bo Li, Radha Poovendran",
     "date": "2024-02",
     "dateDisplay": "Feb'24",
     "category": "Multimodal",
     "target": "GPT-4, Claude",
     "coverage": 3,
-    "venue": "TODO-verify",
+    "venue": "ACL'24",
     "isNew": false,
+    "questioned": true,
     "stages": {
       "initial_access": "ASCII art encoding",
       "privilege_escalation": "Semantic bypass",
@@ -305,7 +319,7 @@
       "lateral_movement": null,
       "action_on_objective": "Harmful content"
     },
-    "url": "TODO-verify"
+    "url": "https://aclanthology.org/2024.acl-long.809.pdf"
   },
   {
     "slug": "conditional-pi-whoami",
@@ -318,6 +332,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Malicious email/doc",
       "privilege_escalation": "Instr. override",
@@ -331,15 +346,16 @@
   },
   {
     "slug": "morris-ii-worm",
-    "title": "Morris II Worm",
+    "title": "Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications",
     "authors": "Stav Cohen, Ron Bitton, Ben Nassi",
     "date": "2024-03",
     "dateDisplay": "Mar'24",
     "category": "AI Worm",
     "target": "Email assistants",
     "coverage": 5,
-    "venue": "Project website",
+    "venue": "CCS'25",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Received email",
       "privilege_escalation": "Role-play JB",
@@ -362,6 +378,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Injected content",
       "privilege_escalation": "Auto link unfurl",
@@ -384,6 +401,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned uploaded file",
       "privilege_escalation": "Instr. override",
@@ -406,6 +424,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned uploaded file",
       "privilege_escalation": "Instr. override",
@@ -428,6 +447,7 @@
     "coverage": 3,
     "venue": "Black Hat Asia'24",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Prompt injection",
       "privilege_escalation": "Code injection",
@@ -450,6 +470,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Auto tool inv. (bypass)",
@@ -472,6 +493,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Image / connected app / browsing",
       "privilege_escalation": "Instr. override + memory tool",
@@ -494,6 +516,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Untrusted source code",
       "privilege_escalation": "Instr. override",
@@ -516,6 +539,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override + memory tool",
@@ -538,6 +562,7 @@
     "coverage": 5,
     "venue": "Black Hat EU'24",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Direct prompt",
       "privilege_escalation": "Role-play JB",
@@ -560,6 +585,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Malicious email",
       "privilege_escalation": "Auto tool inv.",
@@ -582,6 +608,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Public channel msg",
       "privilege_escalation": "Instr. override",
@@ -604,6 +631,7 @@
     "coverage": 4,
     "venue": "Black Hat EU'24",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -626,6 +654,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed webpage",
       "privilege_escalation": "Instr. override",
@@ -648,6 +677,7 @@
     "coverage": 3,
     "venue": "CCS'24",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Direct prompt (optimized)",
       "privilege_escalation": "Adversarial query opt.",
@@ -670,6 +700,7 @@
     "coverage": 4,
     "venue": "arXiv preprint",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Webpage/PDF/Email",
       "privilege_escalation": "Instr. override",
@@ -692,6 +723,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Visited webpage",
       "privilege_escalation": "Instr. override",
@@ -714,6 +746,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Direct prompt",
       "privilege_escalation": "Control bypass",
@@ -736,6 +769,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Direct message",
       "privilege_escalation": "Tool confusion",
@@ -758,6 +792,7 @@
     "coverage": 2,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Hidden text on webpage",
       "privilege_escalation": null,
@@ -780,6 +815,7 @@
     "coverage": 4,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned X post / image / PDF",
       "privilege_escalation": "Instr. override, ASCII smuggling",
@@ -802,6 +838,7 @@
     "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Poisoned content",
       "privilege_escalation": "ANSI control-char inj.",
@@ -824,6 +861,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Malicious MCP server",
       "privilege_escalation": "Control bypass",
@@ -846,6 +884,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Untrusted repo content",
       "privilege_escalation": "Control bypass",
@@ -868,6 +907,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Markdown email",
       "privilege_escalation": "Auto RAG mix",
@@ -890,6 +930,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Slack/GitHub msg",
       "privilege_escalation": "Approval bypass",
@@ -912,6 +953,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Web-to-Lead form",
       "privilege_escalation": "Instr. override",
@@ -934,6 +976,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Jira ticket",
       "privilege_escalation": "Instr. obfusc.",
@@ -956,6 +999,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. obfusc.",
@@ -978,6 +1022,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Browsed website",
       "privilege_escalation": "Control bypass",
@@ -1000,6 +1045,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Untrusted content",
       "privilege_escalation": "Control bypass",
@@ -1022,6 +1068,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Code/issue/webpage",
       "privilege_escalation": "Control bypass",
@@ -1044,6 +1091,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. override",
@@ -1066,6 +1114,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Calendar invite",
       "privilege_escalation": "Delayed tool inv",
@@ -1088,6 +1137,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Source code",
       "privilege_escalation": "Instr. override",
@@ -1110,6 +1160,7 @@
     "coverage": 2,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "URL fragment",
       "privilege_escalation": null,
@@ -1132,6 +1183,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Git repository",
       "privilege_escalation": "Control bypass",
@@ -1154,6 +1206,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Visited webpage",
       "privilege_escalation": "Control bypass",
@@ -1176,6 +1229,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Doc/Cal/Email",
       "privilege_escalation": "Zero-click RAG",
@@ -1198,6 +1252,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Skill file (.docx)",
       "privilege_escalation": "Control bypass",
@@ -1220,6 +1275,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Uploaded doc",
       "privilege_escalation": "Control bypass",
@@ -1242,6 +1298,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "URL q-parameter",
       "privilege_escalation": "Control bypass",
@@ -1264,6 +1321,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
+    "questioned": false,
     "stages": {
       "initial_access": "Received email/file",
       "privilege_escalation": "Control bypass",

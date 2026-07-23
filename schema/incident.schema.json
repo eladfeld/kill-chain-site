@@ -137,6 +137,9 @@
     },
     "new": {
       "type": "boolean"
+    },
+    "questioned": {
+      "type": "boolean"
     }
   },
   "definitions": {
