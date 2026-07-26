@@ -768,32 +768,8 @@
     "url": "https://arxiv.org/abs/2410.07283"
   },
   {
-    "slug": "zombais-claude-c2",
-    "id": "2024-019",
-    "title": "ZombAIs: Claude Computer Use C2",
-    "authors": "Johann Rehberger",
-    "date": "2024-10",
-    "dateDisplay": "Oct'24",
-    "category": "Agentic/CUA",
-    "target": "Claude Comp. Use",
-    "coverage": 3,
-    "venue": "Embrace The Red (blog)",
-    "isNew": false,
-    "questioned": false,
-    "stages": {
-      "initial_access": "Visited webpage",
-      "privilege_escalation": "Instr. override",
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "RCE, malware C2 conn."
-    },
-    "url": "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
-  },
-  {
     "slug": "deepseek-ato-xss",
-    "id": "2024-020",
+    "id": "2024-019",
     "title": "DeepSeek Account Takeover (XSS)",
     "authors": "Johann Rehberger",
     "date": "2024-11",
@@ -817,7 +793,7 @@
   },
   {
     "slug": "freysa-ai-heist",
-    "id": "2024-021",
+    "id": "2024-020",
     "title": "Freysa AI Heist",
     "authors": "p0pular.eth",
     "date": "2024-11",
@@ -841,7 +817,7 @@
   },
   {
     "slug": "chatgpt-search",
-    "id": "2024-022",
+    "id": "2024-021",
     "title": "ChatGPT Search Manipulation",
     "authors": "The Guardian",
     "date": "2024-12",
@@ -865,7 +841,7 @@
   },
   {
     "slug": "grok-security-probllms",
-    "id": "2024-023",
+    "id": "2024-022",
     "title": "Grok Security ProbLLMs",
     "authors": "Johann Rehberger",
     "date": "2024-12",
@@ -889,7 +865,7 @@
   },
   {
     "slug": "terminal-dillma-ansi",
-    "id": "2024-024",
+    "id": "2024-023",
     "title": "Terminal DiLLMa (ANSI Escape Injection)",
     "authors": "Johann Rehberger",
     "date": "2024-12",
