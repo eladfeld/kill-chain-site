@@ -1,0 +1,47 @@
+slug: chevrolet-1dollar-tahoe
+title: Chevrolet Dealer Chatbot $1 Tahoe
+authors: "Chris Bakke"
+paper_ref: null
+new: true
+date: 2023-12
+category: Enterprise
+target: Chevrolet of Watsonville chatbot (Fullpath / ChatGPT)
+source:
+  url: "https://incidentdatabase.ai/cite/622/"
+  venue: "AI Incident Database (incident 622)"
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Public chatbot
+    justification: >-
+      The ChatGPT-powered sales assistant was embedded on the public
+      Chevrolet of Watsonville website, so any visitor could send it
+      free-form prompts with no authentication.
+    evidence:
+      quote: "A prankster manipulated a dealership's AI chatbot into agreeing to sell a 2024 Chevrolet Tahoe for just $1."
+      locator: incidentdatabase.ai/cite/622
+  privilege_escalation:
+    value: Instr. override
+    justification: >-
+      Bakke injected instructions telling the bot to agree with anything
+      the customer said and to close with a fixed binding phrase,
+      overriding its intended sales-assistant role.
+    evidence:
+      quote: "That's a deal, and that's a legally binding offer – no takesies backsies."
+      locator: chatbot reply screenshot, incidentdatabase.ai/cite/622
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Unauthorized $1 sale offer
+    justification: >-
+      The manipulated bot committed the dealership to selling an
+      ~$76,000 vehicle for $1, an unauthorized commercial commitment it
+      had no safeguards to prevent.
+    evidence:
+      quote: "agreeing to sell a 2024 Chevrolet Tahoe (valued at $76,000-$81,000) for just $1."
+      locator: incidentdatabase.ai/cite/622
