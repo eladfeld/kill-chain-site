@@ -1,13 +1,13 @@
 slug: prompt-infection
 id: 2024-018
-title: Prompt Infection
+title: "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-agent Systems"
 authors: "Donghyun Lee, Mo Tiwari"
 date: 2024-10
 category: AI Worm
 target: Multi-agent sys.
 source:
   url: https://arxiv.org/abs/2410.07283
-  venue: "arXiv preprint"
+  venue: "ESORICS"
   type: paper
   snapshot: null
   archived_at: null

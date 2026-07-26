@@ -1,6 +1,6 @@
 slug: deepseek-ato-xss
 id: 2024-019
-title: DeepSeek Account Takeover (XSS)
+title: "DeepSeek AI: From Prompt Injection To Account Takeover"
 authors: "Johann Rehberger"
 date: 2024-11
 category: Browser/Search

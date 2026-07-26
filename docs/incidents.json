@@ -746,14 +746,14 @@
   {
     "slug": "prompt-infection",
     "id": "2024-018",
-    "title": "Prompt Infection",
+    "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-agent Systems",
     "authors": "Donghyun Lee, Mo Tiwari",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "AI Worm",
     "target": "Multi-agent sys.",
     "coverage": 4,
-    "venue": "arXiv preprint",
+    "venue": "ESORICS",
     "isNew": false,
     "questioned": false,
     "stages": {
@@ -770,7 +770,7 @@
   {
     "slug": "deepseek-ato-xss",
     "id": "2024-019",
-    "title": "DeepSeek Account Takeover (XSS)",
+    "title": "DeepSeek AI: From Prompt Injection To Account Takeover",
     "authors": "Johann Rehberger",
     "date": "2024-11",
     "dateDisplay": "Nov'24",
@@ -803,7 +803,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Direct message",
       "privilege_escalation": "Tool confusion",
@@ -827,7 +827,7 @@
     "coverage": 2,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Hidden text on webpage",
       "privilege_escalation": null,
