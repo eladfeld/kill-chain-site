@@ -46,8 +46,8 @@ const indexBody = `
 <p class="intro">An archival, defensible extension of Table II: every prompt-injection / promptware incident coded across the seven-stage kill chain, with per-stage justification, source evidence, and a locally archived copy of each source.</p>
 <div class="controls">
   <input id="q" type="search" placeholder="Search title or target…">
-  <select id="cat"><option value="">All categories</option></select>
-  <select id="year"><option value="">All years</option></select>
+  <div class="msel" id="cat" data-label="categories"></div>
+  <div class="msel" id="year" data-label="years"></div>
   <select id="newf"><option value="">All incidents</option><option value="new">New only</option><option value="orig">Original only</option></select>
   <label class="cov">Min stages <select id="cov"></select></label>
   <span id="count" class="count"></span>

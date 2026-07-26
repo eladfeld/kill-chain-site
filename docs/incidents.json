@@ -562,7 +562,7 @@
     "coverage": 5,
     "venue": "Black Hat EU'24",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Direct prompt",
       "privilege_escalation": "Role-play JB",
@@ -608,7 +608,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Public channel msg",
       "privilege_escalation": "Instr. override",
@@ -622,14 +622,14 @@
   },
   {
     "slug": "chatgpt-spaiware",
-    "title": "ChatGPT SpAIware",
+    "title": "Spyware Injection Into Your ChatGPT's Long-Term Memory (SpAIware)",
     "authors": "Johann Rehberger",
     "date": "2024-09",
     "dateDisplay": "Sep'24",
     "category": "Browser/Search",
     "target": "ChatGPT",
     "coverage": 4,
-    "venue": "Black Hat EU'24",
+    "venue": "Embrace The Red (blog)",
     "isNew": false,
     "questioned": false,
     "stages": {
@@ -641,18 +641,18 @@
       "lateral_movement": null,
       "action_on_objective": "Persistent exfil."
     },
-    "url": "https://arxiv.org/abs/2412.06090"
+    "url": "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/"
   },
   {
     "slug": "chatgpt-zombai-c2",
-    "title": "ChatGPT ZombAI C2",
+    "title": "ZombAIs: From Prompt Injection to C2 with Claude Computer Use",
     "authors": "Johann Rehberger",
     "date": "2024-10",
     "dateDisplay": "Oct'24",
     "category": "Browser/Search",
     "target": "ChatGPT",
     "coverage": 5,
-    "venue": "TODO-verify",
+    "venue": "Embrace The Red (blog)",
     "isNew": false,
     "questioned": false,
     "stages": {
@@ -664,7 +664,7 @@
       "lateral_movement": null,
       "action_on_objective": "Data exfil"
     },
-    "url": "TODO-verify"
+    "url": "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
   },
   {
     "slug": "pleak",

@@ -1,14 +1,14 @@
 slug: chatgpt-spaiware
-title: ChatGPT SpAIware
+title: "Spyware Injection Into Your ChatGPT's Long-Term Memory (SpAIware)"
 authors: "Johann Rehberger"
 paper_ref: 5
 date: 2024-09
 category: Browser/Search
 target: ChatGPT
 source:
-  url: https://arxiv.org/abs/2412.06090
-  venue: "Black Hat EU'24"
-  type: paper
+  url: "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/"
+  venue: "Embrace The Red (blog)"
+  type: blog
   snapshot: null
   archived_at: null
   sha256: null

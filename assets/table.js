@@ -9,23 +9,52 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 
 fetch('incidents.json?v=' + Date.now()).then(r => r.json()).then(d => { DATA = d; setup(); });
 
+let CATSEL = new Set(), YEARSEL = new Set();
+
+function multiSelect(el, values) {
+  const label = el.dataset.label;
+  const sel = new Set();
+  el.innerHTML = `<button type="button" class="msel-btn">All ${label} <span class="caret">▾</span></button><div class="msel-pop" hidden></div>`;
+  const btn = el.querySelector('.msel-btn'), pop = el.querySelector('.msel-pop');
+  pop.innerHTML = values.map(v =>
+    `<label class="msel-opt"><input type="checkbox" value="${esc(v)}"><span>${esc(v)}</span></label>`).join('') +
+    `<button type="button" class="msel-clear">Clear</button>`;
+  const update = () => {
+    const items = [...sel];
+    btn.innerHTML = esc(sel.size === 0 ? `All ${label}` : items.length <= 2 ? items.join(', ') : `${items.length} ${label}`) + ' <span class="caret">▾</span>';
+    btn.classList.toggle('active', sel.size > 0);
+    render();
+  };
+  pop.addEventListener('change', e => { e.target.checked ? sel.add(e.target.value) : sel.delete(e.target.value); update(); });
+  pop.querySelector('.msel-clear').addEventListener('click', () => { sel.clear(); pop.querySelectorAll('input').forEach(i => i.checked = false); update(); });
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const wasHidden = pop.hidden;
+    document.querySelectorAll('.msel-pop').forEach(p => p.hidden = true);
+    pop.hidden = !wasHidden;
+  });
+  document.addEventListener('click', e => { if (!el.contains(e.target)) pop.hidden = true; });
+  return sel;
+}
+
 function setup() {
   const cats = [...new Set(DATA.map(d => d.category))].sort();
-  cats.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; $('#cat').appendChild(o); });
   const years = [...new Set(DATA.map(d => d.date.slice(0, 4)))].sort();
-  years.forEach(y => { const o = document.createElement('option'); o.value = y; o.textContent = y; $('#year').appendChild(o); });
+  CATSEL = multiSelect($('#cat'), cats);
+  YEARSEL = multiSelect($('#year'), years);
   for (let i = 0; i <= 6; i++) { const o = document.createElement('option'); o.value = i; o.textContent = i; $('#cov').appendChild(o); }
   $('#grid thead').innerHTML = '<tr><th class="c-title">Incident</th><th>Date</th><th>Category</th><th>Target</th><th>Venue</th>' +
     STAGES.map(s => `<th>${s[1]}</th>`).join('') + '<th>Cov.</th></tr>';
-  ['#q', '#cat', '#year', '#newf', '#cov'].forEach(id => $(id).addEventListener('input', render));
+  ['#q', '#newf', '#cov'].forEach(id => $(id).addEventListener('input', render));
   setupModal();
   render();
 }
 
 function render() {
-  const q = $('#q').value.toLowerCase(), cat = $('#cat').value, year = $('#year').value, nf = $('#newf').value, cov = +$('#cov').value;
+  const q = $('#q').value.toLowerCase(), nf = $('#newf').value, cov = +$('#cov').value;
   const rows = DATA.filter(d =>
-    (!cat || d.category === cat) && (!year || d.date.startsWith(year)) && (!nf || (nf === 'new') === d.isNew) && d.coverage >= cov &&
+    (!CATSEL.size || CATSEL.has(d.category)) && (!YEARSEL.size || YEARSEL.has(d.date.slice(0, 4))) &&
+    (!nf || (nf === 'new') === d.isNew) && d.coverage >= cov &&
     (!q || d.title.toLowerCase().includes(q) || d.target.toLowerCase().includes(q) || (d.authors||"").toLowerCase().includes(q)));
   $('#grid tbody').innerHTML = rows.map(d => {
     const cells = STAGES.map(s => {

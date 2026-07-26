@@ -1,13 +1,13 @@
 slug: chatgpt-zombai-c2
-title: ChatGPT ZombAI C2
+title: "ZombAIs: From Prompt Injection to C2 with Claude Computer Use"
 authors: "Johann Rehberger"
 paper_ref: 48
 date: 2024-10
 category: Browser/Search
 target: ChatGPT
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
+  venue: "Embrace The Red (blog)"
   type: blog
   snapshot: null
   archived_at: null
