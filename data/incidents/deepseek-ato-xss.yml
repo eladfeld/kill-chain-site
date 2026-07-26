@@ -1,7 +1,7 @@
 slug: deepseek-ato-xss
+id: 2024-020
 title: DeepSeek Account Takeover (XSS)
 authors: "Johann Rehberger"
-paper_ref: 51
 date: 2024-11
 category: Browser/Search
 target: DeepSeek AI web app

@@ -1,7 +1,7 @@
 slug: thief-gpt
+id: 2023-014
 title: Thief GPT (Malicious Custom GPT)
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2023-12
 category: AI Agent
 target: ChatGPT custom GPTs

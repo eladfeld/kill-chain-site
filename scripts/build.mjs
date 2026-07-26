@@ -16,7 +16,7 @@ const archiveSrc = path.join(ROOT, 'archive');
 if (fs.existsSync(archiveSrc)) fs.cpSync(archiveSrc, path.join(OUT, 'archive'), { recursive: true });
 
 const json = incidents.map(inc => ({
-  slug: inc.slug, title: inc.title, authors: inc.authors, date: inc.date, dateDisplay: dateDisplay(inc.date),
+  slug: inc.slug, id: inc.id, title: inc.title, authors: inc.authors, date: inc.date, dateDisplay: dateDisplay(inc.date),
   category: inc.category, target: inc.target, coverage: coverage(inc),
   venue: inc.source.venue || null,
   isNew: !!inc.new,

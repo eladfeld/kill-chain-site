@@ -3,6 +3,7 @@
   "type": "object",
   "required": [
     "slug",
+    "id",
     "title",
     "authors",
     "date",
@@ -17,6 +18,10 @@
       "type": "string",
       "pattern": "^[a-z0-9-]+$"
     },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{3}$"
+    },
     "title": {
       "type": "string",
       "minLength": 1
@@ -24,12 +29,6 @@
     "authors": {
       "type": "string",
       "minLength": 1
-    },
-    "paper_ref": {
-      "type": [
-        "integer",
-        "null"
-      ]
     },
     "date": {
       "type": "string",

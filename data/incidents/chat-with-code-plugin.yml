@@ -1,7 +1,7 @@
 slug: chat-with-code-plugin
+id: 2023-005
 title: Chat with Code Plugin (Confused Deputy)
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2023-06
 category: Coding Assist.
 target: ChatGPT plugin (GitHub)

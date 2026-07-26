@@ -1,8 +1,8 @@
 slug: slack-ai-exfil
+id: 2024-014
 title: Slack AI Exfiltration
 questioned: true
 authors: "PromptArmor"
-paper_ref: 46
 date: 2024-08
 category: Enterprise
 target: Slack AI

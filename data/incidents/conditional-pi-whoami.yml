@@ -1,7 +1,7 @@
 slug: conditional-pi-whoami
+id: 2024-002
 title: Conditional Prompt Injection (whoami)
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2024-03
 category: Enterprise
 target: M365 Copilot

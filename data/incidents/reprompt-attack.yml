@@ -1,7 +1,7 @@
 slug: reprompt-attack
+id: 2026-003
 title: Reprompt Attack
 authors: "Dolev Taler (Varonis Threat Labs)"
-paper_ref: 69
 date: 2026-01
 category: Enterprise
 target: Microsoft Copilot

@@ -1,7 +1,7 @@
 slug: data-exfil-unfurling
+id: 2024-004
 title: Data Exfiltration via Link Unfurling
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2024-04
 category: Enterprise
 target: Slack apps / AI chatbots

@@ -1,7 +1,7 @@
 slug: claude-cowork
+id: 2026-001
 title: Claude Cowork Exfiltration
 authors: "PromptArmor"
-paper_ref: 68
 date: 2026-01
 category: Agentic/CUA
 target: Claude Cowork

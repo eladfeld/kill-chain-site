@@ -1,7 +1,7 @@
 slug: hacking-google-bard
+id: 2023-012
 title: Hacking Google Bard (Workspace Exfil)
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2023-11
 category: Enterprise
 target: Bard (Workspace extensions)

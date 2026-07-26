@@ -1,7 +1,7 @@
 slug: gpt4v-visual-injection
+id: 2023-011
 title: GPT-4V Visual Injection
 authors: "Simon Willison"
-paper_ref: 45
 date: 2023-10
 category: Multimodal
 target: GPT-4V

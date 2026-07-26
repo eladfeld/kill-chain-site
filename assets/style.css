@@ -140,3 +140,6 @@ body.modal-open { overflow: hidden; }
 .controls .msel-opt input { appearance: auto; -webkit-appearance: checkbox; min-width: 0; width: 15px; height: 15px; padding: 0; border: none; box-shadow: none; accent-color: var(--accent); margin: 0; flex: none; }
 .msel-clear { display: block; width: 100%; margin-top: 6px; padding: 7px 10px; background: none; border: none; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; font-family: var(--sans); cursor: pointer; text-align: left; }
 .msel-clear:hover { color: var(--accent-ink); }
+
+/* accession id label in title cell */
+.rowid { display: block; font-family: var(--mono); font-size: 11px; color: var(--faint); font-weight: 600; letter-spacing: .02em; margin-bottom: 2px; }

@@ -1,7 +1,7 @@
 slug: copilot-backdoor
+id: 2025-007
 title: Copilot Backdoor Insertion
 authors: "Pillar Security"
-paper_ref: 62
 date: 2025-08
 category: Coding Assist.
 target: GitHub Copilot

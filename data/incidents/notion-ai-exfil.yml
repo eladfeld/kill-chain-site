@@ -1,7 +1,7 @@
 slug: notion-ai-exfil
+id: 2026-002
 title: Notion AI Exfiltration
 authors: "CodeIntegrity"
-paper_ref: 70
 date: 2026-01
 category: Enterprise
 target: Notion AI

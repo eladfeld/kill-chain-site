@@ -1,7 +1,7 @@
 slug: echoleak
+id: 2025-003
 title: EchoLeak
 authors: "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)"
-paper_ref: 55
 date: 2025-06
 category: Enterprise
 target: M365 Copilot

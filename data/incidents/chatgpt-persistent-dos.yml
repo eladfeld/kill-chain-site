@@ -1,7 +1,7 @@
 slug: chatgpt-persistent-dos
+id: 2024-011
 title: ChatGPT Persistent Denial of Service
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2024-07
 category: Browser/Search
 target: ChatGPT (Memory)

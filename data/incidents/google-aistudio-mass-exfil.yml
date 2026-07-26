@@ -1,7 +1,7 @@
 slug: google-aistudio-mass-exfil
+id: 2024-005
 title: Google AI Studio Mass Data Exfiltration
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2024-04
 category: Enterprise
 target: Google AI Studio (Gemini)

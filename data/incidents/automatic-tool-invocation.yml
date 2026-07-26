@@ -1,7 +1,7 @@
 slug: automatic-tool-invocation
+id: 2024-008
 title: Automatic Tool Invocation (Browsing)
 authors: "Johann Rehberger"
-paper_ref: null
 date: 2024-05
 category: Browser/Search
 target: ChatGPT (browsing + tools)
