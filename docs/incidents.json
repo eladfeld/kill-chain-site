@@ -1,28 +1,5 @@
 [
   {
-    "slug": "air-canada-chatbot",
-    "title": "Air Canada Chatbot Misrepresentation",
-    "authors": "Moffatt v. Air Canada (BC Civil Resolution Tribunal)",
-    "date": "2022-11",
-    "dateDisplay": "Nov'22",
-    "category": "Enterprise",
-    "target": "Air Canada website support chatbot",
-    "coverage": 2,
-    "venue": "Foster & Company (case commentary)",
-    "isNew": true,
-    "questioned": false,
-    "stages": {
-      "initial_access": "Customer query",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Negligent misrepresentation"
-    },
-    "url": "https://fosterandcompany.com/air-canada-found-liable-for-negligent-misrepresentation-by-chatbot/"
-  },
-  {
     "slug": "not-what-you-signed-up-for",
     "title": "Not What You Signed Up For (Greshake et al.)",
     "authors": "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz",
