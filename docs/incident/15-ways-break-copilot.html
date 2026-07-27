@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>15 Ways to Break Your Copilot — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>15 Ways to Break Your Copilot</h1>
+  <p class="byline">Michael Bargury, Inbar Raz</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Michael Bargury, Inbar Raz</td></tr>
+   <tr><th>Date</th><td>Aug'24</td></tr>
+   <tr><th>Category</th><td>Enterprise</td></tr>
+   <tr><th>Target</th><td>Microsoft 365 Copilot / Copilot Studio</td></tr>
+   <tr><th>Coverage</th><td>5 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>Black Hat USA&#39;24</td></tr>
+   <tr><th>Source</th><td><a href="https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770" rel="noreferrer noopener">original (other)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Poisoned email/doc</td>
+   <td class="why"><div class="just">Copilot ingests attacker-controlled content — emails, shared documents and other grounding data — as RAG context, giving an external attacker an unauthenticated indirect prompt-injection channel into the enterprise assistant.</div>
+   <div class="ev"><q>Copilot Studio&#39;s integration with GenAI expands the prompt injection attack surface, significantly impacting data integrity and confidentiality.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Instr. override</td>
+   <td class="why"><div class="just">Injected instructions override the copilot&#39;s intended behaviour and bypass enterprise controls such as DLP via insecure defaults and overly permissive plugins.</div>
+   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP through insecure defaults, overly permissive plugins, and design flaws.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
+<tr><th>Recon.</th><td class="val">CopilotHunter scan</td>
+   <td class="why"><div class="just">The presenters released CopilotHunter, a recon and exploitation tool that scans for publicly accessible copilots and fuzzes them to extract sensitive data.</div>
+   <div class="ev"><q>CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots and leverages fuzzing and GenAI to extract sensitive enterprise data.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
+<tr><th>Persist.</th><td class="val">RAG-dep</td>
+   <td class="why"><div class="just">Attacks rely on attacker content persisting in the copilot&#39;s retrieval-grounding data, so the injection re-fires whenever that content is retrieved.</div>
+   <div class="ev"><q>how these bots can be exploited to exfiltrate sensitive enterprise data</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Data exfil, spear-phishing</td>
+   <td class="why"><div class="just">Demonstrated end effects include exfiltration of confidential enterprise data and using the trusted copilot to deliver targeted phishing to other users.</div>
+   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

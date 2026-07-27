@@ -1,0 +1,64 @@
+slug: 15-ways-break-copilot
+id: 2024-024
+title: "15 Ways to Break Your Copilot"
+authors: "Michael Bargury, Inbar Raz"
+new: true
+date: 2024-08
+category: Enterprise
+target: Microsoft 365 Copilot / Copilot Studio
+source:
+  url: "https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770"
+  venue: "Black Hat USA'24"
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Poisoned email/doc
+    justification: >-
+      Copilot ingests attacker-controlled content — emails, shared
+      documents and other grounding data — as RAG context, giving an
+      external attacker an unauthenticated indirect prompt-injection
+      channel into the enterprise assistant.
+    evidence:
+      quote: "Copilot Studio's integration with GenAI expands the prompt injection attack surface, significantly impacting data integrity and confidentiality."
+      locator: Black Hat USA'24 briefing abstract
+  privilege_escalation:
+    value: Instr. override
+    justification: >-
+      Injected instructions override the copilot's intended behaviour and
+      bypass enterprise controls such as DLP via insecure defaults and
+      overly permissive plugins.
+    evidence:
+      quote: "exfiltrate sensitive enterprise data by bypassing security controls like DLP through insecure defaults, overly permissive plugins, and design flaws."
+      locator: Black Hat USA'24 briefing abstract
+  reconnaissance:
+    value: CopilotHunter scan
+    justification: >-
+      The presenters released CopilotHunter, a recon and exploitation
+      tool that scans for publicly accessible copilots and fuzzes them to
+      extract sensitive data.
+    evidence:
+      quote: "CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots and leverages fuzzing and GenAI to extract sensitive enterprise data."
+      locator: Black Hat USA'24 briefing abstract
+  persistence:
+    value: RAG-dep
+    justification: >-
+      Attacks rely on attacker content persisting in the copilot's
+      retrieval-grounding data, so the injection re-fires whenever that
+      content is retrieved.
+    evidence:
+      quote: "how these bots can be exploited to exfiltrate sensitive enterprise data"
+      locator: Black Hat USA'24 briefing abstract
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfil, spear-phishing
+    justification: >-
+      Demonstrated end effects include exfiltration of confidential
+      enterprise data and using the trusted copilot to deliver targeted
+      phishing to other users.
+    evidence:
+      quote: "exfiltrate sensitive enterprise data by bypassing security controls like DLP"
+      locator: Black Hat USA'24 briefing abstract

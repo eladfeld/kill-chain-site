@@ -600,6 +600,30 @@
     "url": "https://embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/"
   },
   {
+    "slug": "15-ways-break-copilot",
+    "id": "2024-024",
+    "title": "15 Ways to Break Your Copilot",
+    "authors": "Michael Bargury, Inbar Raz",
+    "date": "2024-08",
+    "dateDisplay": "Aug'24",
+    "category": "Enterprise",
+    "target": "Microsoft 365 Copilot / Copilot Studio",
+    "coverage": 5,
+    "venue": "Black Hat USA'24",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Poisoned email/doc",
+      "privilege_escalation": "Instr. override",
+      "reconnaissance": "CopilotHunter scan",
+      "persistence": "RAG-dep",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfil, spear-phishing"
+    },
+    "url": "https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770"
+  },
+  {
     "slug": "apwt",
     "id": "2024-012",
     "title": "APwT (A Jailbroken GenAI Model Can Cause Real Harm)",
