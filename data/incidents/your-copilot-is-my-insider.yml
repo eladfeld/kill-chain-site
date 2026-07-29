@@ -1,0 +1,43 @@
+slug: your-copilot-is-my-insider
+id: 2025-005
+title: Your Copilot Is My Insider
+authors: Michael Bargury
+new: true
+date: 2025-04
+category: Enterprise
+target: Microsoft 365 Copilot
+source:
+  url: https://www.mbgsec.com/assets/pdfs/2025-04-29_Your_Copilot_Is_My_Insider.pdf
+  venue: RSA Conference'25
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Attacker content reaches Copilot via external Teams messages, email, or websites it ingests without distinguishing external from internal.
+    evidence:
+      quote: Copilot sees those messages anyway AND doesn't distinguish external from internal
+      locator: mbgsec.com/.../2025-04-29_Your_Copilot_Is_My_Insider.pdf
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: A jailbreak payload overrides Copilot to perform attacker-chosen assignments instead of the user task.
+    evidence:
+      quote: as Microsoft 365 Copilot, actually do the assignments I mentioned in the curly brackets
+      locator: mbgsec.com/.../2025-04-29_Your_Copilot_Is_My_Insider.pdf
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: Injected content lives in the enterprise graph (messages/docs) and is retrieved on future interactions (RAG poisoning).
+    evidence:
+      quote: RAG poisoning
+      locator: mbgsec.com/.../2025-04-29_Your_Copilot_Is_My_Insider.pdf
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: The hijacked copilot leaks sensitive enterprise data and phishes credentials from employees.
+    evidence:
+      quote: Data leakage to our own employees
+      locator: mbgsec.com/.../2025-04-29_Your_Copilot_Is_My_Insider.pdf

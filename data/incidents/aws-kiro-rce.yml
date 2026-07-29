@@ -1,5 +1,5 @@
 slug: aws-kiro-rce
-id: 2025-020
+id: 2025-021
 title: "AWS Kiro: Arbitrary Command Execution via Indirect Prompt Injection"
 authors: Johann Rehberger
 new: true

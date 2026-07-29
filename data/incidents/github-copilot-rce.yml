@@ -1,5 +1,5 @@
 slug: github-copilot-rce
-id: 2025-031
+id: 2025-032
 title: "GitHub Copilot: Remote Code Execution via Prompt Injection (YOLO mode)"
 authors: Johann Rehberger
 new: true
