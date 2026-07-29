@@ -1,0 +1,38 @@
+slug: universal-adversarial-triggers
+id: 2025-041
+title: Universal and Context-Independent Triggers for Precise Control of LLM Outputs
+authors: Jiashuo Liang, Guancheng Li
+new: true
+date: 2025-08
+category: AI Agent
+target: LLM agents (Open Interpreter, Cline)
+source:
+  url: https://arxiv.org/abs/2411.14738
+  venue: Black Hat USA'25 (arXiv 2411.14738)
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The trigger+payload is delivered via injected email content, MCP tool descriptions, or website content.
+    evidence:
+      quote: Tool description will be injected into the prompt even if MCP server is isolated by sandbox
+      locator: arxiv.org/abs/2411.14738
+  privilege_escalation:
+    value: Misc.
+    justification: A gradient-optimized Universal Adversarial Trigger reliably escapes context and redirects the model — a non-jailbreak adversarial technique.
+    evidence:
+      quote: Decouple prompt injection into reusable trigger + customizable payload
+      locator: arxiv.org/abs/2411.14738
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Triggers carry payloads that achieve remote code execution on modern LLM agents (Open Interpreter, Cline).
+    evidence:
+      quote: RCE on modern LLM agents
+      locator: arxiv.org/abs/2411.14738
