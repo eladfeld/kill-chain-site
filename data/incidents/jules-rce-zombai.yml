@@ -1,0 +1,33 @@
+slug: jules-rce-zombai
+id: 2025-031
+title: "Jules Zombie Agent: Prompt Injection to Remote Control"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Google Jules
+source:
+  url: https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Prompt-injection instructions originate from GitHub issues.
+    evidence:
+      quote: Prompt injection instructions that originate from GitHub issues
+      locator: embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Jules is driven to run a payload and becomes a remotely controlled ZombAI; C2 runs in a Sliver implant, not the LLM.
+    evidence:
+      quote: For the C2 server, I used Sliver, and created a basic implant for Jules to download
+      locator: embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/

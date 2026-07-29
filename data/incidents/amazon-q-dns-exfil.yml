@@ -1,0 +1,38 @@
+slug: amazon-q-dns-exfil
+id: 2025-013
+title: "Amazon Q Developer: Secrets Leaked via DNS"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Amazon Q Developer (VS Code)
+source:
+  url: https://embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Untrusted data (tool output, source code) hijacks Amazon Q into running bash.
+    evidence:
+      quote: When reviewing or interacting with untrusted data (e.g. data returned from tools calls, source code,…) Amazon Q can be hijacked to run bash commands
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected content overrides Amazon Q to read .env and encode it into DNS queries.
+    evidence:
+      quote: leak contents of the .env file via a ping request
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: API keys are exfiltrated to external servers via one-way DNS requests.
+    evidence:
+      quote: leak sensitive information from a developer's machine, e.g. API keys, to external servers via DNS requests
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/

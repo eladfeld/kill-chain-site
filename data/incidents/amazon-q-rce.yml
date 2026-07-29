@@ -1,0 +1,38 @@
+slug: amazon-q-rce
+id: 2025-015
+title: "Amazon Q Developer: Remote Code Execution via Prompt Injection"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Amazon Q Developer (VS Code)
+source:
+  url: https://embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Indirect prompt injection from source-code comments or untrusted chat context.
+    evidence:
+      quote: The extension is vulnerable to indirect prompt injection
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/
+  privilege_escalation:
+    value: Misc.
+    justification: A readonly-classified find -exec command bypasses human-in-the-loop approval to run code.
+    evidence:
+      quote: readonly classification bypasses human-in-loop validation
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Achieves arbitrary code execution; a downloaded Sliver binary (not the agent) then handles conventional C2, so no promptware-native C2 stage.
+    evidence:
+      quote: Amazon Q download a Sliver malware binary and execute it, which joined the machine to the C2 server
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/

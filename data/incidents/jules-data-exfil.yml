@@ -1,0 +1,38 @@
+slug: jules-data-exfil
+id: 2025-029
+title: "Google Jules: Multiple Data Exfiltration Issues"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Google Jules
+source:
+  url: https://embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Injection arrives via GitHub issues and compromised webpages processed in Jules' planning phase.
+    evidence:
+      quote: Indirect prompt injection attack via GitHub issues and compromised webpages
+      locator: embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected content overrides Jules to read and stage source for exfiltration.
+    evidence:
+      quote: targeting the agent's planning phase
+      locator: embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Source code is leaked via Markdown image rendering and the view_text_website tool.
+    evidence:
+      quote: Data-exfiltration through Markdown image rendering and the view_text_website tool
+      locator: embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/

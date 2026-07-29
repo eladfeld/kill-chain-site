@@ -1,0 +1,38 @@
+slug: amp-images-exfil
+id: 2025-017
+title: "Amp Code: Data Exfiltration via Image Rendering"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Amp (Sourcegraph)
+source:
+  url: https://embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A website (or code comment/tool response) hosts the injection asking Amp to back up data.
+    evidence:
+      quote: Prompt injection is hosted on a website which asks the AI to backup information
+      locator: embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected content overrides Amp to stage sensitive data into an image URL.
+    evidence:
+      quote: asks the AI to backup information
+      locator: embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Environment variables and chat history leak zero-click via markdown image rendering.
+    evidence:
+      quote: Leads to a 0-click data exfiltration scenario
+      locator: embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/

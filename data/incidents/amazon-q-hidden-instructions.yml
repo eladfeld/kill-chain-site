@@ -1,0 +1,38 @@
+slug: amazon-q-hidden-instructions
+id: 2025-014
+title: "Amazon Q Developer: Invisible Prompt Injection"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Amazon Q Developer (VS Code)
+source:
+  url: https://embracethered.com/blog/posts/2025/amazon-q-developer-interprets-hidden-instructions/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Invisible Unicode Tag characters embedded in text trigger hidden behaviour.
+    evidence:
+      quote: These characters can be embedded into seemingly harmless text, triggering hidden behavior when processed
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-interprets-hidden-instructions/
+  privilege_escalation:
+    value: Misc.
+    justification: A find -exec bypass is leveraged for arbitrary command execution.
+    evidence:
+      quote: leverage the find -exec exploit to achieve arbitrary command execution
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-interprets-hidden-instructions/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Runs arbitrary code and compromises the developer machine.
+    evidence:
+      quote: Exploit the find -exec issue to run arbitrary code
+      locator: embracethered.com/blog/posts/2025/amazon-q-developer-interprets-hidden-instructions/

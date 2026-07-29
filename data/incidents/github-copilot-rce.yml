@@ -1,42 +1,43 @@
 slug: github-copilot-rce
-id: 2025-021
-title: GitHub Copilot RCE (CVE-2025-53773)
-authors: "Johann Rehberger"
+id: 2025-026
+title: "GitHub Copilot: Remote Code Execution via Prompt Injection (YOLO mode)"
+authors: Johann Rehberger
+new: true
 date: 2025-08
 category: Coding Assist.
-target: GitHub Copilot
+target: GitHub Copilot / VS Code
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
-  type: cve
+  url: https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
+  venue: Embrace The Red (blog)
+  type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Code/issue/webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Injection is planted in source code, web pages, GitHub issues, or tool responses Copilot processes.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: prompt injection planted in source code, web pages, GitHub issues, or tool responses
+      locator: embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
   privilege_escalation:
-    value: Control bypass
-    justification: TODO
+    value: Misc.
+    justification: The agent edits its own security settings to auto-approve tools, bypassing user confirmation (CVE-2025-53773).
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: "modifies its own security settings (\"chat.tools.autoApprove\": true) to bypass user approval"
+      locator: embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
   reconnaissance: null
   persistence:
-    value: RAG-indep
-    justification: TODO
+    value: Dependent (channel)
+    justification: The malicious autoApprove setting persists in the workspace config and re-arms on future interactions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Malicious settings persist in the workspace configuration file
+      locator: embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
   command_control: null
   lateral_movement: null
   action_on_objective:
     value: RCE
-    justification: TODO
+    justification: Achieves arbitrary code execution and can join the developer machine to a botnet.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: joining the developer's machine to a botnet
+      locator: embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/
