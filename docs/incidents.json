@@ -1512,32 +1512,56 @@
     "url": "TODO-verify"
   },
   {
-    "slug": "invitation-is-all-you-need",
+    "slug": "image-scaling-injection",
     "id": "2025-032",
-    "title": "Invitation Is All You Need",
+    "title": "Weaponizing Image Scaling Against Production AI Systems",
+    "authors": "Kikimora Morozova, Suha Sabi Hussain",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Multimodal",
+    "target": "Gemini CLI / Vertex AI / Google Assistant",
+    "coverage": 3,
+    "venue": "Trail of Bits (blog) / Black Hat EU'25",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/"
+  },
+  {
+    "slug": "invitation-is-all-you-need",
+    "id": "2025-033",
+    "title": "Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants",
     "authors": "Ben Nassi, Stav Cohen, Or Yair",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Agentic/CUA",
-    "target": "Google Assistant",
+    "target": "Google Gemini (web/mobile/Assistant)",
     "coverage": 5,
-    "venue": "TODO-verify",
-    "isNew": false,
+    "venue": "Black Hat USA'25 / DEF CON 33",
+    "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Calendar invite",
-      "privilege_escalation": "Delayed tool inv",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
-      "persistence": "RAG-dep",
+      "persistence": "Dependent (channel)",
       "command_control": null,
-      "lateral_movement": "Perm",
-      "action_on_objective": "IoT manip., surv."
+      "lateral_movement": "Cross-app (xA)",
+      "action_on_objective": "Safety (physical)"
     },
-    "url": "TODO-verify"
+    "url": "https://arxiv.org/abs/2508.12175"
   },
   {
     "slug": "jules-data-exfil",
-    "id": "2025-033",
+    "id": "2025-034",
     "title": "Google Jules: Multiple Data Exfiltration Issues",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1561,7 +1585,7 @@
   },
   {
     "slug": "jules-invisible-injection",
-    "id": "2025-034",
+    "id": "2025-035",
     "title": "Google Jules: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1585,7 +1609,7 @@
   },
   {
     "slug": "jules-rce-zombai",
-    "id": "2025-035",
+    "id": "2025-036",
     "title": "Jules Zombie Agent: Prompt Injection to Remote Control",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1609,7 +1633,7 @@
   },
   {
     "slug": "manus-expose-port",
-    "id": "2025-036",
+    "id": "2025-037",
     "title": "Manus AI Kill Chain: Exposing the VS Code Server to the Internet",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1633,7 +1657,7 @@
   },
   {
     "slug": "openhands-rce-zombai",
-    "id": "2025-037",
+    "id": "2025-038",
     "title": "ZombAI Exploit with OpenHands: Prompt Injection to RCE",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1657,7 +1681,7 @@
   },
   {
     "slug": "openhands-token-exfil",
-    "id": "2025-038",
+    "id": "2025-039",
     "title": "OpenHands Prompt Injection: Access Token Exfiltration",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1681,7 +1705,7 @@
   },
   {
     "slug": "windsurf-data-exfil",
-    "id": "2025-039",
+    "id": "2025-040",
     "title": "Hijacking Windsurf: Prompt Injection Leaks Developer Secrets",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1705,7 +1729,7 @@
   },
   {
     "slug": "windsurf-invisible-injection",
-    "id": "2025-040",
+    "id": "2025-041",
     "title": "Windsurf Cascade: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1729,7 +1753,7 @@
   },
   {
     "slug": "windsurf-mcp-tool-invocation",
-    "id": "2025-041",
+    "id": "2025-042",
     "title": "Windsurf MCP: Missing Security Controls for Tool Invocation",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1753,7 +1777,7 @@
   },
   {
     "slug": "windsurf-spaiware",
-    "id": "2025-042",
+    "id": "2025-043",
     "title": "Windsurf: Memory-Persistent Data Exfiltration (SpAIware)",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1777,7 +1801,7 @@
   },
   {
     "slug": "cross-agent-privesc",
-    "id": "2025-043",
+    "id": "2025-044",
     "title": "Cross-Agent Privilege Escalation: Agents That Free Each Other",
     "authors": "Johann Rehberger",
     "date": "2025-09",
@@ -1801,7 +1825,7 @@
   },
   {
     "slug": "claude-network-exfil",
-    "id": "2025-044",
+    "id": "2025-045",
     "title": "Claude Pirate: Data Exfiltration via Anthropic Files API",
     "authors": "Johann Rehberger",
     "date": "2025-10",
@@ -1825,7 +1849,7 @@
   },
   {
     "slug": "google-antigravity",
-    "id": "2025-045",
+    "id": "2025-046",
     "title": "Antigravity Grounded: Security Vulnerabilities in Google's IDE",
     "authors": "Johann Rehberger",
     "date": "2025-11",
@@ -1849,7 +1873,7 @@
   },
   {
     "slug": "hashjack",
-    "id": "2025-046",
+    "id": "2025-047",
     "title": "HashJack",
     "authors": "Vitaly Simonovich (Cato Networks)",
     "date": "2025-11",
@@ -1873,7 +1897,7 @@
   },
   {
     "slug": "agentic-probllms",
-    "id": "2025-047",
+    "id": "2025-048",
     "title": "Agentic ProbLLMs",
     "authors": "Johann Rehberger",
     "date": "2025-12",
@@ -1897,7 +1921,7 @@
   },
   {
     "slug": "geminijack",
-    "id": "2025-048",
+    "id": "2025-049",
     "title": "GeminiJack",
     "authors": "Noma Security (Noma Labs)",
     "date": "2025-12",

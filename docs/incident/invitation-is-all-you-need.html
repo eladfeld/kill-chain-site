@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Invitation Is All You Need — Archive</title>
+<title>Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants — Archive</title>
 <link rel="stylesheet" href="../assets/style.css?v=1785095048449">
 </head><body>
 <header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
@@ -10,35 +10,35 @@
 <div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
 <main>
   <p class="back"><a href="../index.html">← all incidents</a></p>
-  <h1>Invitation Is All You Need</h1>
+  <h1>Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants</h1>
   <p class="byline">Ben Nassi, Stav Cohen, Or Yair</p>
   
   <table class="meta"><tbody>
    <tr><th>Authors</th><td>Ben Nassi, Stav Cohen, Or Yair</td></tr>
    <tr><th>Date</th><td>Aug'25</td></tr>
    <tr><th>Category</th><td>Agentic/CUA</td></tr>
-   <tr><th>Target</th><td>Google Assistant</td></tr>
+   <tr><th>Target</th><td>Google Gemini (web/mobile/Assistant)</td></tr>
    <tr><th>Coverage</th><td>5 / 7 stages</td></tr>
-   <tr><th>Venue</th><td>TODO-verify</td></tr>
-   <tr><th>Source</th><td><a href="TODO-verify" rel="noreferrer noopener">original (paper)</a> · <span class="pending">archive pending</span></td></tr>
+   <tr><th>Venue</th><td>Black Hat USA&#39;25 / DEF CON 33</td></tr>
+   <tr><th>Source</th><td><a href="https://arxiv.org/abs/2508.12175" rel="noreferrer noopener">original (paper)</a> · <span class="pending">archive pending</span></td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>
-  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Calendar invite</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
-<tr><th>Priv. Esc.</th><td class="val">Delayed tool inv</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">A malicious Google Calendar invite delivers an indirect prompt injection processed by Gemini on the victim behalf.</div>
+   <div class="ev"><q>the user is the victim and the attack is performed via the data, which was compromised by the attacker</q> <span class="loc">arxiv.org/abs/2508.12175 (SafeBreach writeup)</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Misc.</td>
+   <td class="why"><div class="just">Delayed automatic tool invocation abuses Gemini existing agent permissions to act without elevation.</div>
+   <div class="ev"><q>hijacking occurs through context manipulation, not elevation</q> <span class="loc">arxiv.org/abs/2508.12175 (SafeBreach writeup)</span></div></td></tr>
 <tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
-<tr><th>Persist.</th><td class="val">RAG-dep</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
+<tr><th>Persist.</th><td class="val">Dependent (channel)</td>
+   <td class="why"><div class="just">The poisoned calendar entry persists and re-triggers on future interactions.</div>
+   <div class="ev"><q>Gemini would delete a random calendar event every time it interacted with the user</q> <span class="loc">arxiv.org/abs/2508.12175 (SafeBreach writeup)</span></div></td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
-<tr><th>Lat. Mov.</th><td class="val">Perm</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
-<tr><th>Action on Obj.</th><td class="val">IoT manip., surv.</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr></tbody></table></main>
+<tr><th>Lat. Mov.</th><td class="val">Cross-app (xA)</td>
+   <td class="why"><div class="just">The attack escapes Gemini to drive other apps on the device (Zoom, Google Home, Chrome).</div>
+   <div class="ev"><q>inter-app lateral movement, by escaping the boundaries of Gemini and leveraging applications installed on a victim smartphone</q> <span class="loc">arxiv.org/abs/2508.12175 (SafeBreach writeup)</span></div></td></tr>
+<tr><th>Action on Obj.</th><td class="val">Safety (physical)</td>
+   <td class="why"><div class="just">Reaches physical impact by remotely controlling the victim smart-home appliances (plus exfil and phishing).</div>
+   <div class="ev"><q>remotely control a victim home appliances</q> <span class="loc">arxiv.org/abs/2508.12175 (SafeBreach writeup)</span></div></td></tr></tbody></table></main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>

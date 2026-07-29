@@ -1,47 +1,48 @@
 slug: invitation-is-all-you-need
-id: 2025-032
-title: Invitation Is All You Need
-authors: "Ben Nassi, Stav Cohen, Or Yair"
+id: 2025-033
+title: Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants
+authors: Ben Nassi, Stav Cohen, Or Yair
+new: true
 date: 2025-08
 category: Agentic/CUA
-target: Google Assistant
+target: Google Gemini (web/mobile/Assistant)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://arxiv.org/abs/2508.12175
+  venue: Black Hat USA'25 / DEF CON 33
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Calendar invite
-    justification: TODO
+    value: Indirect (I)
+    justification: A malicious Google Calendar invite delivers an indirect prompt injection processed by Gemini on the victim behalf.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: the user is the victim and the attack is performed via the data, which was compromised by the attacker
+      locator: arxiv.org/abs/2508.12175 (SafeBreach writeup)
   privilege_escalation:
-    value: Delayed tool inv
-    justification: TODO
+    value: Misc.
+    justification: Delayed automatic tool invocation abuses Gemini existing agent permissions to act without elevation.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: hijacking occurs through context manipulation, not elevation
+      locator: arxiv.org/abs/2508.12175 (SafeBreach writeup)
   reconnaissance: null
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: The poisoned calendar entry persists and re-triggers on future interactions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Gemini would delete a random calendar event every time it interacted with the user
+      locator: arxiv.org/abs/2508.12175 (SafeBreach writeup)
   command_control: null
   lateral_movement:
-    value: Perm
-    justification: TODO
+    value: Cross-app (xA)
+    justification: The attack escapes Gemini to drive other apps on the device (Zoom, Google Home, Chrome).
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: inter-app lateral movement, by escaping the boundaries of Gemini and leveraging applications installed on a victim smartphone
+      locator: arxiv.org/abs/2508.12175 (SafeBreach writeup)
   action_on_objective:
-    value: IoT manip., surv.
-    justification: TODO
+    value: Safety (physical)
+    justification: Reaches physical impact by remotely controlling the victim smart-home appliances (plus exfil and phishing).
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: remotely control a victim home appliances
+      locator: arxiv.org/abs/2508.12175 (SafeBreach writeup)

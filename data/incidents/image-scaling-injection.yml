@@ -1,0 +1,38 @@
+slug: image-scaling-injection
+id: 2025-032
+title: Weaponizing Image Scaling Against Production AI Systems
+authors: Kikimora Morozova, Suha Sabi Hussain
+new: true
+date: 2025-08
+category: Multimodal
+target: Gemini CLI / Vertex AI / Google Assistant
+source:
+  url: https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/
+  venue: Trail of Bits (blog) / Black Hat EU'25
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A benign-looking image hides a payload that only appears after the model downscales it, then acts on it.
+    evidence:
+      quote: you send a seemingly harmless image to an LLM and suddenly it exfiltrates all of your user data
+      locator: blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/
+  privilege_escalation:
+    value: Misc.
+    justification: Exploits systems that auto-approve MCP tool calls with no user confirmation.
+    evidence:
+      quote: automatically approves all MCP tool calls without user confirmation
+      locator: blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: User data (e.g. Google Calendar) is exfiltrated across multiple production systems.
+    evidence:
+      quote: data exfiltration on systems including the Google Gemini CLI
+      locator: blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/
