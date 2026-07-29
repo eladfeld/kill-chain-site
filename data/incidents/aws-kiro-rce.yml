@@ -1,0 +1,43 @@
+slug: aws-kiro-rce
+id: 2025-020
+title: "AWS Kiro: Arbitrary Command Execution via Indirect Prompt Injection"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: AWS Kiro
+source:
+  url: https://embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A remote attacker controlling data Kiro processes hijacks it to run OS commands.
+    evidence:
+      quote: A remote attacker, who controls data that Kiro processes, could hijack it to run arbitrary operating system commands
+      locator: embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/
+  privilege_escalation:
+    value: Misc.
+    justification: Kiro overwrites its own allowlisted commands/config without user approval to escalate.
+    evidence:
+      quote: Agent overwrites its own allowlisted commands without user approval
+      locator: embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: Malicious MCP servers and command allowlists persist in modified config files across sessions.
+    evidence:
+      quote: Malicious MCP servers and command allowlists persist through modified config files
+      locator: embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Arbitrary bash command execution and custom code injection via launched MCP servers.
+    evidence:
+      quote: Arbitrary bash command execution and custom code injection via MCP servers achieved
+      locator: embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/

@@ -1,0 +1,38 @@
+slug: manus-expose-port
+id: 2025-036
+title: "Manus AI Kill Chain: Exposing the VS Code Server to the Internet"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Manus AI (Butterfly Effect)
+source:
+  url: https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Indirect injection enables unauthorized tool invocation without human authorization.
+    evidence:
+      quote: Indirect prompt injection attack enabling unauthorized tool invocation without human authorization
+      locator: embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/
+  privilege_escalation:
+    value: Misc.
+    justification: The deploy_expose_port tool runs with no security controls or human-in-the-loop gate.
+    evidence:
+      quote: the deploy_expose_port tool operates without security controls or human-in-the-loop confirmation
+      locator: embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: The internal VS Code server is exposed to the internet, leaking host secrets, code, and files.
+    evidence:
+      quote: full control of host system including secrets, documents, code and its compute resources
+      locator: embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/

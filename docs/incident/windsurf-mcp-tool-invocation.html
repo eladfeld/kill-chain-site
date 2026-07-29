@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windsurf MCP: Missing Security Controls for Tool Invocation — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>Windsurf MCP: Missing Security Controls for Tool Invocation</h1>
+  <p class="byline">Johann Rehberger</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Johann Rehberger</td></tr>
+   <tr><th>Date</th><td>Aug'25</td></tr>
+   <tr><th>Category</th><td>Coding Assist.</td></tr>
+   <tr><th>Target</th><td>Windsurf (MCP)</td></tr>
+   <tr><th>Coverage</th><td>3 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>Embrace The Red (blog)</td></tr>
+   <tr><th>Source</th><td><a href="https://embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/" rel="noreferrer noopener">original (blog)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">Malicious instructions arrive as a tool-call result hidden in code and files.</div>
+   <div class="ev"><q>malicious instructions can be the result of a tool call, hidden in code and files</q> <span class="loc">embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
+   <td class="why"><div class="just">Natural-language instructions hijack the agent via auto tool invocation.</div>
+   <div class="ev"><q>just natural language...gives the agent instructions, which hijacks its behavior</q> <span class="loc">embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/</span></div></td></tr>
+<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Data exfiltration</td>
+   <td class="why"><div class="just">Private messages are retrieved and posted to unauthorized channels.</div>
+   <div class="ev"><q>retrieved private messages and shared them across unauthorized channels without user consent</q> <span class="loc">embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

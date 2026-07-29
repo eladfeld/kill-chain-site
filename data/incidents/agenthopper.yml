@@ -1,47 +1,53 @@
 slug: agenthopper
-id: 2025-037
-title: AgentHopper
-authors: "Johann Rehberger"
-date: 2025-12
+id: 2025-013
+title: "AgentHopper: A PoC AI Virus"
+authors: Johann Rehberger
+new: true
+date: 2025-08
 category: AI Worm
-target: AI code assist.
+target: AI coding agents (Copilot, Amazon Q, Kiro, Amp)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Git repository
-    justification: TODO
+    value: Indirect (I)
+    justification: A developer agent is compromised through an initial indirect prompt injection.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: An adversary compromises a developer's agent through an initial indirect prompt injection or otherwise
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
   privilege_escalation:
-    value: Control bypass
-    justification: TODO
+    value: Misc.
+    justification: Agents modify their own config files to bypass security controls.
     evidence:
-      quote: TODO
-      locator: TODO
-  reconnaissance: null
+      quote: Agents modify their own configuration files to bypass security controls
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
+  reconnaissance:
+    value: "Yes"
+    justification: The virus scans for Git repositories to find further infection targets.
+    evidence:
+      quote: scans for Git repositories to identify additional infection targets
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: Injected code committed to GitHub repositories persists across sessions and agents.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: injected code committed to GitHub repositories, persisting across developer sessions and agent instances
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
   command_control: null
   lateral_movement:
-    value: Git-propag
-    justification: TODO
+    value: Cross-device (xD)
+    justification: The virus hops between agents and propagates via shared repos to infect other developers' machines.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: hops between different coding agents and propagates through shared GitHub repositories to infect multiple developers' systems
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/
   action_on_objective:
-    value: Exponential spread
-    justification: TODO
+    value: RCE
+    justification: Achieves arbitrary code execution across multiple agent platforms.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: arbitrary code execution
+      locator: embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/

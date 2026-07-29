@@ -1056,8 +1056,32 @@
     "url": "TODO-verify"
   },
   {
-    "slug": "amazon-q-dns-exfil",
+    "slug": "agenthopper",
     "id": "2025-013",
+    "title": "AgentHopper: A PoC AI Virus",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "AI Worm",
+    "target": "AI coding agents (Copilot, Amazon Q, Kiro, Amp)",
+    "coverage": 6,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": "Yes",
+      "persistence": "Dependent (channel)",
+      "command_control": null,
+      "lateral_movement": "Cross-device (xD)",
+      "action_on_objective": "RCE"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/"
+  },
+  {
+    "slug": "amazon-q-dns-exfil",
+    "id": "2025-014",
     "title": "Amazon Q Developer: Secrets Leaked via DNS",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1081,7 +1105,7 @@
   },
   {
     "slug": "amazon-q-hidden-instructions",
-    "id": "2025-014",
+    "id": "2025-015",
     "title": "Amazon Q Developer: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1105,7 +1129,7 @@
   },
   {
     "slug": "amazon-q-rce",
-    "id": "2025-015",
+    "id": "2025-016",
     "title": "Amazon Q Developer: Remote Code Execution via Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1129,7 +1153,7 @@
   },
   {
     "slug": "amp-config-escape",
-    "id": "2025-016",
+    "id": "2025-017",
     "title": "Amp Code: Arbitrary Command Execution via Config Modification",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1153,7 +1177,7 @@
   },
   {
     "slug": "amp-images-exfil",
-    "id": "2025-017",
+    "id": "2025-018",
     "title": "Amp Code: Data Exfiltration via Image Rendering",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1177,7 +1201,7 @@
   },
   {
     "slug": "amp-invisible-injection",
-    "id": "2025-018",
+    "id": "2025-019",
     "title": "Amp Code: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1200,8 +1224,32 @@
     "url": "https://embracethered.com/blog/posts/2025/amp-code-fixed-invisible-prompt-injection/"
   },
   {
+    "slug": "aws-kiro-rce",
+    "id": "2025-020",
+    "title": "AWS Kiro: Arbitrary Command Execution via Indirect Prompt Injection",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "AWS Kiro",
+    "coverage": 4,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": "Dependent (channel)",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/"
+  },
+  {
     "slug": "chatgpt-chat-history-exfil",
-    "id": "2025-019",
+    "id": "2025-021",
     "title": "Exfiltrating Your ChatGPT Chat History and Memories With Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1225,7 +1273,7 @@
   },
   {
     "slug": "chatgpt-codex-zombai",
-    "id": "2025-020",
+    "id": "2025-022",
     "title": "Turning ChatGPT Codex Into A ZombAI Agent",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1248,8 +1296,56 @@
     "url": "https://embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/"
   },
   {
+    "slug": "chatgpt-deep-research-leak",
+    "id": "2025-023",
+    "title": "How Deep Research Agents Can Leak Your Data",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "AI Agent",
+    "target": "ChatGPT Deep Research (connectors)",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/"
+  },
+  {
+    "slug": "cline-data-exfil",
+    "id": "2025-024",
+    "title": "Cline: Vulnerable to Data Exfiltration",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Cline",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/cline-vulnerable-to-data-exfiltration/"
+  },
+  {
     "slug": "copilot-backdoor",
-    "id": "2025-021",
+    "id": "2025-025",
     "title": "Copilot Backdoor Insertion",
     "authors": "Pillar Security",
     "date": "2025-08",
@@ -1273,7 +1369,7 @@
   },
   {
     "slug": "cursor-mermaid-exfil",
-    "id": "2025-022",
+    "id": "2025-026",
     "title": "Cursor: Data Exfiltration via Mermaid Diagram Rendering",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1297,7 +1393,7 @@
   },
   {
     "slug": "devin-ai-rce",
-    "id": "2025-023",
+    "id": "2025-027",
     "title": "Devin AI: Prompt Injection to Remote Code Execution",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1321,7 +1417,7 @@
   },
   {
     "slug": "devin-expose-port",
-    "id": "2025-024",
+    "id": "2025-028",
     "title": "Devin AI Kill Chain: Exposing Ports to the Internet",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1345,7 +1441,7 @@
   },
   {
     "slug": "devin-secrets-leak",
-    "id": "2025-025",
+    "id": "2025-029",
     "title": "How Devin AI Can Leak Your Secrets",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1369,7 +1465,7 @@
   },
   {
     "slug": "github-copilot-rce",
-    "id": "2025-026",
+    "id": "2025-030",
     "title": "GitHub Copilot: Remote Code Execution via Prompt Injection (YOLO mode)",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1393,7 +1489,7 @@
   },
   {
     "slug": "identitymesh",
-    "id": "2025-027",
+    "id": "2025-031",
     "title": "IdentityMesh",
     "authors": "Lasso Security",
     "date": "2025-08",
@@ -1417,7 +1513,7 @@
   },
   {
     "slug": "invitation-is-all-you-need",
-    "id": "2025-028",
+    "id": "2025-032",
     "title": "Invitation Is All You Need",
     "authors": "Ben Nassi, Stav Cohen, Or Yair",
     "date": "2025-08",
@@ -1441,7 +1537,7 @@
   },
   {
     "slug": "jules-data-exfil",
-    "id": "2025-029",
+    "id": "2025-033",
     "title": "Google Jules: Multiple Data Exfiltration Issues",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1465,7 +1561,7 @@
   },
   {
     "slug": "jules-invisible-injection",
-    "id": "2025-030",
+    "id": "2025-034",
     "title": "Google Jules: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1489,7 +1585,7 @@
   },
   {
     "slug": "jules-rce-zombai",
-    "id": "2025-031",
+    "id": "2025-035",
     "title": "Jules Zombie Agent: Prompt Injection to Remote Control",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1512,8 +1608,32 @@
     "url": "https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/"
   },
   {
+    "slug": "manus-expose-port",
+    "id": "2025-036",
+    "title": "Manus AI Kill Chain: Exposing the VS Code Server to the Internet",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Manus AI (Butterfly Effect)",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/"
+  },
+  {
     "slug": "openhands-rce-zombai",
-    "id": "2025-032",
+    "id": "2025-037",
     "title": "ZombAI Exploit with OpenHands: Prompt Injection to RCE",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1537,7 +1657,7 @@
   },
   {
     "slug": "openhands-token-exfil",
-    "id": "2025-033",
+    "id": "2025-038",
     "title": "OpenHands Prompt Injection: Access Token Exfiltration",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1561,7 +1681,7 @@
   },
   {
     "slug": "windsurf-data-exfil",
-    "id": "2025-034",
+    "id": "2025-039",
     "title": "Hijacking Windsurf: Prompt Injection Leaks Developer Secrets",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1584,32 +1704,152 @@
     "url": "https://embracethered.com/blog/posts/2025/windsurf-data-exfiltration-vulnerabilities/"
   },
   {
-    "slug": "windsurf-spaiware",
-    "id": "2025-035",
-    "title": "Windsurf SpAIware",
+    "slug": "windsurf-invisible-injection",
+    "id": "2025-040",
+    "title": "Windsurf Cascade: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
-    "target": "Windsurf",
-    "coverage": 4,
-    "venue": "TODO-verify",
-    "isNew": false,
+    "target": "Windsurf Cascade",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Source code",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
-      "persistence": "RAG-indep",
+      "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Persistent exfil."
+      "action_on_objective": "Data exfiltration"
     },
-    "url": "TODO-verify"
+    "url": "https://embracethered.com/blog/posts/2025/windsurf-sneaking-invisible-instructions-for-prompt-injection/"
+  },
+  {
+    "slug": "windsurf-mcp-tool-invocation",
+    "id": "2025-041",
+    "title": "Windsurf MCP: Missing Security Controls for Tool Invocation",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Windsurf (MCP)",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/"
+  },
+  {
+    "slug": "windsurf-spaiware",
+    "id": "2025-042",
+    "title": "Windsurf: Memory-Persistent Data Exfiltration (SpAIware)",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "Windsurf Cascade",
+    "coverage": 4,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": "Independent (memory)",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/"
+  },
+  {
+    "slug": "cross-agent-privesc",
+    "id": "2025-043",
+    "title": "Cross-Agent Privilege Escalation: Agents That Free Each Other",
+    "authors": "Johann Rehberger",
+    "date": "2025-09",
+    "dateDisplay": "Sep'25",
+    "category": "Coding Assist.",
+    "target": "Copilot / Claude Code / AWS Kiro",
+    "coverage": 5,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": "Dependent (channel)",
+      "command_control": null,
+      "lateral_movement": "Cross-app (xA)",
+      "action_on_objective": "RCE"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/"
+  },
+  {
+    "slug": "claude-network-exfil",
+    "id": "2025-044",
+    "title": "Claude Pirate: Data Exfiltration via Anthropic Files API",
+    "authors": "Johann Rehberger",
+    "date": "2025-10",
+    "dateDisplay": "Oct'25",
+    "category": "AI Agent",
+    "target": "Anthropic Claude",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/"
+  },
+  {
+    "slug": "google-antigravity",
+    "id": "2025-045",
+    "title": "Antigravity Grounded: Security Vulnerabilities in Google's IDE",
+    "authors": "Johann Rehberger",
+    "date": "2025-11",
+    "dateDisplay": "Nov'25",
+    "category": "Coding Assist.",
+    "target": "Google Antigravity IDE",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/security-keeps-google-antigravity-grounded/"
   },
   {
     "slug": "hashjack",
-    "id": "2025-036",
+    "id": "2025-046",
     "title": "HashJack",
     "authors": "Vitaly Simonovich (Cato Networks)",
     "date": "2025-11",
@@ -1632,32 +1872,8 @@
     "url": "TODO-verify"
   },
   {
-    "slug": "agenthopper",
-    "id": "2025-037",
-    "title": "AgentHopper",
-    "authors": "Johann Rehberger",
-    "date": "2025-12",
-    "dateDisplay": "Dec'25",
-    "category": "AI Worm",
-    "target": "AI code assist.",
-    "coverage": 5,
-    "venue": "TODO-verify",
-    "isNew": false,
-    "questioned": false,
-    "stages": {
-      "initial_access": "Git repository",
-      "privilege_escalation": "Control bypass",
-      "reconnaissance": null,
-      "persistence": "RAG-dep",
-      "command_control": null,
-      "lateral_movement": "Git-propag",
-      "action_on_objective": "Exponential spread"
-    },
-    "url": "TODO-verify"
-  },
-  {
     "slug": "agentic-probllms",
-    "id": "2025-038",
+    "id": "2025-047",
     "title": "Agentic ProbLLMs",
     "authors": "Johann Rehberger",
     "date": "2025-12",
@@ -1681,7 +1897,7 @@
   },
   {
     "slug": "geminijack",
-    "id": "2025-039",
+    "id": "2025-048",
     "title": "GeminiJack",
     "authors": "Noma Security (Noma Labs)",
     "date": "2025-12",

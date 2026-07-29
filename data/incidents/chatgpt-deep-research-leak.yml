@@ -1,0 +1,38 @@
+slug: chatgpt-deep-research-leak
+id: 2025-023
+title: How Deep Research Agents Can Leak Your Data
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: AI Agent
+target: ChatGPT Deep Research (connectors)
+source:
+  url: https://embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Untrusted content causes the agent to move data between connected sources autonomously.
+    evidence:
+      quote: data from one source can be sent to other sources by the agent
+      locator: embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/
+  privilege_escalation:
+    value: Misc.
+    justification: The agent acts as a confused deputy with combined permissions across all connectors.
+    evidence:
+      quote: Agent operates with combined permissions across all connected integrations simultaneously
+      locator: embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Sensitive ticket data is sent to an attacker-controlled MCP server.
+    evidence:
+      quote: ChatGPT sent sensitive information from the Linear tickets to the Remote Matrix MCP server
+      locator: embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/

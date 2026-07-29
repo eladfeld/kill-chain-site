@@ -1,0 +1,38 @@
+slug: claude-network-exfil
+id: 2025-044
+title: "Claude Pirate: Data Exfiltration via Anthropic Files API"
+authors: Johann Rehberger
+new: true
+date: 2025-10
+category: AI Agent
+target: Anthropic Claude
+source:
+  url: https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Claude is tricked into sending context data to malicious third parties.
+    evidence:
+      quote: Claude can be tricked into sending information from its context...to malicious third parties
+      locator: embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/
+  privilege_escalation:
+    value: Misc.
+    justification: The attack abuses the allowlisted Anthropic Files API with attacker-supplied credentials.
+    evidence:
+      quote: leverages attacker-supplied API credentials to hijack file upload functionality
+      locator: embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Sandbox files (up to 30MB) are uploaded to the attacker Anthropic console.
+    evidence:
+      quote: uploading sandbox files to attacker's console, exfiltrating up to 30MB per instance
+      locator: embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/

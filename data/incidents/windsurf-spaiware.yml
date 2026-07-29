@@ -1,42 +1,43 @@
 slug: windsurf-spaiware
-id: 2025-035
-title: Windsurf SpAIware
-authors: "Johann Rehberger"
+id: 2025-042
+title: "Windsurf: Memory-Persistent Data Exfiltration (SpAIware)"
+authors: Johann Rehberger
+new: true
 date: 2025-08
 category: Coding Assist.
-target: Windsurf
+target: Windsurf Cascade
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Source code
-    justification: TODO
+    value: Indirect (I)
+    justification: The create_memory tool is invoked during indirect injection with no human approval.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: An attacker can invoke the create_memory tool during an indirect prompt injection attack without human approval
+      locator: embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content in code/comments/web overrides Cascade to plant a memory implant.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: places prompt injection into source code files, comments, or web content
+      locator: embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/
   reconnaissance: null
   persistence:
-    value: RAG-indep
-    justification: TODO
+    value: Independent (memory)
+    justification: Instructions persist in memory and re-arm every future chat session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Persist instructions into future chat sessions like always adding backdoors or false info
+      locator: embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Persistent exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: The implant continuously exfiltrates information across sessions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: continuously exfiltrate information across sessions
+      locator: embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/

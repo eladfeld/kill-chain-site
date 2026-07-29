@@ -1,0 +1,38 @@
+slug: windsurf-mcp-tool-invocation
+id: 2025-041
+title: "Windsurf MCP: Missing Security Controls for Tool Invocation"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Windsurf (MCP)
+source:
+  url: https://embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Malicious instructions arrive as a tool-call result hidden in code and files.
+    evidence:
+      quote: malicious instructions can be the result of a tool call, hidden in code and files
+      locator: embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Natural-language instructions hijack the agent via auto tool invocation.
+    evidence:
+      quote: just natural language...gives the agent instructions, which hijacks its behavior
+      locator: embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Private messages are retrieved and posted to unauthorized channels.
+    evidence:
+      quote: retrieved private messages and shared them across unauthorized channels without user consent
+      locator: embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/

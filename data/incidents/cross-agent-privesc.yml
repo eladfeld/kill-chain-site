@@ -1,0 +1,48 @@
+slug: cross-agent-privesc
+id: 2025-043
+title: "Cross-Agent Privilege Escalation: Agents That Free Each Other"
+authors: Johann Rehberger
+new: true
+date: 2025-09
+category: Coding Assist.
+target: Copilot / Claude Code / AWS Kiro
+source:
+  url: https://embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Indirect injection hijacks one agent (Copilot) to rewrite another agent config.
+    evidence:
+      quote: An indirect prompt injection hijacks Copilot and makes it write to Claude's MCP config to add a malicious server
+      locator: embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
+  privilege_escalation:
+    value: Misc.
+    justification: A compromised agent rewrites a peer agent config to break out of its sandbox.
+    evidence:
+      quote: break out of its sandbox and escape by executing arbitrary code
+      locator: embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: Escalation persists in the modified agent config files.
+    evidence:
+      quote: Configuration changes remain only while agents use modified settings files
+      locator: embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
+  command_control: null
+  lateral_movement:
+    value: Cross-app (xA)
+    justification: One agent writes to a different agent config on the same device to expand its capabilities.
+    evidence:
+      quote: Copilot can create/write to configuration files of other agents
+      locator: embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
+  action_on_objective:
+    value: RCE
+    justification: Multiple agents achieve arbitrary code execution via config manipulation and MCP injection.
+    evidence:
+      quote: Multiple agents achieve arbitrary code execution through configuration manipulation and MCP server injection
+      locator: embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/
