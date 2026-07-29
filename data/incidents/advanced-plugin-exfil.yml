@@ -1,43 +1,38 @@
 slug: advanced-plugin-exfil
 id: 2023-009
 title: Advanced Plugin Data Exfiltration
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-09
 category: Browser/Search
 target: ChatGPT media plugins
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned content
-    justification: TODO
+    value: Indirect (I)
+    justification: Untrusted data enters the chat context and hands control to the attacker.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Untrusted data makes it into the chat context (Indirect Prompt Injection) and attacker is in control at that point going forward
+      locator: embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
   privilege_escalation:
-    value: Auto plugin inv.
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The injected content dictates the plugin actions the assistant performs.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: attacker is in control at that point going forward
+      locator: embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Cross-app
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: High-volume data exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: Chained plugin weaknesses exfiltrate large amounts of conversation data.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: exfiltrate large amounts of data once plugins are enabled by combining multiple weaknesses into an exploit chain
+      locator: embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/

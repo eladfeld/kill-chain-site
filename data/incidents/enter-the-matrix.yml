@@ -1,43 +1,38 @@
 slug: enter-the-matrix
 id: 2023-006
 title: Enter the Matrix
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-06
 category: Browser/Search
 target: ChatGPT (Browsing)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Visiting the attacker page hijacks ChatGPT through indirect injection while browsing.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: The website will hijack ChatGPT via an indirect prompt injection
+      locator: embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The injected page takes over the session and redirects the assistant’s behaviour.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: The website will hijack ChatGPT via an indirect prompt injection and then allow you to enter the matrix
+      locator: embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Cross-app
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: Response manip. (demo)
-    justification: TODO
+    value: Misc
+    justification: A proof-of-concept demonstrating conversation manipulation and cross-plugin abuse for awareness.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: issue requests to other plugins or manipulate your ChatGPT conversation
+      locator: embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/

@@ -13,13 +13,13 @@
     "isNew": false,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned webpage",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Data exfil., fraud"
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://arxiv.org/abs/2302.12173"
   },
@@ -37,13 +37,13 @@
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned transcript",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Session hijack, identity swap"
+      "action_on_objective": "Misinformation"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/"
   },
@@ -56,18 +56,18 @@
     "dateDisplay": "May'23",
     "category": "Browser/Search",
     "target": "ChatGPT plugins (WebPilot)",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned webpage",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
-      "lateral_movement": "Cross-app",
-      "action_on_objective": "Chat-history exfil., fraud"
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/"
   },
@@ -85,8 +85,8 @@
     "isNew": false,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned webpage",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
@@ -104,18 +104,18 @@
     "dateDisplay": "Jun'23",
     "category": "Coding Assist.",
     "target": "ChatGPT plugin (GitHub)",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Malicious webpage",
-      "privilege_escalation": "Confused deputy (OAuth)",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
-      "lateral_movement": "Perm",
-      "action_on_objective": "Source-code theft, repo priv->pub"
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/"
   },
@@ -128,18 +128,18 @@
     "dateDisplay": "Jun'23",
     "category": "Browser/Search",
     "target": "ChatGPT (Browsing)",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Browsed webpage",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
-      "lateral_movement": "Cross-app",
-      "action_on_objective": "Response manip. (demo)"
+      "lateral_movement": null,
+      "action_on_objective": "Misc"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/"
   },
@@ -152,18 +152,18 @@
     "dateDisplay": "Jul'23",
     "category": "Multimodal",
     "target": "Google Bard",
-    "coverage": 3,
+    "coverage": 2,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Image (hidden text)",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": null,
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Response manip."
+      "action_on_objective": "Misinformation"
     },
     "url": "https://embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/"
   },
@@ -176,18 +176,18 @@
     "dateDisplay": "Jul'23",
     "category": "Browser/Search",
     "target": "ChatGPT (Custom Instructions)",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Direct/indirect prompt",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
-      "persistence": "RAG-indep",
+      "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Persistent data exfil."
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/"
   },
@@ -200,18 +200,18 @@
     "dateDisplay": "Sep'23",
     "category": "Browser/Search",
     "target": "ChatGPT media plugins",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned content",
-      "privilege_escalation": "Auto plugin inv.",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
-      "lateral_movement": "Cross-app",
-      "action_on_objective": "High-volume data exfil."
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/"
   },
@@ -224,18 +224,18 @@
     "dateDisplay": "Sep'23",
     "category": "AI Agent",
     "target": "LLM apps, ChatGPT",
-    "coverage": 3,
+    "coverage": 2,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Poisoned content",
-      "privilege_escalation": "Auto tool recursion",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": null,
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "DoS, cost exhaustion"
+      "action_on_objective": "Misc (DoS)"
     },
     "url": "https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/"
   },
@@ -248,18 +248,18 @@
     "dateDisplay": "Oct'23",
     "category": "Multimodal",
     "target": "GPT-4V",
-    "coverage": 2,
+    "coverage": 3,
     "venue": "Simon Willison's Weblog",
     "isNew": false,
     "questioned": false,
     "stages": {
-      "initial_access": "Image (hidden text)",
-      "privilege_escalation": null,
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Response manip."
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/"
   },
@@ -272,18 +272,18 @@
     "dateDisplay": "Nov'23",
     "category": "Enterprise",
     "target": "Bard (Workspace extensions)",
-    "coverage": 4,
+    "coverage": 3,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Force-shared doc/email",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
-      "persistence": "RAG-dep",
+      "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Chat/personal-data exfil."
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/"
   },
@@ -301,13 +301,13 @@
     "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Public chatbot",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Direct (D)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Unauthorized $1 sale offer"
+      "action_on_objective": "Financial"
     },
     "url": "https://incidentdatabase.ai/cite/622/"
   },

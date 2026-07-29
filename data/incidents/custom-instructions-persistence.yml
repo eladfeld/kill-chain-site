@@ -1,43 +1,38 @@
 slug: custom-instructions-persistence
 id: 2023-008
 title: ChatGPT Custom Instructions Persistence
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-07
 category: Browser/Search
 target: ChatGPT (Custom Instructions)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Direct/indirect prompt
-    justification: TODO
+    value: Indirect (I)
+    justification: The backdoor can be planted via indirect injection through browsing or plugins.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: an adversary can do this during an indirect prompt injection as well (e.g. via browsing or plugins)
+      locator: embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Malicious custom instructions override normal behaviour on every exchange.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: always automatically append instructions to every message exchange
+      locator: embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/
   reconnaissance: null
-  persistence:
-    value: RAG-indep
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Persistent data exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: A data-exfiltration backdoor leaks message content to an attacker server.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: install a data exfiltration backdoor
+      locator: embracethered.com/blog/posts/2023/chatgpt-custom-instruction-post-exploitation-data-exfiltration/

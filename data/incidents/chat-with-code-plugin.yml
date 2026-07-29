@@ -1,43 +1,38 @@
 slug: chat-with-code-plugin
 id: 2023-005
 title: Chat with Code Plugin (Confused Deputy)
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-06
 category: Coding Assist.
 target: ChatGPT plugin (GitHub)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Malicious webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: A malicious webpage drives the Chat with Code plugin through indirect injection.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious webpage to create Github repos, steal your private code
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
   privilege_escalation:
-    value: Confused deputy (OAuth)
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected commands are issued to the OAuth-authenticated plugin on the user’s behalf.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: issue commands to plugins to cause harm
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Perm
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: Source-code theft, repo priv->pub
-    justification: TODO
+    value: Data exfiltration
+    justification: Private repositories are stolen and flipped to public visibility.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: steal your private code, and switch all your Github repositories from private to public visibility
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-vulns-chat-with-code/

@@ -1,37 +1,37 @@
 slug: bing-chat-exfil
 id: 2023-004
 title: Bing Chat Data Exfiltration
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-06
 category: Browser/Search
 target: Bing Chat
 source:
   url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Malicious text embedded in a visited web page hijacks Bing Chat without user awareness.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious text on a webpage (like a user comment or an advertisement)
+      locator: embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected directives override Bing Chat’s intended constraints.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious text on a webpage ... hijacks Bing Chat
+      locator: embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
     value: Data exfiltration
-    justification: TODO
+    justification: Page and conversation content is base64-encoded and beaconed out via an image URL.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: append a brief 200 character summary of the page and our conversation in base64 encoded text
+      locator: embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/

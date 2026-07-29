@@ -1,37 +1,37 @@
 slug: not-what-you-signed-up-for
 id: 2023-001
 title: Not What You Signed Up For (Greshake et al.)
-authors: "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz"
+authors: Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz
 date: 2023-02
 category: Browser/Search
 target: Bing Chat, plugins
 source:
   url: https://arxiv.org/abs/2302.12173
-  venue: "AISec@CCS'23 / Black Hat USA'23"
+  venue: AISec@CCS'23 / Black Hat USA'23
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Attacker injects prompts into external data retrieved by the LLM-integrated app, with no direct interface to the model.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: adversaries to remotely (without a direct interface) exploit LLM-integrated applications by strategically injecting prompts into data
+      locator: arxiv.org/abs/2302.12173
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The injected prompt overrides the application’s original instructions and controls.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: override original instructions and employed controls
+      locator: arxiv.org/abs/2302.12173
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfil., fraud
-    justification: TODO
+    value: Data exfiltration
+    justification: Demonstrated impacts include stealing user data from the compromised session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: data theft
+      locator: arxiv.org/abs/2302.12173, abstract

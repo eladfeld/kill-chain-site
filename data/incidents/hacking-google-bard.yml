@@ -1,43 +1,38 @@
 slug: hacking-google-bard
 id: 2023-012
 title: Hacking Google Bard (Workspace Exfil)
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-11
 category: Enterprise
 target: Bard (Workspace extensions)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Force-shared doc/email
-    justification: TODO
+    value: Indirect (I)
+    justification: A shared Google Doc or email delivers the payload to Bard without the user’s consent.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Indirect Prompt Injection attacks via Emails or Google Docs ... can be delivered to users without their consent
+      locator: embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected document instructions override Bard’s behaviour to append data to a URL.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: summarize or access previous data in the chat context and append it accordingly to the URL
+      locator: embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
   reconnaissance: null
-  persistence:
-    value: RAG-dep
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Chat/personal-data exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: User chat history is exfiltrated when the malicious doc enters the chat context.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: The chat history of the user is exfiltrated once the malicious Google Doc is brought into the chat context
+      locator: embracethered.com/blog/posts/2023/google-bard-data-exfiltration/

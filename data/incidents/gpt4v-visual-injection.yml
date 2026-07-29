@@ -1,32 +1,37 @@
 slug: gpt4v-visual-injection
 id: 2023-011
 title: GPT-4V Visual Injection
-authors: "Simon Willison"
+authors: Simon Willison
 date: 2023-10
 category: Multimodal
 target: GPT-4V
 source:
   url: https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
-  venue: "Simon Willison's Weblog"
+  venue: Simon Willison's Weblog
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Image (hidden text)
-    justification: TODO
+    value: Indirect (I)
+    justification: Instructions embedded as text inside an image are processed by GPT-4V.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation: null
+      quote: an image contains text that includes additional instructions
+      locator: simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The model abandons the user’s instructions in favour of the image’s.
+    evidence:
+      quote: the model ignores the user’s instructions and follows the instructions from the image instead
+      locator: simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Response manip.
-    justification: TODO
+    value: Data exfiltration
+    justification: Private conversation data is leaked to an attacker-controlled server.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: private data ... is leaked to an external attacker
+      locator: simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/

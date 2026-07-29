@@ -1,38 +1,33 @@
 slug: llm-cost-dos-loop
 id: 2023-010
 title: LLM Cost / DoS Loop
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-09
 category: AI Agent
 target: LLM apps, ChatGPT
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned content
-    justification: TODO
+    value: Indirect (I)
+    justification: An indirect injection makes the model recursively call a tool/plugin.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Auto tool recursion
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: attacker calls an LLM tool or plugin recursively during an Indirect Prompt Injection
+      locator: embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: DoS, cost exhaustion
-    justification: TODO
+    value: Misc (DoS)
+    justification: The recursive loop exhausts resources and drives up cost — an availability/DoS impact outside the six core outcome classes.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: could this be an issue and drive up costs, or DoS a system? Things could become costly quickly!
+      locator: embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/

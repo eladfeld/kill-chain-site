@@ -1,38 +1,38 @@
 slug: ipi-youtube-transcript
 id: 2023-002
 title: IPI via YouTube Transcript
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-05
 category: Browser/Search
 target: ChatGPT (YouTube plugin)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned transcript
-    justification: TODO
+    value: Indirect (I)
+    justification: Malicious instructions ride inside a YouTube transcript that ChatGPT retrieves via a plugin.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: ChatGPT (via Plugins) can access YouTube transcripts ... introduce Indirect Prompt Injection vulnerabilities
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The transcript author overrides the assistant’s identity and goal for the session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: the owner of the video/transcript takes control of the chat session and gives the AI a new identity and objective
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Session hijack, identity swap
-    justification: TODO
+    value: Misinformation
+    justification: The hijack forces the assistant into an attacker-chosen persona that emits manipulated output.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: gives the AI a new identity and objective
+      locator: embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/

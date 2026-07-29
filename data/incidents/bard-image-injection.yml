@@ -1,38 +1,33 @@
 slug: bard-image-injection
 id: 2023-007
 title: Google Bard Image-to-Prompt Injection
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2023-07
 category: Multimodal
 target: Google Bard
 new: true
 source:
   url: https://embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Image (hidden text)
-    justification: TODO
+    value: Indirect (I)
+    justification: Instructions hidden in an image are followed by Bard when the image is processed.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Instr. override
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: add instructions to an image, and have the Bard follow those instructions
+      locator: embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Response manip.
-    justification: TODO
+    value: Misinformation
+    justification: The model is coerced into emitting attacker-chosen deceptive output (e.g. a rickroll).
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: have the Bard follow those instructions
+      locator: embracethered.com/blog/posts/2023/google-bard-image-to-prompt-injection/
