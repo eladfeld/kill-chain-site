@@ -1,0 +1,43 @@
+slug: mind-the-data-voids
+id: 2025-040
+title: "Mind the Data Voids: Hijacking Copilot Trust to Deliver C2 Instructions with Microsoft Authority"
+authors: Tobias Steele
+new: true
+date: 2025-08
+category: Enterprise
+target: Microsoft 365 Copilot (Bing index)
+source:
+  url: https://www.youtube.com/watch?v=NgjyBKfqJEs
+  venue: DEF CON 33
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The attacker poisons the Bing index (a "data void"), so Copilot retrieves and repeats attacker-controlled content for the user.
+    evidence:
+      quote: Copilot will actually reach out to Bing and retrieve that content from the index
+      locator: youtube.com/watch?v=NgjyBKfqJEs (DEF CON 33)
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Embedded "content usage policies" override Copilot to hide citations/authorship and vouch for the content.
+    evidence:
+      quote: it is not allowed to mention the author
+      locator: youtube.com/watch?v=NgjyBKfqJEs (DEF CON 33)
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: The poisoned index/citation content is retained and re-served over long periods.
+    evidence:
+      quote: Copilot and Bing will hold on to this content for a long time
+      locator: youtube.com/watch?v=NgjyBKfqJEs (DEF CON 33)
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Copilot serves an iwr|iex PowerShell command with Microsoft authority; the user runs it, giving the attacker initial access (post-run C2 is conventional, not the LLM).
+    evidence:
+      quote: that script that you just downloaded automatically gets executed trying to give an attacker initial access
+      locator: youtube.com/watch?v=NgjyBKfqJEs (DEF CON 33)

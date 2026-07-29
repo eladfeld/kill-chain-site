@@ -1,42 +1,33 @@
 slug: agentic-probllms
-id: 2025-051
-title: Agentic ProbLLMs
-authors: "Johann Rehberger"
+id: 2025-052
+title: "Agentic ProbLLMs: Exploiting AI Computer-Use and Coding Agents"
+authors: Johann Rehberger
+new: true
 date: 2025-12
 category: Agentic/CUA
-target: Claude Comp. Use
+target: Claude Computer Use / coding agents
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
-  type: blog
+  url: https://media.ccc.de/v/39c3-agentic-probllms-exploiting-ai-computer-use-and-coding-agents
+  venue: CCC (39C3)
+  type: other
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Visited webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: The computer-use agent browses to an attacker web page instructing it to download a file.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Control bypass
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: we ask cloud computer use to go visit a web page... it reaches this website sees hey computer download this file
+      locator: media.ccc.de 39c3-agentic-probllms
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Perm
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
     value: RCE
-    justification: TODO
+    justification: The agent chmod+x and launches the malware, joining a Sliver C2 (ZombAI) — RCE with conventional post-compromise C2, not the LLM.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: it did change mod plus x added the executable flag to the binary and launched it and that led to that machine... joining the command and control system
+      locator: media.ccc.de 39c3-agentic-probllms

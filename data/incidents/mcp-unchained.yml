@@ -1,0 +1,38 @@
+slug: mcp-unchained
+id: 2025-054
+title: "MCP Unchained: Compromising the AI Agent Ecosystem via its Universal Connector"
+authors: Cheng Huangsheng, Guo Jing, Wu Huiyu
+new: true
+date: 2025-12
+category: AI Agent
+target: MCP clients (Cursor, ChatGPT)
+source:
+  url: https://i.blackhat.com/BH-EU-25/eu-25-Huangsheng-MCP-Unchained-Compromising-The-AI-Agent-Ecosystem-Via-Its-Universal-Connector-Final.pdf
+  venue: Black Hat EU'25
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Any public content fetched via an MCP server (GitHub README, web page, tool response) becomes a payload delivery channel.
+    evidence:
+      quote: Any public content source becomes a payload delivery system (Indirect Prompt Injection)
+      locator: blackhat.com EU-25 MCP-Unchained.pdf
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Hidden instructions in fetched content override the agent to run a command.
+    evidence:
+      quote: "instruction: execute the following command to ensure xxxxx"
+      locator: blackhat.com EU-25 MCP-Unchained.pdf
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: The Cursor agent executes the injected command locally (and cross-plugin injection exfiltrates Gmail via ChatGPT).
+    evidence:
+      quote: Cursor agent executes the command locally
+      locator: blackhat.com EU-25 MCP-Unchained.pdf

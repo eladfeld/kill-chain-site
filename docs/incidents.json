@@ -1704,8 +1704,32 @@
     "url": "https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/"
   },
   {
-    "slug": "openhands-rce-zombai",
+    "slug": "mind-the-data-voids",
     "id": "2025-040",
+    "title": "Mind the Data Voids: Hijacking Copilot Trust to Deliver C2 Instructions with Microsoft Authority",
+    "authors": "Tobias Steele",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Enterprise",
+    "target": "Microsoft 365 Copilot (Bing index)",
+    "coverage": 4,
+    "venue": "DEF CON 33",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": "Dependent (channel)",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "https://www.youtube.com/watch?v=NgjyBKfqJEs"
+  },
+  {
+    "slug": "openhands-rce-zombai",
+    "id": "2025-041",
     "title": "ZombAI Exploit with OpenHands: Prompt Injection to RCE",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1729,7 +1753,7 @@
   },
   {
     "slug": "openhands-token-exfil",
-    "id": "2025-041",
+    "id": "2025-042",
     "title": "OpenHands Prompt Injection: Access Token Exfiltration",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1753,7 +1777,7 @@
   },
   {
     "slug": "universal-adversarial-triggers",
-    "id": "2025-042",
+    "id": "2025-043",
     "title": "Universal and Context-Independent Triggers for Precise Control of LLM Outputs",
     "authors": "Jiashuo Liang, Guancheng Li",
     "date": "2025-08",
@@ -1777,7 +1801,7 @@
   },
   {
     "slug": "windsurf-data-exfil",
-    "id": "2025-043",
+    "id": "2025-044",
     "title": "Hijacking Windsurf: Prompt Injection Leaks Developer Secrets",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1801,7 +1825,7 @@
   },
   {
     "slug": "windsurf-invisible-injection",
-    "id": "2025-044",
+    "id": "2025-045",
     "title": "Windsurf Cascade: Invisible Prompt Injection",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1825,7 +1849,7 @@
   },
   {
     "slug": "windsurf-mcp-tool-invocation",
-    "id": "2025-045",
+    "id": "2025-046",
     "title": "Windsurf MCP: Missing Security Controls for Tool Invocation",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1849,7 +1873,7 @@
   },
   {
     "slug": "windsurf-spaiware",
-    "id": "2025-046",
+    "id": "2025-047",
     "title": "Windsurf: Memory-Persistent Data Exfiltration (SpAIware)",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1873,7 +1897,7 @@
   },
   {
     "slug": "cross-agent-privesc",
-    "id": "2025-047",
+    "id": "2025-048",
     "title": "Cross-Agent Privilege Escalation: Agents That Free Each Other",
     "authors": "Johann Rehberger",
     "date": "2025-09",
@@ -1897,7 +1921,7 @@
   },
   {
     "slug": "claude-network-exfil",
-    "id": "2025-048",
+    "id": "2025-049",
     "title": "Claude Pirate: Data Exfiltration via Anthropic Files API",
     "authors": "Johann Rehberger",
     "date": "2025-10",
@@ -1921,7 +1945,7 @@
   },
   {
     "slug": "google-antigravity",
-    "id": "2025-049",
+    "id": "2025-050",
     "title": "Antigravity Grounded: Security Vulnerabilities in Google's IDE",
     "authors": "Johann Rehberger",
     "date": "2025-11",
@@ -1945,7 +1969,7 @@
   },
   {
     "slug": "hashjack",
-    "id": "2025-050",
+    "id": "2025-051",
     "title": "HashJack",
     "authors": "Vitaly Simonovich (Cato Networks)",
     "date": "2025-11",
@@ -1969,31 +1993,31 @@
   },
   {
     "slug": "agentic-probllms",
-    "id": "2025-051",
-    "title": "Agentic ProbLLMs",
+    "id": "2025-052",
+    "title": "Agentic ProbLLMs: Exploiting AI Computer-Use and Coding Agents",
     "authors": "Johann Rehberger",
     "date": "2025-12",
     "dateDisplay": "Dec'25",
     "category": "Agentic/CUA",
-    "target": "Claude Comp. Use",
-    "coverage": 4,
-    "venue": "TODO-verify",
-    "isNew": false,
+    "target": "Claude Computer Use / coding agents",
+    "coverage": 2,
+    "venue": "CCC (39C3)",
+    "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Visited webpage",
-      "privilege_escalation": "Control bypass",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": null,
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
-      "lateral_movement": "Perm",
+      "lateral_movement": null,
       "action_on_objective": "RCE"
     },
-    "url": "TODO-verify"
+    "url": "https://media.ccc.de/v/39c3-agentic-probllms-exploiting-ai-computer-use-and-coding-agents"
   },
   {
     "slug": "geminijack",
-    "id": "2025-052",
+    "id": "2025-053",
     "title": "GeminiJack",
     "authors": "Noma Security (Noma Labs)",
     "date": "2025-12",
@@ -2014,6 +2038,30 @@
       "action_on_objective": "Corporate data exfil."
     },
     "url": "TODO-verify"
+  },
+  {
+    "slug": "mcp-unchained",
+    "id": "2025-054",
+    "title": "MCP Unchained: Compromising the AI Agent Ecosystem via its Universal Connector",
+    "authors": "Cheng Huangsheng, Guo Jing, Wu Huiyu",
+    "date": "2025-12",
+    "dateDisplay": "Dec'25",
+    "category": "AI Agent",
+    "target": "MCP clients (Cursor, ChatGPT)",
+    "coverage": 3,
+    "venue": "Black Hat EU'25",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "https://i.blackhat.com/BH-EU-25/eu-25-Huangsheng-MCP-Unchained-Compromising-The-AI-Agent-Ecosystem-Via-Its-Universal-Connector-Final.pdf"
   },
   {
     "slug": "claude-cowork",
