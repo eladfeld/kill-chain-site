@@ -1,38 +1,38 @@
 slug: data-exfil-unfurling
-id: 2024-004
+id: 2024-003
 title: Data Exfiltration via Link Unfurling
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-04
 category: Enterprise
 target: Slack apps / AI chatbots
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Injected content
-    justification: TODO
+    value: Indirect (I)
+    justification: Injected website content enters the chat context.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: instructions from the website can make it into the chat context
+      locator: embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/
   privilege_escalation:
-    value: Auto link unfurl
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected instructions direct the assistant to embed data in a link.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: instructions from the website can make it into the chat context
+      locator: embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Zero-click data exfil
-    justification: TODO
+    value: Data exfiltration
+    justification: Auto-unfurled links send sensitive data to a third-party server.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: data is sent to the third party server automatically
+      locator: embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/

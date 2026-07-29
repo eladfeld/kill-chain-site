@@ -1,43 +1,43 @@
 slug: chatgpt-hacking-memories
-id: 2024-009
+id: 2024-008
 title: ChatGPT Hacking Memories
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-05
 category: Browser/Search
 target: ChatGPT (Memory)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Image / connected app / browsing
-    justification: TODO
+    value: Indirect (I)
+    justification: Untrusted third-party data enters the chat via apps, images, or browsing.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: untrusted data from a third party might enter the chat
+      locator: embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   privilege_escalation:
-    value: Instr. override + memory tool
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content drives unauthorized memory writes.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: untrusted data can add memories to your profile
+      locator: embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   reconnaissance: null
   persistence:
-    value: RAG-indep
-    justification: TODO
+    value: Independent (memory)
+    justification: Malicious memories persist autonomously across future sessions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: untrusted data can add memories to your profile
+      locator: embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Memory poisoning / deletion
-    justification: TODO
+    value: Misinformation
+    justification: Corrupts stored user context with attacker-chosen facts and instructions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: misinformation, bias and even instructions
+      locator: embracethered.com/blog/posts/2024/chatgpt-hacking-memories/

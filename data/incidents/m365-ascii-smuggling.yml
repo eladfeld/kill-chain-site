@@ -1,42 +1,42 @@
 slug: m365-ascii-smuggling
-id: 2024-013
+id: 2024-012
 title: M365 Copilot ASCII Smuggling
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-08
 category: Enterprise
 target: M365 Copilot
 source:
-  url: "https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/"
-  venue: "Embrace The Red (blog)"
+  url: https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Malicious email
-    justification: TODO
+    value: Indirect (I)
+    justification: Prompt injection arrives via a malicious email or shared document.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Prompt Injection via a malicious email (or hidden in a shared document)
+      locator: embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
   privilege_escalation:
-    value: Auto tool inv.
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected instructions invoke tools and stage sensitive data.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: invoke additional tools that bring more data into the chat context
+      locator: embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
   reconnaissance: null
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: The malicious email/document persists in the workspace and is retrieved in later interactions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Relies on retrieval of original malicious email/document
+      locator: embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: MFA code exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: Sensitive data is smuggled out via ASCII-tag encoding and single-click links.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: sales data and MFA codes
+      locator: embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/

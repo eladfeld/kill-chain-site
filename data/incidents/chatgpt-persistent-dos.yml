@@ -1,43 +1,43 @@
 slug: chatgpt-persistent-dos
-id: 2024-011
+id: 2024-010
 title: ChatGPT Persistent Denial of Service
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-07
 category: Browser/Search
 target: ChatGPT (Memory)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Untrusted documents/websites carry the payload into the session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: a website, through uploaded documents containing untrusted data
+      locator: embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
   privilege_escalation:
-    value: Instr. override + memory tool
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content forces unauthorized memory modification.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Malicious memory modifications remain until the user manually removes
+      locator: embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
   reconnaissance: null
   persistence:
-    value: RAG-indep
-    justification: TODO
+    value: Independent (memory)
+    justification: A hostile memory entry survives session resets and re-fires every session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Malicious memory modifications remain until the user manually removes the attacker-created memories
+      locator: embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Persistent DoS (cross-session)
-    justification: TODO
+    value: Misc (DoS)
+    justification: The poisoned memory makes ChatGPT refuse all future responses — a persistent denial of service.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: ChatGPT will refuse every future response
+      locator: embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/

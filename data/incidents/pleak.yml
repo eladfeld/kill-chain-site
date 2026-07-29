@@ -1,38 +1,33 @@
 slug: pleak
-id: 2024-017
+id: 2024-015
 title: PLeak
-authors: "Bo Hui, Haolin Yuan, Neil Gong, Philippe Burlina, Yinzhi Cao"
+authors: Bo Hui, Haolin Yuan, Neil Gong, Philippe Burlina, Yinzhi Cao
 date: 2024-10
 category: AI Agent
 target: LLM apps (Poe, GPT Store)
 new: true
 source:
   url: https://arxiv.org/abs/2405.06823
-  venue: "CCS'24"
+  venue: CCS'24
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Direct prompt (optimized)
-    justification: TODO
+    value: Direct (D)
+    justification: The attacker sends optimized adversarial queries directly to the target LLM application.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Adversarial query opt.
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: attacker sends it to a target LLM application
+      locator: arxiv.org/abs/2405.06823
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: System-prompt leak (IP theft)
-    justification: TODO
+    value: Data exfiltration
+    justification: Extracts the confidential system prompt, leaking application IP.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: system prompts
+      locator: arxiv.org/abs/2405.06823

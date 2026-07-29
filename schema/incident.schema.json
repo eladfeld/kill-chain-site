@@ -202,10 +202,8 @@
           "additionalProperties": false,
           "properties": {
             "value": {
-              "enum": [
-                "RAG-dep",
-                "RAG-indep"
-              ]
+              "type": "string",
+              "minLength": 1
             },
             "justification": {
               "type": "string",
@@ -233,9 +231,8 @@
           "additionalProperties": false,
           "properties": {
             "value": {
-              "enum": [
-                "native"
-              ]
+              "type": "string",
+              "minLength": 1
             },
             "justification": {
               "type": "string",
@@ -263,16 +260,8 @@
           "additionalProperties": false,
           "properties": {
             "value": {
-              "enum": [
-                "Perm",
-                "Self-rep",
-                "Pipeline",
-                "Supply-ch",
-                "Git-propag",
-                "Cross-agent",
-                "Cross-app",
-                "Cross-client"
-              ]
+              "type": "string",
+              "minLength": 1
             },
             "justification": {
               "type": "string",

@@ -1,43 +1,43 @@
 slug: conditional-pi-whoami
-id: 2024-002
+id: 2024-001
 title: Conditional Prompt Injection (whoami)
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-03
 category: Enterprise
 target: M365 Copilot
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Malicious email/doc
-    justification: TODO
+    value: Indirect (I)
+    justification: Malicious instructions ride in an email that Copilot processes on the user’s behalf.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious email with instructions for an LLM that only activates when the CEO looks at it
+      locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected instructions override Copilot behaviour once the targeting condition matches.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: only activates when the CEO looks at it
+      locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
   reconnaissance:
-    value: Identity recon (whoami)
-    justification: TODO
+    value: "Yes"
+    justification: The payload reads the current user’s identity (name, title, manager) to fire only against the intended target.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Copilot does have the user’s name and also job title and manager information available when prompting
+      locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Targeted/delayed payload
-    justification: TODO
+    value: Misinformation
+    justification: Delivers identity-conditioned, targeted manipulated output.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: only activates when the CEO looks at it
+      locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/

@@ -1,42 +1,42 @@
 slug: chatgpt-spaiware
-id: 2024-015
-title: "Spyware Injection Into Your ChatGPT's Long-Term Memory (SpAIware)"
-authors: "Johann Rehberger"
+id: 2024-013
+title: Spyware Injection Into Your ChatGPT's Long-Term Memory (SpAIware)
+authors: Johann Rehberger
 date: 2024-09
 category: Browser/Search
 target: ChatGPT
 source:
-  url: "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/"
-  venue: "Embrace The Red (blog)"
+  url: https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: An untrusted document or website carries the memory-implant payload.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: user analyzes an untrusted document or navigates to an untrusted website
+      locator: embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content instructs ChatGPT to write a persistent implant into memory.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious instructions are stored in ChatGPT’s memory
+      locator: embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/
   reconnaissance: null
   persistence:
-    value: RAG-indep
-    justification: TODO
+    value: Independent (memory)
+    justification: The memory implant re-injects attacker instructions into every future conversation.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: all new conversation going forward will contain the attackers instructions
+      locator: embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Persistent exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: Continuously exfiltrates user data via rendered image URLs to an attacker server.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: render an image to an attacker controlled server, and asking ChatGPT to include the user’s data as query parameter
+      locator: embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/

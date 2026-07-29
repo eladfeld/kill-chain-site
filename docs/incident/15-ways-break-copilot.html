@@ -23,22 +23,22 @@
    <tr><th>Source</th><td><a href="https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770" rel="noreferrer noopener">original (other)</a> · <span class="pending">archive pending</span></td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>
-  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Poisoned email/doc</td>
-   <td class="why"><div class="just">Copilot ingests attacker-controlled content — emails, shared documents and other grounding data — as RAG context, giving an external attacker an unauthenticated indirect prompt-injection channel into the enterprise assistant.</div>
-   <div class="ev"><q>Copilot Studio&#39;s integration with GenAI expands the prompt injection attack surface, significantly impacting data integrity and confidentiality.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
-<tr><th>Priv. Esc.</th><td class="val">Instr. override</td>
-   <td class="why"><div class="just">Injected instructions override the copilot&#39;s intended behaviour and bypass enterprise controls such as DLP via insecure defaults and overly permissive plugins.</div>
-   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP through insecure defaults, overly permissive plugins, and design flaws.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
-<tr><th>Recon.</th><td class="val">CopilotHunter scan</td>
-   <td class="why"><div class="just">The presenters released CopilotHunter, a recon and exploitation tool that scans for publicly accessible copilots and fuzzes them to extract sensitive data.</div>
-   <div class="ev"><q>CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots and leverages fuzzing and GenAI to extract sensitive enterprise data.</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
-<tr><th>Persist.</th><td class="val">RAG-dep</td>
-   <td class="why"><div class="just">Attacks rely on attacker content persisting in the copilot&#39;s retrieval-grounding data, so the injection re-fires whenever that content is retrieved.</div>
-   <div class="ev"><q>how these bots can be exploited to exfiltrate sensitive enterprise data</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">Attacker content ingested as Copilot grounding data provides the injection channel.</div>
+   <div class="ev"><q>Copilot Studio’s integration with GenAI expands the prompt injection attack surface</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
+   <td class="why"><div class="just">Injected content bypasses DLP and overrides copilot behaviour via insecure defaults and plugins.</div>
+   <div class="ev"><q>bypassing security controls like DLP through insecure defaults, overly permissive plugins</q> <span class="loc"> blackhat.com/us-24 briefing abstract</span></div></td></tr>
+<tr><th>Recon.</th><td class="val">Yes</td>
+   <td class="why"><div class="just">CopilotHunter scans for publicly accessible copilots and fuzzes them to locate sensitive data.</div>
+   <div class="ev"><q>CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
+<tr><th>Persist.</th><td class="val">Dependent (channel)</td>
+   <td class="why"><div class="just">Attacks rely on attacker content persisting in the copilot’s grounding data.</div>
+   <div class="ev"><q>exfiltrate sensitive enterprise data</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
-<tr><th>Action on Obj.</th><td class="val">Data exfil, spear-phishing</td>
-   <td class="why"><div class="just">Demonstrated end effects include exfiltration of confidential enterprise data and using the trusted copilot to deliver targeted phishing to other users.</div>
-   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP</q> <span class="loc">Black Hat USA&#39;24 briefing abstract</span></div></td></tr></tbody></table></main>
+<tr><th>Action on Obj.</th><td class="val">Data exfiltration</td>
+   <td class="why"><div class="just">Exfiltrates confidential enterprise data and enables spear-phishing.</div>
+   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr></tbody></table></main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>

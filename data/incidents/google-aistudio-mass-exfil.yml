@@ -1,43 +1,38 @@
 slug: google-aistudio-mass-exfil
-id: 2024-005
+id: 2024-004
 title: Google AI Studio Mass Data Exfiltration
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-04
 category: Enterprise
 target: Google AI Studio (Gemini)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned uploaded file
-    justification: TODO
+    value: Indirect (I)
+    justification: A prompt injection embedded in an uploaded document is processed by AI Studio.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: one document contains a prompt injection attack
+      locator: embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The document’s imperative instructions override normal behaviour to stage data.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: one document contains a prompt injection attack
+      locator: embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/
   reconnaissance: null
-  persistence:
-    value: RAG-dep
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Mass in-context data exfil
-    justification: TODO
+    value: Data exfiltration
+    justification: All uploaded documents are exfiltrated to the attacker’s server.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: all the other performance reviews to the attacker’s server
+      locator: embracethered.com/blog/posts/2024/google-aistudio-mass-data-exfil/

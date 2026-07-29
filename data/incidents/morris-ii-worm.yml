@@ -1,47 +1,47 @@
 slug: morris-ii-worm
-id: 2024-003
+id: 2024-002
 title: "Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications"
-authors: "Stav Cohen, Ron Bitton, Ben Nassi"
+authors: Stav Cohen, Ron Bitton, Ben Nassi
 date: 2024-03
 category: AI Worm
 target: Email assistants
 source:
   url: https://sites.google.com/view/compromptmized
-  venue: "CCS'25"
+  venue: CCS'25
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Received email
-    justification: TODO
+    value: Indirect (I)
+    justification: A self-replicating adversarial prompt arrives via email and is processed by the GenAI assistant.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: attackers can insert such prompts into inputs that, when processed by GenAI models, prompt the model to replicate
+      locator: sites.google.com/view/compromptmized
   privilege_escalation:
-    value: Role-play JB
-    justification: TODO
+    value: Social eng. (SE)
+    justification: The self-replicating prompt uses jailbreak/role-play framing to coerce the model.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: adversarial self-replicating prompt
+      locator: sites.google.com/view/compromptmized
   reconnaissance: null
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: Copies persist in email/RAG databases and are retrieved during future interactions.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: propagate to new agents by exploiting the connectivity within the GenAI ecosystem
+      locator: sites.google.com/view/compromptmized
   command_control: null
   lateral_movement:
-    value: Self-rep
-    justification: TODO
+    value: Cross-device (xD)
+    justification: The worm embeds copies in outgoing emails to reach new victims and devices.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: deliver them (propagate) to new agents
+      locator: sites.google.com/view/compromptmized
   action_on_objective:
-    value: Data exfil., spam
-    justification: TODO
+    value: Data exfiltration
+    justification: Compromised assistants spam and exfiltrate personal data as they spread.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: spamming and exfiltrating personal data
+      locator: sites.google.com/view/compromptmized

@@ -1,37 +1,32 @@
 slug: deepseek-ato-xss
-id: 2024-019
+id: 2024-017
 title: "DeepSeek AI: From Prompt Injection To Account Takeover"
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-11
 category: Browser/Search
 target: DeepSeek AI web app
 source:
-  url: "https://embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/"
-  venue: "Embrace The Red (blog)"
+  url: https://embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Direct prompt
-    justification: TODO
+    value: Indirect (I)
+    justification: A document uploaded for analysis carries the injection.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Control bypass
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: uploading of documents for analysis
+      locator: embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: XSS, account takeover
-    justification: TODO
+    value: Misc (XSS ATO)
+    justification: Prompt injection triggers client-side XSS that steals the session token and takes over the account.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: entirely take over a user’s session
+      locator: embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/

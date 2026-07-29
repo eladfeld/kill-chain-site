@@ -1,47 +1,32 @@
 slug: chatgpt-zombai-c2
-id: 2024-016
+id: 2024-014
 title: "ZombAIs: From Prompt Injection to C2 with Claude Computer Use"
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-10
 category: Browser/Search
 target: ChatGPT
 source:
-  url: "https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
-  venue: "Embrace The Red (blog)"
+  url: https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: A prompt-injection payload on a webpage drives Claude Computer Use to fetch and run a binary.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Instr. override
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: craft a prompt injection payload to have Claude download the binary and execute it
+      locator: embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/
+  privilege_escalation: null
   reconnaissance: null
-  persistence:
-    value: RAG-indep
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
-  command_control:
-    value: native
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  persistence: null
+  command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfil
-    justification: TODO
+    value: RCE
+    justification: Achieves remote code execution and enrolls the host as a zombie via a Sliver implant; the post-RCE C2 runs in conventional malware, not the LLM.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: have Claude download the binary and execute it
+      locator: embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/

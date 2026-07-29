@@ -1,43 +1,38 @@
 slug: grok-security-probllms
-id: 2024-022
+id: 2024-018
 title: Grok Security ProbLLMs
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-12
 category: Browser/Search
 target: xAI Grok (X, Web, API)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned X post / image / PDF
-    justification: TODO
+    value: Indirect (I)
+    justification: Injection arrives through images, PDFs, or posts that Grok analyzes.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Prompt injection can also come from images that a user uploads or analyzes
+      locator: embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/
   privilege_escalation:
-    value: Instr. override, ASCII smuggling
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content overrides Grok’s behaviour to leak data.
     evidence:
-      quote: TODO
-      locator: TODO
-  reconnaissance:
-    value: Conditional targeting
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: combine this vulnerability with prompt injection and trigger a data leak
+      locator: embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/
+  reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfil, disinfo, phishing
-    justification: TODO
+    value: Data exfiltration
+    justification: Chat messages and IP address are exfiltrated via markdown image links / ASCII smuggling.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: chat messages and IP address
+      locator: embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/

@@ -1,38 +1,33 @@
 slug: llm4shell
-id: 2024-007
+id: 2024-006
 title: LLM4Shell (RCE in LLM-Integrated Apps)
-authors: "Tong Liu, Zizhuang Deng, Guozhu Meng, Yuekang Li, Kai Chen"
+authors: Tong Liu, Zizhuang Deng, Guozhu Meng, Yuekang Li, Kai Chen
 date: 2024-04
 category: AI Agent
 target: LangChain, LlamaIndex, PALChain
 new: true
 source:
   url: https://arxiv.org/abs/2309.02926
-  venue: "Black Hat Asia'24"
+  venue: Black Hat Asia'24
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Prompt injection
-    justification: TODO
+    value: Direct (D)
+    justification: An attacker submits a crafted prompt directly to LLM-integrated applications.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Code injection
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: prompt injections
+      locator: " arxiv.org/abs/2309.02926"
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: RCE, API-key/file leak, SQLi
-    justification: TODO
+    value: RCE
+    justification: Injection reaches code/interpreter paths, yielding remote code execution across many apps.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Remote Code Execution (RCE) vulnerabilities, enabling remote code execution
+      locator: arxiv.org/abs/2309.02926

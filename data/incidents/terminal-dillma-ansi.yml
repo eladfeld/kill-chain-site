@@ -1,38 +1,33 @@
 slug: terminal-dillma-ansi
-id: 2024-023
+id: 2024-019
 title: Terminal DiLLMa (ANSI Escape Injection)
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-12
 category: Coding Assist.
 target: LLM-powered terminal/CLI apps
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Poisoned content
-    justification: TODO
+    value: Indirect (I)
+    justification: LLM output containing attacker content is printed by an LLM-integrated CLI.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: ANSI control-char inj.
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: LLM-integrated CLI tools, or any other program that prints LLM output to stdout
+      locator: embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/
+  privilege_escalation: null
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Terminal hijack, output manip.
-    justification: TODO
+    value: RCE
+    justification: ANSI escape sequences manipulate the terminal — clipboard writes and code execution in some terminals.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: writing data into the user’s clipboard
+      locator: embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/

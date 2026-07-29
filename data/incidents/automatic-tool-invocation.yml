@@ -1,38 +1,43 @@
 slug: automatic-tool-invocation
-id: 2024-008
+id: 2024-007
 title: Automatic Tool Invocation (Browsing)
-authors: "Johann Rehberger"
+authors: Johann Rehberger
 date: 2024-05
 category: Browser/Search
 target: ChatGPT (browsing + tools)
 new: true
 source:
   url: https://embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
-  venue: "Embrace The Red (blog)"
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed webpage
-    justification: TODO
+    value: Indirect (I)
+    justification: Instructions in untrusted data trigger automatic tool calls.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: instructions embedded in untrusted data can invoke ChatGPT’s memory tool
+      locator: embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
   privilege_escalation:
-    value: Auto tool inv. (bypass)
-    justification: TODO
+    value: Instruction override (IR)
+    justification: Injected content coerces tool invocations the user never requested.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: levels of indirection easily “trick” language models into following instructions
+      locator: embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
   reconnaissance: null
-  persistence: null
+  persistence:
+    value: Independent (memory)
+    justification: The payload writes to ChatGPT’s memory so instructions persist across sessions.
+    evidence:
+      quote: invoke the memory tool by placing specific instructions on a website
+      locator: embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Unauthorized tool use
-    justification: TODO
+    value: Data exfiltration
+    justification: Auto-invoked tools exfiltrate personal data (and can delete memories).
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: personal information might be placed into the image
+      locator: embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/

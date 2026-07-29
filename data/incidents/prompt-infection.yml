@@ -1,42 +1,37 @@
 slug: prompt-infection
-id: 2024-018
+id: 2024-016
 title: "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-agent Systems"
-authors: "Donghyun Lee, Mo Tiwari"
+authors: Donghyun Lee, Mo Tiwari
 date: 2024-10
 category: AI Worm
 target: Multi-agent sys.
 source:
   url: https://arxiv.org/abs/2410.07283
-  venue: "ESORICS"
+  venue: ESORICS
   type: paper
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Webpage/PDF/Email
-    justification: TODO
+    value: Indirect (I)
+    justification: Malicious prompts embedded in external content are processed by an agent.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious prompts embedded in external content trick the LLM into executing unintended or harmful actions
+      locator: arxiv.org/abs/2410.07283
   privilege_escalation:
-    value: Instr. override
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The infection prompt overrides each agent’s instructions as it spreads.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: malicious prompts self-replicate across interconnected agents
+      locator: arxiv.org/abs/2410.07283
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Cross-agent
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: Saturation
-    justification: TODO
+    value: Misinformation
+    justification: Propagated payload drives data theft, scams, and misinformation across the agent network.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: data theft, scams, misinformation, and system-wide disruption
+      locator: arxiv.org/abs/2410.07283

@@ -18,23 +18,21 @@
    <tr><th>Date</th><td>Apr'24</td></tr>
    <tr><th>Category</th><td>AI Agent</td></tr>
    <tr><th>Target</th><td>LangChain, LlamaIndex, PALChain</td></tr>
-   <tr><th>Coverage</th><td>3 / 7 stages</td></tr>
+   <tr><th>Coverage</th><td>2 / 7 stages</td></tr>
    <tr><th>Venue</th><td>Black Hat Asia&#39;24</td></tr>
    <tr><th>Source</th><td><a href="https://arxiv.org/abs/2309.02926" rel="noreferrer noopener">original (paper)</a> · <span class="pending">archive pending</span></td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>
-  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Prompt injection</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
-<tr><th>Priv. Esc.</th><td class="val">Code injection</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Direct (D)</td>
+   <td class="why"><div class="just">An attacker submits a crafted prompt directly to LLM-integrated applications.</div>
+   <div class="ev"><q>prompt injections</q> <span class="loc"> arxiv.org/abs/2309.02926</span></div></td></tr>
+<tr class="absent"><th>Priv. Esc.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
-<tr><th>Action on Obj.</th><td class="val">RCE, API-key/file leak, SQLi</td>
-   <td class="why todo"><div class="just">TODO</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr></tbody></table></main>
+<tr><th>Action on Obj.</th><td class="val">RCE</td>
+   <td class="why"><div class="just">Injection reaches code/interpreter paths, yielding remote code execution across many apps.</div>
+   <div class="ev"><q>Remote Code Execution (RCE) vulnerabilities, enabling remote code execution</q> <span class="loc">arxiv.org/abs/2309.02926</span></div></td></tr></tbody></table></main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>
