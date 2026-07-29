@@ -1,0 +1,38 @@
+slug: cursor-mermaid-exfil
+id: 2025-017
+title: "Cursor: Data Exfiltration via Mermaid Diagram Rendering"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Cursor IDE
+source:
+  url: https://embracethered.com/blog/posts/2025/cursor-data-exfiltration-with-mermaid/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Injection arrives through source code, web requests, or MCP servers Cursor processes.
+    evidence:
+      quote: Indirect prompt injection can come from various sources, like source code, web requests, MCP servers
+      locator: embracethered.com/blog/posts/2025/cursor-data-exfiltration-with-mermaid/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected instructions override behaviour to render a Mermaid diagram whose image URL leaks data with no confirmation (CVE-2025-54132).
+    evidence:
+      quote: Requests go outside sandbox to leak data without human confirmation
+      locator: embracethered.com/blog/posts/2025/cursor-data-exfiltration-with-mermaid/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Stored memories and secret API keys are exfiltrated via Mermaid image rendering.
+    evidence:
+      quote: Sensitive information, like user memories or secret API keys
+      locator: embracethered.com/blog/posts/2025/cursor-data-exfiltration-with-mermaid/

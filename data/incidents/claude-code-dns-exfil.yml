@@ -1,0 +1,38 @@
+slug: claude-code-dns-exfil
+id: 2025-008
+title: "Claude Code: Data Exfiltration with DNS"
+authors: Johann Rehberger
+new: true
+date: 2025-06
+category: Coding Assist.
+target: Anthropic Claude Code
+source:
+  url: https://embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Reviewing untrusted code or external data can hijack Claude Code.
+    evidence:
+      quote: When reviewing or interacting with untrusted code or processing data from external systems, Claude Code can be hijacked
+      locator: embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected content overrides Claude Code to read .env and encode it into allowlisted DNS commands (CVE-2025-55284).
+    evidence:
+      quote: grabbed data from the .env file and placed it into a ping request
+      locator: embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Secrets are exfiltrated via one-way DNS queries to attacker infrastructure without consent.
+    evidence:
+      quote: without the developer consent or approval
+      locator: embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/

@@ -1,42 +1,38 @@
 slug: devin-expose-port
-id: 2025-016
-title: Devin Exposed Port
-authors: "Johann Rehberger"
+id: 2025-019
+title: "Devin AI Kill Chain: Exposing Ports to the Internet"
+authors: Johann Rehberger
+new: true
 date: 2025-08
-category: AI Agent
-target: Devin
+category: Coding Assist.
+target: Devin (Cognition)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://embracethered.com/blog/posts/2025/devin-ai-kill-chain-exposing-ports/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Untrusted content
-    justification: TODO
+    value: Indirect (I)
+    justification: A malicious prompt-injection payload is hosted on a website Devin visits.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Adversary hosts a malicious prompt injection payload on a website
+      locator: embracethered.com/blog/posts/2025/devin-ai-kill-chain-exposing-ports/
   privilege_escalation:
-    value: Control bypass
-    justification: TODO
+    value: Misc.
+    justification: The attack abuses the expose_port tool to escalate from local to public internet exposure with no authorization gate.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: leverages the expose_port tool design flaw to escalate from local access to public internet exposure
+      locator: embracethered.com/blog/posts/2025/devin-ai-kill-chain-exposing-ports/
   reconnaissance: null
   persistence: null
   command_control: null
-  lateral_movement:
-    value: Perm
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: Service exposure
-    justification: TODO
+    value: Data exfiltration
+    justification: Devin exposes internal files/ports to the internet without human verification.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Devin executes consequential tool commands, such as exposing a port, without seeking human verification
+      locator: embracethered.com/blog/posts/2025/devin-ai-kill-chain-exposing-ports/

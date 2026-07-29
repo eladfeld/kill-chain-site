@@ -1,0 +1,33 @@
+slug: openhands-rce-zombai
+id: 2025-024
+title: "ZombAI Exploit with OpenHands: Prompt Injection to RCE"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: OpenHands (All Hands AI)
+source:
+  url: https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The agent looks up untrusted websites during tasks, providing the injection avenue.
+    evidence:
+      quote: Coding agents often decide to look up additional information on the fly from websites, and this is a likely attack avenue
+      locator: embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: OpenHands is tricked into downloading and running malware that joins a Sliver C2 — RCE with conventional (non-promptware) C2.
+    evidence:
+      quote: Hijacking the agent via prompt injection and then tricking it to download malware, run it and join an attacker-controlled C2 server
+      locator: embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/

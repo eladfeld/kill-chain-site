@@ -1,37 +1,38 @@
 slug: devin-ai-rce
-id: 2025-015
-title: Devin AI RCE
-authors: "Johann Rehberger"
+id: 2025-018
+title: "Devin AI: Prompt Injection to Remote Code Execution"
+authors: Johann Rehberger
+new: true
 date: 2025-08
-category: AI Agent
-target: Devin
+category: Coding Assist.
+target: Devin (Cognition)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Browsed website
-    justification: TODO
+    value: Indirect (I)
+    justification: Instructions planted on a website or GitHub issue hijack Devin.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: By planting instructions on a website or GitHub issue that Devin processes, it can be tricked to download malware
+      locator: embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
   privilege_escalation:
-    value: Control bypass
-    justification: TODO
+    value: Misc.
+    justification: Devin makes the payload executable (chmod) before running it.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: adds execute permission before executing the payload
+      locator: embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: RCE, malware C2 (Sliver)
-    justification: TODO
+    value: RCE
+    justification: A downloaded Sliver binary yields a reverse shell; the C2 loop runs in conventional malware, not the LLM.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Sliver malware binary establishes reverse shell
+      locator: embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/

@@ -1,0 +1,43 @@
+slug: amp-config-escape
+id: 2025-013
+title: "Amp Code: Arbitrary Command Execution via Config Modification"
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: Amp (Sourcegraph)
+source:
+  url: https://embracethered.com/blog/posts/2025/amp-agents-that-modify-system-configuration-and-escape/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Prompt injection embedded in code comments is processed by the agent.
+    evidence:
+      quote: prompt injection embedded in code comments
+      locator: embracethered.com/blog/posts/2025/amp-agents-that-modify-system-configuration-and-escape/
+  privilege_escalation:
+    value: Misc.
+    justification: The agent modifies its own critical config files to escalate to command execution.
+    evidence:
+      quote: AI systems...must not be able to modify critical files without explicit developer consent
+      locator: embracethered.com/blog/posts/2025/amp-agents-that-modify-system-configuration-and-escape/
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: A malicious MCP server persisted in settings.json is re-read and relaunched across sessions.
+    evidence:
+      quote: malicious MCP servers persisted in settings.json
+      locator: embracethered.com/blog/posts/2025/amp-agents-that-modify-system-configuration-and-escape/
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Launching attacker MCP servers yields arbitrary command execution on the host.
+    evidence:
+      quote: Arbitrary code execution is achieved by launching malicious MCP servers
+      locator: embracethered.com/blog/posts/2025/amp-agents-that-modify-system-configuration-and-escape/
