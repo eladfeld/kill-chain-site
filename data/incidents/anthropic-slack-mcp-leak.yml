@@ -1,0 +1,38 @@
+slug: anthropic-slack-mcp-leak
+id: 2025-006
+title: "Security Advisory: Anthropic’s Slack MCP Server Vulnerable to Data Exfiltration"
+authors: Johann Rehberger
+new: true
+date: 2025-06
+category: Enterprise
+target: Anthropic Slack MCP server
+source:
+  url: https://embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The server processes untrusted documents, pages, and messages carrying the injection.
+    evidence:
+      quote: Processes untrusted data (documents, web pages, messages,…)
+      locator: embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected instructions direct the assistant to read a private channel and stage data.
+    evidence:
+      quote: read information from the "matrix" channel
+      locator: embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Sensitive data (e.g., API keys) is leaked to a third-party server via crafted unfurled links.
+    evidence:
+      quote: Leak data to third-party servers
+      locator: embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/

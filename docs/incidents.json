@@ -768,8 +768,80 @@
     "url": "https://embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/"
   },
   {
-    "slug": "mcp-history-theft",
+    "slug": "chatgpt-zombai-memory-c2",
     "id": "2025-001",
+    "title": "AI Domination: Remote Controlling ChatGPT ZombAI Instances",
+    "authors": "Johann Rehberger",
+    "date": "2025-01",
+    "dateDisplay": "Jan'25",
+    "category": "Browser/Search",
+    "target": "ChatGPT",
+    "coverage": 5,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": "Independent (memory)",
+      "command_control": "Promptware-native (●)",
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/"
+  },
+  {
+    "slug": "chatgpt-operator-exploits",
+    "id": "2025-002",
+    "title": "ChatGPT Operator: Prompt Injection Exploits & Defenses",
+    "authors": "Johann Rehberger",
+    "date": "2025-02",
+    "dateDisplay": "Feb'25",
+    "category": "Agentic/CUA",
+    "target": "ChatGPT Operator",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/"
+  },
+  {
+    "slug": "gemini-memory-persistence",
+    "id": "2025-003",
+    "title": "Hacking Gemini’s Memory with Prompt Injection and Delayed Tool Invocation",
+    "authors": "Johann Rehberger",
+    "date": "2025-02",
+    "dateDisplay": "Feb'25",
+    "category": "Browser/Search",
+    "target": "Google Gemini (Advanced)",
+    "coverage": 4,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": "Independent (memory)",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Misinformation"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/"
+  },
+  {
+    "slug": "mcp-history-theft",
+    "id": "2025-004",
     "title": "MCP History Theft",
     "authors": "Invariant Labs",
     "date": "2025-04",
@@ -792,8 +864,56 @@
     "url": "TODO-verify"
   },
   {
+    "slug": "mcp-untrusted-servers",
+    "id": "2025-005",
+    "title": "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit",
+    "authors": "Johann Rehberger",
+    "date": "2025-05",
+    "dateDisplay": "May'25",
+    "category": "AI Agent",
+    "target": "MCP clients (Claude Desktop, Cursor, Copilot)",
+    "coverage": 5,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": "Yes",
+      "persistence": "Dependent (channel)",
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/"
+  },
+  {
+    "slug": "anthropic-slack-mcp-leak",
+    "id": "2025-006",
+    "title": "Security Advisory: Anthropic’s Slack MCP Server Vulnerable to Data Exfiltration",
+    "authors": "Johann Rehberger",
+    "date": "2025-06",
+    "dateDisplay": "Jun'25",
+    "category": "Enterprise",
+    "target": "Anthropic Slack MCP server",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/"
+  },
+  {
     "slug": "camoleak",
-    "id": "2025-002",
+    "id": "2025-007",
     "title": "CamoLeak",
     "authors": "Omer Mayraz (Legit Security)",
     "date": "2025-06",
@@ -817,7 +937,7 @@
   },
   {
     "slug": "echoleak",
-    "id": "2025-003",
+    "id": "2025-008",
     "title": "EchoLeak",
     "authors": "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)",
     "date": "2025-06",
@@ -841,7 +961,7 @@
   },
   {
     "slug": "curxecute",
-    "id": "2025-004",
+    "id": "2025-009",
     "title": "CurXecute",
     "authors": "Aim Security (Aim Labs)",
     "date": "2025-07",
@@ -865,7 +985,7 @@
   },
   {
     "slug": "forcedleak",
-    "id": "2025-005",
+    "id": "2025-010",
     "title": "ForcedLeak",
     "authors": "Noma Security (Sasi Levi)",
     "date": "2025-07",
@@ -889,7 +1009,7 @@
   },
   {
     "slug": "agentflayer",
-    "id": "2025-006",
+    "id": "2025-011",
     "title": "AgentFlayer",
     "authors": "Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)",
     "date": "2025-08",
@@ -912,8 +1032,56 @@
     "url": "TODO-verify"
   },
   {
+    "slug": "chatgpt-chat-history-exfil",
+    "id": "2025-012",
+    "title": "Exfiltrating Your ChatGPT Chat History and Memories With Prompt Injection",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Browser/Search",
+    "target": "ChatGPT",
+    "coverage": 3,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/"
+  },
+  {
+    "slug": "chatgpt-codex-zombai",
+    "id": "2025-013",
+    "title": "Turning ChatGPT Codex Into A ZombAI Agent",
+    "authors": "Johann Rehberger",
+    "date": "2025-08",
+    "dateDisplay": "Aug'25",
+    "category": "Coding Assist.",
+    "target": "ChatGPT Codex",
+    "coverage": 2,
+    "venue": "Embrace The Red (blog)",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": null,
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "RCE"
+    },
+    "url": "https://embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/"
+  },
+  {
     "slug": "copilot-backdoor",
-    "id": "2025-007",
+    "id": "2025-014",
     "title": "Copilot Backdoor Insertion",
     "authors": "Pillar Security",
     "date": "2025-08",
@@ -937,7 +1105,7 @@
   },
   {
     "slug": "devin-ai-rce",
-    "id": "2025-008",
+    "id": "2025-015",
     "title": "Devin AI RCE",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -961,7 +1129,7 @@
   },
   {
     "slug": "devin-expose-port",
-    "id": "2025-009",
+    "id": "2025-016",
     "title": "Devin Exposed Port",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -985,7 +1153,7 @@
   },
   {
     "slug": "github-copilot-rce",
-    "id": "2025-010",
+    "id": "2025-017",
     "title": "GitHub Copilot RCE (CVE-2025-53773)",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1009,7 +1177,7 @@
   },
   {
     "slug": "identitymesh",
-    "id": "2025-011",
+    "id": "2025-018",
     "title": "IdentityMesh",
     "authors": "Lasso Security",
     "date": "2025-08",
@@ -1033,7 +1201,7 @@
   },
   {
     "slug": "invitation-is-all-you-need",
-    "id": "2025-012",
+    "id": "2025-019",
     "title": "Invitation Is All You Need",
     "authors": "Ben Nassi, Stav Cohen, Or Yair",
     "date": "2025-08",
@@ -1057,7 +1225,7 @@
   },
   {
     "slug": "windsurf-spaiware",
-    "id": "2025-013",
+    "id": "2025-020",
     "title": "Windsurf SpAIware",
     "authors": "Johann Rehberger",
     "date": "2025-08",
@@ -1081,7 +1249,7 @@
   },
   {
     "slug": "hashjack",
-    "id": "2025-014",
+    "id": "2025-021",
     "title": "HashJack",
     "authors": "Vitaly Simonovich (Cato Networks)",
     "date": "2025-11",
@@ -1105,7 +1273,7 @@
   },
   {
     "slug": "agenthopper",
-    "id": "2025-015",
+    "id": "2025-022",
     "title": "AgentHopper",
     "authors": "Johann Rehberger",
     "date": "2025-12",
@@ -1129,7 +1297,7 @@
   },
   {
     "slug": "agentic-probllms",
-    "id": "2025-016",
+    "id": "2025-023",
     "title": "Agentic ProbLLMs",
     "authors": "Johann Rehberger",
     "date": "2025-12",
@@ -1153,7 +1321,7 @@
   },
   {
     "slug": "geminijack",
-    "id": "2025-017",
+    "id": "2025-024",
     "title": "GeminiJack",
     "authors": "Noma Security (Noma Labs)",
     "date": "2025-12",

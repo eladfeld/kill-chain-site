@@ -1,0 +1,33 @@
+slug: chatgpt-codex-zombai
+id: 2025-013
+title: Turning ChatGPT Codex Into A ZombAI Agent
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Coding Assist.
+target: ChatGPT Codex
+source:
+  url: https://embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A GitHub issue description carries the injection that hijacks Codex.
+    evidence:
+      quote: Adversary can use indirect prompt injection (for instance a description in a GitHub issue) to hijack Codex
+      locator: embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Codex is driven to run a payload achieving remote code execution; a Sliver implant (not the LLM) then handles conventional C2, so no promptware-native C2 stage.
+    evidence:
+      quote: As usual, I used Sliver in my demo for command and control
+      locator: embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/

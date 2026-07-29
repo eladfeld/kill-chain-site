@@ -1,0 +1,43 @@
+slug: gemini-memory-persistence
+id: 2025-003
+title: Hacking Gemini’s Memory with Prompt Injection and Delayed Tool Invocation
+authors: Johann Rehberger
+new: true
+date: 2025-02
+category: Browser/Search
+target: Google Gemini (Advanced)
+source:
+  url: https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A crafted document carries the injection into Gemini.
+    evidence:
+      quote: an adversary crafts a document with embedded prompt injection
+      locator: embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Delayed tool invocation overrides Gemini to write attacker data into long-term memory.
+    evidence:
+      quote: trick Gemini to store false information into a user’s long-term memories
+      locator: embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/
+  reconnaissance: null
+  persistence:
+    value: Independent (memory)
+    justification: False information is stored in the user’s long-term memories, persisting across sessions.
+    evidence:
+      quote: trick Gemini to store false information into a user’s long-term memories
+      locator: embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misinformation
+    justification: Adversary silently inserts or modifies information in the user’s memory.
+    evidence:
+      quote: adversaries can stealthily insert or modify information in a user’s long-term storage
+      locator: embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/

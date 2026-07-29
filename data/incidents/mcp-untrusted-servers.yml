@@ -1,0 +1,48 @@
+slug: mcp-untrusted-servers
+id: 2025-005
+title: "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit"
+authors: Johann Rehberger
+new: true
+date: 2025-05
+category: AI Agent
+target: MCP clients (Claude Desktop, Cursor, Copilot)
+source:
+  url: https://embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Merely adding a malicious tool server to the context enables exploitation.
+    evidence:
+      quote: Adding a tool server to conversation context suffices for exploitation
+      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Hidden instructions in tool metadata hijack the model’s behaviour.
+    evidence:
+      quote: inject hidden instructions via tool metadata to hijack LLM behavior
+      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  reconnaissance:
+    value: "Yes"
+    justification: Malicious servers enumerate tools and probe the system prompt.
+    evidence:
+      quote: malicious servers enumerate available tools and probe Claude’s system prompt
+      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  persistence:
+    value: Dependent (channel)
+    justification: Instructions reside in the connected server’s tool metadata, retrieved each interaction.
+    evidence:
+      quote: malicious instructions reside in tool metadata
+      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Poisoned tools are invoked to read and exfiltrate data (e.g., email).
+    evidence:
+      quote: invoke email-reading tools
+      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/

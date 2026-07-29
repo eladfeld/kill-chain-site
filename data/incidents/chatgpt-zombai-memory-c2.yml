@@ -1,0 +1,48 @@
+slug: chatgpt-zombai-memory-c2
+id: 2025-001
+title: "AI Domination: Remote Controlling ChatGPT ZombAI Instances"
+authors: Johann Rehberger
+new: true
+date: 2025-01
+category: Browser/Search
+target: ChatGPT
+source:
+  url: https://embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The user is infected once via prompt injection in a website, image, or PDF that ChatGPT processes.
+    evidence:
+      quote: The user gets infected once with prompt injection malware...by visiting a website with ChatGPT, analyzing a malicious image or summarizing a pdf document
+      locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The injection overrides behaviour to write a persistent C2 implant into memory.
+    evidence:
+      quote: initial infection persists malicious instructions in ChatGPT’s long-term storage
+      locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
+  reconnaissance: null
+  persistence:
+    value: Independent (memory)
+    justification: C2 instructions live in ChatGPT’s long-term memory and re-arm every session.
+    evidence:
+      quote: initial infection persists malicious instructions in ChatGPT’s long-term storage
+      locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
+  command_control:
+    value: Promptware-native (●)
+    justification: ChatGPT itself repeatedly fetches fresh commands from attacker-controlled GitHub issues each session — a promptware-native C2 loop.
+    evidence:
+      quote: ChatGPT will just always pick the next issue when it pings back home...whenever a new conversation starts
+      locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: The controlled instance leaks data on demand to an attacker domain.
+    evidence:
+      quote: leak data at will...by sending data to this domain
+      locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/

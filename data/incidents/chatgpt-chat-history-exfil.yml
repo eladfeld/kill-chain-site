@@ -1,0 +1,38 @@
+slug: chatgpt-chat-history-exfil
+id: 2025-012
+title: Exfiltrating Your ChatGPT Chat History and Memories With Prompt Injection
+authors: Johann Rehberger
+new: true
+date: 2025-08
+category: Browser/Search
+target: ChatGPT
+source:
+  url: https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Summarizing an untrusted website or PDF lets its author inject instructions.
+    evidence:
+      quote: If you process untrusted content, like summarizing a website, or analyze a pdf document, the author of that document can exfiltrate any information
+      locator: embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected content overrides behaviour to read and stage system-prompt/history data.
+    evidence:
+      quote: All the information is present in the system prompt and accessible to an adversary during a prompt injection attack
+      locator: embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Recent conversation history is exfiltrated to a third-party domain.
+    evidence:
+      quote: ChatGPT retrieves all content under "recent conversation history" in the system prompt and sends it to the third party domain
+      locator: embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/
