@@ -1,6 +1,7 @@
 slug: mcp-history-theft
 id: 2025-004
 title: MCP History Theft
+questioned: true
 authors: "Invariant Labs"
 date: 2025-04
 category: Coding Assist.

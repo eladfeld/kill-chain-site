@@ -1,6 +1,7 @@
 slug: echoleak
 id: 2025-010
 title: EchoLeak
+questioned: true
 authors: "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)"
 date: 2025-06
 category: Enterprise

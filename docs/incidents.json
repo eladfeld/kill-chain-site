@@ -851,7 +851,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Malicious MCP server",
       "privilege_escalation": "Control bypass",
@@ -947,7 +947,7 @@
     "coverage": 3,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Untrusted repo content",
       "privilege_escalation": "Control bypass",
@@ -995,7 +995,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Markdown email",
       "privilege_escalation": "Auto RAG mix",
@@ -1019,7 +1019,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Slack/GitHub msg",
       "privilege_escalation": "Approval bypass",
@@ -1043,7 +1043,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Web-to-Lead form",
       "privilege_escalation": "Instr. override",
@@ -1067,7 +1067,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Jira ticket",
       "privilege_escalation": "Instr. obfusc.",
@@ -1379,7 +1379,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. obfusc.",
@@ -1547,7 +1547,7 @@
     "coverage": 5,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "GitHub issue",
       "privilege_escalation": "Instr. override",
@@ -1979,7 +1979,7 @@
     "coverage": 2,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "URL fragment",
       "privilege_escalation": null,
@@ -2027,7 +2027,7 @@
     "coverage": 4,
     "venue": "TODO-verify",
     "isNew": false,
-    "questioned": false,
+    "questioned": true,
     "stages": {
       "initial_access": "Doc/Cal/Email",
       "privilege_escalation": "Zero-click RAG",

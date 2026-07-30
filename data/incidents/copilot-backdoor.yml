@@ -1,6 +1,7 @@
 slug: copilot-backdoor
 id: 2025-026
 title: Copilot Backdoor Insertion
+questioned: true
 authors: "Pillar Security"
 date: 2025-08
 category: Coding Assist.

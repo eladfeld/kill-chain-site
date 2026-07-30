@@ -1,6 +1,7 @@
 slug: forcedleak
 id: 2025-012
 title: ForcedLeak
+questioned: true
 authors: "Noma Security (Sasi Levi)"
 date: 2025-07
 category: Enterprise

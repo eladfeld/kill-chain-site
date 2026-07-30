@@ -1,6 +1,7 @@
 slug: hashjack
 id: 2025-051
 title: HashJack
+questioned: true
 authors: "Vitaly Simonovich (Cato Networks)"
 date: 2025-11
 category: Browser/Search
