@@ -1,0 +1,39 @@
+slug: no-tools-required-frameworks
+id: 2026-022
+title: "No Tools Required: Post-Injection Exploitation Across AI Agent Frameworks"
+authors: Yarden Porat, Shahar Tal (Check Point)
+new: true
+questioned: true
+date: 2026-08
+category: AI Agent
+target: LangChain / CrewAI / AutoGen / Semantic Kernel
+source:
+  url: https://blackhat.com/us-26/briefings/schedule/index.html#no-tools-required-post-injection-exploitation-across-ai-agent-frameworks-53469
+  venue: Black Hat USA 2026
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Injected content hijacks agents through framework internals even without tool access, via memory stores, planning loops, and serialization layers (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation: null
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: Delayed-execution injection is stored in framework memory/serialization and fires across later conversation turns (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misc (agent hijack)
+    justification: Placeholder pending the recorded talk; framework-internal injection hijacks agent control flow.
+    evidence:
+      quote: TODO
+      locator: TODO

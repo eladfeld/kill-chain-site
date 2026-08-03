@@ -1,0 +1,33 @@
+slug: local-ai-apis-browser
+id: 2026-024
+title: "Local Models, Global Risk: Threats in Browser Built-in AI APIs"
+authors: Zahra Moti, Mina Mehrvarz, Tim Vlummens, Gautham Shaji, Gunes Acar (Radboud / KU Leuven)
+new: true
+date: 2026-09
+category: Browser/Search
+target: Chrome/Edge built-in AI APIs (Gemini Nano)
+source:
+  url: https://zahramoti.com/docs/Local-AI-ESORICS-2026.pdf
+  venue: ESORICS 2026
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Untrusted web content — including text invisible to the user — is passed to the browser's on-device Summarizer/Prompt APIs and manipulates their output.
+    evidence:
+      quote: local model’s outputs can be manipulated through different forms of prompt injection, including hidden text that is invisible to users
+      locator: Abstract
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misinformation
+    justification: Adversarial reviews/comments distort on-device summaries (narrative manipulation); the Prompt API is also abused to infer sensitive user attributes.
+    evidence:
+      quote: adversarial user-generated content, such as reviews and comments can distort summaries through narrative manipulation
+      locator: Abstract

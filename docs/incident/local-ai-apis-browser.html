@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Models, Global Risk: Threats in Browser Built-in AI APIs — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>Local Models, Global Risk: Threats in Browser Built-in AI APIs</h1>
+  <p class="byline">Zahra Moti, Mina Mehrvarz, Tim Vlummens, Gautham Shaji, Gunes Acar (Radboud / KU Leuven)</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Zahra Moti, Mina Mehrvarz, Tim Vlummens, Gautham Shaji, Gunes Acar (Radboud / KU Leuven)</td></tr>
+   <tr><th>Date</th><td>Sep'26</td></tr>
+   <tr><th>Category</th><td>Browser/Search</td></tr>
+   <tr><th>Target</th><td>Chrome/Edge built-in AI APIs (Gemini Nano)</td></tr>
+   <tr><th>Coverage</th><td>2 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>ESORICS 2026</td></tr>
+   <tr><th>Source</th><td><a href="https://zahramoti.com/docs/Local-AI-ESORICS-2026.pdf" rel="noreferrer noopener">original (paper)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">Untrusted web content — including text invisible to the user — is passed to the browser&#39;s on-device Summarizer/Prompt APIs and manipulates their output.</div>
+   <div class="ev"><q>local model’s outputs can be manipulated through different forms of prompt injection, including hidden text that is invisible to users</q> <span class="loc">Abstract</span></div></td></tr>
+<tr class="absent"><th>Priv. Esc.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Misinformation</td>
+   <td class="why"><div class="just">Adversarial reviews/comments distort on-device summaries (narrative manipulation); the Prompt API is also abused to infer sensitive user attributes.</div>
+   <div class="ev"><q>adversarial user-generated content, such as reviews and comments can distort summaries through narrative manipulation</q> <span class="loc">Abstract</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

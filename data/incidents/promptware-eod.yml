@@ -1,0 +1,39 @@
+slug: promptware-eod
+id: 2026-023
+title: "Promptware EOD: Skillful Agent Detonation"
+authors: Francesco Montorsi et al. (Zenity)
+new: true
+questioned: true
+date: 2026-08
+category: AI Agent
+target: AI agent supply chain (Skills / MCP servers / models)
+source:
+  url: https://blackhat.com/us-26/briefings/schedule/index.html#promptware-eod-skillful-agent-detonation-53921
+  venue: Black Hat USA 2026
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Malicious payloads are hidden in the agent supply chain — skill markdown files, rug-pulled MCP servers, misaligned models, and weaponized posts (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation: null
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: A malicious skill/MCP server persists in the agent's configuration and re-arms on each use (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misc (malware delivery)
+    justification: Placeholder pending the recorded talk; the supply chain is treated as a malware delivery vector.
+    evidence:
+      quote: TODO
+      locator: TODO

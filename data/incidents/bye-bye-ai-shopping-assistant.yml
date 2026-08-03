@@ -1,0 +1,39 @@
+slug: bye-bye-ai-shopping-assistant
+id: 2026-018
+title: "Bye Bye AI: Hacking the AI Shopping Assistant of a Top-3 US Retailer"
+authors: Netanel Rubin, Dan Avraham (Rein Security)
+new: true
+questioned: true
+date: 2026-08
+category: Enterprise
+target: AI shopping assistant of a top-3 US retailer (Vertex AI Search)
+source:
+  url: https://blackhat.com/us-26/briefings/schedule/index.html#bye-bye-ai-how-we-hacked-the-ai-shopping-assistant-of-a-top-3-us-retailer-53360
+  venue: Black Hat USA 2026
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct (D)
+    justification: A red-team engagement against a retailer's Vertex AI Search assistant behind an LLM gateway with intent-classification guardrails (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The engagement bypassed the gateway's intent-classification guardrails (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Placeholder pending the recorded talk; the team exfiltrated customer data and manipulated purchase flows.
+    evidence:
+      quote: TODO
+      locator: TODO

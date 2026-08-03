@@ -1,0 +1,43 @@
+slug: breaking-opus-memory-image
+id: 2026-011
+title: Breaking Opus 4.7 with ChatGPT (Hacking Claude's Memory)
+authors: Johann Rehberger (Embrace The Red)
+new: true
+date: 2026-04
+category: Multimodal
+target: Claude Opus 4.7 (memory)
+source:
+  url: https://embracethered.com/blog/posts/2026/breaking-opus-4.7-with-chatgpt/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A malicious image (generated with ChatGPT) is uploaded to Claude Opus 4.7 for analysis; its embedded content hijacks the model.
+    evidence:
+      quote: ChatGPT generated an adversarial image that hijacked my Claude Opus 4.7 to invoke the memory tool and persist false memories for future chats
+      locator: Intro
+  privilege_escalation:
+    value: Social eng. (SE)
+    justification: The image socially-engineers the reasoning model with a puzzle whose "solution" steers it toward the memory tool, overcoming its own suspicion.
+    evidence:
+      quote: Opus starts analyzing the image, gets hijacked by the embedded social engineering puzzle.
+      locator: Running Tests - Nice Puzzle!
+  reconnaissance: null
+  persistence:
+    value: Independent (memory)
+    justification: The payload drives the model to write four false facts into its own memory tool, which then persist into all future conversations.
+    evidence:
+      quote: these fake memories are inserted into the context and used in all future conversations
+      locator: Opus 4.7 Analyzes the Image
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misc (memory poisoning)
+    justification: "The objective is memory integrity corruption: false user attributes (name, age, employer) are implanted to influence future outputs."
+    evidence:
+      quote: It invoked the memory tool, not once, but five times.
+      locator: Opus 4.7 Analyzes the Image

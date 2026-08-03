@@ -1,0 +1,38 @@
+slug: semantic-cache-poisoning
+id: 2026-006
+title: Semantic Cache Poisoning in LLM Systems
+authors: Guanlong Wu, Taojie Wang, Yao Zhang, et al. (SUSTech / ByteDance)
+new: true
+date: 2026-02
+category: Enterprise
+target: LLM serving semantic caches (Azure / AWS / Alibaba)
+source:
+  url: https://www.ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf
+  venue: NDSS 2026
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct (D)
+    justification: The attacker queries the service to inject crafted entries into the shared semantic cache used across users.
+    evidence:
+      quote: an attacker injects crafted cache entries to cause others to receive attacker-defined responses
+      locator: Abstract
+  privilege_escalation: null
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: The poisoned entry persists in the shared cache and is re-served to other users on semantically similar future queries.
+    evidence:
+      quote: semantic caching, which reuses query-response pairs across users based on semantic similarity
+      locator: Abstract
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misinformation
+    justification: Other users of the service receive attacker-defined responses in place of genuine model output.
+    evidence:
+      quote: an attacker injects crafted cache entries to cause others to receive attacker-defined responses
+      locator: Abstract

@@ -1,0 +1,43 @@
+slug: pleasefix-perplexed-agent
+id: 2026-009
+title: PleaseFix (Perplexed Agent)
+authors: Zenity Labs
+new: true
+date: 2026-03
+category: Browser/Search
+target: Perplexity Comet
+source:
+  url: https://zenity.io/research/pleasefix-vulnerabilities
+  venue: Zenity Labs (research)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A weaponized calendar invite carries hidden instructions past a wall of blank lines; when the user asks the agent to accept the meeting it reads and follows them (zero-click).
+    evidence:
+      quote: Hidden past a wall of blank lines are attacker instructions that redirect the agent to an attacker-controlled site, where it receives a second malicious prompt.
+      locator: Local File System Exfiltration
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: Injected instructions written in a mix of Hebrew and English evade the agent's guardrails and redirect it to the password-manager interface.
+    evidence:
+      quote: injected instructions, written in a mix of Hebrew and English to evade guardrails, directing the agent to navigate to the password manager web interface
+      locator: Credential Theft via 1Password Vault
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement:
+    value: Cross-app (xA)
+    justification: The agent pivots to drive the integrated 1Password password manager — a separate application — authenticating with the unlocked session and changing the master password.
+    evidence:
+      quote: The agent initiates a password change, uses the unlocked extension to autofill the current password, and sets a new attacker-controlled one.
+      locator: Full 1Password Account Takeover
+  action_on_objective:
+    value: Credential exfil.
+    justification: Full chains against Perplexity Comet exfiltrate local files, steal vault credentials, and fully take over the integrated password-manager account.
+    evidence:
+      quote: full attack chains against Perplexity Comet leading to file system exfiltration, compromised credentials, and full account takeover of the integrated password manager
+      locator: "Agentic Browsers: Powerful, Pervasive, and Dangerously Vulnerable"

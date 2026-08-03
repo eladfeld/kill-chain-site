@@ -1,0 +1,48 @@
+slug: agent-commander
+id: 2026-008
+title: Agent Commander (Promptware-Powered C2)
+authors: Johann Rehberger (Embrace The Red)
+new: true
+date: 2026-03
+category: AI Agent
+target: OpenClaw / Kimi Claw / NanoClaw
+source:
+  url: https://embracethered.com/blog/posts/2026/agent-commander-your-agent-works-for-me-now/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Agents are hijacked via indirect prompt injection delivered through a malicious email, an analyzed document, or a visited website, requiring no user action.
+    evidence:
+      quote: "OpenClaw: Email delivery. Sending a malicious email to the agent (no human action needed)"
+      locator: Initial Entry Points and Exploitation
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The injected payload overrides the agent to enrol it into the attacker's C2; guardrails on stronger models can be reliably bypassed.
+    evidence:
+      quote: Opus 4.6 is better in catching attacks, but after some testing, reliable bypasses can be found
+      locator: Persistence Using Heartbeats
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: Persistence is achieved by writing to a recurring channel — OpenClaw's HEARTBEAT.md (runs every 30 min) or a scheduled task in NanoClaw — that re-arms the agent each cycle.
+    evidence:
+      quote: In order to achieve persistence, the indirect prompt injection attack adds a scheduled task that fires regularly.
+      locator: Scheduled Tasks
+  command_control:
+    value: Promptware-native (●)
+    justification: The compromised LLM agent itself checks back to Agent Commander each cycle and receives new objectives as natural-language prompts — the LLM is the C2 loop.
+    evidence:
+      quote: Agent Commander is a command and control (C2) server where hijacked agents regularly check in for any new tasks and objectives. Unlike classical C2, it doesn’t execute raw OS commands or APIs. All commands are provided in natural language.
+      locator: Agent Commander
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Assigned objectives include exfiltrating host data — e.g. navigating the mailbox, screenshotting the inbox, and uploading it to the C2.
+    evidence:
+      quote: I asked OpenClaw to navigate to the Outlook inbox, take a screenshot and upload it to Agent Commander
+      locator: "Objectives: Your Agent Works For Me Now"

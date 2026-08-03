@@ -1,0 +1,38 @@
+slug: llmthief-config-leak
+id: 2026-015
+title: "LLMThief: Configuration Leaking in Commercial LLM App Stores"
+authors: Pinji Chen, Jinlong Jiang, Jianjun Chen, et al. (Tsinghua University)
+new: true
+date: 2026-05
+category: Enterprise
+target: OpenAI GPT Store / ByteDance Coze / Baidu Wenxin
+source:
+  url: https://www.jianjunchen.com/p/llm-leak.SP26.pdf
+  venue: IEEE S&P 2026
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct (D)
+    justification: The adversary prompts the deployed LLM app directly, manipulating it into disclosing its own confidential configuration.
+    evidence:
+      quote: adversaries can manipulate the LLM app to reveal its sensitive configurations, such as system prompts, external APIs, and knowledge files
+      locator: Abstract
+  privilege_escalation:
+    value: Misc
+    justification: A genetic algorithm and shadow-app oracles evolve adaptive mutation strategies that defeat the apps' protective instructions.
+    evidence:
+      quote: leverages shadow LLM apps as probing oracles and a genetic algorithm to identify adaptive mutation strategies
+      locator: Abstract
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: The end effect is leakage of system prompts, external API endpoints, and knowledge files across thousands of real commercial LLM apps.
+    evidence:
+      quote: our large-scale analysis of 4,164 real-world LLM apps reveals a range of critical risks, including system prompt leaks, external API exposures, and knowledge file leaks
+      locator: Abstract

@@ -1,0 +1,38 @@
+slug: ipi-retrieval-barrier
+id: 2026-020
+title: "Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild"
+authors: Hongyan Chang, Ergute Bao, Xinjian Luo, Ting Yu (MBZUAI)
+new: true
+date: 2026-08
+category: AI Agent
+target: GPT-4o (RAG / multi-agent workflows)
+source:
+  url: https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_chang.pdf
+  venue: USENIX Security 2026
+  type: paper
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A single poisoned email is planted so that a trigger fragment guarantees its retrieval under natural user queries, delivering the attack fragment to the LLM.
+    evidence:
+      quote: a single poisoned email was sufficient to coerce GPT-4o into exfiltrating SSH keys with over 80% success in a multi-agent workflow
+      locator: Abstract
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The retrieved attack fragment coerces the model into performing the attacker's objective against its intended task.
+    evidence:
+      quote: coerce GPT-4o into exfiltrating SSH keys
+      locator: Abstract
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: In an email-summarization workflow the poisoned content drives GPT-4o to exfiltrate SSH keys.
+    evidence:
+      quote: a single poisoned email was sufficient to coerce GPT-4o into exfiltrating SSH keys with over 80% success in a multi-agent workflow
+      locator: Abstract

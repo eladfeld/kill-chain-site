@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt Injection Risks in Third-Party AI Chatbot Plugins — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>Prompt Injection Risks in Third-Party AI Chatbot Plugins</h1>
+  <p class="byline">Yigitcan Kaya, Anton Landerer, Stijn Pletinckx, et al. (UC Santa Barbara)</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Yigitcan Kaya, Anton Landerer, Stijn Pletinckx, et al. (UC Santa Barbara)</td></tr>
+   <tr><th>Date</th><td>May'26</td></tr>
+   <tr><th>Category</th><td>Enterprise</td></tr>
+   <tr><th>Target</th><td>Third-party website chatbot plugins (10,000+ sites)</td></tr>
+   <tr><th>Coverage</th><td>3 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>IEEE S&amp;P 2026</td></tr>
+   <tr><th>Source</th><td><a href="https://arxiv.org/pdf/2511.05797" rel="noreferrer noopener">original (paper)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">Context-enrichment tools feed untrusted third-party content (e.g. customer reviews) to the chatbot without separating it from trusted content, enabling indirect injection.</div>
+   <div class="ev"><q>these tools do not distinguish the website’s trusted content (e.g., product descriptions) from untrusted, third-party content (e.g., customer reviews), introducing a risk of indirect prompt injection</q> <span class="loc">Abstract</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
+   <td class="why"><div class="just">Plugins that fail to protect conversation-history integrity let attackers forge fake system messages, overriding the chatbot&#39;s instructions.</div>
+   <div class="ev"><q>allowing adversaries to forge conversation histories (including fake system messages), boosting their ability to elicit unintended behavior</q> <span class="loc">Abstract</span></div></td></tr>
+<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Misc (unintended behavior)</td>
+   <td class="why"><div class="just">The forged history amplifies the attacker&#39;s ability to elicit unintended behavior such as free code generation from the site&#39;s LLM.</div>
+   <div class="ev"><q>boosting their ability to elicit unintended behavior (e.g., code generation) by 3–8×</q> <span class="loc">Abstract</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

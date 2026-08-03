@@ -1,0 +1,33 @@
+slug: computer-use-toctou
+id: 2026-016
+title: Computer-Use TOCTOU (What You Click Is Not What You Get)
+authors: Johann Rehberger (Embrace The Red)
+new: true
+date: 2026-06
+category: Agentic/CUA
+target: Claude Computer-Use
+source:
+  url: https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: An attacker-controlled phishing page is processed by the computer-use agent; its "Continue" button is placed exactly over Outlook's "Send" button.
+    evidence:
+      quote: The important part is that the “Continue” button is at the exact same location as the “Send” button in the draft!
+      locator: Crafting The Attack
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misc (unauthorized email send)
+    justification: A time-of-check/time-of-use race between screenshot and click makes the agent click "Send" on a pre-drafted Outlook email instead of the button it reasoned about.
+    evidence:
+      quote: The Agent will think it clicks the Continue button, but in reality it clicks “Send” to send an arbitrary email.
+      locator: Crafting The Attack

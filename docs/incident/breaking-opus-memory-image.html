@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breaking Opus 4.7 with ChatGPT (Hacking Claude&#39;s Memory) — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>Breaking Opus 4.7 with ChatGPT (Hacking Claude&#39;s Memory)</h1>
+  <p class="byline">Johann Rehberger (Embrace The Red)</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Johann Rehberger (Embrace The Red)</td></tr>
+   <tr><th>Date</th><td>Apr'26</td></tr>
+   <tr><th>Category</th><td>Multimodal</td></tr>
+   <tr><th>Target</th><td>Claude Opus 4.7 (memory)</td></tr>
+   <tr><th>Coverage</th><td>4 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>Embrace The Red (blog)</td></tr>
+   <tr><th>Source</th><td><a href="https://embracethered.com/blog/posts/2026/breaking-opus-4.7-with-chatgpt/" rel="noreferrer noopener">original (blog)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">A malicious image (generated with ChatGPT) is uploaded to Claude Opus 4.7 for analysis; its embedded content hijacks the model.</div>
+   <div class="ev"><q>ChatGPT generated an adversarial image that hijacked my Claude Opus 4.7 to invoke the memory tool and persist false memories for future chats</q> <span class="loc">Intro</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Social eng. (SE)</td>
+   <td class="why"><div class="just">The image socially-engineers the reasoning model with a puzzle whose &quot;solution&quot; steers it toward the memory tool, overcoming its own suspicion.</div>
+   <div class="ev"><q>Opus starts analyzing the image, gets hijacked by the embedded social engineering puzzle.</q> <span class="loc">Running Tests - Nice Puzzle!</span></div></td></tr>
+<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Persist.</th><td class="val">Independent (memory)</td>
+   <td class="why"><div class="just">The payload drives the model to write four false facts into its own memory tool, which then persist into all future conversations.</div>
+   <div class="ev"><q>these fake memories are inserted into the context and used in all future conversations</q> <span class="loc">Opus 4.7 Analyzes the Image</span></div></td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Misc (memory poisoning)</td>
+   <td class="why"><div class="just">The objective is memory integrity corruption: false user attributes (name, age, employer) are implanted to influence future outputs.</div>
+   <div class="ev"><q>It invoked the memory tool, not once, but five times.</q> <span class="loc">Opus 4.7 Analyzes the Image</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

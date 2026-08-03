@@ -1,0 +1,34 @@
+slug: attacking-defending-ai-browsers
+id: 2026-017
+title: Attacking and Defending AI Browsers
+authors: Artem Chaikin (Brave Software)
+new: true
+questioned: true
+date: 2026-08
+category: Browser/Search
+target: AI browser assistants
+source:
+  url: https://blackhat.com/us-26/briefings/schedule/index.html#attacking-and-defending-ai-browsers-51657
+  venue: Black Hat USA 2026
+  type: other
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: AI browser assistants autonomously navigate and act on web content, exposing them to injection that traditional web defenses do not stop (pending talk).
+    evidence:
+      quote: TODO
+      locator: TODO
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Placeholder pending the recorded talk; browser-agent hijacks in this class typically end in data theft.
+    evidence:
+      quote: TODO
+      locator: TODO
