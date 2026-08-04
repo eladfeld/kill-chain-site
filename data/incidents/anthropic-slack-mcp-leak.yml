@@ -1,5 +1,5 @@
 slug: anthropic-slack-mcp-leak
-id: 2025-007
+id: 2025-008
 title: "Security Advisory: Anthropic’s Slack MCP Server Vulnerable to Data Exfiltration"
 authors: Johann Rehberger
 new: true

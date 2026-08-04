@@ -1,0 +1,33 @@
+slug: claude-ascii-smuggling
+id: 2024-001
+title: "Anthropic Claude: Hidden Prompt Injection via ASCII Smuggling"
+authors: Johann Rehberger
+new: true
+date: 2024-02
+category: AI Agent
+target: Anthropic Claude
+source:
+  url: https://embracethered.com/blog/posts/2024/claude-hidden-prompt-injection-ascii-smuggling/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Unicode Tag code points are invisible in the UI but interpreted by Claude, so hidden instructions ride inside documents, uploads or pasted text.
+    evidence:
+      quote: Such hidden text can be in RAG documents or in uploaded files or make it into the prompt just via copy/paste.
+      locator: embracethered.com/blog/posts/2024/claude-hidden-prompt-injection-ascii-smuggling/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Misc (unintended behavior)
+    justification: Claude follows the invisible instruction and emits attacker-chosen output; Anthropic closed the report as having no identifiable security impact.
+    evidence:
+      quote: Turns out it has the same issue as ChatGPT had.
+      locator: embracethered.com/blog/posts/2024/claude-hidden-prompt-injection-ascii-smuggling/

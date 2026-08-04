@@ -1,0 +1,33 @@
+slug: gcp-vertex-ai-studio-exfil
+id: 2023-014
+title: "GCP Vertex AI Generative AI Studio: Data Exfiltration via Image Markdown Injection"
+authors: Johann Rehberger
+new: true
+date: 2023-10
+category: Enterprise
+target: Google Cloud Vertex AI - Generative AI Studio
+source:
+  url: https://embracethered.com/blog/posts/2023/google-gcp-generative-ai-studio-data-exfiltration-fixed/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct (D)
+    justification: As in the Azure case, no retrieval integrations existed yet, so the untrusted payload arrives by the user pasting it into the prompt.
+    evidence:
+      quote: the attack was limited to copy/pasting untrusted data into the prompt that is analyzed
+      locator: embracethered.com/blog/posts/2023/google-gcp-generative-ai-studio-data-exfiltration-fixed/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Chat history is appended to an image URL that Generative AI Studio auto-loads; an empty alt text makes the exfiltration image effectively invisible.
+    evidence:
+      quote: This instructs the LLM to grab past messages and send it off to a third party server.
+      locator: embracethered.com/blog/posts/2023/google-gcp-generative-ai-studio-data-exfiltration-fixed/

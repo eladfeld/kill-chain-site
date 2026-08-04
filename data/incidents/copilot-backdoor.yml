@@ -1,43 +1,38 @@
 slug: copilot-backdoor
-id: 2025-026
-title: Copilot Backdoor Insertion
-questioned: true
-authors: "Pillar Security"
-date: 2025-08
+id: 2025-004
+title: "GitHub Copilot: Backdoor Insertion via Custom Instructions File"
+authors: "Johann Rehberger (after Pillar Security)"
+new: true
+date: 2025-04
 category: Coding Assist.
-target: GitHub Copilot
+target: GitHub Copilot (.github/copilot-instructions.md)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://embracethered.com/blog/posts/2025/github-custom-copilot-instructions/
+  venue: Embrace The Red (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: GitHub issue
-    justification: TODO
+    value: Indirect (I)
+    justification: A poisoned repository file is pulled into Copilot's prompt context whenever a developer works in the repo.
     evidence:
-      quote: TODO
-      locator: TODO
-  privilege_escalation:
-    value: Instr. obfusc.
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+      quote: if you ask Copilot to explain some code it adds these custom instructions to the prompt context
+      locator: embracethered.com/blog/posts/2025/github-custom-copilot-instructions/
+  privilege_escalation: null
   reconnaissance: null
-  persistence: null
-  command_control: null
-  lateral_movement:
-    value: Supply-ch
-    justification: TODO
+  persistence:
+    value: Dependent (channel)
+    justification: The instructions file lives in the repository and re-arms the payload on every subsequent session rather than being injected once.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Stay alert for any modifications to your custom instruction file.
+      locator: embracethered.com/blog/posts/2025/github-custom-copilot-instructions/
+  command_control: null
+  lateral_movement: null
   action_on_objective:
     value: Backdoor insertion
-    justification: TODO
+    justification: A single injected line causes Copilot to emit backdoored code into the developer's project.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: The most significant issue is that a single sneaky line in the instructions file can add backdoor code.
+      locator: embracethered.com/blog/posts/2025/github-custom-copilot-instructions/

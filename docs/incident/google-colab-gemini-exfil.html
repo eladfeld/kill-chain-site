@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Colab AI (Gemini): Prompt Injection to Data Exfiltration — Archive</title>
+<link rel="stylesheet" href="../assets/style.css?v=1785095048449">
+</head><body>
+<header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
+<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<main>
+  <p class="back"><a href="../index.html">← all incidents</a></p>
+  <h1>Google Colab AI (Gemini): Prompt Injection to Data Exfiltration</h1>
+  <p class="byline">Johann Rehberger</p>
+  
+  <table class="meta"><tbody>
+   <tr><th>Authors</th><td>Johann Rehberger</td></tr>
+   <tr><th>Date</th><td>Jul'24</td></tr>
+   <tr><th>Category</th><td>Enterprise</td></tr>
+   <tr><th>Target</th><td>Google Colab AI / Gemini in Colab</td></tr>
+   <tr><th>Coverage</th><td>3 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>Embrace The Red (blog)</td></tr>
+   <tr><th>Source</th><td><a href="https://embracethered.com/blog/posts/2024/google-colab-image-render-exfil/" rel="noreferrer noopener">original (blog)</a> · <span class="pending">archive pending</span></td></tr>
+  </tbody></table>
+  <h2>Kill-chain analysis</h2>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">Colab began placing untrusted notebook content into the prompt, so attacker text in a shared notebook reaches the model automatically.</div>
+   <div class="ev"><q>Colab now automatically puts Notebook content (untrusted data) into the prompt.</q> <span class="loc">embracethered.com/blog/posts/2024/google-colab-image-render-exfil/</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
+   <td class="why"><div class="just">The system prompt explicitly asks the model not to render images; the injected instructions override it.</div>
+   <div class="ev"><q>System instructions are more like suggestions… an attacker can override system instructions.</q> <span class="loc">embracethered.com/blog/posts/2024/google-colab-image-render-exfil/</span></div></td></tr>
+<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Action on Obj.</th><td class="val">Data exfiltration</td>
+   <td class="why"><div class="just">Chat data and notebook source code are staged into a clickable Google-domain link that bypasses Colab&#39;s link-confirmation mitigation and reaches an attacker Apps Script endpoint.</div>
+   <div class="ev"><q>the data, incl. name and email from chat + source code from Notebook, was sent to the custom Apps Script macro and written to the exfiltration log</q> <span class="loc">embracethered.com/blog/posts/2024/google-colab-image-render-exfil/</span></div></td></tr></tbody></table></main>
+<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+</body></html>

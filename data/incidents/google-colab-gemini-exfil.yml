@@ -1,0 +1,38 @@
+slug: google-colab-gemini-exfil
+id: 2024-012
+title: "Google Colab AI (Gemini): Prompt Injection to Data Exfiltration"
+authors: Johann Rehberger
+new: true
+date: 2024-07
+category: Enterprise
+target: Google Colab AI / Gemini in Colab
+source:
+  url: https://embracethered.com/blog/posts/2024/google-colab-image-render-exfil/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Colab began placing untrusted notebook content into the prompt, so attacker text in a shared notebook reaches the model automatically.
+    evidence:
+      quote: Colab now automatically puts Notebook content (untrusted data) into the prompt.
+      locator: embracethered.com/blog/posts/2024/google-colab-image-render-exfil/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The system prompt explicitly asks the model not to render images; the injected instructions override it.
+    evidence:
+      quote: System instructions are more like suggestions… an attacker can override system instructions.
+      locator: embracethered.com/blog/posts/2024/google-colab-image-render-exfil/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Chat data and notebook source code are staged into a clickable Google-domain link that bypasses Colab's link-confirmation mitigation and reaches an attacker Apps Script endpoint.
+    evidence:
+      quote: the data, incl. name and email from chat + source code from Notebook, was sent to the custom Apps Script macro and written to the exfiltration log
+      locator: embracethered.com/blog/posts/2024/google-colab-image-render-exfil/

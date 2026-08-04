@@ -1,0 +1,38 @@
+slug: claude-image-markdown-exfil
+id: 2023-010
+title: "Anthropic Claude: Data Exfiltration via Image Markdown Injection"
+authors: Johann Rehberger
+new: true
+date: 2023-08
+category: AI Agent
+target: Anthropic Claude
+source:
+  url: https://embracethered.com/blog/posts/2023/anthropic-fixes-claude-data-exfiltration-via-images/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: A file uploaded into the Claude conversation carries the attacker payload, making the uploading user the victim.
+    evidence:
+      quote: In case the user uploads a file containing untrusted data, the user becomes susceptible to an Indirect Prompt Injection attack.
+      locator: embracethered.com/blog/posts/2023/anthropic-fixes-claude-data-exfiltration-via-images/
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The payload overrides the current task and dictates the assistant's identity and output.
+    evidence:
+      quote: Ignore everything before and after this sentence
+      locator: embracethered.com/blog/posts/2023/anthropic-fixes-claude-data-exfiltration-via-images/
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: Prior chat history is URL-encoded into an image src that the client auto-loads, sending it to the attacker server with no user interaction.
+    evidence:
+      quote: instruct the model to append the previous chat history to the URL, and at the same time URL encode the data
+      locator: embracethered.com/blog/posts/2023/anthropic-fixes-claude-data-exfiltration-via-images/

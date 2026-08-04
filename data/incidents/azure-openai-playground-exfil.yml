@@ -1,0 +1,33 @@
+slug: azure-openai-playground-exfil
+id: 2023-012
+title: "Azure OpenAI Playground: Data Exfiltration via Image Markdown Injection"
+authors: Johann Rehberger
+new: true
+date: 2023-09
+category: Enterprise
+target: Azure OpenAI / AI Playground
+source:
+  url: https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
+  venue: Embrace The Red (blog)
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Direct (D)
+    justification: No integrations existed that could pull remote content into the prompt, so the payload reaches the model when the user pastes untrusted data into the playground.
+    evidence:
+      quote: the attack was limited to copy/pasting untrusted data into the prompt that is analyzed
+      locator: embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
+  privilege_escalation: null
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: Data exfiltration
+    justification: The model URL-encodes the conversation into an image src that the playground renders, sending chat history including a secret code to the attacker server.
+    evidence:
+      quote: This instructs the LLM to grab past messages and send it off to a third party server.
+      locator: embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
