@@ -1,5 +1,5 @@
 slug: llmthief-config-leak
-id: 2026-012
+id: 2026-010
 title: "LLMThief: Configuration Leaking in Commercial LLM App Stores"
 authors: Pinji Chen, Jinlong Jiang, Jianjun Chen, et al. (Tsinghua University)
 new: true
@@ -21,7 +21,7 @@ stages:
       quote: adversaries can manipulate the LLM app to reveal its sensitive configurations, such as system prompts, external APIs, and knowledge files
       locator: Abstract
   privilege_escalation:
-    value: Misc
+    value: Misc.
     justification: A genetic algorithm and shadow-app oracles evolve adaptive mutation strategies that defeat the apps' protective instructions.
     evidence:
       quote: leverages shadow LLM apps as probing oracles and a genetic algorithm to identify adaptive mutation strategies

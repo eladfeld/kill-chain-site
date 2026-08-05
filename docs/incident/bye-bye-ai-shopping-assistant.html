@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bye Bye AI: Hacking the AI Shopping Assistant of a Top-3 US Retailer — Archive</title>
+<title>Bye Bye AI: Hacking the AI Shopping Assistant of a Top 3 US Retailer — Archive</title>
 <link rel="stylesheet" href="../assets/style.css?v=1785095048449">
 </head><body>
 <header class="site"><a class="home" href="../index.html">Promptware Kill-Chain Archive</a>
@@ -10,31 +10,33 @@
 <div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
 <main>
   <p class="back"><a href="../index.html">← all incidents</a></p>
-  <h1>Bye Bye AI: Hacking the AI Shopping Assistant of a Top-3 US Retailer</h1>
-  <p class="byline">Netanel Rubin, Dan Avraham (Rein Security)</p>
-  <p class="questioned"><strong>?</strong> Not demonstrated against a real LLM-integrated application.</p>
+  <h1>Bye Bye AI: Hacking the AI Shopping Assistant of a Top 3 US Retailer</h1>
+  <p class="byline">Shlomi Ashkenazy, Netanel Rubin, Dan Avraham (Rein Security)</p>
+  
   <table class="meta"><tbody>
-   <tr><th>Authors</th><td>Netanel Rubin, Dan Avraham (Rein Security)</td></tr>
-   <tr><th>Date</th><td>Aug'26</td></tr>
+   <tr><th>Authors</th><td>Shlomi Ashkenazy, Netanel Rubin, Dan Avraham (Rein Security)</td></tr>
+   <tr><th>Date</th><td>Jul'26</td></tr>
    <tr><th>Category</th><td>Enterprise</td></tr>
-   <tr><th>Target</th><td>AI shopping assistant of a top-3 US retailer (Vertex AI Search)</td></tr>
-   <tr><th>Coverage</th><td>3 / 7 stages</td></tr>
-   <tr><th>Venue</th><td>Black Hat USA 2026</td></tr>
-   <tr><th>Source</th><td><a href="https://blackhat.com/us-26/briefings/schedule/index.html#bye-bye-ai-how-we-hacked-the-ai-shopping-assistant-of-a-top-3-us-retailer-53360" rel="noreferrer noopener">original (other)</a> · <span class="pending">archive pending</span></td></tr>
+   <tr><th>Target</th><td>AI shopping assistant of an undisclosed top-3 US retailer (Google Vertex AI Search)</td></tr>
+   <tr><th>Coverage</th><td>4 / 7 stages</td></tr>
+   <tr><th>Venue</th><td>Rein Security (blog); Black Hat USA&#39;26</td></tr>
+   <tr><th>Source</th><td><a href="https://reinsec.io/blog/reins-agent-breakers-research-team-discovers-critical-vulnerabilities-in-top-u-s-retailers-ai-shopping-agent/" rel="noreferrer noopener">original (blog)</a> · <span class="pending">archive pending</span></td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>
-  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Direct (D)</td>
-   <td class="why"><div class="just">A red-team engagement against a retailer&#39;s Vertex AI Search assistant behind an LLM gateway with intent-classification guardrails (pending talk).</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
-<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
-   <td class="why"><div class="just">The engagement bypassed the gateway&#39;s intent-classification guardrails (pending talk).</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr>
-<tr class="absent"><th>Recon.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+  <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
+   <td class="why"><div class="just">The product-comparison feature delegates retrieval to a fetcher process, so attacker-controlled external pages enter the assistant&#39;s context as data.</div>
+   <div class="ev"><q>The agent delegated retrieval to a fetcher-style process that could ingest untrusted external content</q> <span class="loc">reinsec.io blog § stage 1</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Misc.</td>
+   <td class="why"><div class="just">The search query field takes a different path to the backend than other inputs, so the LLM gateway&#39;s filtering never inspects the payload.</div>
+   <div class="ev"><q>was not subjected to the same effective filtration path</q> <span class="loc">reinsec.io blog § stage 2</span></div></td></tr>
+<tr><th>Recon.</th><td class="val">Yes</td>
+   <td class="why"><div class="just">A first-stage payload dumps the assistant&#39;s own prompt context and tool syntax, which the exploit needs before it can call tools correctly.</div>
+   <div class="ev"><q>elicit the assistant&#39;s internal prompt context, including system tool names, invocation syntax</q> <span class="loc">reinsec.io blog § stage 3</span></div></td></tr>
 <tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
-<tr><th>Action on Obj.</th><td class="val">Data exfiltration</td>
-   <td class="why"><div class="just">Placeholder pending the recorded talk; the team exfiltrated customer data and manipulated purchase flows.</div>
-   <div class="ev"><q>TODO</q> <span class="loc">TODO</span></div></td></tr></tbody></table></main>
+<tr><th>Action on Obj.</th><td class="val">RCE</td>
+   <td class="why"><div class="just">The second-stage payload runs attacker-controlled tool code inside the retailer&#39;s backend, returning directory listings and environment variables.</div>
+   <div class="ev"><q>execute attacker-controlled tool code within its backend environment</q> <span class="loc">reinsec.io blog § stage 4</span></div></td></tr></tbody></table></main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>

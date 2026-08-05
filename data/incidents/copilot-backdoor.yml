@@ -31,7 +31,7 @@ stages:
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Backdoor insertion
+    value: Misc (backdoor insertion)
     justification: A single injected line causes Copilot to emit backdoored code into the developer's project.
     evidence:
       quote: The most significant issue is that a single sneaky line in the instructions file can add backdoor code.

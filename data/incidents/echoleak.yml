@@ -1,43 +1,42 @@
 slug: echoleak
 id: 2025-010
 title: EchoLeak
-questioned: true
 authors: "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)"
 date: 2025-06
 category: Enterprise
 target: M365 Copilot
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://www.catonetworks.com/blog/breaking-down-echoleak/
+  venue: "Aim Labs / Cato Networks (blog); MSRC CVE-2025-32711"
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Markdown email
-    justification: TODO
+    value: Indirect (I)
+    justification: An unsolicited external email carries the payload, which Copilot processes on behalf of an unsuspecting user with no click required.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: An adversary simply needs to send an email to the victim without any restriction on the sender's email.
+      locator: catonetworks.com/blog/breaking-down-echoleak/ § attack chain
   privilege_escalation:
-    value: Auto RAG mix
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The email's instructions redirect Copilot to attend to privileged internal data outside the user's intent — the "LLM Scope Violation" technique.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: make the LLM attend to trusted data without the user's explicit consent
+      locator: catonetworks.com/blog/breaking-down-echoleak/ § LLM Scope Violation
   reconnaissance: null
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: The payload sits in the mailbox and is re-retrieved by the RAG engine whenever a related user query pulls it back into context.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: M365 Copilot queries the Microsoft Graph and retrieves any relevant information from the user's organizational environment.
+      locator: catonetworks.com/blog/breaking-down-echoleak/ § retrieval
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Zero-click exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: Context data is smuggled out through reference-style markdown images that evade redaction and CSP via a trusted Microsoft endpoint.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Automatically exfiltrate any data from M365 Copilot's context, without relying on specific victim behavior.
+      locator: catonetworks.com/blog/breaking-down-echoleak/ § exfiltration

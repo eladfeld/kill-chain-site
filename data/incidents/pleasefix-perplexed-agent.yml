@@ -36,7 +36,7 @@ stages:
       quote: The agent initiates a password change, uses the unlocked extension to autofill the current password, and sets a new attacker-controlled one.
       locator: Full 1Password Account Takeover
   action_on_objective:
-    value: Credential exfil.
+    value: Data exfiltration
     justification: Full chains against Perplexity Comet exfiltrate local files, steal vault credentials, and fully take over the integrated password-manager account.
     evidence:
       quote: full attack chains against Perplexity Comet leading to file system exfiltration, compromised credentials, and full account takeover of the integrated password manager

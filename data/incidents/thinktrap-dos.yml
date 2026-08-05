@@ -21,7 +21,7 @@ stages:
       quote: adversaries craft specially designed inputs that cause the model to enter excessively long or infinite generation loops
       locator: Abstract
   privilege_escalation:
-    value: Misc
+    value: Misc.
     justification: A black-box input-space optimization finds adversarial prompts that induce unbounded reasoning with minimal token overhead.
     evidence:
       quote: identify adversarial prompts that induce extended or non-terminating generation across several state-of-the-art LLMs, achieving DoS with minimal token overhead

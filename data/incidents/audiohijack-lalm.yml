@@ -1,5 +1,5 @@
 slug: audiohijack-lalm
-id: 2026-010
+id: 2026-008
 title: "AudioHijack: Auditory Prompt Injection Against Audio-Language Models"
 authors: Meng Chen, Kun Wang, Li Lu, et al. (Zhejiang University / NTU / NUS)
 new: true
@@ -21,7 +21,7 @@ stages:
       quote: we reveal a previously overlooked threat, auditory prompt injection, under realistic constraints of audio data-only access and strong perceptual stealth
       locator: Abstract
   privilege_escalation:
-    value: Misc
+    value: Misc.
     justification: The trigger is an optimized, imperceptible adversarial perturbation blended into natural reverberation, steering model attention while evading the user.
     evidence:
       quote: a convolutional blending method that modulates perturbations into natural reverberation, making them highly imperceptible to users

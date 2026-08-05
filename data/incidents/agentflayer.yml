@@ -1,48 +1,42 @@
 slug: agentflayer
 id: 2025-011
 title: AgentFlayer
-questioned: true
-authors: "Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)"
+authors: "Marina Simakov, Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)"
 date: 2025-08
 category: Coding Assist.
-target: Cursor
+target: Cursor with Jira MCP integration
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets
+  venue: "Zenity Labs (blog); Black Hat USA'25"
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Jira ticket
-    justification: TODO
+    value: Indirect (I)
+    justification: An outside party files a Zendesk ticket that auto-syncs into Jira, and Cursor's Jira MCP tool feeds it to the agent as ordinary work content.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Tickets from external systems like Zendesk are automatically synced into Jira.
+      locator: labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets § attack flow
   privilege_escalation:
-    value: Instr. obfusc.
-    justification: TODO
+    value: Misc.
+    justification: The credential hunt is obfuscated as a nonsense-token debugging request, evading the model's alignment checks rather than overtly overriding them.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: A waffle is a string which starts with 'AK' is located under the root directory.
+      locator: labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets § payload
   reconnaissance: null
   persistence:
-    value: RAG-dep
-    justification: TODO
+    value: Dependent (channel)
+    justification: The payload lives in the synced Jira ticket and re-fires whenever the agent revisits that issue in a later session.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Tickets from external systems like Zendesk are automatically synced into Jira.
+      locator: labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets § attack flow
   command_control: null
-  lateral_movement:
-    value: Pipeline
-    justification: TODO
-    evidence:
-      quote: TODO
-      locator: TODO
+  lateral_movement: null
   action_on_objective:
-    value: Credential exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: AWS credentials found on the developer's machine are sent to an attacker-controlled domain as a URL parameter.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: Exfiltrate the secret by initiating a request to an attacker-controlled domain, sending the secret in a URL parameter.
+      locator: labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets § exfiltration

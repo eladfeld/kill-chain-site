@@ -7,8 +7,8 @@ date: 2024-08
 category: Enterprise
 target: Microsoft 365 Copilot / Copilot Studio
 source:
-  url: https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770
-  venue: Black Hat USA'24
+  url: https://i.blackhat.com/BH-US-24/Presentations/US24-MichaelBargury-15WaystoBreakYourCopilot.pdf
+  venue: Black Hat USA 2024 (slide deck)
   type: other
   snapshot: null
   archived_at: null
@@ -16,33 +16,33 @@ source:
 stages:
   initial_access:
     value: Indirect (I)
-    justification: Attacker content ingested as Copilot grounding data provides the injection channel.
+    justification: Copilot knowledge sources ingest attacker-controllable external web content as trusted input to the bot.
     evidence:
-      quote: Copilot Studio’s integration with GenAI expands the prompt injection attack surface
-      locator: blackhat.com/us-24 briefing abstract
+      quote: An unauthenticated external resource ... Under someone else’s control
+      locator: US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p24
   privilege_escalation:
-    value: Instruction override (IR)
-    justification: Injected content bypasses DLP and overrides copilot behaviour via insecure defaults and plugins.
+    value: Misc.
+    justification: "Insecure defaults rather than a jailbreak: author-authentication and permissive connectors hand the maker’s privileges to any user of the copilot."
     evidence:
-      quote: bypassing security controls like DLP through insecure defaults, overly permissive plugins
-      locator: " blackhat.com/us-24 briefing abstract"
+      quote: essentially lets others use the maker’s access and privileges inside the copilot
+      locator: US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p47
   reconnaissance:
     value: "Yes"
-    justification: CopilotHunter scans for publicly accessible copilots and fuzzes them to locate sensitive data.
+    justification: CopilotHunter enumerates tenants, environments and bot names to find publicly reachable copilots before interacting with them.
     evidence:
-      quote: CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots
-      locator: blackhat.com/us-24 briefing abstract
+      quote: Environment & Tenant ID Enumeration
+      locator: US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p117 (Copilot Hunter, p84)
   persistence:
     value: Dependent (channel)
-    justification: Attacks rely on attacker content persisting in the copilot’s grounding data.
+    justification: Dynamic web knowledge sources are re-fetched on later interactions, so attacker content re-enters the bot each session.
     evidence:
-      quote: exfiltrate sensitive enterprise data
-      locator: blackhat.com/us-24 briefing abstract
+      quote: Uploaded files are static, web content can be dynamic.
+      locator: US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p23
   command_control: null
   lateral_movement: null
   action_on_objective:
     value: Data exfiltration
-    justification: Exfiltrates confidential enterprise data and enables spear-phishing.
+    justification: The chained defaults produce data leakage and over-sharing of sensitive enterprise data out of the tenant.
     evidence:
-      quote: exfiltrate sensitive enterprise data by bypassing security controls like DLP
-      locator: blackhat.com/us-24 briefing abstract
+      quote: Multiple data leakage scenarios
+      locator: US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p82 (recap)

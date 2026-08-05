@@ -163,7 +163,7 @@
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Misc"
+      "action_on_objective": "Misc (conversation manipulation)"
     },
     "url": "https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/"
   },
@@ -729,19 +729,19 @@
     "category": "Enterprise",
     "target": "Microsoft 365 Copilot / Copilot Studio",
     "coverage": 5,
-    "venue": "Black Hat USA'24",
+    "venue": "Black Hat USA 2024 (slide deck)",
     "isNew": true,
     "questioned": false,
     "stages": {
       "initial_access": "Indirect (I)",
-      "privilege_escalation": "Instruction override (IR)",
+      "privilege_escalation": "Misc.",
       "reconnaissance": "Yes",
       "persistence": "Dependent (channel)",
       "command_control": null,
       "lateral_movement": null,
       "action_on_objective": "Data exfiltration"
     },
-    "url": "https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770"
+    "url": "https://i.blackhat.com/BH-US-24/Presentations/US24-MichaelBargury-15WaystoBreakYourCopilot.pdf"
   },
   {
     "slug": "m365-ascii-smuggling",
@@ -1027,7 +1027,7 @@
       "persistence": "Dependent (channel)",
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Backdoor insertion"
+      "action_on_objective": "Misc (backdoor insertion)"
     },
     "url": "https://embracethered.com/blog/posts/2025/github-custom-copilot-instructions/"
   },
@@ -1161,43 +1161,43 @@
     "category": "Enterprise",
     "target": "M365 Copilot",
     "coverage": 4,
-    "venue": "TODO-verify",
+    "venue": "Aim Labs / Cato Networks (blog); MSRC CVE-2025-32711",
     "isNew": false,
-    "questioned": true,
+    "questioned": false,
     "stages": {
-      "initial_access": "Markdown email",
-      "privilege_escalation": "Auto RAG mix",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
-      "persistence": "RAG-dep",
+      "persistence": "Dependent (channel)",
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Zero-click exfil."
+      "action_on_objective": "Data exfiltration"
     },
-    "url": "TODO-verify"
+    "url": "https://www.catonetworks.com/blog/breaking-down-echoleak/"
   },
   {
     "slug": "agentflayer",
     "id": "2025-011",
     "title": "AgentFlayer",
-    "authors": "Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)",
+    "authors": "Marina Simakov, Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Coding Assist.",
-    "target": "Cursor",
-    "coverage": 5,
-    "venue": "TODO-verify",
+    "target": "Cursor with Jira MCP integration",
+    "coverage": 4,
+    "venue": "Zenity Labs (blog); Black Hat USA'25",
     "isNew": false,
-    "questioned": true,
+    "questioned": false,
     "stages": {
-      "initial_access": "Jira ticket",
-      "privilege_escalation": "Instr. obfusc.",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
-      "persistence": "RAG-dep",
+      "persistence": "Dependent (channel)",
       "command_control": null,
-      "lateral_movement": "Pipeline",
-      "action_on_objective": "Credential exfil."
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
     },
-    "url": "TODO-verify"
+    "url": "https://labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets"
   },
   {
     "slug": "agenthopper",
@@ -1635,25 +1635,25 @@
     "slug": "identitymesh",
     "id": "2025-030",
     "title": "IdentityMesh",
-    "authors": "Lasso Security",
+    "authors": "Bar Lanyado, Ophir Dror, Or Oxenberg (Lasso Security)",
     "date": "2025-08",
     "dateDisplay": "Aug'25",
     "category": "Browser/Search",
     "target": "Perplexity Comet",
-    "coverage": 5,
-    "venue": "TODO-verify",
+    "coverage": 4,
+    "venue": "Lasso Security (blog)",
     "isNew": false,
-    "questioned": true,
+    "questioned": false,
     "stages": {
-      "initial_access": "GitHub issue",
-      "privilege_escalation": "Instr. override",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
       "reconnaissance": null,
-      "persistence": "RAG-dep",
+      "persistence": null,
       "command_control": null,
-      "lateral_movement": "Cross-app",
-      "action_on_objective": "Gmail exfil., phish"
+      "lateral_movement": "Cross-app (xA)",
+      "action_on_objective": "Data exfiltration"
     },
-    "url": "TODO-verify"
+    "url": "https://www.lasso.security/blog/identitymesh-exploiting-agentic-ai"
   },
   {
     "slug": "image-scaling-injection",
@@ -2016,8 +2016,32 @@
     "url": "https://embracethered.com/blog/posts/2025/cross-agent-privilege-escalation-agents-that-free-each-other/"
   },
   {
-    "slug": "claude-network-exfil",
+    "slug": "notion-ai-exfil",
     "id": "2025-046",
+    "title": "Notion AI Exfiltration",
+    "authors": "Abi R. (CodeIntegrity)",
+    "date": "2025-09",
+    "dateDisplay": "Sep'25",
+    "category": "Enterprise",
+    "target": "Notion 3.0 AI Agent (Claude Sonnet 4)",
+    "coverage": 3,
+    "venue": "CodeIntegrity (blog)",
+    "isNew": false,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": null,
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://www.codeintegrity.ai/blog/notion"
+  },
+  {
+    "slug": "claude-network-exfil",
+    "id": "2025-047",
     "title": "Claude Pirate: Data Exfiltration via Anthropic Files API",
     "authors": "Johann Rehberger",
     "date": "2025-10",
@@ -2040,8 +2064,32 @@
     "url": "https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/"
   },
   {
+    "slug": "unseeable-prompt-injections",
+    "id": "2025-048",
+    "title": "Unseeable Prompt Injections in Screenshots (Comet and Fellou)",
+    "authors": "Artem Chaikin, Shivan Kaul Sahib (Brave)",
+    "date": "2025-10",
+    "dateDisplay": "Oct'25",
+    "category": "Browser/Search",
+    "target": "Perplexity Comet, Fellou",
+    "coverage": 4,
+    "venue": "Brave (blog); Black Hat USA'26",
+    "isNew": true,
+    "questioned": false,
+    "stages": {
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Instruction override (IR)",
+      "reconnaissance": null,
+      "persistence": null,
+      "command_control": null,
+      "lateral_movement": "Cross-app (xA)",
+      "action_on_objective": "Data exfiltration"
+    },
+    "url": "https://brave.com/blog/unseeable-prompt-injections/"
+  },
+  {
     "slug": "google-antigravity",
-    "id": "2025-047",
+    "id": "2025-049",
     "title": "Antigravity Grounded: Security Vulnerabilities in Google's IDE",
     "authors": "Johann Rehberger",
     "date": "2025-11",
@@ -2065,7 +2113,7 @@
   },
   {
     "slug": "agentic-probllms",
-    "id": "2025-048",
+    "id": "2025-050",
     "title": "Agentic ProbLLMs: Exploiting AI Computer-Use and Coding Agents",
     "authors": "Johann Rehberger",
     "date": "2025-12",
@@ -2089,7 +2137,7 @@
   },
   {
     "slug": "mcp-unchained",
-    "id": "2025-049",
+    "id": "2025-051",
     "title": "MCP Unchained: Compromising the AI Agent Ecosystem via its Universal Connector",
     "authors": "Cheng Huangsheng, Guo Jing, Wu Huiyu",
     "date": "2025-12",
@@ -2112,28 +2160,28 @@
     "url": "https://i.blackhat.com/BH-EU-25/eu-25-Huangsheng-MCP-Unchained-Compromising-The-AI-Agent-Ecosystem-Via-Its-Universal-Connector-Final.pdf"
   },
   {
-    "slug": "notion-ai-exfil",
+    "slug": "claude-code-project-files-rce",
     "id": "2026-001",
-    "title": "Notion AI Exfiltration",
-    "authors": "CodeIntegrity",
-    "date": "2026-01",
-    "dateDisplay": "Jan'26",
-    "category": "Enterprise",
-    "target": "Notion AI",
-    "coverage": 3,
-    "venue": "TODO-verify",
-    "isNew": false,
+    "title": "Caught in the Hook: RCE and API Token Exfiltration via Claude Code Project Files",
+    "authors": "Aviv Donenfeld, Oded Vanunu (Check Point Research)",
+    "date": "2026-02",
+    "dateDisplay": "Feb'26",
+    "category": "Coding Assist.",
+    "target": "Anthropic Claude Code (CVE-2025-59536, CVE-2026-21852)",
+    "coverage": 4,
+    "venue": "Check Point Research (blog); presented at RSAC 2026",
+    "isNew": true,
     "questioned": false,
     "stages": {
-      "initial_access": "Uploaded doc",
-      "privilege_escalation": "Control bypass",
+      "initial_access": "Indirect (I)",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
-      "persistence": null,
+      "persistence": "Dependent (channel)",
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "HR data exfil."
+      "action_on_objective": "RCE"
     },
-    "url": "TODO-verify"
+    "url": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/"
   },
   {
     "slug": "scary-agent-skills",
@@ -2198,7 +2246,7 @@
     "questioned": false,
     "stages": {
       "initial_access": "Direct (D)",
-      "privilege_escalation": "Misc",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
@@ -2251,37 +2299,13 @@
       "persistence": null,
       "command_control": null,
       "lateral_movement": "Cross-app (xA)",
-      "action_on_objective": "Credential exfil."
+      "action_on_objective": "Data exfiltration"
     },
     "url": "https://zenity.io/research/pleasefix-vulnerabilities"
   },
   {
-    "slug": "ai-agents-become-backdoors",
-    "id": "2026-007",
-    "title": "When AI Agents Become Backdoors: The New Era of Client-Side Threats",
-    "authors": "TBD (RSAC 2026)",
-    "date": "2026-04",
-    "dateDisplay": "Apr'26",
-    "category": "Coding Assist.",
-    "target": "Cursor / Claude Code / Codex CLI / Gemini CLI",
-    "coverage": 3,
-    "venue": "RSAC 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": "Dependent (channel)",
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Data exfiltration"
-    },
-    "url": "https://www.rsaconference.com/library/presentation/usa/2026/when%20ai%20agents%20become%20backdoors%20the%20new%20era%20of%20client-side%20threats"
-  },
-  {
     "slug": "breaking-opus-memory-image",
-    "id": "2026-008",
+    "id": "2026-007",
     "title": "Breaking Opus 4.7 with ChatGPT (Hacking Claude's Memory)",
     "authors": "Johann Rehberger (Embrace The Red)",
     "date": "2026-04",
@@ -2304,32 +2328,8 @@
     "url": "https://embracethered.com/blog/posts/2026/breaking-opus-4.7-with-chatgpt/"
   },
   {
-    "slug": "trust-me-im-a-tool-mcp",
-    "id": "2026-009",
-    "title": "Trust Me, I'm a Tool: Attacking and Defending the MCP",
-    "authors": "TBD (RSAC 2026)",
-    "date": "2026-04",
-    "dateDisplay": "Apr'26",
-    "category": "AI Agent",
-    "target": "Model Context Protocol (MCP)",
-    "coverage": 2,
-    "venue": "RSAC 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Data exfiltration"
-    },
-    "url": "https://www.rsaconference.com/library/presentation/usa/2026/trust%20me%20im%20a%20tool%20attacking%20and%20defending%20the%20mcp"
-  },
-  {
     "slug": "audiohijack-lalm",
-    "id": "2026-010",
+    "id": "2026-008",
     "title": "AudioHijack: Auditory Prompt Injection Against Audio-Language Models",
     "authors": "Meng Chen, Kun Wang, Li Lu, et al. (Zhejiang University / NTU / NUS)",
     "date": "2026-05",
@@ -2342,7 +2342,7 @@
     "questioned": false,
     "stages": {
       "initial_access": "Indirect (I)",
-      "privilege_escalation": "Misc",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
@@ -2353,7 +2353,7 @@
   },
   {
     "slug": "chatbot-plugin-injection",
-    "id": "2026-011",
+    "id": "2026-009",
     "title": "Prompt Injection Risks in Third-Party AI Chatbot Plugins",
     "authors": "Yigitcan Kaya, Anton Landerer, Stijn Pletinckx, et al. (UC Santa Barbara)",
     "date": "2026-05",
@@ -2377,7 +2377,7 @@
   },
   {
     "slug": "llmthief-config-leak",
-    "id": "2026-012",
+    "id": "2026-010",
     "title": "LLMThief: Configuration Leaking in Commercial LLM App Stores",
     "authors": "Pinji Chen, Jinlong Jiang, Jianjun Chen, et al. (Tsinghua University)",
     "date": "2026-05",
@@ -2390,7 +2390,7 @@
     "questioned": false,
     "stages": {
       "initial_access": "Direct (D)",
-      "privilege_escalation": "Misc",
+      "privilege_escalation": "Misc.",
       "reconnaissance": null,
       "persistence": null,
       "command_control": null,
@@ -2401,7 +2401,7 @@
   },
   {
     "slug": "computer-use-toctou",
-    "id": "2026-013",
+    "id": "2026-011",
     "title": "Computer-Use TOCTOU (What You Click Is Not What You Get)",
     "authors": "Johann Rehberger (Embrace The Red)",
     "date": "2026-06",
@@ -2424,80 +2424,32 @@
     "url": "https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/"
   },
   {
-    "slug": "attacking-defending-ai-browsers",
-    "id": "2026-014",
-    "title": "Attacking and Defending AI Browsers",
-    "authors": "Artem Chaikin (Brave Software)",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
-    "category": "Browser/Search",
-    "target": "AI browser assistants",
-    "coverage": 2,
-    "venue": "Black Hat USA 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Data exfiltration"
-    },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#attacking-and-defending-ai-browsers-51657"
-  },
-  {
     "slug": "bye-bye-ai-shopping-assistant",
-    "id": "2026-015",
-    "title": "Bye Bye AI: Hacking the AI Shopping Assistant of a Top-3 US Retailer",
-    "authors": "Netanel Rubin, Dan Avraham (Rein Security)",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
+    "id": "2026-012",
+    "title": "Bye Bye AI: Hacking the AI Shopping Assistant of a Top 3 US Retailer",
+    "authors": "Shlomi Ashkenazy, Netanel Rubin, Dan Avraham (Rein Security)",
+    "date": "2026-07",
+    "dateDisplay": "Jul'26",
     "category": "Enterprise",
-    "target": "AI shopping assistant of a top-3 US retailer (Vertex AI Search)",
-    "coverage": 3,
-    "venue": "Black Hat USA 2026",
+    "target": "AI shopping assistant of an undisclosed top-3 US retailer (Google Vertex AI Search)",
+    "coverage": 4,
+    "venue": "Rein Security (blog); Black Hat USA'26",
     "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Direct (D)",
-      "privilege_escalation": "Instruction override (IR)",
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Data exfiltration"
-    },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#bye-bye-ai-how-we-hacked-the-ai-shopping-assistant-of-a-top-3-us-retailer-53360"
-  },
-  {
-    "slug": "corebreak-agent-credentials",
-    "id": "2026-016",
-    "title": "The CoreBreak Attack: AI Agents as Credential Exfiltration Vectors",
-    "authors": "Hedi Ingber, Aviyam Ivgi",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
-    "category": "AI Agent",
-    "target": "Managed AI agent platforms",
-    "coverage": 2,
-    "venue": "Black Hat USA 2026",
-    "isNew": true,
-    "questioned": true,
+    "questioned": false,
     "stages": {
       "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
+      "privilege_escalation": "Misc.",
+      "reconnaissance": "Yes",
       "persistence": null,
       "command_control": null,
       "lateral_movement": null,
-      "action_on_objective": "Data exfiltration"
+      "action_on_objective": "RCE"
     },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#the-corebreak-attack-turning-ai-agents-into-credentials-exfiltration-vectors-53825"
+    "url": "https://reinsec.io/blog/reins-agent-breakers-research-team-discovers-critical-vulnerabilities-in-top-u-s-retailers-ai-shopping-agent/"
   },
   {
     "slug": "ipi-retrieval-barrier",
-    "id": "2026-017",
+    "id": "2026-013",
     "title": "Overcoming the Retrieval Barrier: Indirect Prompt Injection in the Wild",
     "authors": "Hongyan Chang, Ergute Bao, Xinjian Luo, Ting Yu (MBZUAI)",
     "date": "2026-08",
@@ -2520,80 +2472,8 @@
     "url": "https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_chang.pdf"
   },
   {
-    "slug": "kinetic-prompt-injection",
-    "id": "2026-018",
-    "title": "Kinetic Prompt Injection: Agent Compromise With a Physical Blast Radius",
-    "authors": "BT6",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
-    "category": "Multimodal",
-    "target": "Unitree Go2 robot dog (Gemini Robotics-ER 1.6)",
-    "coverage": 3,
-    "venue": "Black Hat USA 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": "Misc",
-      "reconnaissance": null,
-      "persistence": null,
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Safety (physical)"
-    },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#kinetic-prompt-injection-agent-compromise-with-a-physical-blast-radius-57343"
-  },
-  {
-    "slug": "no-tools-required-frameworks",
-    "id": "2026-019",
-    "title": "No Tools Required: Post-Injection Exploitation Across AI Agent Frameworks",
-    "authors": "Yarden Porat, Shahar Tal (Check Point)",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
-    "category": "AI Agent",
-    "target": "LangChain / CrewAI / AutoGen / Semantic Kernel",
-    "coverage": 3,
-    "venue": "Black Hat USA 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": "Dependent (channel)",
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Misc (agent hijack)"
-    },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#no-tools-required-post-injection-exploitation-across-ai-agent-frameworks-53469"
-  },
-  {
-    "slug": "promptware-eod",
-    "id": "2026-020",
-    "title": "Promptware EOD: Skillful Agent Detonation",
-    "authors": "Francesco Montorsi et al. (Zenity)",
-    "date": "2026-08",
-    "dateDisplay": "Aug'26",
-    "category": "AI Agent",
-    "target": "AI agent supply chain (Skills / MCP servers / models)",
-    "coverage": 3,
-    "venue": "Black Hat USA 2026",
-    "isNew": true,
-    "questioned": true,
-    "stages": {
-      "initial_access": "Indirect (I)",
-      "privilege_escalation": null,
-      "reconnaissance": null,
-      "persistence": "Dependent (channel)",
-      "command_control": null,
-      "lateral_movement": null,
-      "action_on_objective": "Misc (malware delivery)"
-    },
-    "url": "https://blackhat.com/us-26/briefings/schedule/index.html#promptware-eod-skillful-agent-detonation-53921"
-  },
-  {
     "slug": "local-ai-apis-browser",
-    "id": "2026-021",
+    "id": "2026-014",
     "title": "Local Models, Global Risk: Threats in Browser Built-in AI APIs",
     "authors": "Zahra Moti, Mina Mehrvarz, Tim Vlummens, Gautham Shaji, Gunes Acar (Radboud / KU Leuven)",
     "date": "2026-09",

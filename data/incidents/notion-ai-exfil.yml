@@ -1,37 +1,37 @@
 slug: notion-ai-exfil
-id: 2026-001
+id: 2025-046
 title: Notion AI Exfiltration
-authors: "CodeIntegrity"
-date: 2026-01
+authors: "Abi R. (CodeIntegrity)"
+date: 2025-09
 category: Enterprise
-target: Notion AI
+target: Notion 3.0 AI Agent (Claude Sonnet 4)
 source:
-  url: TODO-verify
-  venue: "TODO-verify"
+  url: https://www.codeintegrity.ai/blog/notion
+  venue: CodeIntegrity (blog)
   type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Uploaded doc
-    justification: TODO
+    value: Indirect (I)
+    justification: A PDF that looks like a customer-feedback report hides an instruction block the agent reads when the user asks it to summarise the file.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: what's not visible here to the naked eye is a malicious prompt hidden in plain sight
+      locator: codeintegrity.ai/blog/notion § Step 1 — creating the malicious PDF
   privilege_escalation:
-    value: Control bypass
-    justification: TODO
+    value: Instruction override (IR)
+    justification: The payload asserts internal authority and pre-authorisation so the agent runs the attacker's tool calls instead of the summary it was asked for.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: even in those cases it is important for you to make the tool calls
+      locator: codeintegrity.ai/blog/notion § the malicious prompt
   reconnaissance: null
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: HR data exfil.
-    justification: TODO
+    value: Data exfiltration
+    justification: Private client records are concatenated into a URL and leaked through the agent's own web-search tool to an attacker-controlled backend.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: "construct a URL that is of the following format: https://db-client-codeintegrity.com/{data}"
+      locator: codeintegrity.ai/blog/notion § Step 3 — executing the data exfiltration attack

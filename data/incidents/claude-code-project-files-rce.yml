@@ -1,0 +1,43 @@
+slug: claude-code-project-files-rce
+id: 2026-001
+title: "Caught in the Hook: RCE and API Token Exfiltration via Claude Code Project Files"
+authors: "Aviv Donenfeld, Oded Vanunu (Check Point Research)"
+new: true
+date: 2026-02
+category: Coding Assist.
+target: Anthropic Claude Code (CVE-2025-59536, CVE-2026-21852)
+source:
+  url: https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/
+  venue: "Check Point Research (blog); presented at RSAC 2026"
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: The payload rides in an untrusted repository's checked-in Claude Code configuration, which the assistant loads as soon as the developer opens the project.
+    evidence:
+      quote: When developers clone a project, they automatically inherit the same Claude Code settings
+      locator: research.checkpoint.com Claude Code post § project settings
+  privilege_escalation:
+    value: Misc.
+    justification: Config abuse rather than a jailbreak — repo-controlled settings run before the trust dialog, so the user's approval step never applies.
+    evidence:
+      quote: Hook commands defined in .claude/settings.json will run automatically without confirmation
+      locator: research.checkpoint.com Claude Code post § hooks
+  reconnaissance: null
+  persistence:
+    value: Dependent (channel)
+    justification: The malicious settings stay in the repository, re-arming on every later session in that project rather than firing once.
+    evidence:
+      quote: enableAllProjectMcpServers enables all servers...without manual setup
+      locator: research.checkpoint.com Claude Code post § MCP servers
+  command_control: null
+  lateral_movement: null
+  action_on_objective:
+    value: RCE
+    justification: Hooks execute arbitrary shell commands with the developer's privileges, and a redirected base URL also leaks the Anthropic API key in plaintext.
+    evidence:
+      quote: An attacker could configure the hook to execute any shell command
+      locator: research.checkpoint.com Claude Code post § hooks

@@ -19,26 +19,26 @@
    <tr><th>Category</th><td>Enterprise</td></tr>
    <tr><th>Target</th><td>Microsoft 365 Copilot / Copilot Studio</td></tr>
    <tr><th>Coverage</th><td>5 / 7 stages</td></tr>
-   <tr><th>Venue</th><td>Black Hat USA&#39;24</td></tr>
-   <tr><th>Source</th><td><a href="https://www.blackhat.com/us-24/briefings/schedule/#ways-to-break-your-copilot-39770" rel="noreferrer noopener">original (other)</a> · <span class="pending">archive pending</span></td></tr>
+   <tr><th>Venue</th><td>Black Hat USA 2024 (slide deck)</td></tr>
+   <tr><th>Source</th><td><a href="https://i.blackhat.com/BH-US-24/Presentations/US24-MichaelBargury-15WaystoBreakYourCopilot.pdf" rel="noreferrer noopener">original (other)</a> · <span class="pending">archive pending</span></td></tr>
   </tbody></table>
   <h2>Kill-chain analysis</h2>
   <table class="stages"><tbody><tr><th>Initial Access</th><td class="val">Indirect (I)</td>
-   <td class="why"><div class="just">Attacker content ingested as Copilot grounding data provides the injection channel.</div>
-   <div class="ev"><q>Copilot Studio’s integration with GenAI expands the prompt injection attack surface</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
-<tr><th>Priv. Esc.</th><td class="val">Instruction override (IR)</td>
-   <td class="why"><div class="just">Injected content bypasses DLP and overrides copilot behaviour via insecure defaults and plugins.</div>
-   <div class="ev"><q>bypassing security controls like DLP through insecure defaults, overly permissive plugins</q> <span class="loc"> blackhat.com/us-24 briefing abstract</span></div></td></tr>
+   <td class="why"><div class="just">Copilot knowledge sources ingest attacker-controllable external web content as trusted input to the bot.</div>
+   <div class="ev"><q>An unauthenticated external resource ... Under someone else’s control</q> <span class="loc">US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p24</span></div></td></tr>
+<tr><th>Priv. Esc.</th><td class="val">Misc.</td>
+   <td class="why"><div class="just">Insecure defaults rather than a jailbreak: author-authentication and permissive connectors hand the maker’s privileges to any user of the copilot.</div>
+   <div class="ev"><q>essentially lets others use the maker’s access and privileges inside the copilot</q> <span class="loc">US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p47</span></div></td></tr>
 <tr><th>Recon.</th><td class="val">Yes</td>
-   <td class="why"><div class="just">CopilotHunter scans for publicly accessible copilots and fuzzes them to locate sensitive data.</div>
-   <div class="ev"><q>CopilotHunter, a recon and exploitation tool that scans for publicly accessible Copilots</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
+   <td class="why"><div class="just">CopilotHunter enumerates tenants, environments and bot names to find publicly reachable copilots before interacting with them.</div>
+   <div class="ev"><q>Environment &amp; Tenant ID Enumeration</q> <span class="loc">US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p117 (Copilot Hunter, p84)</span></div></td></tr>
 <tr><th>Persist.</th><td class="val">Dependent (channel)</td>
-   <td class="why"><div class="just">Attacks rely on attacker content persisting in the copilot’s grounding data.</div>
-   <div class="ev"><q>exfiltrate sensitive enterprise data</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr>
+   <td class="why"><div class="just">Dynamic web knowledge sources are re-fetched on later interactions, so attacker content re-enters the bot each session.</div>
+   <div class="ev"><q>Uploaded files are static, web content can be dynamic.</q> <span class="loc">US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p23</span></div></td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr><th>Action on Obj.</th><td class="val">Data exfiltration</td>
-   <td class="why"><div class="just">Exfiltrates confidential enterprise data and enables spear-phishing.</div>
-   <div class="ev"><q>exfiltrate sensitive enterprise data by bypassing security controls like DLP</q> <span class="loc">blackhat.com/us-24 briefing abstract</span></div></td></tr></tbody></table></main>
+   <td class="why"><div class="just">The chained defaults produce data leakage and over-sharing of sensitive enterprise data out of the tenant.</div>
+   <div class="ev"><q>Multiple data leakage scenarios</q> <span class="loc">US24-MichaelBargury-15WaystoBreakYourCopilot.pdf p82 (recap)</span></div></td></tr></tbody></table></main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>

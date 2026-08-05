@@ -31,7 +31,7 @@ stages:
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Misc
+    value: Misc (conversation manipulation)
     justification: A proof-of-concept demonstrating conversation manipulation and cross-plugin abuse for awareness.
     evidence:
       quote: issue requests to other plugins or manipulate your ChatGPT conversation

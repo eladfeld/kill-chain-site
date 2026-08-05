@@ -1,39 +1,43 @@
 slug: bye-bye-ai-shopping-assistant
-id: 2026-015
-title: "Bye Bye AI: Hacking the AI Shopping Assistant of a Top-3 US Retailer"
-authors: Netanel Rubin, Dan Avraham (Rein Security)
+id: 2026-012
+title: "Bye Bye AI: Hacking the AI Shopping Assistant of a Top 3 US Retailer"
+authors: "Shlomi Ashkenazy, Netanel Rubin, Dan Avraham (Rein Security)"
 new: true
-questioned: true
-date: 2026-08
+date: 2026-07
 category: Enterprise
-target: AI shopping assistant of a top-3 US retailer (Vertex AI Search)
+target: AI shopping assistant of an undisclosed top-3 US retailer (Google Vertex AI Search)
 source:
-  url: https://blackhat.com/us-26/briefings/schedule/index.html#bye-bye-ai-how-we-hacked-the-ai-shopping-assistant-of-a-top-3-us-retailer-53360
-  venue: Black Hat USA 2026
-  type: other
+  url: https://reinsec.io/blog/reins-agent-breakers-research-team-discovers-critical-vulnerabilities-in-top-u-s-retailers-ai-shopping-agent/
+  venue: "Rein Security (blog); Black Hat USA'26"
+  type: blog
   snapshot: null
   archived_at: null
   sha256: null
 stages:
   initial_access:
-    value: Direct (D)
-    justification: A red-team engagement against a retailer's Vertex AI Search assistant behind an LLM gateway with intent-classification guardrails (pending talk).
+    value: Indirect (I)
+    justification: The product-comparison feature delegates retrieval to a fetcher process, so attacker-controlled external pages enter the assistant's context as data.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: The agent delegated retrieval to a fetcher-style process that could ingest untrusted external content
+      locator: reinsec.io blog § stage 1
   privilege_escalation:
-    value: Instruction override (IR)
-    justification: The engagement bypassed the gateway's intent-classification guardrails (pending talk).
+    value: Misc.
+    justification: The search query field takes a different path to the backend than other inputs, so the LLM gateway's filtering never inspects the payload.
     evidence:
-      quote: TODO
-      locator: TODO
-  reconnaissance: null
+      quote: was not subjected to the same effective filtration path
+      locator: reinsec.io blog § stage 2
+  reconnaissance:
+    value: "Yes"
+    justification: A first-stage payload dumps the assistant's own prompt context and tool syntax, which the exploit needs before it can call tools correctly.
+    evidence:
+      quote: elicit the assistant's internal prompt context, including system tool names, invocation syntax
+      locator: reinsec.io blog § stage 3
   persistence: null
   command_control: null
   lateral_movement: null
   action_on_objective:
-    value: Data exfiltration
-    justification: Placeholder pending the recorded talk; the team exfiltrated customer data and manipulated purchase flows.
+    value: RCE
+    justification: The second-stage payload runs attacker-controlled tool code inside the retailer's backend, returning directory listings and environment variables.
     evidence:
-      quote: TODO
-      locator: TODO
+      quote: execute attacker-controlled tool code within its backend environment
+      locator: reinsec.io blog § stage 4

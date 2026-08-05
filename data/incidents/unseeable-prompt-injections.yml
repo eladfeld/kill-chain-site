@@ -1,0 +1,43 @@
+slug: unseeable-prompt-injections
+id: 2025-048
+title: "Unseeable Prompt Injections in Screenshots (Comet and Fellou)"
+authors: "Artem Chaikin, Shivan Kaul Sahib (Brave)"
+new: true
+date: 2025-10
+category: Browser/Search
+target: Perplexity Comet, Fellou
+source:
+  url: https://brave.com/blog/unseeable-prompt-injections/
+  venue: "Brave (blog); Black Hat USA'26"
+  type: blog
+  snapshot: null
+  archived_at: null
+  sha256: null
+stages:
+  initial_access:
+    value: Indirect (I)
+    justification: Instructions are planted in page content and screenshots the browsing agent reads for the user, who cannot see them.
+    evidence:
+      quote: nearly-invisible text within the image
+      locator: brave.com/blog/unseeable-prompt-injections/ § Comet screenshot attack
+  privilege_escalation:
+    value: Instruction override (IR)
+    justification: The hidden text is treated as user instruction, redirecting the agent's browser tools away from the task it was given.
+    evidence:
+      quote: The injected commands instruct the AI to use its browser tools maliciously
+      locator: brave.com/blog/unseeable-prompt-injections/ § impact
+  reconnaissance: null
+  persistence: null
+  command_control: null
+  lateral_movement:
+    value: Cross-app (xA)
+    justification: The hijacked agent acts on the user's other authenticated sites — banking, email, cloud storage — under their existing sessions.
+    evidence:
+      quote: trigger cross-domain actions that reach banks, healthcare provider sites, corporate systems
+      locator: brave.com/blog/unseeable-prompt-injections/ § impact
+  action_on_objective:
+    value: Data exfiltration
+    justification: The compromised authenticated sessions are used to take the user's private data, and in some chains their money.
+    evidence:
+      quote: steal your money or your private data
+      locator: brave.com/blog/unseeable-prompt-injections/ § impact
