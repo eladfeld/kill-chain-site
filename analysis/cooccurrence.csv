@@ -1,0 +1,8 @@
+stage,initial_access,privilege_escalation,reconnaissance,persistence,command_control,lateral_movement,action_on_objective
+initial_access,104,86,5,26,2,7,104
+privilege_escalation,86,86,5,24,2,7,86
+reconnaissance,5,5,5,3,0,1,5
+persistence,26,24,3,26,2,4,26
+command_control,2,2,0,2,2,0,2
+lateral_movement,7,7,1,4,0,7,7
+action_on_objective,104,86,5,26,2,7,104

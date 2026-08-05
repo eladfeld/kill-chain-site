@@ -1,0 +1,559 @@
+{
+  "generated": "2026-08-05",
+  "n": 104,
+  "years": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "partialYear": "2026",
+  "meanStages": 3.212,
+  "ge4": 29,
+  "ge5": 8,
+  "maxStages": 6,
+  "perYear": [
+    {
+      "year": "2022",
+      "n": 1,
+      "mean": 3,
+      "min": 3,
+      "max": 3,
+      "ge4": 0
+    },
+    {
+      "year": "2023",
+      "n": 17,
+      "mean": 2.764705882352941,
+      "min": 2,
+      "max": 3,
+      "ge4": 0
+    },
+    {
+      "year": "2024",
+      "n": 21,
+      "mean": 3.1904761904761907,
+      "min": 2,
+      "max": 5,
+      "ge4": 8
+    },
+    {
+      "year": "2025",
+      "n": 51,
+      "mean": 3.3529411764705883,
+      "min": 2,
+      "max": 6,
+      "ge4": 16
+    },
+    {
+      "year": "2026",
+      "n": 14,
+      "mean": 3.2857142857142856,
+      "min": 2,
+      "max": 5,
+      "ge4": 5
+    }
+  ],
+  "outcomesAll": [
+    [
+      "Data exfiltration",
+      56
+    ],
+    [
+      "RCE",
+      25
+    ],
+    [
+      "Misc (other)",
+      11
+    ],
+    [
+      "Misinformation",
+      9
+    ],
+    [
+      "Financial",
+      1
+    ],
+    [
+      "Harmful content",
+      1
+    ],
+    [
+      "Safety (physical)",
+      1
+    ]
+  ],
+  "outcomesRaw": [
+    [
+      "Data exfiltration",
+      56
+    ],
+    [
+      "RCE",
+      25
+    ],
+    [
+      "Misinformation",
+      9
+    ],
+    [
+      "Misc (DoS)",
+      3
+    ],
+    [
+      "Misc (unintended behavior)",
+      2
+    ],
+    [
+      "Financial",
+      1
+    ],
+    [
+      "Harmful content",
+      1
+    ],
+    [
+      "Misc (backdoor insertion)",
+      1
+    ],
+    [
+      "Misc (conversation manipulation)",
+      1
+    ],
+    [
+      "Misc (memory poisoning)",
+      1
+    ],
+    [
+      "Misc (unauthorized actions)",
+      1
+    ],
+    [
+      "Misc (unauthorized email send)",
+      1
+    ],
+    [
+      "Misc (XSS ATO)",
+      1
+    ],
+    [
+      "Safety (physical)",
+      1
+    ]
+  ],
+  "prevalence": [
+    {
+      "stage": "initial_access",
+      "n": 104,
+      "pct": 100
+    },
+    {
+      "stage": "privilege_escalation",
+      "n": 86,
+      "pct": 82.6923076923077
+    },
+    {
+      "stage": "reconnaissance",
+      "n": 5,
+      "pct": 4.8076923076923075
+    },
+    {
+      "stage": "persistence",
+      "n": 26,
+      "pct": 25
+    },
+    {
+      "stage": "command_control",
+      "n": 2,
+      "pct": 1.9230769230769231
+    },
+    {
+      "stage": "lateral_movement",
+      "n": 7,
+      "pct": 6.730769230769231
+    },
+    {
+      "stage": "action_on_objective",
+      "n": 104,
+      "pct": 100
+    }
+  ],
+  "hist": [
+    {
+      "stages": 1,
+      "n": 0
+    },
+    {
+      "stages": 2,
+      "n": 16
+    },
+    {
+      "stages": 3,
+      "n": 59
+    },
+    {
+      "stages": 4,
+      "n": 21
+    },
+    {
+      "stages": 5,
+      "n": 7
+    },
+    {
+      "stages": 6,
+      "n": 1
+    },
+    {
+      "stages": 7,
+      "n": 0
+    }
+  ],
+  "iaByYear": [
+    {
+      "year": "2022",
+      "direct": 1,
+      "indirect": 0,
+      "pctIndirect": 0
+    },
+    {
+      "year": "2023",
+      "direct": 3,
+      "indirect": 14,
+      "pctIndirect": 82.3529411764706
+    },
+    {
+      "year": "2024",
+      "direct": 2,
+      "indirect": 19,
+      "pctIndirect": 90.47619047619048
+    },
+    {
+      "year": "2025",
+      "direct": 0,
+      "indirect": 51,
+      "pctIndirect": 100
+    },
+    {
+      "year": "2026",
+      "direct": 3,
+      "indirect": 11,
+      "pctIndirect": 78.57142857142857
+    }
+  ],
+  "catByYear": [
+    {
+      "year": "2022",
+      "counts": {
+        "Coding Assist.": 0,
+        "Enterprise": 0,
+        "Browser/Search": 0,
+        "AI Agent": 1,
+        "Agentic/CUA": 0,
+        "Multimodal": 0,
+        "AI Worm": 0
+      }
+    },
+    {
+      "year": "2023",
+      "counts": {
+        "Coding Assist.": 1,
+        "Enterprise": 5,
+        "Browser/Search": 7,
+        "AI Agent": 2,
+        "Agentic/CUA": 0,
+        "Multimodal": 2,
+        "AI Worm": 0
+      }
+    },
+    {
+      "year": "2024",
+      "counts": {
+        "Coding Assist.": 2,
+        "Enterprise": 7,
+        "Browser/Search": 7,
+        "AI Agent": 3,
+        "Agentic/CUA": 0,
+        "Multimodal": 0,
+        "AI Worm": 2
+      }
+    },
+    {
+      "year": "2025",
+      "counts": {
+        "Coding Assist.": 29,
+        "Enterprise": 5,
+        "Browser/Search": 5,
+        "AI Agent": 6,
+        "Agentic/CUA": 4,
+        "Multimodal": 1,
+        "AI Worm": 1
+      }
+    },
+    {
+      "year": "2026",
+      "counts": {
+        "Coding Assist.": 2,
+        "Enterprise": 5,
+        "Browser/Search": 2,
+        "AI Agent": 2,
+        "Agentic/CUA": 1,
+        "Multimodal": 2,
+        "AI Worm": 0
+      }
+    }
+  ],
+  "persistence": [
+    [
+      "Dependent (channel)",
+      18
+    ],
+    [
+      "Independent (memory)",
+      8
+    ]
+  ],
+  "cooccurrence": [
+    [
+      104,
+      86,
+      5,
+      26,
+      2,
+      7,
+      104
+    ],
+    [
+      86,
+      86,
+      5,
+      24,
+      2,
+      7,
+      86
+    ],
+    [
+      5,
+      5,
+      5,
+      3,
+      0,
+      1,
+      5
+    ],
+    [
+      26,
+      24,
+      3,
+      26,
+      2,
+      4,
+      26
+    ],
+    [
+      2,
+      2,
+      0,
+      2,
+      2,
+      0,
+      2
+    ],
+    [
+      7,
+      7,
+      1,
+      4,
+      0,
+      7,
+      7
+    ],
+    [
+      104,
+      86,
+      5,
+      26,
+      2,
+      7,
+      104
+    ]
+  ],
+  "conditional": [
+    [
+      100,
+      82.6923076923077,
+      4.8076923076923075,
+      25,
+      1.9230769230769231,
+      6.730769230769231,
+      100
+    ],
+    [
+      100,
+      100,
+      5.813953488372093,
+      27.906976744186046,
+      2.3255813953488373,
+      8.13953488372093,
+      100
+    ],
+    [
+      100,
+      100,
+      100,
+      60,
+      0,
+      20,
+      100
+    ],
+    [
+      100,
+      92.3076923076923,
+      11.538461538461538,
+      100,
+      7.6923076923076925,
+      15.384615384615385,
+      100
+    ],
+    [
+      100,
+      100,
+      0,
+      100,
+      100,
+      0,
+      100
+    ],
+    [
+      100,
+      100,
+      14.285714285714286,
+      57.142857142857146,
+      0,
+      100,
+      100
+    ],
+    [
+      100,
+      82.6923076923077,
+      4.8076923076923075,
+      25,
+      1.9230769230769231,
+      6.730769230769231,
+      100
+    ]
+  ],
+  "paths": [
+    [
+      "IA+PE+AO",
+      57
+    ],
+    [
+      "IA+AO",
+      16
+    ],
+    [
+      "IA+PE+PS+AO",
+      16
+    ],
+    [
+      "IA+PE+LM+AO",
+      3
+    ],
+    [
+      "IA+PE+PS+LM+AO",
+      3
+    ],
+    [
+      "IA+PE+PS+C2+AO",
+      2
+    ],
+    [
+      "IA+PE+RC+AO",
+      2
+    ],
+    [
+      "IA+PE+RC+PS+AO",
+      2
+    ],
+    [
+      "IA+PS+AO",
+      2
+    ],
+    [
+      "IA+PE+RC+PS+LM+AO",
+      1
+    ]
+  ],
+  "provByYear": [
+    {
+      "year": "2022",
+      "paper": 0,
+      "blog": 1,
+      "other": 0
+    },
+    {
+      "year": "2023",
+      "paper": 1,
+      "blog": 15,
+      "other": 1
+    },
+    {
+      "year": "2024",
+      "paper": 4,
+      "blog": 16,
+      "other": 1
+    },
+    {
+      "year": "2025",
+      "paper": 2,
+      "blog": 44,
+      "other": 5
+    },
+    {
+      "year": "2026",
+      "paper": 7,
+      "blog": 7,
+      "other": 0
+    }
+  ],
+  "vendors": [
+    [
+      "Other / multiple",
+      25
+    ],
+    [
+      "OpenAI",
+      23
+    ],
+    [
+      "Microsoft",
+      18
+    ],
+    [
+      "Google",
+      17
+    ],
+    [
+      "Anthropic",
+      11
+    ],
+    [
+      "Amazon/AWS",
+      4
+    ],
+    [
+      "Perplexity",
+      3
+    ],
+    [
+      "Cursor",
+      2
+    ],
+    [
+      "SaaS connectors",
+      1
+    ]
+  ]
+}

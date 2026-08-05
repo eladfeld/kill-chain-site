@@ -1,0 +1,8 @@
+outcome,n,pct
+Data exfiltration,56,53.8
+RCE,25,24.0
+Misc (other),11,10.6
+Misinformation,9,8.7
+Financial,1,1.0
+Harmful content,1,1.0
+Safety (physical),1,1.0

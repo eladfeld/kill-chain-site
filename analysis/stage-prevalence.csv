@@ -1,0 +1,8 @@
+stage,n,pct
+initial_access,104,100.0
+privilege_escalation,86,82.7
+reconnaissance,5,4.8
+persistence,26,25.0
+command_control,2,1.9
+lateral_movement,7,6.7
+action_on_objective,104,100.0
