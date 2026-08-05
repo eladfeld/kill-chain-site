@@ -3,7 +3,7 @@ id: 2023-016
 title: Hacking Google Bard (Workspace Exfil)
 authors: Johann Rehberger
 date: 2023-11
-category: Enterprise
+category: Browser/Search
 target: Bard (Workspace extensions)
 new: true
 source:

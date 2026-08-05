@@ -4,7 +4,7 @@ title: "AgentHopper: A PoC AI Virus"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: AI Worm
+category: Coding Assist.
 target: AI coding agents (Copilot, Amazon Q, Kiro, Amp)
 source:
   url: https://embracethered.com/blog/posts/2025/agenthopper-a-poc-ai-virus/

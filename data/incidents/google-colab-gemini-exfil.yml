@@ -4,7 +4,7 @@ title: "Google Colab AI (Gemini): Prompt Injection to Data Exfiltration"
 authors: Johann Rehberger
 new: true
 date: 2024-07
-category: Enterprise
+category: Coding Assist.
 target: Google Colab AI / Gemini in Colab
 source:
   url: https://embracethered.com/blog/posts/2024/google-colab-image-render-exfil/

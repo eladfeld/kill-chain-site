@@ -3,7 +3,7 @@ id: 2023-015
 title: GPT-4V Visual Injection
 authors: Simon Willison
 date: 2023-10
-category: Multimodal
+category: Browser/Search
 target: GPT-4V
 source:
   url: https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/

@@ -4,7 +4,7 @@ title: "Azure OpenAI Playground: Data Exfiltration via Image Markdown Injection"
 authors: Johann Rehberger
 new: true
 date: 2023-09
-category: Enterprise
+category: Coding Assist.
 target: Azure OpenAI / AI Playground
 source:
   url: https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/

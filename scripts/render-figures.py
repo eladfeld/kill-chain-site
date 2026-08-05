@@ -9,6 +9,7 @@ import csv
 import json
 import math
 import pathlib
+import textwrap
 
 import matplotlib
 matplotlib.use("Agg")
@@ -86,6 +87,49 @@ def stacked(name, title, keys, series, ylabel="Incidents"):
         ax.annotate(f"{tot:.0f}", (x, tot), textcoords="offset points",
                     xytext=(0, 3), ha="center", fontsize=7.5, color=MUTED)
     finish(fig, ax, name, title, ylabel, "Year", handles)
+
+
+def render_table(name, title, cols, rows, total_label="Total", figwidth=6.0, first_col_width=1.0):
+    """Booktabs-style rendered table (paper look): bold header/total row, rules only."""
+    n_rows, n_cols = len(rows) + 1, len(cols)
+    widths = [first_col_width] + [1.0] * (n_cols - 1)
+    total_w = sum(widths)
+    edges = [0]
+    for w in widths:
+        edges.append(edges[-1] + w)
+    col_x = [(edges[i] + edges[i + 1]) / 2 for i in range(n_cols)]
+
+    row_h = 0.34
+    fig, ax = plt.subplots(figsize=(figwidth, row_h * (n_rows + 1.4)))
+    ax.set_xlim(0, total_w)
+    ax.set_ylim(0, n_rows)
+    ax.axis("off")
+    ax.invert_yaxis()
+
+    col_align = ["left"] + ["center"] * (n_cols - 1)
+    pad = 0.06 * total_w
+    for i, (label, align, w) in enumerate(zip(cols, col_align, widths)):
+        xt = edges[i] + pad if align == "left" else col_x[i]
+        wrap_w = max(8, int(w * 11))
+        wrapped = "\n".join(textwrap.wrap(label, wrap_w, break_long_words=False)) if len(label) > wrap_w else label
+        ax.text(xt, 0.5, wrapped, ha=align, va="center", fontsize=9.5, fontweight="bold", color=INK)
+
+    for ri, row in enumerate(rows):
+        y = ri + 1.5
+        is_total = str(row[0]) == total_label
+        for i, val in enumerate(row):
+            align = col_align[i]
+            xt = edges[i] + pad if align == "left" else col_x[i]
+            ax.text(xt, y, str(val), ha=align, va="center", fontsize=9.5, color=INK,
+                    fontweight="bold" if is_total else "normal")
+
+    ax.plot([0, total_w], [0, 0], color=INK, linewidth=1.4, clip_on=False)
+    ax.plot([0, total_w], [1, 1], color=INK, linewidth=0.8, clip_on=False)
+    ax.plot([0, total_w], [n_rows - 1, n_rows - 1], color=INK, linewidth=0.8, clip_on=False)
+    ax.plot([0, total_w], [n_rows, n_rows], color=INK, linewidth=1.4, clip_on=False)
+    ax.set_title(title, loc="left", pad=10, fontweight="semibold", fontsize=10)
+    fig.tight_layout()
+    save(fig, name)
 
 
 # 1 — incidents per year
@@ -204,6 +248,51 @@ stacked("10-provenance", "Source provenance by year",
         {"Industry blog": [r["blog"] for r in S["provByYear"]],
          "Peer-reviewed / arXiv": [r["paper"] for r in S["provByYear"]],
          "Talk / other": [r["other"] for r in S["provByYear"]]})
+
+# 11 — stage-count distribution by period (reproduces the paper's Table III)
+periods = [r["period"] for r in S["stageDistByPeriod"]]
+kcols = S["kCols"]
+fig, ax = plt.subplots(figsize=(5.4, 3.0))
+bottom = [0] * len(periods)
+handles = []
+for i, k in enumerate(kcols):
+    vals = [r["counts"][str(k)] for r in S["stageDistByPeriod"]]
+    ax.bar(periods, vals, bottom=bottom, width=0.62, color=CAT[i % len(CAT)],
+           edgecolor="white", linewidth=1.4)
+    handles.append(Patch(facecolor=CAT[i % len(CAT)], label=f"{k} stages"))
+    bottom = [b + v for b, v in zip(bottom, vals)]
+for x, tot, r in zip(periods, bottom, S["stageDistByPeriod"]):
+    ax.annotate(f"{tot:.0f}\n(n={r['n']})", (x, tot), textcoords="offset points",
+                xytext=(0, 3), ha="center", fontsize=7.5, color=MUTED)
+finish(fig, ax, "11-stage-dist-period",
+       "Kill chain stage-count distribution by time period",
+       "Incidents", "Period", handles)
+
+# 12 — stage-count distribution by period, as a rendered table (mirrors paper Table III layout)
+cols = ["Period", "N"] + [f"{k} Stages" for k in kcols]
+rows = [[r["period"], r["n"]] + [r["counts"][str(k)] for k in kcols] for r in S["stageDistByPeriod"]]
+rows.append(["Total", S["stageDistTotal"]["n"]] + [S["stageDistTotal"]["counts"][str(k)] for k in kcols])
+render_table("12-stage-dist-period-table",
+             "Table III (reproduced). Kill chain stage distribution by time period.", cols, rows)
+
+# 13 — action on objective by year, as a rendered table (years as rows, outcomes as columns)
+okeys_t = [k for k, _ in S["outcomesAll"]]
+outcome_totals = dict(S["outcomesAll"])
+cols13 = ["Year"] + okeys_t + ["Total"]
+rows13 = [[y] + [raw[y][k] for k in okeys_t] + [sum(raw[y][k] for k in okeys_t)] for y in years]
+rows13.append(["Total"] + [outcome_totals[k] for k in okeys_t] + [S["n"]])
+render_table("13-outcome-by-year-table",
+             "Action on objective by time period.", cols13, rows13, figwidth=11.0, first_col_width=0.9)
+
+# 14 — target category (victim type) by year, as a rendered table
+cats_t = list(S["catByYear"][0]["counts"].keys())
+cat_by_year_map = {r["year"]: r["counts"] for r in S["catByYear"]}
+cat_totals = {c: sum(cat_by_year_map[y][c] for y in years) for c in cats_t}
+cols14 = ["Year"] + cats_t + ["Total"]
+rows14 = [[y] + [cat_by_year_map[y][c] for c in cats_t] + [sum(cat_by_year_map[y][c] for c in cats_t)] for y in years]
+rows14.append(["Total"] + [cat_totals[c] for c in cats_t] + [S["n"]])
+render_table("14-category-by-year-table",
+             "Targeted application category by time period.", cols14, rows14, figwidth=11.5, first_col_width=0.9)
 
 # contact sheet — every figure on one page for a quick look
 cols = 2

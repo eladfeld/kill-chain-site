@@ -64,7 +64,7 @@ function render() {
     const tag = d.isNew ? ' <span class="newtag">NEW</span>' : '';
     const q = d.questioned ? ' <span class="qtag" title="Not demonstrated against a real LLM-integrated application">?</span>' : '';
     const venue = d.venue && d.venue !== 'TODO-verify' ? esc(d.venue) : '<span class="pending">TBD</span>';
-    return `<tr data-slug="${d.slug}"><td class="title">${d.id?`<span class="rowid">${esc(d.id)}</span>`:""}<a class="rowlink" href="incident/${d.slug}.html">${esc(d.title)}</a>${tag}${q}${d.authors&&d.authors!=="TODO-verify"?`<div class="rowauth">${esc(d.authors)}</div>`:""}</td><td>${d.dateDisplay}</td><td>${esc(d.category)}</td><td>${esc(d.target)}</td><td class="venue">${venue}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
+    return `<tr data-slug="${d.slug}"><td class="title">${d.id?`<span class="rowid">${esc(d.id)}</span>`:""}<a class="rowlink" href="incident/${d.slug}.html">${esc(d.title)}</a>${tag}${q}${d.authors&&d.authors!=="TODO-verify"?`<div class="rowauth">${esc(d.authors)}</div>`:""}</td><td>${d.dateDisplay}</td><td>${esc(d.category)} <span class="cat-app">(${esc(d.target)})</span></td><td>${esc(d.target)}</td><td class="venue">${venue}</td>${cells}<td class="cov cov-${d.coverage}"><span class="badge">${d.coverage}</span></td></tr>`;
   }).join('');
   $('#grid tbody').querySelectorAll('tr').forEach(tr => {
     tr.addEventListener('click', e => {

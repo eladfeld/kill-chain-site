@@ -37,13 +37,9 @@
     "category": {
       "enum": [
         "Browser/Search",
-        "Enterprise",
         "Coding Assist.",
         "AI Agent",
-        "Agentic/CUA",
-        "Crypto/DeFi",
-        "AI Worm",
-        "Multimodal"
+        "Agentic/CUA"
       ]
     },
     "target": {

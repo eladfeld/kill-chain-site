@@ -4,8 +4,8 @@ title: Semantic Cache Poisoning in LLM Systems
 authors: Guanlong Wu, Taojie Wang, Yao Zhang, et al. (SUSTech / ByteDance)
 new: true
 date: 2026-02
-category: Enterprise
-target: LLM serving semantic caches (Azure / AWS / Alibaba)
+category: AI Agent
+target: AWS Bedrock / Azure OpenAI Service / Alibaba Cloud Higress (semantic caching)
 source:
   url: https://www.ndss-symposium.org/wp-content/uploads/2026-f200-paper.pdf
   venue: NDSS 2026

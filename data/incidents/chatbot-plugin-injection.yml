@@ -4,7 +4,7 @@ title: Prompt Injection Risks in Third-Party AI Chatbot Plugins
 authors: Yigitcan Kaya, Anton Landerer, Stijn Pletinckx, et al. (UC Santa Barbara)
 new: true
 date: 2026-05
-category: Enterprise
+category: Browser/Search
 target: Third-party website chatbot plugins (10,000+ sites)
 source:
   url: https://arxiv.org/pdf/2511.05797

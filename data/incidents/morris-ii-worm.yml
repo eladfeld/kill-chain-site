@@ -3,7 +3,7 @@ id: 2024-003
 title: "Here Comes the AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications"
 authors: Stav Cohen, Ron Bitton, Ben Nassi
 date: 2024-03
-category: AI Worm
+category: AI Agent
 target: Email assistants
 source:
   url: https://sites.google.com/view/compromptmized

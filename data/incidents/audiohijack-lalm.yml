@@ -4,7 +4,7 @@ title: "AudioHijack: Auditory Prompt Injection Against Audio-Language Models"
 authors: Meng Chen, Kun Wang, Li Lu, et al. (Zhejiang University / NTU / NUS)
 new: true
 date: 2026-05
-category: Multimodal
+category: AI Agent
 target: Mistral AI / Microsoft Azure voice agents
 source:
   url: https://arxiv.org/pdf/2604.14604

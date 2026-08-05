@@ -3,7 +3,7 @@ id: 2024-004
 title: Data Exfiltration via Link Unfurling
 authors: Johann Rehberger
 date: 2024-04
-category: Enterprise
+category: Browser/Search
 target: Slack apps / AI chatbots
 new: true
 source:

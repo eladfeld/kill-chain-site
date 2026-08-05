@@ -3,7 +3,7 @@ id: 2025-046
 title: Notion AI Exfiltration
 authors: "Abi R. (CodeIntegrity)"
 date: 2025-09
-category: Enterprise
+category: AI Agent
 target: Notion 3.0 AI Agent (Claude Sonnet 4)
 source:
   url: https://www.codeintegrity.ai/blog/notion

@@ -4,7 +4,7 @@ title: "Security Advisory: Anthropic’s Slack MCP Server Vulnerable to Data Exf
 authors: Johann Rehberger
 new: true
 date: 2025-06
-category: Enterprise
+category: AI Agent
 target: Anthropic Slack MCP server
 source:
   url: https://embracethered.com/blog/posts/2025/security-advisory-anthropic-slack-mcp-server-data-leakage/

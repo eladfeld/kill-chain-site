@@ -3,7 +3,7 @@ id: 2024-018
 title: "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-agent Systems"
 authors: Donghyun Lee, Mo Tiwari
 date: 2024-10
-category: AI Worm
+category: AI Agent
 target: Multi-agent sys.
 source:
   url: https://arxiv.org/abs/2410.07283

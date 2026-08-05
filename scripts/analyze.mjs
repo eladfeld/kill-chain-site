@@ -101,6 +101,20 @@ const VENDOR = [
 const vendorOf = i => (VENDOR.find(([, re]) => re.test(i.target))?.[0]) ?? 'Other / multiple';
 const vendors = byCount(tally(inc, vendorOf));
 
+// ------------------------------------------- 12. stage-count distribution by period
+// Mirrors the paper's Table III (Kill Chain Stage Distribution by Time Period), split per-year.
+const PERIODS = years;
+const periodOf = i => year(i);
+const allCovForK = inc.map(cov);
+const kMin = Math.min(...allCovForK), kMax = Math.max(...allCovForK);
+const kCols = [...Array(kMax - kMin + 1).keys()].map(i => i + kMin);
+const stageDistByPeriod = PERIODS.map(p => {
+  const g = inc.filter(i => periodOf(i) === p);
+  const c = g.map(cov);
+  return { period: p, n: g.length, counts: Object.fromEntries(kCols.map(k => [k, c.filter(x => x === k).length])) };
+});
+const stageDistTotal = { period: 'Total', n: inc.length, counts: Object.fromEntries(kCols.map(k => [k, allCovForK.filter(x => x === k).length])) };
+
 // ============================================================ CSV + stats.json
 csv('per-year.csv', ['year', 'incidents', 'mean_stages', 'min', 'max', 'ge4'], perYear.map(r => [r.year, r.n, r.mean.toFixed(2), r.min, r.max, r.ge4]));
 csv('outcomes-overall.csv', ['outcome', 'n', 'pct'], outcomesAll.map(([k, v]) => [k, v, (100 * v / inc.length).toFixed(1)]));
@@ -113,6 +127,8 @@ csv('cooccurrence.csv', ['stage', ...STAGES], STAGES.map((s, i) => [s, ...co[i]]
 csv('chain-paths.csv', ['path', 'n'], paths.map(([k, v]) => [k, v]));
 csv('provenance-by-year.csv', ['year', 'paper', 'blog', 'other'], provByYear.map(r => [r.year, r.paper, r.blog, r.other]));
 csv('targets.csv', ['vendor', 'n'], vendors.map(([k, v]) => [k, v]));
+csv('stage-distribution-by-period.csv', ['period', 'n', ...kCols.map(k => `${k}_stages`)],
+  [...stageDistByPeriod, stageDistTotal].map(r => [r.period, r.n, ...kCols.map(k => r.counts[k])]));
 
 const allCov = inc.map(cov);
 fs.writeFileSync(path.join(OUT, 'stats.json'), JSON.stringify({
@@ -122,6 +138,7 @@ fs.writeFileSync(path.join(OUT, 'stats.json'), JSON.stringify({
   ge4: allCov.filter(c => c >= 4).length, ge5: allCov.filter(c => c >= 5).length, maxStages: Math.max(...allCov),
   perYear, outcomesAll, outcomesRaw: byCount(tally(inc, i => i.stages.action_on_objective?.value ?? '(none)')),
   prevalence, hist, iaByYear, catByYear, persistence, cooccurrence: co, conditional: cond, paths, provByYear, vendors,
+  kCols, stageDistByPeriod, stageDistTotal,
 }, null, 2) + '\n');
 
 // ==================================================================== tables
@@ -225,6 +242,21 @@ ${byCount(tally(inc, i => i.source.type)).map(([k, v]) => `\\quad ${esc(k)} & ${
 \\midrule
 \\multicolumn{2}{l}{\\emph{Most-targeted vendors}} \\\\
 ${vendors.slice(0, 8).map(([k, v]) => `\\quad ${esc(k)} & ${v} \\\\`).join('\n')}
+\\bottomrule
+\\end{tabular}
+\\end{table}`);
+
+T.push(`\\begin{table}[t]
+\\centering
+\\caption{Kill chain stage distribution by time period.}
+\\label{tab:stage-dist-period}
+\\begin{tabular}{l r ${'r'.repeat(kCols.length)}}
+\\toprule
+Period & $N$ & ${kCols.map(k => `${k} Stages`).join(' & ')} \\\\
+\\midrule
+${stageDistByPeriod.map(r => `${esc(r.period)} & ${r.n} & ${kCols.map(k => r.counts[k]).join(' & ')} \\\\`).join('\n')}
+\\midrule
+Total & ${stageDistTotal.n} & ${kCols.map(k => stageDistTotal.counts[k]).join(' & ')} \\\\
 \\bottomrule
 \\end{tabular}
 \\end{table}`);
@@ -385,6 +417,20 @@ F.push(`\\begin{figure}[t]\\centering
 \\end{axis}
 \\end{tikzpicture}
 \\caption{Source provenance by year: the corpus is industry-led, with academic publication trailing.}\\label{fig:provenance}
+\\end{figure}`);
+
+// fig 11: stage-count distribution by period, stacked
+F.push(`\\begin{figure}[t]\\centering
+\\begin{tikzpicture}
+\\begin{axis}[width=\\columnwidth,height=4.6cm,ybar stacked,bar width=18pt,ymin=0,
+  symbolic x coords={${PERIODS.join(',')}},xtick=data,
+  ylabel={Incidents},xlabel={Period},ymajorgrids,
+  legend style={font=\\footnotesize,at={(0.5,1.02)},anchor=south,legend columns=${kCols.length},draw=none},
+  legend cell align=left]
+${kCols.map((k, idx) => `\\addplot[fill=${CB[idx % CB.length]},draw=none] coordinates {${PERIODS.map(p => `(${p},${stageDistByPeriod.find(r => r.period === p).counts[k]})`).join(' ')}};\n\\addlegendentry{${k} stages}`).join('\n')}
+\\end{axis}
+\\end{tikzpicture}
+\\caption{Kill chain stage-count distribution by time period. Coverage has shifted toward deeper chains over time.}\\label{fig:stage-dist-period}
 \\end{figure}`);
 
 fs.writeFileSync(path.join(OUT, 'figures.tex'), F.join('\n\n') + '\n');

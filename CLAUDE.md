@@ -58,8 +58,33 @@ stages:                           # ALL 7 keys required; each is either null or 
   action_on_objective: {value, justification, evidence: {quote, locator}}
 ```
 
-`category` enum: `Browser/Search`, `Enterprise`, `Coding Assist.`, `AI Agent`,
-`Agentic/CUA`, `Crypto/DeFi`, `AI Worm`, `Multimodal`.
+`category` enum (deliberately kept to 4 — this is the *victim application type*,
+not the attack mechanism, the deploying business, or a modality/propagation
+mechanism like a worm — those don't describe what the app *is* and were folded
+into whichever of the 4 the app actually functions as):
+
+- **`Coding Assist.`** — writes or executes code, or is a developer-facing cloud
+  AI console (prompt playground, notebook/dev environment) even when no code is
+  generated. Cursor, Copilot, Claude Code, Devin, Windsurf, Google Jules, Azure
+  OpenAI Playground, Vertex AI Studio, AI Studio, Colab AI.
+- **`Browser/Search`** — a general chat/search product used directly (no
+  business-specific integration wrapped around it), including a business's own
+  customer-facing chat widget bolted onto a site (same shape, different owner).
+  ChatGPT, Bing Chat, Bard, Gemini, Perplexity, Grok, dealership/retail chatbots,
+  third-party chatbot plugins.
+- **`AI Agent`** — retrieves data or calls tools/APIs on the user's behalf beyond
+  plain chat: RAG, connectors, MCP clients, multi-agent workflows, memory-backed
+  assistants embedded in a product (M365 Copilot, Notion AI, NotebookLM), and
+  anything with no specific downstream app at all (raw LLM-serving infra, cloud
+  semantic caches) — the catch-all for "acts on data/tools" that isn't code and
+  isn't screen control.
+- **`Agentic/CUA`** — computer-use agents that control a GUI/OS directly
+  (mouse/keyboard/screen), not API calls. ChatGPT Operator, Claude Computer Use,
+  Gemini Assistant. Kept separate from `AI Agent` because screen-based action is
+  a genuinely different attack surface than API/RAG-based action.
+
+Always name the actual concrete victim product(s) in `target` — check the source
+rather than defaulting to a vague phrase like "commercial LLM services."
 
 Every non-null stage needs `value`, a one-sentence `justification`, and `evidence`
 with a **real quote from the source** plus a `locator` (where in the source). Do not

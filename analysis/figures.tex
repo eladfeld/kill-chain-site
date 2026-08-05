@@ -126,20 +126,14 @@
 \begin{axis}[width=\columnwidth,height=5cm,ybar stacked,bar width=16pt,ymin=0,
   symbolic x coords={2022,2023,2024,2025,2026},xtick=data,ylabel={Incidents},xlabel={Year},ymajorgrids,
   legend style={font=\footnotesize,at={(0.5,1.02)},anchor=south,legend columns=3,draw=none},legend cell align=left]
-\addplot[fill={rgb,255:red,31;green,119;blue,180},draw=none] coordinates {(2022,0) (2023,1) (2024,2) (2025,29) (2026,2)};
+\addplot[fill={rgb,255:red,31;green,119;blue,180},draw=none] coordinates {(2022,0) (2023,3) (2024,4) (2025,31) (2026,2)};
 \addlegendentry{Coding Assist.}
-\addplot[fill={rgb,255:red,255;green,127;blue,14},draw=none] coordinates {(2022,0) (2023,5) (2024,7) (2025,5) (2026,5)};
-\addlegendentry{Enterprise}
-\addplot[fill={rgb,255:red,44;green,160;blue,44},draw=none] coordinates {(2022,0) (2023,7) (2024,7) (2025,5) (2026,2)};
-\addlegendentry{Browser/Search}
-\addplot[fill={rgb,255:red,214;green,39;blue,40},draw=none] coordinates {(2022,1) (2023,2) (2024,3) (2025,6) (2026,2)};
+\addplot[fill={rgb,255:red,255;green,127;blue,14},draw=none] coordinates {(2022,1) (2023,3) (2024,9) (2025,11) (2026,6)};
 \addlegendentry{AI Agent}
-\addplot[fill={rgb,255:red,148;green,103;blue,189},draw=none] coordinates {(2022,0) (2023,0) (2024,0) (2025,4) (2026,1)};
+\addplot[fill={rgb,255:red,44;green,160;blue,44},draw=none] coordinates {(2022,0) (2023,11) (2024,8) (2025,5) (2026,5)};
+\addlegendentry{Browser/Search}
+\addplot[fill={rgb,255:red,214;green,39;blue,40},draw=none] coordinates {(2022,0) (2023,0) (2024,0) (2025,4) (2026,1)};
 \addlegendentry{Agentic/CUA}
-\addplot[fill={rgb,255:red,140;green,86;blue,75},draw=none] coordinates {(2022,0) (2023,2) (2024,0) (2025,1) (2026,2)};
-\addlegendentry{Multimodal}
-\addplot[fill={rgb,255:red,127;green,127;blue,127},draw=none] coordinates {(2022,0) (2023,0) (2024,2) (2025,1) (2026,0)};
-\addlegendentry{AI Worm}
 \end{axis}
 \end{tikzpicture}
 \caption{Targeted application category by year.}\label{fig:category-year}
@@ -222,4 +216,26 @@ x y meta
 \end{axis}
 \end{tikzpicture}
 \caption{Source provenance by year: the corpus is industry-led, with academic publication trailing.}\label{fig:provenance}
+\end{figure}
+
+\begin{figure}[t]\centering
+\begin{tikzpicture}
+\begin{axis}[width=\columnwidth,height=4.6cm,ybar stacked,bar width=18pt,ymin=0,
+  symbolic x coords={2022,2023,2024,2025,2026},xtick=data,
+  ylabel={Incidents},xlabel={Period},ymajorgrids,
+  legend style={font=\footnotesize,at={(0.5,1.02)},anchor=south,legend columns=5,draw=none},
+  legend cell align=left]
+\addplot[fill={rgb,255:red,31;green,119;blue,180},draw=none] coordinates {(2022,0) (2023,4) (2024,6) (2025,4) (2026,2)};
+\addlegendentry{2 stages}
+\addplot[fill={rgb,255:red,255;green,127;blue,14},draw=none] coordinates {(2022,1) (2023,13) (2024,7) (2025,31) (2026,7)};
+\addlegendentry{3 stages}
+\addplot[fill={rgb,255:red,44;green,160;blue,44},draw=none] coordinates {(2022,0) (2023,0) (2024,6) (2025,11) (2026,4)};
+\addlegendentry{4 stages}
+\addplot[fill={rgb,255:red,214;green,39;blue,40},draw=none] coordinates {(2022,0) (2023,0) (2024,2) (2025,4) (2026,1)};
+\addlegendentry{5 stages}
+\addplot[fill={rgb,255:red,148;green,103;blue,189},draw=none] coordinates {(2022,0) (2023,0) (2024,0) (2025,1) (2026,0)};
+\addlegendentry{6 stages}
+\end{axis}
+\end{tikzpicture}
+\caption{Kill chain stage-count distribution by time period. Coverage has shifted toward deeper chains over time.}\label{fig:stage-dist-period}
 \end{figure}

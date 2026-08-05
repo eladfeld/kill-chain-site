@@ -3,7 +3,7 @@ id: 2025-010
 title: EchoLeak
 authors: "Aim Security (Pavan Reddy, Aditya Sanjay Gujral)"
 date: 2025-06
-category: Enterprise
+category: AI Agent
 target: M365 Copilot
 source:
   url: https://www.catonetworks.com/blog/breaking-down-echoleak/

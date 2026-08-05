@@ -4,7 +4,7 @@ title: Weaponizing Image Scaling Against Production AI Systems
 authors: Kikimora Morozova, Suha Sabi Hussain
 new: true
 date: 2025-08
-category: Multimodal
+category: Coding Assist.
 target: Gemini CLI / Vertex AI / Google Assistant
 source:
   url: https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/

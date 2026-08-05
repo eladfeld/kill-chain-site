@@ -3,7 +3,7 @@ id: 2024-002
 title: Conditional Prompt Injection (whoami)
 authors: Johann Rehberger
 date: 2024-03
-category: Enterprise
+category: AI Agent
 target: M365 Copilot
 new: true
 source:

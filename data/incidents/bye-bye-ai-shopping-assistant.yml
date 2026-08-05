@@ -4,7 +4,7 @@ title: "Bye Bye AI: Hacking the AI Shopping Assistant of a Top 3 US Retailer"
 authors: "Shlomi Ashkenazy, Netanel Rubin, Dan Avraham (Rein Security)"
 new: true
 date: 2026-07
-category: Enterprise
+category: Browser/Search
 target: AI shopping assistant of an undisclosed top-3 US retailer (Google Vertex AI Search)
 source:
   url: https://reinsec.io/blog/reins-agent-breakers-research-team-discovers-critical-vulnerabilities-in-top-u-s-retailers-ai-shopping-agent/

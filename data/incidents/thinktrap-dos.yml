@@ -4,8 +4,8 @@ title: "ThinkTrap: DoS Against Black-box LLM Services via Infinite Thinking"
 authors: Yunzhe Li, Jianan Wang, Hongzi Zhu, et al. (Shanghai Jiao Tong University)
 new: true
 date: 2026-02
-category: Enterprise
-target: Commercial black-box LLM services
+category: AI Agent
+target: OpenAI, Google Gemini, DeepSeek, Mistral, Microsoft, Meta commercial LLM APIs (via OpenRouter)
 source:
   url: https://www.ndss-symposium.org/wp-content/uploads/2026-f639-paper.pdf
   venue: NDSS 2026

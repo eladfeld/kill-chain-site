@@ -247,60 +247,45 @@
       "year": "2022",
       "counts": {
         "Coding Assist.": 0,
-        "Enterprise": 0,
-        "Browser/Search": 0,
         "AI Agent": 1,
-        "Agentic/CUA": 0,
-        "Multimodal": 0,
-        "AI Worm": 0
+        "Browser/Search": 0,
+        "Agentic/CUA": 0
       }
     },
     {
       "year": "2023",
       "counts": {
-        "Coding Assist.": 1,
-        "Enterprise": 5,
-        "Browser/Search": 7,
-        "AI Agent": 2,
-        "Agentic/CUA": 0,
-        "Multimodal": 2,
-        "AI Worm": 0
+        "Coding Assist.": 3,
+        "AI Agent": 3,
+        "Browser/Search": 11,
+        "Agentic/CUA": 0
       }
     },
     {
       "year": "2024",
       "counts": {
-        "Coding Assist.": 2,
-        "Enterprise": 7,
-        "Browser/Search": 7,
-        "AI Agent": 3,
-        "Agentic/CUA": 0,
-        "Multimodal": 0,
-        "AI Worm": 2
+        "Coding Assist.": 4,
+        "AI Agent": 9,
+        "Browser/Search": 8,
+        "Agentic/CUA": 0
       }
     },
     {
       "year": "2025",
       "counts": {
-        "Coding Assist.": 29,
-        "Enterprise": 5,
+        "Coding Assist.": 31,
+        "AI Agent": 11,
         "Browser/Search": 5,
-        "AI Agent": 6,
-        "Agentic/CUA": 4,
-        "Multimodal": 1,
-        "AI Worm": 1
+        "Agentic/CUA": 4
       }
     },
     {
       "year": "2026",
       "counts": {
         "Coding Assist.": 2,
-        "Enterprise": 5,
-        "Browser/Search": 2,
-        "AI Agent": 2,
-        "Agentic/CUA": 1,
-        "Multimodal": 2,
-        "AI Worm": 0
+        "AI Agent": 6,
+        "Browser/Search": 5,
+        "Agentic/CUA": 1
       }
     }
   ],
@@ -521,7 +506,7 @@
   "vendors": [
     [
       "Other / multiple",
-      25
+      24
     ],
     [
       "OpenAI",
@@ -529,7 +514,7 @@
     ],
     [
       "Microsoft",
-      18
+      19
     ],
     [
       "Google",
@@ -555,5 +540,80 @@
       "SaaS connectors",
       1
     ]
-  ]
+  ],
+  "kCols": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "stageDistByPeriod": [
+    {
+      "period": "2022",
+      "n": 1,
+      "counts": {
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    {
+      "period": "2023",
+      "n": 17,
+      "counts": {
+        "2": 4,
+        "3": 13,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    {
+      "period": "2024",
+      "n": 21,
+      "counts": {
+        "2": 6,
+        "3": 7,
+        "4": 6,
+        "5": 2,
+        "6": 0
+      }
+    },
+    {
+      "period": "2025",
+      "n": 51,
+      "counts": {
+        "2": 4,
+        "3": 31,
+        "4": 11,
+        "5": 4,
+        "6": 1
+      }
+    },
+    {
+      "period": "2026",
+      "n": 14,
+      "counts": {
+        "2": 2,
+        "3": 7,
+        "4": 4,
+        "5": 1,
+        "6": 0
+      }
+    }
+  ],
+  "stageDistTotal": {
+    "period": "Total",
+    "n": 104,
+    "counts": {
+      "2": 16,
+      "3": 59,
+      "4": 21,
+      "5": 7,
+      "6": 1
+    }
+  }
 }
