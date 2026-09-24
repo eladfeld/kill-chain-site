@@ -1,13 +1,9 @@
 # Promptware Kill-Chain Archive
 
-A durable, standalone archive that extends **Table II** of *The Promptware Kill Chain*
-(Brodt, Feldman, Schneier, Nassi — NDSS'27). Every prompt-injection / promptware
+A durable, standalone archive that extends **Table II** of *SoK: The Promptware Kill Chain*. Every prompt-injection / promptware
 incident is coded across the seven-stage kill chain, with a short per-stage
 justification, the source excerpt each coding was drawn from, the publication URL,
 and a **self-hosted hard copy** of the source so records survive if origins disappear.
-
-> ⚠ **Work in progress** — data is being verified. Some source URLs and per-stage
-> justifications are still `TODO` placeholders.
 
 ## Structure
 - `data/incidents/*.yml` — one record per incident (edit these).

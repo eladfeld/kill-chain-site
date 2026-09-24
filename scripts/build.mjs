@@ -35,8 +35,7 @@ function page(title, body, prefix) {
 <link rel="stylesheet" href="${prefix}assets/style.css?v=${cssVer}">
 </head><body>
 <header class="site"><a class="home" href="${prefix}index.html">Promptware Kill-Chain Archive</a>
-<span class="sub">Extending Table II — <em>The Promptware Kill Chain</em> (NDSS'27)</span></header>
-<div class="wip">⚠ Work in progress — data is being verified. Some source URLs and per-stage justifications are placeholders (<code>TODO</code>).</div>
+<span class="sub">Extending Table II — <em>SoK: The Promptware Kill Chain</em></span></header>
 <main>${body}</main>
 <footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>`;

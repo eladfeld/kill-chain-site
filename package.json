@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Archive extending Table II of The Promptware Kill Chain (NDSS'27)",
+  "description": "Archive extending Table II of The Promptware Kill Chain",
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/build.mjs",
