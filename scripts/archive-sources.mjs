@@ -35,7 +35,9 @@ async function fetchPdf(url) {
 
 async function singleFile(url, out) {
   await run('npx', ['--yes', 'single-file-cli', url, out, `--browser-executable-path=${CHROME}`,
-    '--browser-wait-until=networkIdle', '--browser-load-max-time=60000'], { timeout: 180000 });
+    '--browser-wait-until=networkIdle', '--browser-load-max-time=60000'],
+    // UTC so the "saved date" header SingleFile writes does not reveal the archiver's time zone
+    { timeout: 180000, env: { ...process.env, TZ: 'UTC' } });
   const buf = fs.readFileSync(out);
   if (buf.length < 2000) throw new Error(`snapshot too small (${buf.length} B)`);
   return buf;

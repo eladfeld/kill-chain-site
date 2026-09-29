@@ -2,7 +2,7 @@
   "url": "https://zenity.io/research/pleasefix-vulnerabilities",
   "fetched_from": "https://zenity.io/research/pleasefix-vulnerabilities",
   "archived_at": "2026-09-29",
-  "sha256": "faafa33c3e14fda1fefe4c97e91024ce67b8ede367377c668e57e010c1fa15d5",
+  "sha256": "b91e7ab83ad9afff017610025b9255cd565277efa6339adf6bdc118a0c69b3e2",
   "tool": "single-file-cli",
-  "bytes": 937692
+  "bytes": 937698
 }

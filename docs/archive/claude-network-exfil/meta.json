@@ -2,7 +2,7 @@
   "url": "https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/",
   "fetched_from": "https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/",
   "archived_at": "2026-09-29",
-  "sha256": "d80f4a28c223d0c6b94f2aa096d9a203a403f147add9845f46aa4e186e4f86bf",
+  "sha256": "b738ac5ae2327d75e92912e4ad976cea35d638b9a3b54949147ba9323ed05b59",
   "tool": "single-file-cli",
-  "bytes": 7818819
+  "bytes": 7818825
 }

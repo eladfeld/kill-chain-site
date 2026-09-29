@@ -2,7 +2,7 @@
   "url": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
   "fetched_from": "https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/",
   "archived_at": "2026-09-29",
-  "sha256": "6d84966a0b461505569132e7dccaf8cec9902d1826c3bcdf3a8dd8ca86772575",
+  "sha256": "845d3ebe111d9f6e514bec934fa34a73faa034334c4e92bc21208b2a737ca198",
   "tool": "single-file-cli",
-  "bytes": 16868249
+  "bytes": 16868255
 }

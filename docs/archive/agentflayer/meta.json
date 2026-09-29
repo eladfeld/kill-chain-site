@@ -2,7 +2,7 @@
   "url": "https://labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets",
   "fetched_from": "https://labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets",
   "archived_at": "2026-09-29",
-  "sha256": "f753dfbaa75663ff7b7c24a2a48dfb291774ab6a8b1d7551d4429dfdf9a85727",
+  "sha256": "ed286ed820647125fda41cff6667b7d1de9bf5837d26377e872263d7763abe79",
   "tool": "single-file-cli",
-  "bytes": 636385
+  "bytes": 636391
 }

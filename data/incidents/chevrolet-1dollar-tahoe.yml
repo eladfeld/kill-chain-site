@@ -12,7 +12,7 @@ source:
   type: other
   snapshot: snapshot.html
   archived_at: "2026-09-29"
-  sha256: e78cd41e294afb80b9e17d7b2eb36d2d11aa25175a42287cdbb5b7662f98b3ff
+  sha256: e3161d7be664416ec0ea07b1a456fca744ebafbfea93ab0d12d1f9001b6c2e36
 stages:
   initial_access:
     value: Direct (D)

@@ -2,7 +2,7 @@
   "url": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
   "fetched_from": "https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/",
   "archived_at": "2026-09-29",
-  "sha256": "a65a3ae4f5c20e31aede0608d22aa99ec721d937d56453e87c0a75792a39bcb8",
+  "sha256": "dbbeb44bfd9cc31cac9455c0b1a97726ab301bce3e02aaf050386b5e78967e34",
   "tool": "single-file-cli",
-  "bytes": 4347947
+  "bytes": 4347953
 }

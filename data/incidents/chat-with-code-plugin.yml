@@ -12,7 +12,7 @@ source:
   type: blog
   snapshot: snapshot.html
   archived_at: "2026-09-29"
-  sha256: 8f8e8772a2ae853496eaaaaf6fcbb51656de271fc0e2a29fcf952f4d915690ce
+  sha256: 15f2a7d74d931c367be8b12e1171891cec3cc270e8e51bc593e8988322fbcd90
 stages:
   initial_access:
     value: Indirect (I)
