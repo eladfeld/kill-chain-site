@@ -10,9 +10,9 @@ source:
   url: https://arxiv.org/abs/2405.06823
   venue: CCS'24
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 06e219e343d5ce0a07d899154dcd5f44aa04c2d8a24fe24a9e8521f926ddeb39
 stages:
   initial_access:
     value: Direct (D)

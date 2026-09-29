@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 0aec2af8298fe569d72daf9de5bf6dfeb76fe21c6ae0ac1cbad098bc835bae93
 stages:
   initial_access:
     value: Indirect (I)

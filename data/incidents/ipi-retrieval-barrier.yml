@@ -10,9 +10,9 @@ source:
   url: https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_chang.pdf
   venue: USENIX Security 2026
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 745d721cf4fa003ef45b64d33373cbd42f211f09659c5b572d7601e5ef608fde
 stages:
   initial_access:
     value: Indirect (I)

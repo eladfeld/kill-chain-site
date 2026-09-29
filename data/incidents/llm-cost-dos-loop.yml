@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: f88941333bdf0dc0222181721dbab7ebb9ccf6343615c347072557897a13ba0d
 stages:
   initial_access:
     value: Indirect (I)

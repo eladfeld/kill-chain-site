@@ -10,9 +10,9 @@ source:
   url: https://www.youtube.com/watch?v=NgjyBKfqJEs
   venue: DEF CON 33
   type: other
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: e211b25cafe71f9067de760cd994d0681a5396250fe669266b9055f60297a552
 stages:
   initial_access:
     value: Indirect (I)

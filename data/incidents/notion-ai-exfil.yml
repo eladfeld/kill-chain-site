@@ -9,9 +9,9 @@ source:
   url: https://www.codeintegrity.ai/blog/notion
   venue: CodeIntegrity (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: aa36cc3f88038ad87bc2a258bb981c7b364ce0c3a007b766fa6efcbdfbad1ebc
 stages:
   initial_access:
     value: Indirect (I)

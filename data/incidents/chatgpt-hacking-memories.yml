@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: d4ace0c5f2de0f77d6eb4467df2c476c04c2b48252ef5c22dc97edde2109d28e
 stages:
   initial_access:
     value: Indirect (I)

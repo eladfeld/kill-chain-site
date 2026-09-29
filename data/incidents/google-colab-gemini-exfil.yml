@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2024/google-colab-image-render-exfil/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 904ec4a4b1c59710676f29352ab5c2de884e09bd24562d51d3702e517131d80b
 stages:
   initial_access:
     value: Indirect (I)

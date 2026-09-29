@@ -9,9 +9,9 @@ source:
   url: https://arxiv.org/abs/2302.12173
   venue: AISec@CCS'23 / Black Hat USA'23
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 428e23e8c7e4f89310e113e38d082b3f65548a8b887188ebc536099061800e81
 stages:
   initial_access:
     value: Indirect (I)

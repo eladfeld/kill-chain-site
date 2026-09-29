@@ -10,9 +10,9 @@ source:
   url: https://incidentdatabase.ai/cite/622/
   venue: AI Incident Database (incident 622)
   type: other
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: e78cd41e294afb80b9e17d7b2eb36d2d11aa25175a42287cdbb5b7662f98b3ff
 stages:
   initial_access:
     value: Direct (D)

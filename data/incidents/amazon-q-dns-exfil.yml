@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 7d3902337c9b2bd51056cd7e92f36748715bd1fb1380d3826b41c829f76dde2e
 stages:
   initial_access:
     value: Indirect (I)

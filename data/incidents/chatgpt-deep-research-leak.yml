@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/chatgpt-deep-research-connectors-data-spill-and-leaks/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 357045c53b0a2f186ff87f1e02e45bf5cf96146205767076269273bc06828c6c
 stages:
   initial_access:
     value: Indirect (I)

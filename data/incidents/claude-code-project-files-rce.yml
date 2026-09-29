@@ -10,9 +10,9 @@ source:
   url: https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/
   venue: "Check Point Research (blog); presented at RSAC 2026"
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 6d84966a0b461505569132e7dccaf8cec9902d1826c3bcdf3a8dd8ca86772575
 stages:
   initial_access:
     value: Indirect (I)

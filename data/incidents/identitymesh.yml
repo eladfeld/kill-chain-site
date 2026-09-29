@@ -9,9 +9,9 @@ source:
   url: https://www.lasso.security/blog/identitymesh-exploiting-agentic-ai
   venue: Lasso Security (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 6ddef7e340a086232d476a4f21c289e615f9b6640a963a590a50c41c8e76b9fd
 stages:
   initial_access:
     value: Indirect (I)

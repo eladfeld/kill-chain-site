@@ -9,9 +9,9 @@ source:
   url: https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: bce25075cc2ea6c98477a58cbc98a206353a00b1a1f84866169157b3e076701e
 stages:
   initial_access:
     value: Indirect (I)

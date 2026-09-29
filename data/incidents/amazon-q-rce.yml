@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 70c6a46da08c14cf096f721c8457c085864f1f0e0e111f79197f3c2a814afbf2
 stages:
   initial_access:
     value: Indirect (I)

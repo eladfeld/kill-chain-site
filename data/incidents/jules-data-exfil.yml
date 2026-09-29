@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/google-jules-vulnerable-to-data-exfiltration-issues/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 543296bb9b91b2ff48d2279f2f76a56ef5ebea5980cbf02f9b7416919dc9c348
 stages:
   initial_access:
     value: Indirect (I)

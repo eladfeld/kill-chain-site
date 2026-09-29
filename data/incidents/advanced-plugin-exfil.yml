@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/advanced-plugin-data-exfiltration-trickery/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: ac02038677be0323eb416f2774c23522f528b372e613eba6aca3c67fd772114a
 stages:
   initial_access:
     value: Indirect (I)

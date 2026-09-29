@@ -10,9 +10,9 @@ source:
   url: https://arxiv.org/abs/2508.12175
   venue: Black Hat USA'25 / DEF CON 33
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 02c2e5a0c7a7d40e4aa9d2f22fef3930385de5552ad0820e7242fb8809f6e434
 stages:
   initial_access:
     value: Indirect (I)

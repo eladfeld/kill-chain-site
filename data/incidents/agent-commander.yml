@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2026/agent-commander-your-agent-works-for-me-now/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 46299f7069b6668ae89ed22a83f0006716fc71bc8991d648f6dd5f8c1701ab19
 stages:
   initial_access:
     value: Indirect (I)

@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2024/llm-apps-automatic-tool-invocations/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 25999b7d029dac9f1b982156c973e377bd5d04aeeffe920c43aec628b1fb5bcf
 stages:
   initial_access:
     value: Indirect (I)

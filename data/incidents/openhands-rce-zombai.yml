@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: d82a69ddb70d5563f840bdb01d9c10fc6435206911d137bb35cf5cabe2ccea5c
 stages:
   initial_access:
     value: Indirect (I)

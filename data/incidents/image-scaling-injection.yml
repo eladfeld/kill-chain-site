@@ -10,9 +10,9 @@ source:
   url: https://blog.trailofbits.com/2025/08/21/weaponizing-image-scaling-against-production-ai-systems/
   venue: Trail of Bits (blog) / Black Hat EU'25
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: c24bb776d49b0b3059cda5916f6348768836fabbc013e4c539aa14485faee685
 stages:
   initial_access:
     value: Indirect (I)

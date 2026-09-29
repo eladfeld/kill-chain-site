@@ -10,9 +10,9 @@ source:
   url: https://arxiv.org/abs/2309.02926
   venue: Black Hat Asia'24
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 0cc6b555a63a5186e1881c2cbe870a76437dd4b3b84338d3c697dffffa9610a7
 stages:
   initial_access:
     value: Direct (D)

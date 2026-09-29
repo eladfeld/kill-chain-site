@@ -10,9 +10,9 @@ source:
   url: https://simonwillison.net/2022/Sep/12/prompt-injection/
   venue: Simon Willison's Weblog (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 1edcc8084cfc31cc9f7e07d61a6fcfe5db682eff0b9ea23eb929a5ba47806761
 stages:
   initial_access:
     value: Direct (D)

@@ -9,9 +9,9 @@ source:
   url: https://arxiv.org/abs/2410.07283
   venue: ESORICS
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 9b2c2c3a11c03fbdd8fce1eb23cc34d2a000b2d3ca1a297f508ea8a75e18b512
 stages:
   initial_access:
     value: Indirect (I)

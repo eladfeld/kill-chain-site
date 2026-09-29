@@ -10,9 +10,9 @@ source:
   url: https://www.mbgsec.com/assets/pdfs/2025-04-29_Your_Copilot_Is_My_Insider.pdf
   venue: RSA Conference'25
   type: other
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: c6021120574b1adf32d0e2fcadc0faf5ea242d363ae37f5d5001f87df655297f
 stages:
   initial_access:
     value: Indirect (I)

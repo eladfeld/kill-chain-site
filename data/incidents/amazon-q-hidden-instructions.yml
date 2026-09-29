@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/amazon-q-developer-interprets-hidden-instructions/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 9b56e4b7b5c9bc672226cfa82e36de0f1e7f327edb15841ed96cf5137b4a745d
 stages:
   initial_access:
     value: Indirect (I)

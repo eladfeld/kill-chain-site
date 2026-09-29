@@ -9,9 +9,9 @@ source:
   url: https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/
   venue: Simon Willison's Weblog
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: e2e641aa7b89d33da58337206fe92d363e354dae71ddf2acb5227292163de5cc
 stages:
   initial_access:
     value: Indirect (I)

@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/data-exfiltration-in-azure-openai-playground-fixed/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 9f2053df7191122edde54f1438a036cd5605c936a8d519d17008ce9644e8426e
 stages:
   initial_access:
     value: Direct (D)

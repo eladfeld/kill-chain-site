@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: ea91bb0fa3d864b931af711b19f024685da578866d9fda2eb18e2dc9115fb5dc
 stages:
   initial_access:
     value: Indirect (I)

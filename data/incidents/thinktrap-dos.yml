@@ -10,9 +10,9 @@ source:
   url: https://www.ndss-symposium.org/wp-content/uploads/2026-f639-paper.pdf
   venue: NDSS 2026
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: deea245413a65727dea27a7c161527014467c34c0a269b1a70209aa5266d7900
 stages:
   initial_access:
     value: Direct (D)

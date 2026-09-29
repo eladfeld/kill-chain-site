@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/devin-i-spent-usd500-to-hack-devin/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 7bf15828487cc6ba9aebcf12ff620b0f3c6ea9f32093ab9605c0823de62631cf
 stages:
   initial_access:
     value: Indirect (I)

@@ -10,9 +10,9 @@ source:
   url: https://reinsec.io/blog/reins-agent-breakers-research-team-discovers-critical-vulnerabilities-in-top-u-s-retailers-ai-shopping-agent/
   venue: "Rein Security (blog); Black Hat USA'26"
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 379da56afd3d27737fe0a9c657d5a2053d72febb7a5a08701dd9d662f0795327
 stages:
   initial_access:
     value: Indirect (I)

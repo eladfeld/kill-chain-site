@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/windsurf-data-exfiltration-vulnerabilities/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 9605f5854925ca25e4c2bf19157f5fbdc01368b07c4205dedbb8519bb34a08f9
 stages:
   initial_access:
     value: Indirect (I)

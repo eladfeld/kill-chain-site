@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: b9fbc26d211f24bb1d66b8c585797a64dd4729a7b029fd2fcfb1db473a8e8e09
 stages:
   initial_access:
     value: Indirect (I)

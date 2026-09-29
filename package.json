@@ -11,7 +11,8 @@
     "add": "node scripts/add.mjs",
     "serve": "node scripts/build.mjs && npx --yes http-server docs -p 8080 -c-1",
     "analyze": "node scripts/analyze.mjs",
-    "figures": "python3 scripts/render-figures.py"
+    "figures": "python3 scripts/render-figures.py",
+    "archive-sources": "node scripts/archive-sources.mjs"
   },
   "dependencies": {
     "ajv": "^8.17.1",

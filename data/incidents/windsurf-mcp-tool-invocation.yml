@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 4b1f66de9e1cb0a22d979a14839fd33d9e1b04889d9e2015ffce1d1b73cc4f92
 stages:
   initial_access:
     value: Indirect (I)

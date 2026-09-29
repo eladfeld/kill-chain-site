@@ -10,9 +10,9 @@ source:
   url: https://www.jianjunchen.com/p/llm-leak.SP26.pdf
   venue: IEEE S&P 2026
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 9196bbe4b737dd1f896255c98386faa0ef2b9fa5a3425cafe0e892de5c5fe0af
 stages:
   initial_access:
     value: Direct (D)

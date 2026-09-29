@@ -10,9 +10,9 @@ source:
   url: https://i.blackhat.com/BH-USA-25/Presentations/US-25-Lynch-From-Prompts-to-Pwns.pdf
   venue: Black Hat USA'25
   type: other
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: 16d965cfd07c81289b799b8b048202545f1990bca4fcdd5f43003b0a1356a6da
 stages:
   initial_access:
     value: Indirect (I)

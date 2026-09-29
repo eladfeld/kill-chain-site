@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/google-docs-ai-scam/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 7cec62b57d1b923f28f110a2aeb8166059184bd1818aa6d1af3145eef19471ce
 stages:
   initial_access:
     value: Indirect (I)

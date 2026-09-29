@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/manus-ai-kill-chain-expose-port-vs-code-server-on-internet/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 943bdbbe3e2160ead9a8739c75321f5f77e044850425ef20300b7be5997267d4
 stages:
   initial_access:
     value: Indirect (I)

@@ -10,9 +10,9 @@ source:
   url: https://zenity.io/research/pleasefix-vulnerabilities
   venue: Zenity Labs (research)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: faafa33c3e14fda1fefe4c97e91024ce67b8ede367377c668e57e010c1fa15d5
 stages:
   initial_access:
     value: Indirect (I)

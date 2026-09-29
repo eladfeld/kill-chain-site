@@ -9,9 +9,9 @@ source:
   url: https://embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 11436e4a78aa8d40656aec61460f5a0ec1acaa4e61a9a5b71320fac4daa99a47
 stages:
   initial_access:
     value: Indirect (I)

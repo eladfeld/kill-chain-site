@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: e0a73f9b25be764ff189161986913efd9557a8d473a8fafe0f87f5d68eca3570
 stages:
   initial_access:
     value: Indirect (I)

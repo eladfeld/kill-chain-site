@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: d80f4a28c223d0c6b94f2aa096d9a203a403f147add9845f46aa4e186e4f86bf
 stages:
   initial_access:
     value: Indirect (I)

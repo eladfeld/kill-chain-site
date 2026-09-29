@@ -10,9 +10,9 @@ source:
   url: https://embracethered.com/blog/posts/2023/chatgpt-webpilot-data-exfil-via-markdown-injection/
   venue: Embrace The Red (blog)
   type: blog
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: snapshot.html
+  archived_at: "2026-09-29"
+  sha256: 21163cad9aaf8410e1d8ab1e6b1d98adeaffb964007104b8e10f9b3cc700f7a8
 stages:
   initial_access:
     value: Indirect (I)

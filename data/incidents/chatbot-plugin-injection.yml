@@ -10,9 +10,9 @@ source:
   url: https://arxiv.org/pdf/2511.05797
   venue: IEEE S&P 2026
   type: paper
-  snapshot: null
-  archived_at: null
-  sha256: null
+  snapshot: paper.pdf
+  archived_at: "2026-09-29"
+  sha256: dd7ef2b3a06eaea6b7d229537f63a97a0c873676f4ad0a4d6512b33c329c74a6
 stages:
   initial_access:
     value: Indirect (I)
