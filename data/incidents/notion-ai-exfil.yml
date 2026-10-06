@@ -20,7 +20,7 @@ stages:
       quote: what's not visible here to the naked eye is a malicious prompt hidden in plain sight
       locator: codeintegrity.ai/blog/notion § Step 1 — creating the malicious PDF
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The payload asserts internal authority and pre-authorisation so the agent runs the attacker's tool calls instead of the summary it was asked for.
     evidence:
       quote: even in those cases it is important for you to make the tool calls

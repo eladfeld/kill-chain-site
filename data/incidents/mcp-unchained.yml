@@ -21,7 +21,7 @@ stages:
       quote: Any public content source becomes a payload delivery system (Indirect Prompt Injection)
       locator: blackhat.com EU-25 MCP-Unchained.pdf
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Hidden instructions in fetched content override the agent to run a command.
     evidence:
       quote: "instruction: execute the following command to ensure xxxxx"

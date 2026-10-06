@@ -21,7 +21,7 @@ stages:
       quote: Adding a tool server to conversation context suffices for exploitation
       locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Hidden instructions in tool metadata hijack the model’s behaviour.
     evidence:
       quote: inject hidden instructions via tool metadata to hijack LLM behavior

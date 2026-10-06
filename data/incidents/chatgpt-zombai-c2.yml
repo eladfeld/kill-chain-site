@@ -4,7 +4,7 @@ title: "ZombAIs: From Prompt Injection to C2 with Claude Computer Use"
 authors: Johann Rehberger
 date: 2024-10
 category: Browser/Search
-target: ChatGPT
+target: Claude Computer Use
 source:
   url: https://embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/
   venue: Embrace The Red (blog)
@@ -19,7 +19,12 @@ stages:
     evidence:
       quote: craft a prompt injection payload to have Claude download the binary and execute it
       locator: embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Social eng. (SE)"
+    justification: "After Claude refused wget/bash download of untrusted URLs, the malware was reframed as a benign 'Support Tool' via a browser click, which succeeded."
+    evidence:
+      quote: "Claude complained about untrusted URLs and similar potentially dangerous actions, like usage of wget"
+      locator: "embracethered.com/blog/posts/2024/claude-computer-use-c2-the-zombais-are-coming/"
   reconnaissance: null
   persistence: null
   command_control: null

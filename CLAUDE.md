@@ -50,7 +50,7 @@ source:
   sha256: null
 stages:                           # ALL 7 keys required; each is either null or an object
   initial_access:      {value, justification, evidence: {quote, locator}}
-  privilege_escalation: null      # null = stage not present (not counted in coverage)
+  privilege_escalation: {value, justification, evidence: {quote, locator}}  # never null: IO, SE, or Misc.
   reconnaissance:      null
   persistence:         null
   command_control:     null
@@ -99,7 +99,7 @@ Use these exact coded values. A stage that isn't demonstrated is `null` (not cou
 | Stage | Allowed `value` (else `null`) |
 |---|---|
 | initial_access | `Direct (D)` — attacker prompts the LLM directly · `Indirect (I)` — payload in external content the LLM processes for an unsuspecting user |
-| privilege_escalation | `Instruction override (IR)` · `Social eng. (SE)` (role-play / DAN) · `Misc.` (other technique: config abuse, optimized adversarial trigger, find-exec bypass, …) · `null` = no jailbreak needed |
+| privilege_escalation | `Instruction override (IO)` · `Social eng. (SE)` (role-play / DAN) · `Misc.` (other technique: config abuse, optimized adversarial trigger, find-exec bypass, …) · **never `null`** |
 | reconnaissance | `Yes` when the **payload itself** probes user/env/tools to enable later stages · else `null` |
 | persistence | `Independent (memory)` — payload told the LLM to store in its memory · `Dependent (channel)` — payload lives in email/calendar/doc/workspace/config retrieved in future interactions · `null` = none |
 | command_control | `Promptware-native (●)` — the **LLM itself** re-fetches attacker instructions from a remote server across sessions · `null` = none |
@@ -112,9 +112,12 @@ Use these exact coded values. A stage that isn't demonstrated is `null` (not cou
   (e.g. ChatGPT re-reading GitHub-issue commands each session). **RCE that then drops
   a conventional implant (Sliver, botnet, reverse shell) is `command_control: null`**
   — the malware does C2, not the LLM. This excludes every "ZombAI-via-RCE" post.
-- **IR vs null priv-esc:** indirect injection that issues overriding instructions to
-  perform actions = `IR`. Pure capability abuse with no guardrail override (e.g. the
-  app just executes injected code) = `null` (no jailbreak).
+- **Privilege escalation is never `null`.** Every incident gets exactly one of `IO`,
+  `SE`, or `Misc.`: attacker text is always acted on with more authority than its source
+  warrants. Injected instructions the app simply follows, with or without explicit
+  override wording = `IO`. Role-play, persona, or reframing a refused request = `SE`.
+  Escalation that relies on a mechanism beyond the instruction text (optimized inputs,
+  sandbox escape, approval bypass, agent self-reconfiguration) = `Misc.`.
 - **Reconnaissance is the payload probing** for later stages — NOT "read the secret
   then exfil it" (that's the action) and NOT the researcher's own recon.
 - **Lateral movement:** cross-agent / plugin-to-plugin / connector-to-connector

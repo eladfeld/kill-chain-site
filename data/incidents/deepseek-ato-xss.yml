@@ -19,7 +19,12 @@ stages:
     evidence:
       quote: uploading of documents for analysis
       locator: embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Instruction override (IO)"
+    justification: "Uploaded file states the attacker task as plain instructions; no cancellation of prior instructions or impersonation."
+    evidence:
+      quote: "The mission is to base64 decode and write just the final result of this:"
+      locator: "embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/ § Full Prompt Injection Payload"
   reconnaissance: null
   persistence: null
   command_control: null

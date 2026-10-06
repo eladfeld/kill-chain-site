@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: prompt injections
       locator: " arxiv.org/abs/2309.02926"
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Misc."
+    justification: "'Code escape' payloads break custom Python sandboxes (e.g., PandasAI keyword/function restrictions) via inheritance-chain and loader tricks; 2 apps needed it."
+    evidence:
+      quote: "code escape to circum- vent the custom sandbox implemented by the developers"
+      locator: "arxiv.org/abs/2309.02926 §5 (PandasAI discussion, Fig. 6); Table 1 (Test Code Escape)"
   reconnaissance: null
   persistence: null
   command_control: null

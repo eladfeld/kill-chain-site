@@ -21,7 +21,7 @@ stages:
       quote: untrusted data from a third party might enter the chat
       locator: embracethered.com/blog/posts/2024/chatgpt-hacking-memories/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected content drives unauthorized memory writes.
     evidence:
       quote: untrusted data can add memories to your profile

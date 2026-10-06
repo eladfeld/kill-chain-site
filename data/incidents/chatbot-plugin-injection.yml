@@ -21,7 +21,7 @@ stages:
       quote: these tools do not distinguish the website’s trusted content (e.g., product descriptions) from untrusted, third-party content (e.g., customer reviews), introducing a risk of indirect prompt injection
       locator: Abstract
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Plugins that fail to protect conversation-history integrity let attackers forge fake system messages, overriding the chatbot's instructions.
     evidence:
       quote: allowing adversaries to forge conversation histories (including fake system messages), boosting their ability to elicit unintended behavior

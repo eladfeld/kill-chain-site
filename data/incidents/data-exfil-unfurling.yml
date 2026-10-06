@@ -21,7 +21,7 @@ stages:
       quote: instructions from the website can make it into the chat context
       locator: embracethered.com/blog/posts/2024/the-dangers-of-unfurling-and-what-you-can-do-about-it/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected instructions direct the assistant to embed data in a link.
     evidence:
       quote: instructions from the website can make it into the chat context

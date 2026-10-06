@@ -21,7 +21,7 @@ stages:
       quote: nearly-invisible text within the image
       locator: brave.com/blog/unseeable-prompt-injections/ § Comet screenshot attack
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The hidden text is treated as user instruction, redirecting the agent's browser tools away from the task it was given.
     evidence:
       quote: The injected commands instruct the AI to use its browser tools maliciously

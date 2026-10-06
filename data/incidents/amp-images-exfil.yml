@@ -21,7 +21,7 @@ stages:
       quote: Prompt injection is hosted on a website which asks the AI to backup information
       locator: embracethered.com/blog/posts/2025/amp-code-fixed-data-exfiltration-via-images/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected content overrides Amp to stage sensitive data into an image URL.
     evidence:
       quote: asks the AI to backup information

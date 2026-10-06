@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: attacker sends it to a target LLM application
       locator: arxiv.org/abs/2405.06823
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Misc."
+    justification: "Adversarial queries are found by gradient-based incremental search on shadow LLMs/prompts."
+    evidence:
+      quote: "We formulate finding such an adversarial query as an optimization problem and solve it with a gradient-based method"
+      locator: "arxiv.org/abs/2405.06823 (abstract)"
   reconnaissance: null
   persistence: null
   command_control: null

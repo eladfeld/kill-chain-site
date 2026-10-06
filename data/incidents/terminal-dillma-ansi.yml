@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: LLM-integrated CLI tools, or any other program that prints LLM output to stdout
       locator: embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Instruction override (IO)"
+    justification: "Summarized file/web page carries instructions that make the CLI app emit ANSI escape sequences; payload text not published, no override/impersonation described."
+    evidence:
+      quote: "The file, however, came from a malicious actor and contains instructions. Now, the tool is hijacked and inserts ANSI escape sequences"
+      locator: "embracethered.com/blog/posts/2024/terminal-dillmas-prompt-injection-ansi-sequences/ § dillma.py - A Demo App"
   reconnaissance: null
   persistence: null
   command_control: null

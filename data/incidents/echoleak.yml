@@ -20,7 +20,7 @@ stages:
       quote: An adversary simply needs to send an email to the victim without any restriction on the sender's email.
       locator: catonetworks.com/blog/breaking-down-echoleak/ § attack chain
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The email's instructions redirect Copilot to attend to privileged internal data outside the user's intent — the "LLM Scope Violation" technique.
     evidence:
       quote: make the LLM attend to trusted data without the user's explicit consent

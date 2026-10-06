@@ -21,7 +21,7 @@ stages:
       quote: Hidden past a wall of blank lines are attacker instructions that redirect the agent to an attacker-controlled site, where it receives a second malicious prompt.
       locator: Local File System Exfiltration
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected instructions written in a mix of Hebrew and English evade the agent's guardrails and redirect it to the password-manager interface.
     evidence:
       quote: injected instructions, written in a mix of Hebrew and English to evade guardrails, directing the agent to navigate to the password manager web interface

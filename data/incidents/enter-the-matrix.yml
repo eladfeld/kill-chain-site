@@ -21,7 +21,7 @@ stages:
       quote: The website will hijack ChatGPT via an indirect prompt injection
       locator: embracethered.com/blog/posts/2023/chatgpt-vulns-enter-the-matrix/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The injected page takes over the session and redirects the assistant’s behaviour.
     evidence:
       quote: The website will hijack ChatGPT via an indirect prompt injection and then allow you to enter the matrix

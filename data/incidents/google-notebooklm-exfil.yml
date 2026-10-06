@@ -21,7 +21,7 @@ stages:
       quote: uploaded files can manipulate the chat conversation and control what the user sees in responses
       locator: embracethered.com/blog/posts/2024/google-notebook-ml-data-exfiltration/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected file content overrides behaviour to render exfiltration images.
     evidence:
       quote: uploaded files can manipulate the chat conversation

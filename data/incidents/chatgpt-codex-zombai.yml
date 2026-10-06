@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: Adversary can use indirect prompt injection (for instance a description in a GitHub issue) to hijack Codex
       locator: embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Instruction override (IO)"
+    justification: "GitHub issue the user asks Codex to work on carries task steps framed as a connectivity repro; Codex adopts them. No override or impersonation language."
+    evidence:
+      quote: "Then we have Codex investigate this GitHub issue, and because of the malicious instructions ChatGPT Codex gets hijacked, and follows the adversary's instructions"
+      locator: "embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/"
   reconnaissance: null
   persistence: null
   command_control: null

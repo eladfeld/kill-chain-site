@@ -21,7 +21,7 @@ stages:
       quote: ChatGPT (via Plugins) can access YouTube transcripts ... introduce Indirect Prompt Injection vulnerabilities
       locator: embracethered.com/blog/posts/2023/chatgpt-plugin-youtube-indirect-prompt-injection/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The transcript author overrides the assistant’s identity and goal for the session.
     evidence:
       quote: the owner of the video/transcript takes control of the chat session and gives the AI a new identity and objective

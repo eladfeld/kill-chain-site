@@ -34,6 +34,7 @@ export function validateAll(incidents) {
     const { __file: _f, ...rest } = inc;
     if (!validate(rest)) for (const e of validate.errors) errors.push(`${inc.__file || inc.slug}: ${e.instancePath || '/'} ${e.message}`);
     if (slugs.has(inc.slug)) errors.push(`duplicate slug: ${inc.slug}`);
+    if (!inc.stages?.privilege_escalation) errors.push(`${inc.slug}: privilege_escalation must be IO, SE, or Misc. (never null)`);
     slugs.add(inc.slug);
     if (inc.source && inc.source.snapshot) {
       const p = path.join(ROOT, 'archive', inc.slug, inc.source.snapshot);

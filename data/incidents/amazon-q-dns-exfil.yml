@@ -21,7 +21,7 @@ stages:
       quote: When reviewing or interacting with untrusted data (e.g. data returned from tools calls, source code,…) Amazon Q can be hijacked to run bash commands
       locator: embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected content overrides Amazon Q to read .env and encode it into DNS queries.
     evidence:
       quote: leak contents of the .env file via a ping request

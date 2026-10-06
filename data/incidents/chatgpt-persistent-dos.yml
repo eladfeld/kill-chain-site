@@ -21,7 +21,7 @@ stages:
       quote: a website, through uploaded documents containing untrusted data
       locator: embracethered.com/blog/posts/2024/chatgpt-persistent-denial-of-service/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected content forces unauthorized memory modification.
     evidence:
       quote: Malicious memory modifications remain until the user manually removes

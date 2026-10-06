@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: local model’s outputs can be manipulated through different forms of prompt injection, including hidden text that is invisible to users
       locator: Abstract
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Instruction override (IO)"
+    justification: "Structure-based payloads fake system blocks and document boundaries to pose as higher-priority instructions (30% ASR on Edge, 0% Chrome)."
+    evidence:
+      quote: "injected commands that are formatted to look like boundaries or higher-priority instructions rather than ordinary page content"
+      locator: "zahramoti.com/docs/Local-AI-ESORICS-2026.pdf, §4.1 (S1)"
   reconnaissance: null
   persistence: null
   command_control: null

@@ -21,7 +21,7 @@ stages:
       quote: If you process untrusted content, like summarizing a website, or analyze a pdf document, the author of that document can exfiltrate any information
       locator: embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected content overrides behaviour to read and stage system-prompt/history data.
     evidence:
       quote: All the information is present in the system prompt and accessible to an adversary during a prompt injection attack

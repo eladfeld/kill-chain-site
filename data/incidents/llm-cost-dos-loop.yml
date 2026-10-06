@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: attacker calls an LLM tool or plugin recursively during an Indirect Prompt Injection
       locator: embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Instruction override (IO)"
+    justification: "Injected plugin response makes ChatGPT re-invoke the plugin recursively; exact payload text is not published, so only adoption can be asserted."
+    evidence:
+      quote: "What happens if an attacker calls an LLM tool or plugin recursively during an Indirect Prompt Injection?"
+      locator: "embracethered.com/blog/posts/2023/llm-cost-and-dos-threat/"
   reconnaissance: null
   persistence: null
   command_control: null

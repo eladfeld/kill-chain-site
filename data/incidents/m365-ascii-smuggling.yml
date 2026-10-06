@@ -20,7 +20,7 @@ stages:
       quote: Prompt Injection via a malicious email (or hidden in a shared document)
       locator: embracethered.com/blog/posts/2024/m365-copilot-prompt-injection-tool-invocation-and-data-exfil-using-ascii-smuggling/
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: Injected instructions invoke tools and stage sensitive data.
     evidence:
       quote: invoke additional tools that bring more data into the chat context

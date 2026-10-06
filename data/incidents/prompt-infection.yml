@@ -20,7 +20,7 @@ stages:
       quote: malicious prompts embedded in external content trick the LLM into executing unintended or harmful actions
       locator: arxiv.org/abs/2410.07283
   privilege_escalation:
-    value: Instruction override (IR)
+    value: Instruction override (IO)
     justification: The infection prompt overrides each agent’s instructions as it spreads.
     evidence:
       quote: malicious prompts self-replicate across interconnected agents

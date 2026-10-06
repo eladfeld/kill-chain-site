@@ -20,7 +20,12 @@ stages:
     evidence:
       quote: Prompt injection instructions that originate from GitHub issues
       locator: embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/
-  privilege_escalation: null
+  privilege_escalation:
+    value: "Misc."
+    justification: "Jules' plan-approval gate auto-approves after a timeout and is not re-triggered for later tasks, so malicious bash steps run unconfirmed."
+    evidence:
+      quote: "If tasks are created later in the same conversation, tools are invoked automatically without re-triggering the planning and confirmation step."
+      locator: "embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/ (Plan Approval Happens Only at Session Start)"
   reconnaissance: null
   persistence: null
   command_control: null
