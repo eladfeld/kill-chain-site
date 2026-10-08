@@ -4,7 +4,7 @@ title: PLeak
 authors: Bo Hui, Haolin Yuan, Neil Gong, Philippe Burlina, Yinzhi Cao
 date: 2024-10
 category: AI Agent
-target: LLM apps (Poe, GPT Store)
+target: LLM apps (Poe)
 new: true
 source:
   url: https://arxiv.org/abs/2405.06823
