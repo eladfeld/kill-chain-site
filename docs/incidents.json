@@ -1694,7 +1694,7 @@
     "questioned": false,
     "stages": {
       "initial_access": "Indirect (I)",
-      "privilege_escalation": "Misc.",
+      "privilege_escalation": "Social eng. (SE)",
       "reconnaissance": null,
       "persistence": "Dependent (channel)",
       "command_control": null,
