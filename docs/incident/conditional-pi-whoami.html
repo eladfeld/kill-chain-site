@@ -17,7 +17,7 @@
    <tr><th>Date</th><td>Mar'24</td></tr>
    <tr><th>Category</th><td>AI Agent</td></tr>
    <tr><th>Target</th><td>M365 Copilot</td></tr>
-   <tr><th>Coverage</th><td>4 / 7 stages</td></tr>
+   <tr><th>Coverage</th><td>5 / 7 stages</td></tr>
    <tr><th>Venue</th><td>Embrace The Red (blog)</td></tr>
    <tr><th>Source</th><td><a href="https://embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/" rel="noreferrer noopener">original (blog)</a> · <a href="../archive/conditional-pi-whoami/snapshot.html">archived copy</a></td></tr>
   </tbody></table>
@@ -31,7 +31,9 @@
 <tr><th>Recon.</th><td class="val">Yes</td>
    <td class="why"><div class="just">The payload reads the current user’s identity (name, title, manager) to fire only against the intended target.</div>
    <div class="ev"><q>Copilot does have the user’s name and also job title and manager information available when prompting</q> <span class="loc">embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/</span></div></td></tr>
-<tr class="absent"><th>Persist.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
+<tr><th>Persist.</th><td class="val">Dependent (channel)</td>
+   <td class="why"><div class="just">The payload sits in an email in the recipients&#39; mailboxes and is retrieved again whenever Copilot processes that email.</div>
+   <div class="ev"><q>I sent this email to the three recipients</q> <span class="loc">embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/</span></div></td></tr>
 <tr class="absent"><th>C2</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr class="absent"><th>Lat. Mov.</th><td class="val">—</td><td class="why">not demonstrated</td></tr>
 <tr><th>Action on Obj.</th><td class="val">Misinformation</td>

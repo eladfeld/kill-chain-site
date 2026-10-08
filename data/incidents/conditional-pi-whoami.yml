@@ -32,7 +32,12 @@ stages:
     evidence:
       quote: Copilot does have the user’s name and also job title and manager information available when prompting
       locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
-  persistence: null
+  persistence:
+    value: Dependent (channel)
+    justification: The payload sits in an email in the recipients' mailboxes and is retrieved again whenever Copilot processes that email.
+    evidence:
+      quote: I sent this email to the three recipients
+      locator: embracethered.com/blog/posts/2024/whoami-conditional-prompt-injection-instructions/
   command_control: null
   lateral_movement: null
   action_on_objective:

@@ -464,7 +464,7 @@
     "dateDisplay": "Mar'24",
     "category": "AI Agent",
     "target": "M365 Copilot",
-    "coverage": 4,
+    "coverage": 5,
     "venue": "Embrace The Red (blog)",
     "isNew": true,
     "questioned": false,
@@ -472,7 +472,7 @@
       "initial_access": "Indirect (I)",
       "privilege_escalation": "Instruction override (IO)",
       "reconnaissance": "Yes",
-      "persistence": null,
+      "persistence": "Dependent (channel)",
       "command_control": null,
       "lateral_movement": null,
       "action_on_objective": "Misinformation"

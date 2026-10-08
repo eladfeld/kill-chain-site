@@ -10,12 +10,12 @@
 Year & $n$ & Mean stages & Min & Max & $\geq 4$ stages \\
 \midrule
 2022 & 1 & 3.00 & 3 & 3 & 0 \\
-2023 & 17 & 2.76 & 2 & 3 & 0 \\
-2024 & 21 & 3.19 & 2 & 5 & 8 \\
-2025 & 51 & 3.35 & 2 & 6 & 16 \\
-2026 & 14 & 3.29 & 2 & 5 & 5 \\
+2023 & 17 & 3.00 & 3 & 3 & 0 \\
+2024 & 21 & 3.52 & 3 & 5 & 8 \\
+2025 & 51 & 3.45 & 3 & 6 & 17 \\
+2026 & 14 & 3.50 & 3 & 5 & 6 \\
 \midrule
-All & 104 & 3.21 & 2 & 6 & 29 \\
+All & 104 & 3.39 & 3 & 6 & 31 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -50,9 +50,9 @@ Total & 1 & 17 & 21 & 51 & 14 & 104 \\
 Stage & Incidents & \% of corpus \\
 \midrule
 Initial access & 104 & 100.0 \\
-Priv. escalation & 86 & 82.7 \\
+Priv. escalation & 104 & 100.0 \\
 Reconnaissance & 5 & 4.8 \\
-Persistence & 26 & 25.0 \\
+Persistence & 27 & 26.0 \\
 Command \& control & 2 & 1.9 \\
 Lateral movement & 7 & 6.7 \\
 Action on obj. & 104 & 100.0 \\
@@ -68,15 +68,13 @@ Action on obj. & 104 & 100.0 \\
 \toprule
 Path & $n$ & \% \\
 \midrule
-\texttt{IA+PE+AO} & 57 & 54.8 \\
-\texttt{IA+AO} & 16 & 15.4 \\
-\texttt{IA+PE+PS+AO} & 16 & 15.4 \\
+\texttt{IA+PE+AO} & 73 & 70.2 \\
+\texttt{IA+PE+PS+AO} & 18 & 17.3 \\
 \texttt{IA+PE+LM+AO} & 3 & 2.9 \\
 \texttt{IA+PE+PS+LM+AO} & 3 & 2.9 \\
+\texttt{IA+PE+RC+PS+AO} & 3 & 2.9 \\
 \texttt{IA+PE+PS+C2+AO} & 2 & 1.9 \\
-\texttt{IA+PE+RC+AO} & 2 & 1.9 \\
-\texttt{IA+PE+RC+PS+AO} & 2 & 1.9 \\
-\texttt{IA+PS+AO} & 2 & 1.9 \\
+\texttt{IA+PE+RC+AO} & 1 & 1.0 \\
 \texttt{IA+PE+RC+PS+LM+AO} & 1 & 1.0 \\
 \bottomrule
 \end{tabular}
@@ -90,13 +88,13 @@ Path & $n$ & \% \\
 \toprule
  & IA & PE & RC & PS & C2 & LM & AO \\
 \midrule
-IA & 100 & 83 & 5 & 25 & 2 & 7 & 100 \\
-PE & 100 & 100 & 6 & 28 & 2 & 8 & 100 \\
-RC & 100 & 100 & 100 & 60 & 0 & 20 & 100 \\
-PS & 100 & 92 & 12 & 100 & 8 & 15 & 100 \\
+IA & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
+PE & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
+RC & 100 & 100 & 100 & 80 & 0 & 20 & 100 \\
+PS & 100 & 100 & 15 & 100 & 7 & 15 & 100 \\
 C2 & 100 & 100 & 0 & 100 & 100 & 0 & 100 \\
 LM & 100 & 100 & 14 & 57 & 0 & 100 & 100 \\
-AO & 100 & 83 & 5 & 25 & 2 & 7 & 100 \\
+AO & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -123,8 +121,8 @@ Agentic/CUA & 0 & 0 & 0 & 4 & 1 & 5 \\
 \label{tab:aux}
 \begin{tabular}{lr}
 \toprule
-\multicolumn{2}{l}{\emph{Persistence mode} (of 26 incidents with persistence)} \\
-\quad Dependent (channel) & 18 \\
+\multicolumn{2}{l}{\emph{Persistence mode} (of 27 incidents with persistence)} \\
+\quad Dependent (channel) & 19 \\
 \quad Independent (memory) & 8 \\
 \midrule
 \multicolumn{2}{l}{\emph{Source type}} \\
@@ -134,10 +132,10 @@ Agentic/CUA & 0 & 0 & 0 & 4 & 1 & 5 \\
 \midrule
 \multicolumn{2}{l}{\emph{Most-targeted vendors}} \\
 \quad Other / multiple & 24 \\
-\quad OpenAI & 23 \\
+\quad OpenAI & 22 \\
 \quad Microsoft & 19 \\
 \quad Google & 17 \\
-\quad Anthropic & 11 \\
+\quad Anthropic & 12 \\
 \quad Amazon/AWS & 4 \\
 \quad Perplexity & 3 \\
 \quad Cursor & 2 \\
@@ -149,17 +147,17 @@ Agentic/CUA & 0 & 0 & 0 & 4 & 1 & 5 \\
 \centering
 \caption{Kill chain stage distribution by time period.}
 \label{tab:stage-dist-period}
-\begin{tabular}{l r rrrrr}
+\begin{tabular}{l r rrrr}
 \toprule
-Period & $N$ & 2 Stages & 3 Stages & 4 Stages & 5 Stages & 6 Stages \\
+Period & $N$ & 3 Stages & 4 Stages & 5 Stages & 6 Stages \\
 \midrule
-2022 & 1 & 0 & 1 & 0 & 0 & 0 \\
-2023 & 17 & 4 & 13 & 0 & 0 & 0 \\
-2024 & 21 & 6 & 7 & 6 & 2 & 0 \\
-2025 & 51 & 4 & 31 & 11 & 4 & 1 \\
-2026 & 14 & 2 & 7 & 4 & 1 & 0 \\
+2022 & 1 & 1 & 0 & 0 & 0 \\
+2023 & 17 & 17 & 0 & 0 & 0 \\
+2024 & 21 & 13 & 5 & 3 & 0 \\
+2025 & 51 & 34 & 12 & 4 & 1 \\
+2026 & 14 & 8 & 5 & 1 & 0 \\
 \midrule
-Total & 104 & 16 & 59 & 21 & 7 & 1 \\
+Total & 104 & 73 & 22 & 8 & 1 \\
 \bottomrule
 \end{tabular}
 \end{table}
