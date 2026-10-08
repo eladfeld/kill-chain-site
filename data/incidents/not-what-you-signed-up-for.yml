@@ -3,7 +3,7 @@ id: 2023-001
 title: Not What You Signed Up For (Greshake et al.)
 authors: Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, Mario Fritz
 date: 2023-02
-category: Browser/Search
+category: AI Agent
 target: Bing Chat, plugins
 source:
   url: https://arxiv.org/abs/2302.12173

@@ -1,10 +1,10 @@
 slug: cursor-mermaid-exfil
-id: 2025-024
+id: 2025-023
 title: "Cursor: Data Exfiltration via Mermaid Diagram Rendering"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Cursor IDE
 source:
   url: https://embracethered.com/blog/posts/2025/cursor-data-exfiltration-with-mermaid/

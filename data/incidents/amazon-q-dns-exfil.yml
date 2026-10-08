@@ -1,10 +1,10 @@
 slug: amazon-q-dns-exfil
-id: 2025-013
+id: 2025-012
 title: "Amazon Q Developer: Secrets Leaked via DNS"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Amazon Q Developer (VS Code)
 source:
   url: https://embracethered.com/blog/posts/2025/amazon-q-developer-data-exfil-via-dns/

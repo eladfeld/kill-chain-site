@@ -1,4 +1,4 @@
-# CLAUDE.md — Promptware Kill-Chain Archive
+# CLAUDE.md — LLM Malware Kill-Chain Archive
 
 Operating manual for updating the incident table on this site. Follow it exactly.
 
@@ -39,7 +39,7 @@ authors: "First Last, First Last" # researcher(s)/byline; non-empty
 new: true                         # optional
 questioned: true                  # optional — set when there is no APPROVED source (see Sources)
 date: 2025-08                     # ^[0-9]{4}-[0-9]{2}$  (YYYY-MM). Drives display order.
-category: Coding Assist.          # enum, see below
+category: Coding Assistant          # enum, see below
 target: "Product / app targeted"  # the real commercial app under attack
 source:
   url: "https://..."              # primary source URL (non-empty). "TODO-verify" = NOT sourced yet.
@@ -63,25 +63,19 @@ not the attack mechanism, the deploying business, or a modality/propagation
 mechanism like a worm — those don't describe what the app *is* and were folded
 into whichever of the 4 the app actually functions as):
 
-- **`Coding Assist.`** — writes or executes code, or is a developer-facing cloud
-  AI console (prompt playground, notebook/dev environment) even when no code is
-  generated. Cursor, Copilot, Claude Code, Devin, Windsurf, Google Jules, Azure
-  OpenAI Playground, Vertex AI Studio, AI Studio, Colab AI.
-- **`Browser/Search`** — a general chat/search product used directly (no
-  business-specific integration wrapped around it), including a business's own
-  customer-facing chat widget bolted onto a site (same shape, different owner).
-  ChatGPT, Bing Chat, Bard, Gemini, Perplexity, Grok, dealership/retail chatbots,
-  third-party chatbot plugins.
-- **`AI Agent`** — retrieves data or calls tools/APIs on the user's behalf beyond
-  plain chat: RAG, connectors, MCP clients, multi-agent workflows, memory-backed
-  assistants embedded in a product (M365 Copilot, Notion AI, NotebookLM), and
-  anything with no specific downstream app at all (raw LLM-serving infra, cloud
-  semantic caches) — the catch-all for "acts on data/tools" that isn't code and
-  isn't screen control.
-- **`Agentic/CUA`** — computer-use agents that control a GUI/OS directly
-  (mouse/keyboard/screen), not API calls. ChatGPT Operator, Claude Computer Use,
-  Gemini Assistant. Kept separate from `AI Agent` because screen-based action is
-  a genuinely different attack surface than API/RAG-based action.
+Categories follow the paper's Application Categories (Section 5, Table II):
+
+- **`Coding Assistant`** — tools that read, modify, or execute code in developer
+  workspaces (e.g., GitHub Copilot, Cursor, Claude Code, Devin, Windsurf, Google
+  Jules, Google AI Studio).
+- **`Agentic Browser`** — web browsers with integrated agents that navigate and
+  interact with web pages (e.g., Perplexity Comet).
+- **`Computer-Use Agent`** — agents that operate a system interface by perceiving
+  screens or automating clicks/keystrokes (e.g., Claude Computer Use, ChatGPT
+  Operator).
+- **`AI Agent`** — the residual category: general chat, enterprise, and
+  tool-connected assistants acting via text or APIs (e.g., ChatGPT, M365 Copilot,
+  Bing Chat, Gemini, customer-facing chatbots, RAG/MCP clients).
 
 Always name the actual concrete victim product(s) in `target` — check the source
 rather than defaulting to a vague phrase like "commercial LLM services."
@@ -102,7 +96,7 @@ Use these exact coded values. A stage that isn't demonstrated is `null` (not cou
 | privilege_escalation | `Instruction override (IO)` · `Social eng. (SE)` (role-play / DAN) · `Misc.` (other technique: config abuse, optimized adversarial trigger, find-exec bypass, …) · **never `null`** |
 | reconnaissance | `Yes` when the **payload itself** probes user/env/tools to enable later stages · else `null` |
 | persistence | `Independent (memory)` — payload told the LLM to store in its memory · `Dependent (channel)` — payload lives in email/calendar/doc/workspace/config retrieved in future interactions · `null` = none |
-| command_control | `Promptware-native (●)` — the **LLM itself** re-fetches attacker instructions from a remote server across sessions · `null` = none |
+| command_control | `LLM-native (●)` — the **LLM itself** re-fetches attacker instructions from a remote server across sessions · `null` = none |
 | lateral_movement | `Cross-app (xA)` — a *different* app on the same device is abused · `Cross-device (xD)` — spreads to other devices/clients · `null` = on-app only (OA), incl. cross-agent/plugin **within one app** |
 | action_on_objective | one of: `Misinformation` · `Data exfiltration` · `Harmful content` · `Safety (physical)` · `Financial` · `RCE` · `Misc (...)` (e.g. `Misc (DoS)`, `Misc (XSS ATO)`) |
 

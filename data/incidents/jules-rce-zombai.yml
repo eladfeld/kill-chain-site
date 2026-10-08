@@ -1,10 +1,10 @@
 slug: jules-rce-zombai
-id: 2025-035
+id: 2025-034
 title: "Jules Zombie Agent: Prompt Injection to Remote Control"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Google Jules
 source:
   url: https://embracethered.com/blog/posts/2025/google-jules-remote-code-execution-zombai/

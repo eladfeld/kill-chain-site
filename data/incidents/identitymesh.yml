@@ -1,9 +1,9 @@
 slug: identitymesh
-id: 2025-030
+id: 2025-029
 title: IdentityMesh
 authors: "Bar Lanyado, Ophir Dror, Or Oxenberg (Lasso Security)"
 date: 2025-08
-category: Browser/Search
+category: Agentic Browser
 target: Perplexity Comet
 source:
   url: https://www.lasso.security/blog/identitymesh-exploiting-agentic-ai

@@ -3,7 +3,7 @@ id: 2024-019
 title: "DeepSeek AI: From Prompt Injection To Account Takeover"
 authors: Johann Rehberger
 date: 2024-11
-category: Browser/Search
+category: AI Agent
 target: DeepSeek AI web app
 source:
   url: https://embracethered.com/blog/posts/2024/deepseek-ai-prompt-injection-to-xss-and-account-takeover/

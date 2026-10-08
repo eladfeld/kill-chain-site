@@ -1,10 +1,10 @@
 slug: chatgpt-zombai-memory-c2
-id: 2025-001
+id: 2024-022
 title: "AI Domination: Remote Controlling ChatGPT ZombAI Instances"
 authors: Johann Rehberger
 new: true
-date: 2025-01
-category: Browser/Search
+date: 2024-12
+category: AI Agent
 target: ChatGPT
 source:
   url: https://embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
@@ -34,7 +34,7 @@ stages:
       quote: initial infection persists malicious instructions in ChatGPT’s long-term storage
       locator: embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/
   command_control:
-    value: Promptware-native (●)
+    value: LLM-native (●)
     justification: ChatGPT itself repeatedly fetches fresh commands from attacker-controlled GitHub issues each session — a promptware-native C2 loop.
     evidence:
       quote: ChatGPT will just always pick the next issue when it pings back home...whenever a new conversation starts

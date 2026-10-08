@@ -280,7 +280,7 @@ F.push(`\\begin{figure}[t]\\centering
 \\addplot[fill=${CB[0]},draw=none] coordinates {${perYear.map(r => `(${r.year},${r.n})`).join(' ')}};
 \\end{axis}
 \\end{tikzpicture}
-\\caption{Documented promptware incidents per year (${PARTIAL} partial).}\\label{fig:per-year}
+\\caption{Documented LLM malware incidents per year (${PARTIAL} partial).}\\label{fig:per-year}
 \\end{figure}`);
 
 // fig 2: mean stages per year

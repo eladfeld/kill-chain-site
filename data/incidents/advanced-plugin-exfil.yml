@@ -3,7 +3,7 @@ id: 2023-011
 title: Advanced Plugin Data Exfiltration
 authors: Johann Rehberger
 date: 2023-09
-category: Browser/Search
+category: AI Agent
 target: ChatGPT media plugins
 new: true
 source:

@@ -136,7 +136,7 @@ def render_table(name, title, cols, rows, total_label="Total", figwidth=6.0, fir
 fig, ax = plt.subplots(figsize=(5.4, 2.7))
 bar_labels(ax, ax.bar(years, [r["n"] for r in S["perYear"]], width=0.6, color=CAT[0]))
 finish(fig, ax, "01-incidents-per-year",
-       f"Promptware incidents per year (n={S['n']}; {S['partialYear']} partial)",
+       f"LLM malware incidents per year (n={S['n']}; {S['partialYear']} partial)",
        "Incidents", "Year")
 
 # 2 — mean chain depth

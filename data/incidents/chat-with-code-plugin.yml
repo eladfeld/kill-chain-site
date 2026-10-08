@@ -3,7 +3,7 @@ id: 2023-005
 title: Chat with Code Plugin (Confused Deputy)
 authors: Johann Rehberger
 date: 2023-06
-category: Coding Assist.
+category: Coding Assistant
 target: ChatGPT plugin (GitHub)
 new: true
 source:

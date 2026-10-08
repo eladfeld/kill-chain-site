@@ -1,9 +1,9 @@
 slug: agentflayer
-id: 2025-011
+id: 2025-010
 title: AgentFlayer
 authors: "Marina Simakov, Michael Bargury, Tamir Ishay Sharbat (Zenity Labs)"
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Cursor with Jira MCP integration
 source:
   url: https://labs.zenity.io/p/when-a-jira-ticket-can-steal-your-secrets

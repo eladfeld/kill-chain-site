@@ -36,10 +36,10 @@
     },
     "category": {
       "enum": [
-        "Browser/Search",
-        "Coding Assist.",
         "AI Agent",
-        "Agentic/CUA"
+        "Coding Assistant",
+        "Computer-Use Agent",
+        "Agentic Browser"
       ]
     },
     "target": {

@@ -3,7 +3,7 @@ id: 2023-003
 title: Plugin Exfil / Cross-Plugin Request Forgery
 authors: Johann Rehberger
 date: 2023-05
-category: Browser/Search
+category: AI Agent
 target: ChatGPT plugins (WebPilot)
 new: true
 source:

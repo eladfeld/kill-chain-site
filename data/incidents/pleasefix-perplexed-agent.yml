@@ -4,7 +4,7 @@ title: PleaseFix (Perplexed Agent)
 authors: Zenity Labs
 new: true
 date: 2026-03
-category: Browser/Search
+category: Agentic Browser
 target: Perplexity Comet
 source:
   url: https://zenity.io/research/pleasefix-vulnerabilities

@@ -1,10 +1,10 @@
 slug: google-antigravity
-id: 2025-049
+id: 2025-048
 title: "Antigravity Grounded: Security Vulnerabilities in Google's IDE"
 authors: Johann Rehberger
 new: true
 date: 2025-11
-category: Coding Assist.
+category: Coding Assistant
 target: Google Antigravity IDE
 source:
   url: https://embracethered.com/blog/posts/2025/security-keeps-google-antigravity-grounded/

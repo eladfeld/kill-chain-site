@@ -1,10 +1,10 @@
 slug: amazon-q-rce
-id: 2025-015
+id: 2025-014
 title: "Amazon Q Developer: Remote Code Execution via Prompt Injection"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Amazon Q Developer (VS Code)
 source:
   url: https://embracethered.com/blog/posts/2025/amazon-q-developer-remote-code-execution/

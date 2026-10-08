@@ -34,15 +34,15 @@ function page(title, body, prefix) {
 <title>${escapeHtml(title)}</title>
 <link rel="stylesheet" href="${prefix}assets/style.css?v=${cssVer}">
 </head><body>
-<header class="site"><a class="home" href="${prefix}index.html">Promptware Kill-Chain Archive</a>
-<span class="sub">Extending Table II — <em>SoK: The Promptware Kill Chain</em></span></header>
+<header class="site"><a class="home" href="${prefix}index.html">LLM Malware Kill-Chain Archive</a>
+<span class="sub">Extending Table II — <em>SoK: The LLM Malware Kill Chain</em></span></header>
 <main>${body}</main>
-<footer>Self-hosted archive of promptware incidents. Every source is snapshotted locally for durability.</footer>
+<footer>Self-hosted archive of LLM malware incidents. Every source is snapshotted locally for durability.</footer>
 </body></html>`;
 }
 
 const indexBody = `
-<p class="intro">An archival, defensible extension of Table II: every prompt-injection / promptware incident coded across the seven-stage kill chain, with per-stage justification, source evidence, and a locally archived copy of each source.</p>
+<p class="intro">An archival, defensible extension of Table II: every prompt-injection / LLM malware incident coded across the seven-stage kill chain, with per-stage justification, source evidence, and a locally archived copy of each source.</p>
 <div class="controls">
   <input id="q" type="search" placeholder="Search title, target, or author…">
   <div class="msel" id="cat" data-label="categories"></div>
@@ -54,7 +54,7 @@ const indexBody = `
 <div class="table-wrap"><table id="grid"><thead></thead><tbody></tbody></table></div>
 <div id="modal" class="modal" hidden><div class="modal-card"><button class="modal-close" aria-label="Close">\u00d7</button><div class="modal-body"></div></div></div>
 <script src="assets/table.js?v=${jsVer}"></script>`;
-fs.writeFileSync(path.join(OUT, 'index.html'), page('Promptware Kill-Chain Archive', indexBody, ''));
+fs.writeFileSync(path.join(OUT, 'index.html'), page('LLM Malware Kill-Chain Archive', indexBody, ''));
 
 function stageRow(inc, k) {
   const s = inc.stages[k];

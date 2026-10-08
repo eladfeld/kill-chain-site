@@ -1,10 +1,10 @@
 slug: unseeable-prompt-injections
-id: 2025-048
+id: 2025-047
 title: "Unseeable Prompt Injections in Screenshots (Comet and Fellou)"
 authors: "Artem Chaikin, Shivan Kaul Sahib (Brave)"
 new: true
 date: 2025-10
-category: Browser/Search
+category: Agentic Browser
 target: Perplexity Comet, Fellou
 source:
   url: https://brave.com/blog/unseeable-prompt-injections/

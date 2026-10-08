@@ -3,7 +3,7 @@ id: 2024-008
 title: Automatic Tool Invocation (Browsing)
 authors: Johann Rehberger
 date: 2024-05
-category: Browser/Search
+category: AI Agent
 target: ChatGPT (browsing + tools)
 new: true
 source:

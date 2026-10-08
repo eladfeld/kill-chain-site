@@ -9,9 +9,9 @@
     "2026"
   ],
   "partialYear": "2026",
-  "meanStages": 3.394,
+  "meanStages": 3.385,
   "ge4": 31,
-  "ge5": 9,
+  "ge5": 8,
   "maxStages": 6,
   "perYear": [
     {
@@ -32,19 +32,19 @@
     },
     {
       "year": "2024",
-      "n": 21,
-      "mean": 3.5238095238095237,
+      "n": 22,
+      "mean": 3.590909090909091,
       "min": 3,
       "max": 5,
-      "ge4": 8
+      "ge4": 9
     },
     {
       "year": "2025",
-      "n": 51,
-      "mean": 3.450980392156863,
+      "n": 50,
+      "mean": 3.4,
       "min": 3,
       "max": 6,
-      "ge4": 17
+      "ge4": 16
     },
     {
       "year": "2026",
@@ -156,8 +156,8 @@
     },
     {
       "stage": "reconnaissance",
-      "n": 5,
-      "pct": 4.8076923076923075
+      "n": 4,
+      "pct": 3.8461538461538463
     },
     {
       "stage": "persistence",
@@ -195,11 +195,11 @@
     },
     {
       "stages": 4,
-      "n": 22
+      "n": 23
     },
     {
       "stages": 5,
-      "n": 8
+      "n": 7
     },
     {
       "stages": 6,
@@ -226,13 +226,13 @@
     {
       "year": "2024",
       "direct": 2,
-      "indirect": 19,
-      "pctIndirect": 90.47619047619048
+      "indirect": 20,
+      "pctIndirect": 90.9090909090909
     },
     {
       "year": "2025",
       "direct": 0,
-      "indirect": 51,
+      "indirect": 50,
       "pctIndirect": 100
     },
     {
@@ -246,46 +246,46 @@
     {
       "year": "2022",
       "counts": {
-        "Coding Assist.": 0,
         "AI Agent": 1,
-        "Browser/Search": 0,
-        "Agentic/CUA": 0
+        "Coding Assistant": 0,
+        "Computer-Use Agent": 0,
+        "Agentic Browser": 0
       }
     },
     {
       "year": "2023",
       "counts": {
-        "Coding Assist.": 3,
-        "AI Agent": 3,
-        "Browser/Search": 11,
-        "Agentic/CUA": 0
+        "AI Agent": 14,
+        "Coding Assistant": 3,
+        "Computer-Use Agent": 0,
+        "Agentic Browser": 0
       }
     },
     {
       "year": "2024",
       "counts": {
-        "Coding Assist.": 4,
-        "AI Agent": 9,
-        "Browser/Search": 8,
-        "Agentic/CUA": 0
+        "AI Agent": 17,
+        "Coding Assistant": 4,
+        "Computer-Use Agent": 1,
+        "Agentic Browser": 0
       }
     },
     {
       "year": "2025",
       "counts": {
-        "Coding Assist.": 31,
-        "AI Agent": 11,
-        "Browser/Search": 5,
-        "Agentic/CUA": 4
+        "AI Agent": 13,
+        "Coding Assistant": 31,
+        "Computer-Use Agent": 4,
+        "Agentic Browser": 2
       }
     },
     {
       "year": "2026",
       "counts": {
-        "Coding Assist.": 2,
-        "AI Agent": 6,
-        "Browser/Search": 5,
-        "Agentic/CUA": 1
+        "AI Agent": 10,
+        "Coding Assistant": 2,
+        "Computer-Use Agent": 1,
+        "Agentic Browser": 1
       }
     }
   ],
@@ -303,34 +303,34 @@
     [
       104,
       104,
-      5,
-      27,
-      2,
-      7,
-      104
-    ],
-    [
-      104,
-      104,
-      5,
-      27,
-      2,
-      7,
-      104
-    ],
-    [
-      5,
-      5,
-      5,
       4,
+      27,
+      2,
+      7,
+      104
+    ],
+    [
+      104,
+      104,
+      4,
+      27,
+      2,
+      7,
+      104
+    ],
+    [
+      4,
+      4,
+      4,
+      3,
       0,
       1,
-      5
+      4
     ],
     [
       27,
       27,
-      4,
+      3,
       27,
       2,
       4,
@@ -357,7 +357,7 @@
     [
       104,
       104,
-      5,
+      4,
       27,
       2,
       7,
@@ -368,7 +368,7 @@
     [
       100,
       100,
-      4.8076923076923075,
+      3.8461538461538463,
       25.96153846153846,
       1.9230769230769231,
       6.730769230769231,
@@ -377,7 +377,7 @@
     [
       100,
       100,
-      4.8076923076923075,
+      3.8461538461538463,
       25.96153846153846,
       1.9230769230769231,
       6.730769230769231,
@@ -387,15 +387,15 @@
       100,
       100,
       100,
-      80,
+      75,
       0,
-      20,
+      25,
       100
     ],
     [
       100,
       100,
-      14.814814814814815,
+      11.11111111111111,
       100,
       7.407407407407407,
       14.814814814814815,
@@ -422,7 +422,7 @@
     [
       100,
       100,
-      4.8076923076923075,
+      3.8461538461538463,
       25.96153846153846,
       1.9230769230769231,
       6.730769230769231,
@@ -436,7 +436,7 @@
     ],
     [
       "IA+PE+PS+AO",
-      18
+      19
     ],
     [
       "IA+PE+LM+AO",
@@ -447,11 +447,11 @@
       3
     ],
     [
-      "IA+PE+RC+PS+AO",
-      3
+      "IA+PE+PS+C2+AO",
+      2
     ],
     [
-      "IA+PE+PS+C2+AO",
+      "IA+PE+RC+PS+AO",
       2
     ],
     [
@@ -479,13 +479,13 @@
     {
       "year": "2024",
       "paper": 4,
-      "blog": 16,
+      "blog": 17,
       "other": 1
     },
     {
       "year": "2025",
       "paper": 2,
-      "blog": 44,
+      "blog": 43,
       "other": 5
     },
     {
@@ -562,21 +562,21 @@
     },
     {
       "period": "2024",
-      "n": 21,
+      "n": 22,
       "counts": {
         "3": 13,
         "4": 5,
-        "5": 3,
+        "5": 4,
         "6": 0
       }
     },
     {
       "period": "2025",
-      "n": 51,
+      "n": 50,
       "counts": {
         "3": 34,
-        "4": 12,
-        "5": 4,
+        "4": 13,
+        "5": 2,
         "6": 1
       }
     },
@@ -596,8 +596,8 @@
     "n": 104,
     "counts": {
       "3": 73,
-      "4": 22,
-      "5": 8,
+      "4": 23,
+      "5": 7,
       "6": 1
     }
   }

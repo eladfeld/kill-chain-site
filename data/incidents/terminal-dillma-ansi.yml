@@ -3,7 +3,7 @@ id: 2024-021
 title: Terminal DiLLMa (ANSI Escape Injection)
 authors: Johann Rehberger
 date: 2024-12
-category: Coding Assist.
+category: Coding Assistant
 target: LLM-powered terminal/CLI apps
 new: true
 source:

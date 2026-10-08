@@ -3,7 +3,7 @@ id: 2023-004
 title: Bing Chat Data Exfiltration
 authors: Johann Rehberger
 date: 2023-06
-category: Browser/Search
+category: AI Agent
 target: Bing Chat
 source:
   url: https://embracethered.com/blog/posts/2023/bing-chat-data-exfiltration-poc-and-fix/

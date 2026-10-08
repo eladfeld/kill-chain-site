@@ -1,10 +1,10 @@
 slug: windsurf-spaiware
-id: 2025-044
+id: 2025-043
 title: "Windsurf: Memory-Persistent Data Exfiltration (SpAIware)"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Windsurf Cascade
 source:
   url: https://embracethered.com/blog/posts/2025/windsurf-spaiware-exploit-persistent-prompt-injection/

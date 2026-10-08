@@ -1,10 +1,10 @@
 slug: devin-expose-port
-id: 2025-026
+id: 2025-025
 title: "Devin AI Kill Chain: Exposing Ports to the Internet"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Devin (Cognition)
 source:
   url: https://embracethered.com/blog/posts/2025/devin-ai-kill-chain-exposing-ports/

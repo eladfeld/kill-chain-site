@@ -1,10 +1,10 @@
 slug: invitation-is-all-you-need
-id: 2025-032
+id: 2025-031
 title: Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants
 authors: Ben Nassi, Stav Cohen, Or Yair
 new: true
 date: 2025-08
-category: Agentic/CUA
+category: Computer-Use Agent
 target: Google Gemini (web/mobile/Assistant)
 source:
   url: https://arxiv.org/abs/2508.12175

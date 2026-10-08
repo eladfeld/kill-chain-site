@@ -4,7 +4,7 @@ title: "Local Models, Global Risk: Threats in Browser Built-in AI APIs"
 authors: Zahra Moti, Mina Mehrvarz, Tim Vlummens, Gautham Shaji, Gunes Acar (Radboud / KU Leuven)
 new: true
 date: 2026-09
-category: Browser/Search
+category: AI Agent
 target: Chrome/Edge built-in AI APIs (Gemini Nano)
 source:
   url: https://zahramoti.com/docs/Local-AI-ESORICS-2026.pdf

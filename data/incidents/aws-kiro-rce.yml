@@ -1,10 +1,10 @@
 slug: aws-kiro-rce
-id: 2025-019
+id: 2025-018
 title: "AWS Kiro: Arbitrary Command Execution via Indirect Prompt Injection"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: AWS Kiro
 source:
   url: https://embracethered.com/blog/posts/2025/aws-kiro-aribtrary-command-execution-with-indirect-prompt-injection/

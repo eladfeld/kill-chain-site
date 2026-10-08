@@ -3,7 +3,7 @@ id: 2024-011
 title: ChatGPT Persistent Denial of Service
 authors: Johann Rehberger
 date: 2024-07
-category: Browser/Search
+category: AI Agent
 target: ChatGPT (Memory)
 new: true
 source:

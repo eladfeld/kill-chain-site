@@ -1,6 +1,6 @@
-# Promptware Kill-Chain Archive
+# LLM Malware Kill-Chain Archive
 
-A durable, standalone archive that extends **Table II** of *SoK: The Promptware Kill Chain*. Every prompt-injection / promptware
+A durable, standalone archive that extends **Table II** of *SoK: The LLM Malware Kill Chain*. Every prompt-injection / LLM malware
 incident is coded across the seven-stage kill chain, with a short per-stage
 justification, the source excerpt each coding was drawn from, the publication URL,
 and a **self-hosted hard copy** of the source so records survive if origins disappear.

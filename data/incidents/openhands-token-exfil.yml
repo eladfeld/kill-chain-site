@@ -1,10 +1,10 @@
 slug: openhands-token-exfil
-id: 2025-039
+id: 2025-038
 title: "OpenHands Prompt Injection: Access Token Exfiltration"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: OpenHands (All Hands AI)
 source:
   url: https://embracethered.com/blog/posts/2025/openhands-the-lethal-trifecta-strikes-again/

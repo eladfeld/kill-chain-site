@@ -1,10 +1,10 @@
 slug: copilot-backdoor
-id: 2025-004
+id: 2025-003
 title: "GitHub Copilot: Backdoor Insertion via Custom Instructions File"
 authors: "Johann Rehberger (after Pillar Security)"
 new: true
 date: 2025-04
-category: Coding Assist.
+category: Coding Assistant
 target: GitHub Copilot (.github/copilot-instructions.md)
 source:
   url: https://embracethered.com/blog/posts/2025/github-custom-copilot-instructions/

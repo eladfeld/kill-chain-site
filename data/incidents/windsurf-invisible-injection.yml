@@ -1,10 +1,10 @@
 slug: windsurf-invisible-injection
-id: 2025-042
+id: 2025-041
 title: "Windsurf Cascade: Invisible Prompt Injection"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Windsurf Cascade
 source:
   url: https://embracethered.com/blog/posts/2025/windsurf-sneaking-invisible-instructions-for-prompt-injection/

@@ -44,7 +44,7 @@ const yml = `slug: ${slug}
 id: ${id}         # accession id — if you change the date's YEAR, reassign to next free <year>-NNN
 title: "${(title || slug).replace(/"/g, '\\"')}"
 date: ${today.slice(0, 7)}         # TODO verify actual publication month (YYYY-MM)
-category: Browser/Search          # TODO set: Enterprise|Coding Assist.|AI Agent|Agentic/CUA|Crypto/DeFi|AI Worm|Multimodal
+category: AI Agent          # TODO set: AI Agent|Coding Assistant|Computer-Use Agent|Agentic Browser
 target: "TODO"
 source:
   url: "${target}"

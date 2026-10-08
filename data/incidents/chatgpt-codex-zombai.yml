@@ -1,10 +1,10 @@
 slug: chatgpt-codex-zombai
-id: 2025-021
+id: 2025-020
 title: Turning ChatGPT Codex Into A ZombAI Agent
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: ChatGPT Codex
 source:
   url: https://embracethered.com/blog/posts/2025/chatgpt-codex-remote-control-zombai/

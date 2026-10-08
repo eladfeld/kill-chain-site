@@ -3,7 +3,7 @@ id: 2024-010
 title: GitHub Copilot Chat Data Exfiltration
 authors: Johann Rehberger
 date: 2024-06
-category: Coding Assist.
+category: Coding Assistant
 target: GitHub Copilot Chat (VS Code)
 new: true
 source:

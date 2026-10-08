@@ -34,7 +34,7 @@ stages:
       quote: In order to achieve persistence, the indirect prompt injection attack adds a scheduled task that fires regularly.
       locator: Scheduled Tasks
   command_control:
-    value: Promptware-native (●)
+    value: LLM-native (●)
     justification: The compromised LLM agent itself checks back to Agent Commander each cycle and receives new objectives as natural-language prompts — the LLM is the C2 loop.
     evidence:
       quote: Agent Commander is a command and control (C2) server where hijacked agents regularly check in for any new tasks and objectives. Unlike classical C2, it doesn’t execute raw OS commands or APIs. All commands are provided in natural language.

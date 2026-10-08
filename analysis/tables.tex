@@ -11,11 +11,11 @@ Year & $n$ & Mean stages & Min & Max & $\geq 4$ stages \\
 \midrule
 2022 & 1 & 3.00 & 3 & 3 & 0 \\
 2023 & 17 & 3.00 & 3 & 3 & 0 \\
-2024 & 21 & 3.52 & 3 & 5 & 8 \\
-2025 & 51 & 3.45 & 3 & 6 & 17 \\
+2024 & 22 & 3.59 & 3 & 5 & 9 \\
+2025 & 50 & 3.40 & 3 & 6 & 16 \\
 2026 & 14 & 3.50 & 3 & 5 & 6 \\
 \midrule
-All & 104 & 3.39 & 3 & 6 & 31 \\
+All & 104 & 3.38 & 3 & 6 & 31 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -28,7 +28,7 @@ All & 104 & 3.39 & 3 & 6 & 31 \\
 \toprule
 Outcome & 2022 & 2023 & 2024 & 2025 & 2026 & All \\
 \midrule
-Data exfiltration & 0 & 11 & 12 & 29 & 4 & 56 \\
+Data exfiltration & 0 & 11 & 13 & 28 & 4 & 56 \\
 RCE & 0 & 0 & 3 & 19 & 3 & 25 \\
 Misc (other) & 0 & 2 & 3 & 1 & 5 & 11 \\
 Misinformation & 0 & 3 & 3 & 1 & 2 & 9 \\
@@ -36,7 +36,7 @@ Financial & 0 & 1 & 0 & 0 & 0 & 1 \\
 Harmful content & 1 & 0 & 0 & 0 & 0 & 1 \\
 Safety (physical) & 0 & 0 & 0 & 1 & 0 & 1 \\
 \midrule
-Total & 1 & 17 & 21 & 51 & 14 & 104 \\
+Total & 1 & 17 & 22 & 50 & 14 & 104 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -51,7 +51,7 @@ Stage & Incidents & \% of corpus \\
 \midrule
 Initial access & 104 & 100.0 \\
 Priv. escalation & 104 & 100.0 \\
-Reconnaissance & 5 & 4.8 \\
+Reconnaissance & 4 & 3.8 \\
 Persistence & 27 & 26.0 \\
 Command \& control & 2 & 1.9 \\
 Lateral movement & 7 & 6.7 \\
@@ -69,11 +69,11 @@ Action on obj. & 104 & 100.0 \\
 Path & $n$ & \% \\
 \midrule
 \texttt{IA+PE+AO} & 73 & 70.2 \\
-\texttt{IA+PE+PS+AO} & 18 & 17.3 \\
+\texttt{IA+PE+PS+AO} & 19 & 18.3 \\
 \texttt{IA+PE+LM+AO} & 3 & 2.9 \\
 \texttt{IA+PE+PS+LM+AO} & 3 & 2.9 \\
-\texttt{IA+PE+RC+PS+AO} & 3 & 2.9 \\
 \texttt{IA+PE+PS+C2+AO} & 2 & 1.9 \\
+\texttt{IA+PE+RC+PS+AO} & 2 & 1.9 \\
 \texttt{IA+PE+RC+AO} & 1 & 1.0 \\
 \texttt{IA+PE+RC+PS+LM+AO} & 1 & 1.0 \\
 \bottomrule
@@ -88,13 +88,13 @@ Path & $n$ & \% \\
 \toprule
  & IA & PE & RC & PS & C2 & LM & AO \\
 \midrule
-IA & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
-PE & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
-RC & 100 & 100 & 100 & 80 & 0 & 20 & 100 \\
-PS & 100 & 100 & 15 & 100 & 7 & 15 & 100 \\
+IA & 100 & 100 & 4 & 26 & 2 & 7 & 100 \\
+PE & 100 & 100 & 4 & 26 & 2 & 7 & 100 \\
+RC & 100 & 100 & 100 & 75 & 0 & 25 & 100 \\
+PS & 100 & 100 & 11 & 100 & 7 & 15 & 100 \\
 C2 & 100 & 100 & 0 & 100 & 100 & 0 & 100 \\
 LM & 100 & 100 & 14 & 57 & 0 & 100 & 100 \\
-AO & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
+AO & 100 & 100 & 4 & 26 & 2 & 7 & 100 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -107,10 +107,10 @@ AO & 100 & 100 & 5 & 26 & 2 & 7 & 100 \\
 \toprule
 Category & 2022 & 2023 & 2024 & 2025 & 2026 & All \\
 \midrule
-Coding Assist. & 0 & 3 & 4 & 31 & 2 & 40 \\
-AI Agent & 1 & 3 & 9 & 11 & 6 & 30 \\
-Browser/Search & 0 & 11 & 8 & 5 & 5 & 29 \\
-Agentic/CUA & 0 & 0 & 0 & 4 & 1 & 5 \\
+AI Agent & 1 & 14 & 17 & 13 & 10 & 55 \\
+Coding Assistant & 0 & 3 & 4 & 31 & 2 & 40 \\
+Computer-Use Agent & 0 & 0 & 1 & 4 & 1 & 6 \\
+Agentic Browser & 0 & 0 & 0 & 2 & 1 & 3 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -153,11 +153,11 @@ Period & $N$ & 3 Stages & 4 Stages & 5 Stages & 6 Stages \\
 \midrule
 2022 & 1 & 1 & 0 & 0 & 0 \\
 2023 & 17 & 17 & 0 & 0 & 0 \\
-2024 & 21 & 13 & 5 & 3 & 0 \\
-2025 & 51 & 34 & 12 & 4 & 1 \\
+2024 & 22 & 13 & 5 & 4 & 0 \\
+2025 & 50 & 34 & 13 & 2 & 1 \\
 2026 & 14 & 8 & 5 & 1 & 0 \\
 \midrule
-Total & 104 & 73 & 22 & 8 & 1 \\
+Total & 104 & 73 & 23 & 7 & 1 \\
 \bottomrule
 \end{tabular}
 \end{table}

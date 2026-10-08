@@ -1,5 +1,5 @@
 slug: mcp-untrusted-servers
-id: 2025-007
+id: 2025-006
 title: "MCP: Untrusted Servers and Confused Clients, Plus a Sneaky Exploit"
 authors: Johann Rehberger
 new: true
@@ -26,12 +26,7 @@ stages:
     evidence:
       quote: inject hidden instructions via tool metadata to hijack LLM behavior
       locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
-  reconnaissance:
-    value: "Yes"
-    justification: Malicious servers enumerate tools and probe the system prompt.
-    evidence:
-      quote: malicious servers enumerate available tools and probe Claude’s system prompt
-      locator: embracethered.com/blog/posts/2025/model-context-protocol-security-risks-and-exploits/
+  reconnaissance: null
   persistence:
     value: Dependent (channel)
     justification: Instructions reside in the connected server’s tool metadata, retrieved each interaction.

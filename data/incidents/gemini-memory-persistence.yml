@@ -1,10 +1,10 @@
 slug: gemini-memory-persistence
-id: 2025-003
+id: 2025-002
 title: Hacking Gemini’s Memory with Prompt Injection and Delayed Tool Invocation
 authors: Johann Rehberger
 new: true
 date: 2025-02
-category: Browser/Search
+category: AI Agent
 target: Google Gemini (Advanced)
 source:
   url: https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/

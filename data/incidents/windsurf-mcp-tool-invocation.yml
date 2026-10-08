@@ -1,10 +1,10 @@
 slug: windsurf-mcp-tool-invocation
-id: 2025-043
+id: 2025-042
 title: "Windsurf MCP: Missing Security Controls for Tool Invocation"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: Windsurf (MCP)
 source:
   url: https://embracethered.com/blog/posts/2025/windsurf-dangers-lack-of-security-controls-for-mcp-server-tool-invocation/

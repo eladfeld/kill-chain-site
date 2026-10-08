@@ -1,10 +1,10 @@
 slug: chatgpt-chat-history-exfil
-id: 2025-020
+id: 2025-019
 title: Exfiltrating Your ChatGPT Chat History and Memories With Prompt Injection
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Browser/Search
+category: AI Agent
 target: ChatGPT
 source:
   url: https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/

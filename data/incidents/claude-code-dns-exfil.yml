@@ -1,10 +1,10 @@
 slug: claude-code-dns-exfil
-id: 2025-009
+id: 2025-008
 title: "Claude Code: Data Exfiltration with DNS"
 authors: Johann Rehberger
 new: true
 date: 2025-06
-category: Coding Assist.
+category: Coding Assistant
 target: Anthropic Claude Code
 source:
   url: https://embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/

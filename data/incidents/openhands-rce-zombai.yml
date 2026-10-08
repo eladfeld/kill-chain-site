@@ -1,10 +1,10 @@
 slug: openhands-rce-zombai
-id: 2025-038
+id: 2025-037
 title: "ZombAI Exploit with OpenHands: Prompt Injection to RCE"
 authors: Johann Rehberger
 new: true
 date: 2025-08
-category: Coding Assist.
+category: Coding Assistant
 target: OpenHands (All Hands AI)
 source:
   url: https://embracethered.com/blog/posts/2025/openhands-remote-code-execution-zombai/
